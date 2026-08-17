@@ -42,6 +42,16 @@ BOOK_REVIEW_CHECKS = (
     "source_coverage_and_verse_inventory",
 )
 
+# Consumer Bible filename in cgv-data. Release paperwork stays in Biblia-LBF.
+LBF_TEXT_SLUGS = {
+    "zechariah": "zacarias",
+    "daniel": "daniel",
+    "titus": "tito",
+    "jude": "judas",
+    "1peter": "1pedro",
+    "1john": "1juan",
+}
+
 
 def release_paths(data: dict[str, Any]) -> dict[str, Path]:
     base = data["root"] / "verification" / data["book"]
@@ -339,7 +349,12 @@ def publish(data: dict[str, Any], operator: str, target_root: Path, confirmed: b
     require_named_role(data, "releaseOperator", operator)
     approval, manifest, source_manifest = validated_approval(data)
     source_dir = source_manifest.parent
-    destination = target_root.resolve() / "bibles" / "LBF" / "releases" / data["book"] / manifest["version"] / manifest["buildId"]
+    # Release package (manifest, text, alignment) lives in Biblia-LBF.
+    # cgv-data receives only the consumer Bible text.
+    biblia_lbf = data["root"].parent / "Biblia-LBF"
+    destination = (
+        biblia_lbf / "releases" / data["book"] / str(manifest["version"]) / str(manifest["buildId"])
+    )
     destination.mkdir(parents=True, exist_ok=True)
     for filename in [item["file"] for item in manifest["artifacts"].values()] + ["release-manifest.json"]:
         source = source_dir / filename
@@ -354,6 +369,17 @@ def publish(data: dict[str, Any], operator: str, target_root: Path, confirmed: b
     published_manifest_sha = sha256_file(destination / "release-manifest.json")
     if published_manifest_sha != approval["manifestSha256"]:
         raise WorkflowError("Published manifest checksum does not match human approval.")
+    text_name = manifest["artifacts"]["text"]["file"]
+    slug = LBF_TEXT_SLUGS.get(data["book"], data["book"])
+    consumer_text = target_root.resolve() / "bibles" / "LBF" / f"{slug}.lbf.md"
+    consumer_text.parent.mkdir(parents=True, exist_ok=True)
+    text_bytes = (destination / text_name).read_bytes()
+    if consumer_text.is_file() and consumer_text.read_bytes() != text_bytes:
+        raise WorkflowError(f"Refusing to overwrite different published Bible text: {consumer_text}")
+    if not consumer_text.is_file():
+        consumer_text.write_bytes(text_bytes)
+    if sha256_file(consumer_text) != manifest["artifacts"]["text"]["sha256"]:
+        raise WorkflowError(f"Published Bible text checksum mismatch: {consumer_text}")
     record = {
         "schemaVersion": 1,
         "recordType": "PUBLICATION_RECORD",
@@ -371,6 +397,7 @@ def publish(data: dict[str, Any], operator: str, target_root: Path, confirmed: b
         "edition": manifest["edition"],
         "version": manifest["version"],
         "publishedPath": str(destination),
+        "consumerTextPath": str(consumer_text),
     }
     save_json(release_paths(data)["publication"], record)
     release_paths(data)["attestation"].write_text(

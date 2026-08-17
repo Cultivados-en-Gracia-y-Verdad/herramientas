@@ -49,8 +49,29 @@ function scrubSummary(value) {
     .trim();
 }
 
-function buildTranslatePrompt({ analysis, rulesMarkdown, rv1909Text }) {
+function sourceLanguageLabel(analysis) {
+  const source = String(analysis?.greek || "");
+  const constraints = analysis?.gates?.morphology?.constraints || [];
+  const strongs = constraints.map(item => String(item.strongs || "")).join(" ");
+  if (/[\u0590-\u05ff]/u.test(source) || /\bH\d+/iu.test(strongs)) return "Hebrew/Aramaic";
+  if (/[\u0370-\u03ff\u1f00-\u1fff]/u.test(source) || /\bG\d+/iu.test(strongs)) return "Greek";
+  return "biblical source language";
+}
+
+export function buildTranslatePrompt({ analysis, rulesMarkdown, rv1909Text }) {
   const { gates, readyForSynthesis, reference, greek, mechanicalDraft } = analysis;
+  const sourceLanguage = sourceLanguageLabel(analysis);
+  const sourceSpecificRules = sourceLanguage === "Greek"
+    ? `3. πιστεύω in PASSIVE (ἐπιστεύθην) = "was entrusted / me fue confiada", NEVER "creí/believed".
+4. Possessive genitives: αὐτοῦ/ἡμῶν → su/nuestro before the noun (su palabra, nuestro Salvador), not "de él/de nosotros".
+5. τοῦ σωτῆρος ἡμῶν θεοῦ ≈ "de Dios nuestro Salvador" or "de nuestro Salvador Dios", not "Salvador de nosotros, Dios".
+6. ἰδίοις with καιροῖς = "tiempos propios / sus tiempos", NEVER "tiempos escogidos".
+7. Soft δέ: do not force "y"; "pero tú…" is fine when addressing resumes the discourse.
+8. ἰδίοις ἀνδράσιν (household) → "sus propios maridos", not "varones".`
+    : `3. Treat Hebrew/Aramaic morphology and syntax as the source of sentence structure; disconnected Spanish glosses do not supply syntax.
+4. Translate the spine token. Nested qere is evidence only; do not substitute it for the snapshot token or fuse both readings into one proposal.
+5. Strong's numbers identify source lexemes/senses; they do not prove a particular Spanish wording or historical-version alignment.
+6. Do not claim that a historical witness translates a source word unless an alignment is explicitly recorded.`;
   const morphLines = (gates.morphology?.constraints || []).map(c =>
     `- ${c.greek} | ${c.morphology} | ${c.explanation} | ${ (c.requirements || []).join("; ") }`
   ).join("\n");
@@ -82,11 +103,11 @@ function buildTranslatePrompt({ analysis, rulesMarkdown, rv1909Text }) {
 ---
 
 TASK
-Produce one modern Spanish rendering for this Greek phrase.
-It must be faithful to Greek grammar and natural enough that a translator can usually click "Use draft".
+Produce one modern Spanish rendering for this ${sourceLanguage} phrase.
+It must be faithful to the source grammar and genuinely grammatical, idiomatic Spanish.
 
 Reference: ${reference}
-Greek: ${greek}
+${sourceLanguage}: ${greek}
 
 HARD GRAMMAR CONSTRAINTS (do not violate):
 ${morphLines || "(none)"}
@@ -101,7 +122,7 @@ GENERAL CONTEXT (verse → paragraph → book — clarify among morph-valid opti
 ${discourseLines || "(none)"}
 Scope: ${(gates.generalContext?.scope || []).join(" · ") || "—"}
 
-Grammar skeleton (structure hint, not final style):
+DIAGNOSTIC GLOSS STREAM (evidence only; NEVER return this as the Spanish draft):
 Template: ${mechanicalDraft?.template || "—"}
 Mechanical: ${mechanicalDraft?.proposedSpanish || "—"}
 
@@ -110,21 +131,18 @@ ${rv1909Text || "—"}
 RV1909 flags: ${(gates.rv1909Review?.flags || []).map(f => f.note).join(" | ") || "none"}
 
 Rules:
-1. Translate FROM the Greek. RV1909 is consultative only.
-2. Preserve number/case/dependency (e.g. πίστιν ἐκλεκτῶν = fe de los elegidos/escogidos, NEVER fe elegida).
-3. πιστεύω in PASSIVE (ἐπιστεύθην) = "was entrusted / me fue confiada", NEVER "creí/believed".
-4. Possessive genitives: αὐτοῦ/ἡμῶν → su/nuestro before the noun (su palabra, nuestro Salvador), not "de él/de nosotros".
-5. τοῦ σωτῆρος ἡμῶν θεοῦ ≈ "de Dios nuestro Salvador" or "de nuestro Salvador Dios", not "Salvador de nosotros, Dios".
-6. ἰδίοις with καιροῖς = "tiempos propios / sus tiempos", NEVER "tiempos escogidos".
-7. Prefer readings that fit the verse/paragraph discourse above when multiple morph-valid options exist.
-8. Use contemporary Spanish that flows naturally (never RV1909 spelling like "á").
-9. Do not add subjects/copulas/theology absent from this phrase.
-10. Articles and smooth phrasing are allowed when Spanish requires them and Greek sense remains.
-11. Soft δέ: do not force "y"; "pero tú…" is fine when addressing resumes the discourse.
-12. ἰδίοις ἀνδράσιν (household) → "sus propios maridos", not "varones".
-13. Translate ONLY this phrase span — do not pull wording from the next Greek phrase or later RV1909 clauses.
+1. Translate FROM the ${sourceLanguage} source. RV1909 is consultative only.
+2. Preserve number, verbal force, syntax, and dependencies recorded by the gates.
+${sourceSpecificRules}
+9. Prefer readings that fit the verse/paragraph discourse above when multiple morph-valid options exist.
+10. Use contemporary Spanish that flows naturally (never RV1909 spelling like "á").
+11. Do not add subjects, copulas, or theology absent from this phrase.
+12. Articles and smooth phrasing are allowed when Spanish requires them and the source sense remains.
+13. Translate ONLY this phrase span — do not pull wording from the next source phrase or later RV1909 clauses.
 14. If readyForSynthesis=${readyForSynthesis} is false, set proposedSpanish to null.
-15. Return JSON only:
+15. The Mechanical line is a word-by-word diagnostic, not a sentence. Do not copy it, lightly punctuate it, or merely reorder its words.
+16. Before returning, silently read proposedSpanish as a standalone Spanish sentence. If it is not grammatical and readily understandable, set proposedSpanish to null and explain why in flags.
+17. Return JSON only:
 
 {
   "gateSummaries": {
@@ -135,16 +153,95 @@ Rules:
     "rv1909Review": "one sentence"
   },
   "proposedSpanish": "modern faithful Spanish phrase",
-  "rationale": ["short bullets citing Greek + discourse constraints"],
+  "rationale": ["short bullets citing source-language + discourse constraints"],
   "flags": [],
   "blockedNote": null
 }`;
 }
 
-function validateDraftAgainstGates(draft, analysis) {
+function normalizeDraftComparison(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/gu, "")
+    .toLocaleLowerCase("es")
+    .replace(/[•·]/gu, " ")
+    .replace(/[^a-zñ0-9]+/giu, " ")
+    .trim()
+    .replace(/\s+/gu, " ");
+}
+
+function mechanicalCopyScore(draft, mechanical) {
+  const draftTokens = normalizeDraftComparison(draft).split(" ").filter(Boolean);
+  const mechanicalTokens = normalizeDraftComparison(mechanical).split(" ").filter(Boolean);
+  if (!draftTokens.length || !mechanicalTokens.length) return 0;
+
+  const counts = new Map();
+  for (const token of mechanicalTokens) counts.set(token, (counts.get(token) || 0) + 1);
+  let shared = 0;
+  for (const token of draftTokens) {
+    const remaining = counts.get(token) || 0;
+    if (remaining > 0) {
+      shared += 1;
+      counts.set(token, remaining - 1);
+    }
+  }
+  return shared / Math.max(draftTokens.length, mechanicalTokens.length);
+}
+
+function normalizeHebrew(value) {
+  return String(value || "")
+    .replace(/[\u0591-\u05c7]/gu, "")
+    .replace(/[^\u05d0-\u05ea]+/gu, " ")
+    .trim()
+    .replace(/\s+/gu, " ");
+}
+
+function inventedHebrewCitations(rationale, sourceText) {
+  const sourceWords = new Set(normalizeHebrew(sourceText).split(" ").filter(Boolean));
+  const cited = (Array.isArray(rationale) ? rationale : [])
+    .flatMap(item => String(item || "").match(/[\u0590-\u05ff]+/gu) || [])
+    .map(normalizeHebrew)
+    .filter(word => word.length >= 2);
+  return [...new Set(cited.filter(word => !sourceWords.has(word)))];
+}
+
+export function validateDraftAgainstGates(draft, analysis, rationale = []) {
   const flags = [];
   const text = String(draft || "");
   const morphConstraints = analysis?.gates?.morphology?.constraints || [];
+  const lemmaTokens = analysis?.gates?.lemma?.tokens || [];
+  const mechanical = String(analysis?.mechanicalDraft?.proposedSpanish || "");
+  const normalizedText = normalizeDraftComparison(text);
+  const normalizedMechanical = normalizeDraftComparison(mechanical);
+
+  if (!normalizedText) {
+    flags.push("Rejected: the model returned no usable Spanish draft.");
+  }
+  if (/[•·]/u.test(text)) {
+    flags.push("Rejected: the proposal contains diagnostic gloss separators, not normal Spanish prose.");
+  }
+  if (normalizedMechanical && normalizedText === normalizedMechanical) {
+    flags.push("Rejected: the proposal copies the mechanical gloss stream instead of producing grammatical Spanish.");
+  } else if (
+    normalizedMechanical.split(" ").length >= 6
+    && mechanicalCopyScore(text, mechanical) >= 0.8
+  ) {
+    flags.push("Rejected: the proposal is only a light rearrangement of the mechanical gloss stream.");
+  }
+
+  const inventedCitations = inventedHebrewCitations(rationale, analysis?.greek || "");
+  if (inventedCitations.length) {
+    flags.push(`Rejected: the rationale cites source word(s) not present in this phrase: ${inventedCitations.join(", ")}.`);
+  }
+
+  const sourceStrongs = new Set(
+    lemmaTokens.map(item => String(item.strongs || "").toUpperCase()).filter(Boolean)
+  );
+  const permitsLordTitle = ["H113", "H136", "H1167", "H3068", "H410", "H430"]
+    .some(strongs => sourceStrongs.has(strongs));
+  if (!permitsLordTitle && /\b(?:el\s+)?señor\b|\bYHWH\b|\bDios\b/iu.test(text)) {
+    flags.push("Rejected: the proposal adds a divine/master title absent from the selected source tokens.");
+  }
 
   for (const item of morphConstraints) {
     if (/ἐκλεκτ/u.test(item.lemma || "") || /ἐκλεκτ/u.test(item.greek || "")) {
@@ -270,6 +367,27 @@ export async function assistPhraseGates({
     throw error;
   }
 
+  if (!analysis.readyForSynthesis) {
+    const investigationId = analysis?.gates?.lemma?.investigationId || "the open investigation";
+    const sourceVariant = analysis?.gates?.lemma?.blockReason === "source-variant";
+    return {
+      provider: availability.provider,
+      model: availability.model,
+      draftSource: "blocked",
+      gateSummaries: {},
+      proposedSpanish: null,
+      slots: [],
+      template: null,
+      rationale: [],
+      blockedNote: sourceVariant
+        ? `Drafting is withheld until a named human resolves ${investigationId}'s source-reading decision.`
+        : `Gate 1 is blocked by ${investigationId}. Resolve the investigation before drafting.`,
+      flags: ["No AI request was made while deterministic gates were blocked."],
+      readyForSynthesis: false,
+      pipelineStatus: analysis.pipelineStatus
+    };
+  }
+
   const mechanical = analysis.mechanicalDraft;
   const rulesMarkdown = await loadTranslationRules(rootDir);
   const prompt = buildTranslatePrompt({
@@ -281,10 +399,11 @@ export async function assistPhraseGates({
   const raw = await runChatCompletion({
     prompt,
     json: true,
-    system: `You are a Bible translation assistant for La Biblia Fiel.
-Produce faithful contemporary Spanish from Greek grammar constraints.
+    system: `You are a suggestion-only Bible translation assistant for La Biblia Fiel.
+Produce faithful contemporary Spanish from the supplied Hebrew, Aramaic, or Greek source constraints.
 Prefer natural modern Spanish that a human can usually accept with light edits.
-Never invent theology. Never violate number/case/dependency.
+Never copy a mechanical word-by-word gloss as though it were Spanish. Never invent theology or violate source grammar.
+You do not verify, approve, save, or publish translations. A named human decides every wording.
 Return JSON only.`
   });
 
@@ -302,16 +421,12 @@ Return JSON only.`
   let draftSource = "ai";
 
   if (analysis.readyForSynthesis) {
-    const validation = validateDraftAgainstGates(proposedSpanish, analysis);
+    const validation = validateDraftAgainstGates(proposedSpanish, analysis, parsed.rationale);
     if (!proposedSpanish || !validation.ok) {
       flags.push(...validation.flags);
-      if (mechanical?.proposedSpanish) {
-        proposedSpanish = mechanical.proposedSpanish;
-        draftSource = "mechanical-fallback";
-        flags.push("AI draft rejected by grammar checks; showing mechanical fallback.");
-      } else if (!proposedSpanish) {
-        throw new Error("AI returned no Spanish draft.");
-      }
+      proposedSpanish = null;
+      draftSource = "rejected";
+      flags.push("No draft was offered. The mechanical gloss remains diagnostic evidence only.");
     }
   }
 

@@ -314,7 +314,7 @@ function safeTabFile(file) {
 }
 
 function safeEvidenceFile(file) {
-  if (!/^[a-z0-9-]+\.md$/.test(file)) {
+  if (!/^[a-z0-9-]+\.(?:md|json)$/.test(file)) {
     throw new Error("Invalid evidence file");
   }
   return file;
@@ -885,6 +885,25 @@ function isOtOccurrenceReport(report) {
     || /^[HA]\d+/i.test(String(report?.strongs || ""));
 }
 
+function formatHistoricalWitnesses(occurrence) {
+  const translations = occurrence?.translations || {};
+  const focus = occurrence?.historicalFocus || {};
+  const rows = [
+    ["RV1862", "rv1862"],
+    ["RV1909", "rv1909"],
+    ["SPNBES", "spnbes"],
+    ["SPNVBL", "spnvbl"]
+  ];
+  return rows.map(([label, key]) => {
+    const witness = valueOrDash(translations[key]);
+    const linked = normalizeDecisionValue(focus[key]);
+    const linkStatus = linked
+      ? `Recorded source-word link: **${linked}**`
+      : "Recorded source-word link: none — no highlight applied; inventing an alignment is prohibited.";
+    return `${label}: ${witness}  \n${linkStatus}`;
+  }).join("\n\n");
+}
+
 function formatOccurrenceEvidence(report, generatedAt) {
   const ot = isOtOccurrenceReport(report);
   const countBy = (items, getKey) => {
@@ -952,13 +971,7 @@ BLE: ${valueOrDash(translations.ble)}
 
 #### Historical Witnesses
 
-RV1862: ${valueOrDash(translations.rv1862)}
-
-RV1909: ${valueOrDash(translations.rv1909)}
-
-SPNBES: ${valueOrDash(translations.spnbes)}
-
-SPNVBL: ${valueOrDash(translations.spnvbl)}
+${formatHistoricalWitnesses(occurrence)}
 
 </details>`;
   }).join("\n\n");
@@ -1050,13 +1063,7 @@ BLE: ${valueOrDash(translations.ble)}
 
 ## Historical Witnesses
 
-RV1862: ${valueOrDash(translations.rv1862)}
-
-RV1909: ${valueOrDash(translations.rv1909)}
-
-SPNBES: ${valueOrDash(translations.spnbes)}
-
-SPNVBL: ${valueOrDash(translations.spnvbl)}
+${formatHistoricalWitnesses(occurrence)}
 `;
 }
 
@@ -1181,7 +1188,10 @@ async function sendEvidenceMarkdown(response, id, fileName) {
     send(response, 404, "Not found");
     return;
   }
-  send(response, 200, content, "text/markdown; charset=utf-8");
+  const contentType = safeFileName.endsWith(".json")
+    ? "application/json; charset=utf-8"
+    : "text/markdown; charset=utf-8";
+  send(response, 200, content, contentType);
 }
 
 async function handleTranslation(request, response, url) {
@@ -1240,6 +1250,7 @@ async function handleTranslation(request, response, url) {
 
 async function readPhrasePipelineBody(request) {
   const body = await readJsonBody(request);
+  const book = typeof body.book === "string" ? body.book.trim().toLowerCase() : "";
   const reference = typeof body.reference === "string" ? body.reference.trim() : "";
   const greek = typeof body.greek === "string" ? body.greek.trim() : "";
   const rv1909Text = typeof body.rv1909Text === "string" ? body.rv1909Text : "";
@@ -1255,6 +1266,7 @@ async function readPhrasePipelineBody(request) {
     : [];
 
   return {
+    book,
     reference,
     greek: greek || tokenRows.map(row => row.greek).filter(Boolean).join(" "),
     rv1909Text,
@@ -1332,7 +1344,7 @@ async function handleTranslationGatesAssist(request, response) {
     });
     sendJson(response, 200, { analysis, assist });
   } catch (error) {
-    const status = error?.code === "AI_NOT_CONFIGURED" || error?.code === "OLLAMA_UNREACHABLE"
+    const status = ["AI_NOT_CONFIGURED", "OLLAMA_UNREACHABLE", "LMSTUDIO_UNREACHABLE", "LMSTUDIO_MODEL_MISSING"].includes(error?.code)
       ? 503
       : 502;
     sendJson(response, status, {

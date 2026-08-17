@@ -16,6 +16,7 @@ from book_workflow import (  # noqa: E402
     load_book,
     prepare,
     record,
+    record_book,
     record_chapter,
     resolve_paths,
     translation_audit,
@@ -134,6 +135,18 @@ class BookWorkflowTests(unittest.TestCase):
         self.assertEqual(gate_state(data, "translation")[0], "PENDING")
         self.assertEqual(gate_state(data, "alignment")[0], "PENDING")
 
+    def test_missing_alignment_does_not_block_g0a_preparation(self):
+        self.paths["alignment"].unlink()
+        data = self.data()
+        self.assertEqual(translation_audit(data), [])
+        self.assertTrue(any("not been submitted" in item for item in alignment_audit(data)))
+        prepare(data)
+        self.assertTrue(data["paths"]["translation_review"].is_file())
+        self.assertFalse(data["paths"]["alignment_review"].is_file())
+        self.assertEqual(gate_state(data, "translation")[0], "PENDING")
+        record(data, "translation", "Titus 1:1", "PASS", "Reviewer A", "faithful", True)
+        self.assertEqual(gate_state(data, "translation")[0], "PASS")
+
     def test_release_report_keeps_g0b_pending_until_g0a_passes(self):
         data = self.data()
         prepare(data)
@@ -160,6 +173,16 @@ class BookWorkflowTests(unittest.TestCase):
         review = json.loads(data["paths"]["translation_review"].read_text(encoding="utf-8"))
         self.assertEqual(review["verses"][0]["decision"], "PASS")
         self.assertTrue(review["verses"][0]["decisionId"].startswith("G0A-titus-"))
+
+    def test_book_record_is_one_reading_not_many_reviews(self):
+        data = self.data()
+        prepare(data)
+        record_book(data, "translation", "PASS", "Reviewer A", "read the book", True)
+        review = json.loads(data["paths"]["translation_review"].read_text(encoding="utf-8"))
+        ids = {item["decisionId"] for item in review["verses"]}
+        self.assertEqual(len(ids), 1)
+        self.assertTrue(all(item["decision"] == "PASS" for item in review["verses"]))
+        self.assertEqual(gate_state(data, "translation")[0], "PASS")
 
     def test_release_build_requires_separate_human_book_review(self):
         data = self.data()

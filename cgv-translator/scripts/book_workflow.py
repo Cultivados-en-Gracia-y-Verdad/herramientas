@@ -157,7 +157,9 @@ def ensure_revision_records(data: dict[str, Any]) -> dict[str, str]:
             "nextAction": "Resolve producer identity or use a reviewer independent of every possible producer.",
             "details": {"textualBasis": "LBF staging"},
         },
-        "alignment": {
+    }
+    if data["alignment"] is not None:
+        definitions["alignment"] = {
             "path": paths["alignment"],
             "author": str(data["alignment"].get("generator", {}).get("name") or "legacy-alignment-producer"),
             "status": str(data["alignment"].get("generator", {}).get("status") or "DRAFT"),
@@ -167,8 +169,7 @@ def ensure_revision_records(data: dict[str, Any]) -> dict[str, str]:
                 "generator": data["alignment"].get("generator"),
                 "textualBasis": data["alignment"].get("textualBasis"),
             },
-        },
-    }
+        }
     ids = {}
     for record_type, definition in definitions.items():
         artifact_data = artifact(data["root"], definition["path"])
@@ -247,10 +248,12 @@ def load_book(root: Path, book: str) -> dict[str, Any]:
     paths = resolve_paths(root, book)
     spine = load_json(paths["spine"])
     translation = load_json(paths["translation"])
-    alignment = load_json(paths["alignment"])
+    alignment = load_json(paths["alignment"]) if paths["alignment"].is_file() else None
     if not isinstance(spine, dict) or not isinstance(spine.get("verses"), dict):
         raise WorkflowError("Source spine must contain a verses object.")
-    if not isinstance(alignment, dict) or not isinstance(alignment.get("links"), list):
+    if alignment is not None and (
+        not isinstance(alignment, dict) or not isinstance(alignment.get("links"), list)
+    ):
         raise WorkflowError("Alignment artifact must contain a links array.")
     return {
         "root": root,
@@ -333,6 +336,10 @@ def has_lexical_text(value: str) -> bool:
 
 
 def alignment_audit(data: dict[str, Any]) -> list[str]:
+    if data["alignment"] is None:
+        return [
+            "Alignment has not been submitted. Submit it only after the current translation receives G0A PASS."
+        ]
     errors: list[str] = []
     tokens, _ = source_indexes(data)
     rows: dict[tuple[str, int], dict[str, Any]] = {}
@@ -427,14 +434,15 @@ def artifacts_for_gate(data: dict[str, Any], gate: str) -> dict[str, dict[str, s
         "source": artifact(data["root"], paths["spine"]),
         "translation": artifact(data["root"], paths["translation"]),
     }
-    if gate == "alignment":
+    if gate == "alignment" and data["alignment"] is not None and paths["alignment"].is_file():
         values["alignment"] = artifact(data["root"], paths["alignment"])
     return values
 
 
 def verse_evidence(data: dict[str, Any]) -> list[dict[str, Any]]:
     tokens, source_by_verse = source_indexes(data)
-    links = {phrase_key(link): link for link in data["alignment"]["links"] if phrase_key(link)}
+    alignment_links = data["alignment"]["links"] if data["alignment"] is not None else []
+    links = {phrase_key(link): link for link in alignment_links if phrase_key(link)}
     rows_by_reference: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for row in data["rows"]:
         rows_by_reference[str(row.get("reference"))].append(row)
@@ -896,6 +904,77 @@ def record_chapter(
         )
 
 
+def record_book(
+    data: dict[str, Any], gate: str, decision: str,
+    reviewer: str, notes: str, human_confirmation: bool,
+    owner: str = "", next_action: str = "",
+) -> None:
+    """Record one book reading. Verse rows store that attestation; they are not 211 reviews."""
+    gate = gate.lower()
+    if gate not in GATES:
+        raise WorkflowError(f"Unknown gate: {gate}")
+    decision = decision.upper()
+    if decision not in {"PASS", "BLOCKED"}:
+        raise WorkflowError(
+            "record-book is a book reading: PASS or BLOCKED. "
+            "Record verse findings with `record` and CHANGES_REQUIRED."
+        )
+    reviewer = reviewer.strip()
+    if not reviewer:
+        raise WorkflowError("A human reviewer name is required.")
+    if human_confirmation is not True:
+        raise WorkflowError("Direct human review must be explicitly confirmed. AI verification is prohibited.")
+    notes = notes.strip()
+    owner = owner.strip()
+    next_action = next_action.strip()
+    if decision == "BLOCKED" and (not owner or not next_action):
+        raise WorkflowError("BLOCKED requires --owner and --next-action.")
+    require_independent_reviewer(data, gate, reviewer)
+    path = review_path(data, gate)
+    if not path.is_file():
+        raise WorkflowError(f"Run prepare before recording {gate} review.")
+    review = load_json(path)
+    pending_items = [item for item in review.get("verses", []) if item.get("decision") == "PENDING"]
+    if not pending_items:
+        raise WorkflowError(f"No pending {gate} verses to record for {data['book']}.")
+    if gate == "alignment":
+        translation_review = load_json(review_path(data, "translation")) if review_path(data, "translation").is_file() else {}
+        translation_by_ref = {
+            str(item.get("reference")): item
+            for item in translation_review.get("verses", [])
+        }
+        for item in pending_items:
+            reference = str(item.get("reference"))
+            translation_item = translation_by_ref.get(reference)
+            if not translation_item or translation_item.get("decision") != "PASS" or translation_item.get("authority") != "HUMAN":
+                raise WorkflowError(f"{reference}: translation must receive a human PASS before alignment review.")
+    references = [str(item.get("reference")) for item in pending_items]
+    timestamp = now_iso()
+    decision_id = write_gate_decision(
+        data, gate, references, decision, reviewer, notes, owner, next_action
+    )
+    for item in pending_items:
+        item.update(
+            {
+                "decision": decision,
+                "reviewer": reviewer,
+                "authority": "HUMAN",
+                "reviewMethod": HUMAN_REVIEW_METHOD,
+                "aiUsed": False,
+                "reviewedAt": timestamp,
+                "notes": notes,
+                "owner": owner,
+                "nextAction": next_action,
+                "decisionId": decision_id,
+            }
+        )
+    save_json(path, review)
+    print(
+        f"{gate.upper()} {decision}: {data['book']} book reading — "
+        f"{len(references)} pending verse(s) — {reviewer} ({decision_id})"
+    )
+
+
 def pending(data: dict[str, Any], gate: str) -> None:
     gate = gate.lower()
     path = review_path(data, gate)
@@ -916,13 +995,13 @@ def build_parser() -> argparse.ArgumentParser:
         command = commands.add_parser(name)
         command.add_argument("book")
     decision_choices = ("PASS", "CHANGES_REQUIRED", "BLOCKED", "pass", "changes_required", "blocked")
-    for command_name in ("record", "record-chapter"):
+    for command_name in ("record", "record-chapter", "record-book"):
         command = commands.add_parser(command_name)
         command.add_argument("book")
         command.add_argument("gate", choices=GATES)
         if command_name == "record":
             command.add_argument("reference")
-        else:
+        elif command_name == "record-chapter":
             command.add_argument("chapter", type=int)
         command.add_argument("decision", choices=decision_choices)
         command.add_argument("--reviewer", required=True)
@@ -932,7 +1011,7 @@ def build_parser() -> argparse.ArgumentParser:
         command.add_argument(
             "--human-confirmation",
             action="store_true",
-            help="attest that the named human directly reviewed every referenced verse without AI verification",
+            help="attest that the named human read the book (or the named verses) without AI verification",
         )
     command = commands.add_parser("pending")
     command.add_argument("book")
@@ -960,6 +1039,13 @@ def main() -> int:
         if args.command == "record-chapter":
             record_chapter(
                 data, args.gate, args.chapter, args.decision,
+                args.reviewer, args.notes, args.human_confirmation,
+                args.owner, args.next_action,
+            )
+            return status(data)
+        if args.command == "record-book":
+            record_book(
+                data, args.gate, args.decision,
                 args.reviewer, args.notes, args.human_confirmation,
                 args.owner, args.next_action,
             )

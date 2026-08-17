@@ -108,6 +108,25 @@ export function oshbLemmaMatchesStrongs(lemma = "", strongs = "") {
   return oshbLemmaStrongsNumbers(lemma).includes(num);
 }
 
+function oshbLemmaSense(lemma = "") {
+  const parts = String(lemma || "").split("/");
+  for (let index = parts.length - 1; index >= 0; index -= 1) {
+    const match = parts[index].trim().match(/^(\d+)(?:\s+([a-z]))?/iu);
+    if (match) return `${match[1]}${match[2] ? ` ${match[2].toLowerCase()}` : ""}`;
+  }
+  return "";
+}
+
+function aquiferOshbSourceTokenIds(bookNumber, row = {}) {
+  const book = String(bookNumber || "").padStart(2, "0");
+  const chapter = String(Number(row.ch || 0)).padStart(3, "0");
+  const verse = String(Number(row.vs || 0)).padStart(3, "0");
+  const word = String(Number(row.w || 0)).padStart(3, "0");
+  if (!bookNumber || !Number(row.ch) || !Number(row.vs) || !Number(row.w)) return [];
+  const prefix = `o${book}${chapter}${verse}${word}`;
+  return Array.from({ length: 9 }, (_, index) => `${prefix}${index + 1}`);
+}
+
 const OT_BOOK_LABELS_EN = {
   genesis: "Genesis",
   exodo: "Exodus",
@@ -597,20 +616,18 @@ function buildHighlightedTranslations({
   bleToken,
   strongs = ""
 }) {
-  const focusWords = [
-    ...(historical.focusWords || []),
-    normalizeFocusToken(projectLiteralToken),
-    normalizeFocusToken(bleToken)
-  ].filter(Boolean);
+  const projectFocus = [normalizeFocusToken(projectLiteralToken)].filter(Boolean);
+  const bleFocus = [normalizeFocusToken(bleToken)].filter(Boolean);
+  const witnessFocus = historical.focusByWitness || {};
 
   return {
     ...defaultTranslations(),
-    projectLiteral: highlightWitnessText(projectLiteralVerse || projectLiteralToken || "", focusWords, strongs),
-    ble: highlightWitnessText(bleVerse || bleToken || "", focusWords, strongs),
-    rv1862: highlightWitnessText(historical.rv1862 || "", focusWords, strongs),
-    rv1909: highlightWitnessText(historical.rv1909 || "", focusWords, strongs),
-    spnbes: highlightWitnessText(historical.spnbes || "", focusWords, strongs),
-    spnvbl: highlightWitnessText(historical.spnvbl || "", focusWords, strongs)
+    projectLiteral: highlightWitnessText(projectLiteralVerse || projectLiteralToken || "", projectFocus, strongs),
+    ble: highlightWitnessText(bleVerse || bleToken || "", bleFocus, strongs),
+    rv1862: highlightWitnessText(historical.rv1862 || "", [witnessFocus.rv1862], strongs),
+    rv1909: highlightWitnessText(historical.rv1909 || "", [witnessFocus.rv1909], strongs),
+    spnbes: highlightWitnessText(historical.spnbes || "", [witnessFocus.spnbes], strongs),
+    spnvbl: highlightWitnessText(historical.spnvbl || "", [witnessFocus.spnvbl], strongs)
   };
 }
 
@@ -764,6 +781,7 @@ export async function getGreekOccurrencesByStrongs(strongs, options = {}) {
  */
 export async function getHebrewOccurrencesByStrongs(strongs, options = {}) {
   const lemmaHint = String(options.lemma || "").trim();
+  const requestedSense = /\d+\s+[a-z]\b/iu.test(lemmaHint) ? oshbLemmaSense(lemmaHint) : "";
   const normalizedStrongs = normalizeStrongsId(strongs, { defaultPrefix: "H" });
   if (!isHebrewStrongs(normalizedStrongs) && !/^\d+$/.test(String(strongs || "").trim())) {
     if (String(normalizedStrongs || "").startsWith("G")) {
@@ -815,6 +833,7 @@ export async function getHebrewOccurrencesByStrongs(strongs, options = {}) {
       const hebrewText = rows.map(row => row.surface).filter(Boolean).join(" ");
       for (const row of rows) {
         if (!oshbLemmaMatchesStrongs(row.lemma, hebrewStrongs)) continue;
+        if (requestedSense && oshbLemmaSense(row.lemma) !== requestedSense) continue;
         const lang = String(row.morph || "").startsWith("A") ? "arc" : "he";
         const verseKey = `${bookId}|${row.ch}|${row.vs}`;
         const occurrenceIndex = verseOccurrenceCounts.get(verseKey) ?? 0;
@@ -826,7 +845,8 @@ export async function getHebrewOccurrencesByStrongs(strongs, options = {}) {
             verse: Number(row.vs),
             strongs: hebrewStrongs,
             occurrenceIndex,
-            testament: "OT"
+            testament: "OT",
+            sourceTokenIds: aquiferOshbSourceTokenIds(bookNumber, row)
           })
           : defaultTranslations();
         occurrences.push({
@@ -853,7 +873,8 @@ export async function getHebrewOccurrencesByStrongs(strongs, options = {}) {
             bleVerse: "",
             bleToken: "",
             strongs: hebrewStrongs
-          })
+          }),
+          historicalFocus: historical.focusByWitness || {}
         });
       }
     }

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "recordId": "SRC-zechariah-c7c8144ff3c7",
+  "revision": 1,
+  "recordType": "SOURCE",
+  "book": "zechariah",
+  "author": "source-importer-unresolved",
+  "recordedAt": "2026-08-14T19:41:55+00:00",
+  "status": "BLOCKED",
+  "artifact": {
+    "path": "translations/oshb-spine/zechariah/zechariah-oshb-spine.json",
+    "sha256": "c7c8144ff3c731a9a4025d7d490defee5bc6ddceb648b10802cace52260b3607"
+  },
+  "details": {
+    "declaredEdition": "OSHB/WLC",
+    "tokenizationVersion": 1,
+    "sourceTokenIdScheme": "h38{ch:03}{vs:03}{w:03}"
+  },
+  "owner": "John Wry",
+  "nextAction": "Confirm the OSHB/WLC source edition and tokenization provenance."
+}

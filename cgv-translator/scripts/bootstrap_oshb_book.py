@@ -82,8 +82,8 @@ def mapped_reference(verse: ET.Element, osis: str, mt_chapter: int, mt_verse: in
 
 
 def direct_words(verse: ET.Element) -> list[ET.Element]:
-    # Deliberately use only direct <w> children. Nested qere words live inside
-    # variant notes; Daniel's established spine keeps the direct OSHB/ketiv word.
+    # Declared OT snapshot rule (WORKFLOW §6): only direct <w> children.
+    # Nested qere lives in variant notes and is not a second source.
     return [child for child in list(verse) if local_name(child.tag) == "w"]
 
 
@@ -110,7 +110,12 @@ def load_optional_glosses(root: Path, book: dict) -> dict[str, str]:
             row = json.loads(raw_line)
         except json.JSONDecodeError:
             continue
-        token_id = str(row.get("sourceTokenId") or row.get("source_token_id") or "")
+        token_id = str(
+            row.get("sourceTokenId")
+            or row.get("source_token_id")
+            or row.get("id")
+            or ""
+        )
         gloss = str(row.get("es") or row.get("gloss") or "")
         if token_id and gloss:
             glosses[token_id] = gloss
@@ -152,8 +157,8 @@ def build_documents(root: Path, book_id: str) -> tuple[dict, dict]:
             morph = str(word.get("morph") or "")
             lang = language_from_morph(morph)
             token_id = source_token_id(book["book_code"], mt_chapter, mt_verse, position)
-            gloss = glosses.get(token_id, "")
             oshb_id = str(word.get("id") or "")
+            gloss = glosses.get(token_id, "") or glosses.get(oshb_id, "")
 
             token = {
                 "sourceTokenId": token_id,

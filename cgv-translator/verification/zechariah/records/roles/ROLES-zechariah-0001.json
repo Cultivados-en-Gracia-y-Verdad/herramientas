@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "recordId": "ROLES-zechariah-0001",
+  "revision": 1,
+  "book": "zechariah",
+  "recordedAt": "2026-08-17T03:29:00Z",
+  "recordedBy": "John Wry",
+  "status": "PASS",
+  "translationRevision": {
+    "id": "TR-zechariah-e8049b4bdba6",
+    "sha256": "e8049b4bdba6b36b9d0ed92e51987d50d09dd7d6b1ee5b434834cb72be970290"
+  },
+  "alignmentDraftRevision": null,
+  "assignments": {
+    "translationProducer": {
+      "name": "AI-assisted producer-draft",
+      "kind": "AI_ASSISTED",
+      "usesAI": true,
+      "verificationAuthority": false,
+      "status": "ASSIGNED",
+      "evidence": "The current Spanish in TR-zechariah-e8049b4bdba6 was drafted from the OSHB/WLC spine in a Cursor producer session. John Wry directed the work and is the G0A reviewer, not the recorded producer of this revision."
+    },
+    "translationReviewer": {
+      "name": "John Wry",
+      "status": "ASSIGNED"
+    },
+    "alignmentProducer": {
+      "name": "UNASSIGNED",
+      "status": "PENDING",
+      "evidence": "Alignment is submitted only after current G0A PASS."
+    },
+    "alignmentReviewer": {
+      "name": "UNASSIGNED",
+      "status": "PENDING"
+    },
+    "releaseApprover": {
+      "name": "John Wry",
+      "status": "ASSIGNED"
+    },
+    "releaseOperator": {
+      "name": "John Wry",
+      "status": "ASSIGNED"
+    }
+  },
+  "blockers": []
+}

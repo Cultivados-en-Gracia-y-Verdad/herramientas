@@ -23,6 +23,39 @@ from book_workflow import WorkflowError, alignment_audit, load_book, save_json
 
 WORD_RE = re.compile(r"[^\W_]+(?:[’'][^\W_]+)?", re.UNICODE)
 IGNORED_GLOSSES = {"obj", "acc", "dobj"}
+BLE_SLUGS = {"zechariah": "zacarias", "daniel": "daniel"}
+
+
+def load_interlinear_glosses(root: Path, book_id: str) -> dict[str, str]:
+    """Map OSHB token id / sourceTokenId to a stored interlinear gloss.
+
+    Used only when phrase tokenRows have an empty ble field (common on
+    Protestant/MT remapped verses). Does not change Spanish.
+    """
+    slug = BLE_SLUGS.get(book_id, book_id)
+    candidates = [
+        root.parent / "cgv-data" / "interlinears" / "OT" / f"{slug}.tokens.jsonl",
+        root.parent / "MNA" / "datasets" / "interlinear" / "OT" / f"{slug}.tokens.jsonl",
+    ]
+    path = next((candidate for candidate in candidates if candidate.is_file()), None)
+    if path is None:
+        return {}
+    glosses: dict[str, str] = {}
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        if not raw_line.strip():
+            continue
+        try:
+            row = json.loads(raw_line)
+        except json.JSONDecodeError:
+            continue
+        gloss = str(row.get("es") or row.get("gloss") or "").strip()
+        if not gloss:
+            continue
+        for key in (row.get("id"), row.get("sourceTokenId"), row.get("source_token_id")):
+            token_id = str(key or "").strip()
+            if token_id:
+                glosses[token_id] = gloss
+    return glosses
 
 
 def normalize(value: str) -> str:
@@ -92,9 +125,14 @@ def lexical_score(spanish: list[str], glosses: list[str]) -> float:
     return 0.0 if precision + recall == 0 else 2 * precision * recall / (precision + recall)
 
 
-def token_gloss(row: dict[str, Any]) -> str:
+def token_gloss(row: dict[str, Any], extra: dict[str, str] | None = None) -> str:
     for field in ("ble", "gloss", "es", "rv1909"):
         value = str(row.get(field) or "").strip()
+        if value:
+            return value
+    extra = extra or {}
+    for key in (row.get("oshbId"), row.get("sourceTokenId")):
+        value = extra.get(str(key or "").strip(), "")
         if value:
             return value
     return ""
@@ -156,7 +194,9 @@ def partition(
     return groups
 
 
-def build_units(row: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+def build_units(
+    row: dict[str, Any], extra_glosses: dict[str, str] | None = None
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     spanish = str(row.get("spanish") or "")
     spans = word_spans(spanish)
     if not spans:
@@ -173,7 +213,7 @@ def build_units(row: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[st
     atoms: list[dict[str, Any]] = []
     pending_null_ids: list[str] = []
     for token_id in source_ids:
-        words_for_token = gloss_words(token_gloss(token_rows.get(token_id, {})))
+        words_for_token = gloss_words(token_gloss(token_rows.get(token_id, {}), extra_glosses))
         if not words_for_token:
             pending_null_ids.append(token_id)
             continue
@@ -215,7 +255,7 @@ def build_units(row: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[st
                 "unitId": f"{phrase_index}:{unit_index}",
                 "spanish": surface,
                 "sourceTokenIds": ids,
-                "sourceGloss": " | ".join(token_gloss(token_rows.get(token_id, {})) for token_id in ids),
+                "sourceGloss": " | ".join(token_gloss(token_rows.get(token_id, {}), extra_glosses) for token_id in ids),
                 "lexicalScore": round(similarity, 4),
                 "reviewPriority": "HIGH" if similarity < 0.25 else "NORMAL",
             }
@@ -224,9 +264,10 @@ def build_units(row: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[st
 
 
 def build_draft(data: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
+    extra_glosses = load_interlinear_glosses(data["root"], data["book"])
     links, diagnostics = [], []
     for row in data["rows"]:
-        units, unit_diagnostics = build_units(row)
+        units, unit_diagnostics = build_units(row, extra_glosses)
         links.append(
             {
                 "phraseIndex": int(row.get("phraseIndex")),
@@ -239,7 +280,7 @@ def build_draft(data: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
         diagnostics.append({"reference": row.get("reference"), "units": unit_diagnostics})
     document = {
         "bookId": data["book"],
-        "textualBasis": data["alignment"].get("textualBasis") or data["spine"].get("textualBasis"),
+        "textualBasis": (data["alignment"] or {}).get("textualBasis") or data["spine"].get("textualBasis"),
         "schemaVersion": "draft-1",
         "generator": {
             "name": "deterministic-gloss-dp-v1",

@@ -15,7 +15,7 @@ The human translator remains responsible for every approved phrase.
 ## Goal
 
 Produce contemporary Spanish that a translator can usually accept via **Use draft**,
-while remaining accountable to Greek grammar.
+while remaining accountable to Hebrew, Aramaic, or Greek grammar.
 
 When morphology leaves more than one valid option, prefer the reading that fits
 the immediate verse and local paragraph — not tradition or theology.
@@ -30,6 +30,7 @@ the immediate verse and local paragraph — not tradition or theology.
 ## AI may not
 
 - Start from RV1909, BLE, memory, or tradition
+- Copy, punctuate, or lightly rearrange the BLE/mechanical gloss stream as if it were Spanish
 - Violate number, case, or dependency (e.g. never turn ἐκλεκτῶν into "fe elegida")
 - Invent lemma policy
 - Add subjects, copulas, or theology absent from this phrase

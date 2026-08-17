@@ -47,6 +47,9 @@
 
           <section class="translation-document">
             <section id="phrase-interlinear" class="phrase-interlinear" aria-label="Phrase interlinear"></section>
+            <p id="source-investigation-hint" class="source-investigation-hint">
+              Investigations are source-first. Select <strong>Investigate</strong> under any source word; no Spanish-word alignment is required.
+            </p>
 
             <p class="scripture-label">Working Spanish translation</p>
             <p id="suggestion-source-label" class="suggestion-source-label">Fresh LBF translation</p>
@@ -133,6 +136,10 @@
                 <div>
                   <dt>Status</dt>
                   <dd id="decision-panel-status">Investigation required</dd>
+                </div>
+                <div>
+                  <dt>Current Spanish phrase</dt>
+                  <dd id="decision-panel-spanish">—</dd>
                 </div>
               </dl>
               <button id="open-investigation" class="primary-action" type="button">Open Investigation</button>
@@ -284,6 +291,7 @@
         <div class="modal-header">
           <p class="eyebrow">Case Study</p>
           <h2 id="new-investigation-title">New investigation</h2>
+          <p class="modal-guidance">Start from the Hebrew, Aramaic, or Greek source word. A Spanish-word assignment is not required.</p>
         </div>
 
         <label class="field-label" for="new-inv-lemma">Lemma</label>

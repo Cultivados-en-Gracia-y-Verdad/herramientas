@@ -35,6 +35,11 @@ const state = {
   saving: false
 };
 
+// Deterministic source-token links read from investigation evidence. These
+// links identify the investigation for an exact OSHB token; they do not imply
+// that the token has been aligned to any particular Spanish word.
+const sourceInvestigationByOshbId = new Map();
+
 const translationView = document.querySelector("#translation-view");
 const investigationView = document.querySelector("#investigation-view");
 const sidebar = document.querySelector(".sidebar");
@@ -43,6 +48,7 @@ const decisionPanel = document.querySelector("#decision-panel");
 const decisionPanelLemma = document.querySelector("#decision-panel-lemma");
 const decisionPanelPolicy = document.querySelector("#decision-panel-policy");
 const decisionPanelStatus = document.querySelector("#decision-panel-status");
+const decisionPanelSpanish = document.querySelector("#decision-panel-spanish");
 const openInvestigationButton = document.querySelector("#open-investigation");
 const investigationList = document.querySelector("#investigation-list");
 const investigationToggle = document.querySelector("#investigation-toggle");
@@ -330,13 +336,17 @@ function registerTokenAsGreekWord(token = {}) {
     ...existing,
     lemma: lemma || existing.lemma || "",
     strongs: strongs || existing.strongs || "",
-    investigationId: existing.investigationId || "",
+    investigationId: sourceInvestigationByOshbId.get(token.oshbId)
+      || existing.investigationId
+      || "",
     approved: existing.approved || false,
     rendering: existing.rendering || token.ble || token.es || "",
     source: existing.source || "BLE",
     reference: currentPhrase()?.reference || existing.reference || "Titus 1:1",
     surface: surface || existing.surface || lemma,
     rmac: token.rmac || token.morph || existing.rmac || "",
+    sourceTokenId: token.sourceTokenId || existing.sourceTokenId || "",
+    oshbId: token.oshbId || existing.oshbId || "",
     language,
     construction: existing.construction
   };
@@ -771,9 +781,7 @@ function renderGateAnalysis(analysis, assist = null) {
 
   if (assist?.proposedSpanish) {
     constrainedDraftText.textContent = assist.proposedSpanish;
-    const sourceLabel = assist.draftSource === "mechanical-fallback"
-      ? `mechanical fallback (${assist.provider}/${assist.model})`
-      : `AI draft · ${assist.provider}/${assist.model}`;
+    const sourceLabel = `AI suggestion · ${assist.provider}/${assist.model}`;
     draftMeta.textContent = sourceLabel;
     acceptDraftButton.disabled = false;
     const rationale = Array.isArray(assist.rationale) ? assist.rationale : [];
@@ -789,6 +797,13 @@ function renderGateAnalysis(analysis, assist = null) {
       draftRationale.hidden = true;
       draftRationale.innerHTML = "";
     }
+  } else if (assist?.draftSource === "rejected") {
+    constrainedDraftText.textContent = "Suggestion rejected: the model did not produce usable grammatical Spanish.";
+    draftMeta.textContent = `Rejected by deterministic checks · ${assist.provider}/${assist.model}`;
+    acceptDraftButton.disabled = true;
+    const flags = Array.isArray(assist.flags) ? assist.flags : [];
+    draftRationale.hidden = flags.length === 0;
+    draftRationale.innerHTML = flags.map(flag => `<li>${escapeHtml(flag)}</li>`).join("");
   } else if (blocked) {
     constrainedDraftText.textContent = "Draft withheld until Gate 1 is resolved.";
     draftMeta.textContent = "Blocked";
@@ -796,8 +811,8 @@ function renderGateAnalysis(analysis, assist = null) {
     draftRationale.hidden = true;
   } else if (analysis.mechanicalDraft?.proposedSpanish) {
     constrainedDraftText.textContent = analysis.mechanicalDraft.proposedSpanish;
-    draftMeta.textContent = "grammar skeleton (run Propose Spanish for fluent draft)";
-    acceptDraftButton.disabled = false;
+    draftMeta.textContent = "Diagnostic gloss stream only — cannot be used as a translation";
+    acceptDraftButton.disabled = true;
     const notes = analysis.mechanicalDraft.notes || [];
     if (notes.length) {
       draftRationale.hidden = false;
@@ -827,7 +842,6 @@ function applyPipelineCache(phrase = currentPhrase()) {
   phrase.pipelineAnalysis = cached.analysis || null;
   phrase.pipelineAssist = cached.assist || null;
   phrase.constrainedDraft = cached.assist?.proposedSpanish
-    || cached.analysis?.mechanicalDraft?.proposedSpanish
     || "";
   renderGateAnalysis(cached.analysis, cached.assist || null);
   return cached;
@@ -873,7 +887,7 @@ async function analyzeCurrentPhrase({ force = false } = {}) {
     pipelineCache.set(cacheKey, next);
     phrase.pipelineAnalysis = analysis;
     phrase.pipelineAssist = null;
-    phrase.constrainedDraft = analysis.mechanicalDraft?.proposedSpanish || "";
+    phrase.constrainedDraft = "";
     renderGateAnalysis(analysis, null);
     return next;
   } catch (error) {
@@ -897,7 +911,7 @@ async function assistCurrentPhrase() {
 
   if (!aiAvailability.available) {
     draftMeta.textContent = aiAvailability.message || "AI unavailable";
-    constrainedDraftText.textContent = "Start Ollama to assist under gate constraints.";
+    constrainedDraftText.textContent = "Start the configured local AI server to enable optional drafting suggestions.";
     return null;
   }
 
@@ -905,7 +919,7 @@ async function assistCurrentPhrase() {
   assistGatesButton.textContent = "Proposing…";
   analyzeGatesButton.disabled = true;
   draftMeta.textContent = `${aiAvailability.provider}/${aiAvailability.model}`;
-  constrainedDraftText.textContent = "Proposing modern Spanish under Greek grammar constraints…";
+  constrainedDraftText.textContent = "Proposing modern Spanish under source-language grammar constraints…";
   acceptDraftButton.disabled = true;
 
   try {
@@ -922,7 +936,6 @@ async function assistCurrentPhrase() {
     phrase.pipelineAnalysis = result.analysis;
     phrase.pipelineAssist = result.assist;
     phrase.constrainedDraft = result.assist?.proposedSpanish
-      || result.analysis?.mechanicalDraft?.proposedSpanish
       || "";
     renderGateAnalysis(result.analysis, result.assist);
     return result;
@@ -930,7 +943,7 @@ async function assistCurrentPhrase() {
     if (requestId !== pipelineRequestId || currentPhraseKey() !== cacheKey) return null;
     constrainedDraftText.textContent = error.message || "AI proposal failed";
     draftMeta.textContent = error.code || "error";
-    acceptDraftButton.disabled = Boolean(phrase.pipelineAnalysis?.mechanicalDraft?.proposedSpanish);
+    acceptDraftButton.disabled = true;
     if (phrase.pipelineAnalysis?.mechanicalDraft?.proposedSpanish) {
       renderGateAnalysis(phrase.pipelineAnalysis, null);
     }
@@ -948,7 +961,7 @@ async function assistCurrentPhrase() {
 function acceptConstrainedDraft() {
   const phrase = currentPhrase();
   const proposal = String(phrase.constrainedDraft || constrainedDraftText.textContent || "").trim();
-  if (!proposal || proposal === "—" || /^(Run Analyze|Gates analyzed|Draft withheld|Start Ollama|Summarizing)/.test(proposal)) {
+  if (!proposal || proposal === "—" || /^(Run Analyze|Gates analyzed|Draft withheld|Start (?:Ollama|the configured)|Summarizing)/.test(proposal)) {
     return;
   }
 
@@ -1170,6 +1183,7 @@ async function switchTranslationBook(bookId) {
   state.translationLoadedFromDisk = false;
   translationUnitsLoaded = false;
   translationUnits = [];
+  await loadInvestigations();
   await loadTranslationDocument();
   await enrichPhraseReferencesFromUnits();
   await loadContinuationUnits({ force: true });
@@ -1304,7 +1318,7 @@ function renderSpanishUnits() {
         ? "No reverse links for this phrase yet."
         : state.bookId === "daniel"
           ? "No reverse links for this phrase yet."
-          : "Reverse interlinear available for Tito TR spine first.";
+          : "Alignment has not started. Use Investigate under any source word above; no Spanish-word link is required.";
     } else {
       const status = entry?.status || "seeded";
       reverseLinksMeta.hidden = false;
@@ -1325,7 +1339,7 @@ function renderSpanishUnits() {
   if (!units.length) {
     const empty = document.createElement("span");
     empty.className = "reverse-links-meta";
-    empty.textContent = "—";
+    empty.textContent = "No Spanish-word alignment yet. Source-word investigations remain available above.";
     spanishUnits.append(empty);
     clearGreekLinkHighlights();
     return;
@@ -1443,6 +1457,7 @@ function renderPhraseInterlinear() {
       button.dataset.greekKey = key;
       if (token.sourceTokenId) button.dataset.sourceTokenId = token.sourceTokenId;
       button.textContent = token.greek || token.surface || "—";
+      button.title = "Open source-word investigation options";
       greekLine.append(button);
     } else {
       greekLine.textContent = token.greek || token.surface || "—";
@@ -1456,7 +1471,18 @@ function renderPhraseInterlinear() {
     rmacLine.className = "interlinear-rmac";
     rmacLine.textContent = token.rmac || token.morph || "—";
 
-    item.append(greekLine, bleLine, rmacLine);
+    const investigate = document.createElement("button");
+    investigate.type = "button";
+    investigate.className = "token-investigate-action";
+    investigate.dataset.greekKey = key;
+    if (token.sourceTokenId) investigate.dataset.sourceTokenId = token.sourceTokenId;
+    investigate.textContent = "Investigate";
+    investigate.setAttribute(
+      "aria-label",
+      `Investigate source word ${token.greek || token.surface || token.lemma || ""}`.trim()
+    );
+
+    item.append(greekLine, bleLine, rmacLine, investigate);
     phraseInterlinear.append(item);
   });
 }
@@ -1592,6 +1618,9 @@ function showGreekDecisionPanel(key, anchor) {
   decisionPanelPolicy.textContent = info.approved
     ? info.rendering
     : `${info.rendering || "—"} (${info.source || "unresolved"})`;
+  if (decisionPanelSpanish) {
+    decisionPanelSpanish.textContent = phraseDisplayText(currentPhrase()) || "—";
+  }
   if (info.investigationId) {
     decisionPanelStatus.textContent = info.approved
       ? `Approved · ${info.investigationId}`
@@ -1701,6 +1730,27 @@ async function fetchText(path) {
 async function loadInvestigations() {
   const { investigations } = await api(translationApiPath("/api/investigations"));
   investigationList.innerHTML = "";
+  sourceInvestigationByOshbId.clear();
+
+  await Promise.all(investigations.map(async id => {
+    try {
+      const content = await fetchText(`/api/investigations/${id}/evidence/source-variants.json`);
+      const evidence = JSON.parse(content);
+      if (evidence.recordType !== "SOURCE_VARIANT_EVIDENCE"
+        || evidence.book !== state.bookId
+        || !Array.isArray(evidence.variants)) {
+        return;
+      }
+      for (const variant of evidence.variants) {
+        for (const reading of [variant.ketiv, variant.qere]) {
+          const oshbId = String(reading?.id || "").trim();
+          if (oshbId) sourceInvestigationByOshbId.set(oshbId, id);
+        }
+      }
+    } catch {
+      // Most investigations do not contain source-variant evidence.
+    }
+  }));
 
   for (const id of investigations) {
     const button = document.createElement("button");
@@ -2753,6 +2803,7 @@ bookSelect?.addEventListener("change", async () => {
   state.translationLoadedFromDisk = false;
   translationUnitsLoaded = false;
   translationUnits = [];
+  await loadInvestigations();
   await loadTranslationDocument();
   await enrichPhraseReferencesFromUnits();
   await loadContinuationUnits({ force: true });

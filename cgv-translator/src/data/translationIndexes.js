@@ -508,7 +508,7 @@ function parseAlignmentIndex(contents, targetTokenIndex) {
 
     for (const record of data.records || []) {
       const sourceIds = (record.source || [])
-        .map(value => String(value).match(/^n?(\d+)\|/u)?.[1])
+        .map(value => String(value).match(/^[no]?(\d+)\|/u)?.[1])
         .filter(Boolean);
       const targetIds = (record.target || [])
         .map(value => String(value).match(/^(\d+)\|/u)?.[1])
@@ -527,7 +527,7 @@ function parseAlignmentIndex(contents, targetTokenIndex) {
 function lookupAlignedSpan(alignmentIndex, sourceTokenIds = []) {
   if (!alignmentIndex || !sourceTokenIds.length) return "";
   const targetIds = sourceTokenIds.flatMap(id => {
-    const normalizedId = String(id).replace(/^n/u, "");
+    const normalizedId = String(id).replace(/^[no]/u, "");
     return alignmentIndex.sourceToTargets.get(normalizedId) || alignmentIndex.sourceToTargets.get(String(id)) || [];
   });
   if (!targetIds.length) return "";
@@ -669,15 +669,16 @@ export function resolveHistoricalRenderings(indexes, {
   const rv1862 = testament === "NT"
     ? lookupRvVerse(indexes.rv1862, book, chapter, verse) || rv1862Focus
     : rv1862OtUnavailable;
-  const rv1909 = lookupAlignedSpan(indexes.rv1909Alignment, sourceTokenIds)
-    || lookupRvVerse(indexes.rv1909, aquiferBook, chapter, verse)
+  const rv1909Aligned = lookupAlignedSpan(indexes.rv1909Alignment, sourceTokenIds);
+  const rv1909 = lookupRvVerse(indexes.rv1909, aquiferBook, chapter, verse)
     || (testament === "NT" ? lookupRvVerse(indexes.rv1909, `m${paddedBook}`, chapter, verse) : "")
+    || rv1909Aligned
     || rv1909Focus;
   const spnbes = indexes.spnbes.verseTextIndex.get(bcv) || spnbesFocus;
   const spnvbl = indexes.spnvbl.verseTextIndex.get(bcv) || spnvblFocus;
 
   const focusWords = [...new Set(
-    [spnbesFocus, spnvblFocus, rv1862Focus, rv1909Focus]
+    [spnbesFocus, spnvblFocus, rv1862Focus, rv1909Aligned, rv1909Focus]
       .map(normalizeFocusToken)
       .filter(Boolean)
   )];
@@ -687,6 +688,12 @@ export function resolveHistoricalRenderings(indexes, {
     rv1909,
     spnbes,
     spnvbl,
-    focusWords
+    focusWords,
+    focusByWitness: {
+      rv1862: rv1862Focus,
+      rv1909: rv1909Aligned || rv1909Focus,
+      spnbes: spnbesFocus,
+      spnvbl: spnvblFocus
+    }
   };
 }

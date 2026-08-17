@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "recordType": "RELEASE_READINESS_REPORT",
+  "book": "zechariah",
+  "checkedAt": "2026-08-17T12:58:25+00:00",
+  "authority": "DETERMINISTIC_FACTS_ONLY",
+  "aiVerificationPermitted": false,
+  "status": "BLOCKED",
+  "inputRevisionIds": {
+    "source": "SRC-zechariah-c7c8144ff3c7",
+    "translation": "TR-zechariah-ac24fdec642c",
+    "alignment": "ALN-zechariah-679cb51cd289"
+  },
+  "scriptFacts": {
+    "translationDefectCount": 0,
+    "alignmentDefectCount": 0,
+    "translationLegacyLabels": {
+      "lbf-preliminary": 1,
+      "producer-draft": 210
+    },
+    "alignmentDraft": {
+      "path": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-translator/translations/oshb-spine/zechariah/zechariah-reverse-links.draft-v1.json",
+      "exists": true,
+      "sha256": "679cb51cd289757be99a6c893277c7ea06f949ad28808b4f2c1cb1d107e09064",
+      "gitTracked": false,
+      "deterministicDefectCount": 0,
+      "verificationAuthority": false
+    },
+    "sourceOrigin": {
+      "path": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/interlinears/OT/zechariah.tokens.jsonl",
+      "exists": false,
+      "sha256": null,
+      "gitTracked": null,
+      "spineTokenCount": null,
+      "originTokenCount": null,
+      "mismatchCount": null
+    }
+  },
+  "humanGates": {
+    "G0A": {
+      "status": "PASS",
+      "detail": "all 211 verses passed human review for these exact bytes"
+    },
+    "G0B": {
+      "status": "PASS",
+      "detail": "all 211 verses passed human review for these exact bytes"
+    }
+  },
+  "investigations": [
+    {
+      "id": "INV-38-0001",
+      "status": "RESOLVED",
+      "releaseBlocking": false,
+      "classification": "EXPLICIT"
+    }
+  ],
+  "publicationInventory": {
+    "cgvDataRepository": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data",
+    "textCandidates": [
+      {
+        "path": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/zechariah.lbf.md",
+        "exists": false,
+        "sha256": null,
+        "gitTracked": null
+      },
+      {
+        "path": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/zechariah.lbf.final.md",
+        "exists": false,
+        "sha256": null,
+        "gitTracked": null
+      }
+    ],
+    "alignmentCandidate": {
+      "path": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/alignments/zechariah.alignment.json",
+      "exists": false,
+      "sha256": null,
+      "gitTracked": null
+    },
+    "managerState": {
+      "path": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-MANAGER/projects/zechariah/state.yaml",
+      "exists": false,
+      "sha256": null,
+      "gitTracked": null
+    }
+  },
+  "blockers": [
+    {
+      "id": "RELEASE-APPROVAL",
+      "owner": "John Wry",
+      "nextAction": "The assigned human release approver must approve the exact manifest.",
+      "reason": "A current human release approval is required."
+    }
+  ]
+}

@@ -1,12 +1,25 @@
 # CGV Translator Workflow Standard
 
 **Status:** Active
-**Version:** 1.0
+**Version:** 1.2
 **Scope:** LBF translation, investigation, alignment, verification, approval, and release
 
 ## 1. Authority
 
 This document is the canonical production policy for `cgv-translator`. The Constitution governs values; this standard governs work. Schemas and implementation specifications may add detail but may not weaken these controls.
+
+### What you decide, and what you do not
+
+**You decide Spanish** against the tokens already in the declared source snapshot (the spine).
+
+**You do not decide:**
+
+- which edition is the source (that is declared when the snapshot is built);
+- which physical tokens belong in the snapshot (direct OSHB word vs nested qere, tokenization);
+- ketiv versus qere as a text-critical vote;
+- Greek evidence for a Hebrew book, or the reverse.
+
+If a reading is not in the snapshot, it is not the translation source. Changing that set of tokens is a new source snapshot, not a G0A question and not a translator investigation.
 
 ## 2. Required roles
 
@@ -72,16 +85,22 @@ An investigation may be opened from any state. Opening or editing research does 
 
 The Producer shall:
 
-1. work from the declared source snapshot;
+1. work from the declared source snapshot — the tokens in that revision, nothing else;
 2. create a translation-unit revision;
-3. link any controlling investigation decisions;
+3. link only investigations that actually control Spanish or alignment wording;
 4. submit the exact revision to G0A.
 
 Other translations may be consulted as evidence but may not replace accountability to the declared source.
 
+For OT books the snapshot is the OSHB/WLC spine: direct `<w>` tokens, including ketiv. Nested qere in the edition file is not a second source. Translate the spine. A G0A reviewer checks Spanish against those tokens.
+
 ## 7. Investigation policy
 
-Open an investigation when a decision is non-routine, disputed, materially consequential, or likely to recur.
+Open an investigation when a **translation or alignment** decision is non-routine, disputed, materially consequential, or likely to recur (lemma Spanish, grammar, a recurring rendering).
+
+Do **not** open a release-blocking investigation that asks a translator or G0A reviewer to choose ketiv vs qere, or to re-select tokens the snapshot already excluded. A list of unused qere forms is source documentation. It may exist as a non-blocking note. It must not block drafting, G0A, or verse PASS.
+
+Lemma-profile and occurrence dumps must match the book's language and the investigation's question. A Greek lemma must never be written into a Hebrew investigation.
 
 An investigation is resolved only when it contains:
 
@@ -93,19 +112,24 @@ An investigation is resolved only when it contains:
 - affected scope;
 - accountable decision-maker.
 
-Possible statuses are `OPEN`, `RESOLVED`, and `SUPERSEDED`. An `OPEN` investigation blocks release only when marked release-blocking.
+Possible statuses are `OPEN`, `RESOLVED`, and `SUPERSEDED`. An `OPEN` investigation blocks release only when marked release-blocking **and** it actually controls Spanish or alignment content. Source-tokenization inventories are not release-blocking.
 
 ## 8. G0A — translation verification
 
-**Inputs:** source snapshot revision, translation revision, linked controlling investigations, and relevant context.
+G0A is a **book reading**, not a stack of terminal commands and not 211 separate verse audits.
 
-The reviewer checks at minimum:
+**Inputs:** source snapshot revision, translation revision, linked controlling investigations, and the continuous Spanish book.
 
-- source meaning and grammatical relationships are represented;
+The reviewer reads the book. Check at minimum:
+
+- the Spanish is the book you meant to publish from this snapshot;
+- it represents the **spine tokens**, not an excluded qere or another edition;
 - nothing material is unsupported, omitted, or distorted;
 - ambiguity is preserved or resolved responsibly;
-- Spanish is intelligible and fit for downstream analysis;
-- controlling decisions are followed or explicitly challenged.
+- Spanish is intelligible;
+- controlling **translation** decisions are followed or explicitly challenged.
+
+If a verse is wrong, record that verse as `CHANGES_REQUIRED` with a finding. If the book is acceptable, record one book `PASS` on this revision. Verse rows store that attestation. They are not a second review.
 
 **Output:** a gate decision bound to the input revisions. `CHANGES_REQUIRED` must contain actionable findings. A `PASS` becomes stale automatically when any bound input changes.
 
@@ -182,11 +206,12 @@ The Release operator shall:
 1. build from the approved manifest;
 2. validate schema and referential integrity;
 3. create an artifact checksum;
-4. publish the immutable artifact to `cgv-data`;
-5. verify that the published checksum matches the manifest;
-6. register the artifact ID, checksum, edition, and version with `cgv-MANAGER`.
+4. keep the release package (manifest, text, alignment) in `Biblia-LBF/releases/`;
+5. publish only the consumer Bible text to `cgv-data/bibles/LBF/`;
+6. verify that the published text checksum matches the manifest;
+7. register the artifact ID, checksum, edition, and version with `cgv-MANAGER`.
 
-Downstream work must consume the registered artifact, not a working copy.
+`cgv-data` is not the home of release paperwork. Downstream work must consume the registered Bible text, not a working copy.
 
 ## 16. Corrections after release
 

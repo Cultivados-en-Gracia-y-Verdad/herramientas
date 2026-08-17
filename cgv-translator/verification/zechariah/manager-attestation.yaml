@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1",
+  "project": {
+    "book": "zechariah",
+    "language": "es",
+    "producer_project": "cgv-translator"
+  },
+  "source": {
+    "name": "LBF",
+    "path": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/releases/zechariah/1.0.0/LBF-zechariah-1.0.0-8cb0343354a5/zechariah.lbf.md",
+    "revision": "TR-zechariah-ac24fdec642c",
+    "checksum_sha256": "412a091d8c792e37b893b95b5cc588ada408ff511819c84b11a789d684846555"
+  },
+  "alignment": {
+    "path": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/releases/zechariah/1.0.0/LBF-zechariah-1.0.0-8cb0343354a5/zechariah.alignment.json",
+    "revision": "ALN-zechariah-679cb51cd289",
+    "checksum_sha256": "679cb51cd289757be99a6c893277c7ea06f949ad28808b4f2c1cb1d107e09064"
+  },
+  "producer": {
+    "status": "PASS",
+    "tool_version": "book_workflow.py/release_book.py schema 1",
+    "checked_at": "2026-08-17T12:59:13+00:00",
+    "checks": {
+      "verse_completeness": "PASS",
+      "verse_order": "PASS",
+      "duplicate_source_segments": "PASS",
+      "missing_source_segments": "PASS",
+      "token_accounting": "PASS",
+      "span_integrity": "PASS",
+      "reproducibility": "PASS"
+    },
+    "report_path": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-translator/verification/zechariah/defects.json"
+  },
+  "independent_verification": {
+    "status": "PASS",
+    "verifier": "Brandon Flores (G0A) and John Wry (G0B)",
+    "runtime": "direct human review plus deterministic scripts",
+    "model": "NONE — AI verification prohibited",
+    "ai_used": false,
+    "verified_at": "2026-08-17T12:59:12+00:00",
+    "checks": {
+      "source_identity": "PASS",
+      "source_text_integrity": "PASS",
+      "alignment_integrity": "PASS",
+      "span_boundary_review": "PASS",
+      "suspicious_omission_review": "PASS",
+      "suspicious_duplication_review": "PASS"
+    },
+    "report_path": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-translator/verification/zechariah/review-packet.json",
+    "findings": []
+  },
+  "human_linguistic_review": {
+    "required": true,
+    "status": "PASS",
+    "reviewer": "Brandon Flores; John Wry",
+    "reviewed_at": "2026-08-17T12:59:12+00:00",
+    "scope": "complete book translation, alignment, and book review",
+    "report_path": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-translator/verification/zechariah/book-review.json",
+    "findings": []
+  },
+  "attestation": {
+    "status": "VERIFIED",
+    "issued_at": "2026-08-17T12:59:13+00:00",
+    "blockers": [],
+    "notes": "Compatibility registration for approved manifest RELMAN-zechariah-92f794998ead; AI verification was not used."
+  }
+}

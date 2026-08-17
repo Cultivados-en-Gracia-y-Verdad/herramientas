@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "recordType": "SOURCE_VARIANT_EVIDENCE",
+  "investigationId": "INV-38-0001",
+  "book": "zechariah",
+  "authority": "DETERMINISTIC_SOURCE_FACTS_ONLY",
+  "aiUsed": false,
+  "source": {
+    "edition": "OSHB/WLC",
+    "path": "MNA/SOURCES/OSHB/morphhb/wlc/Zech.xml",
+    "sha256": "2e287c8d0e0abd3bf601eb8ef9b4ee6ca3ae12cf36c0ed1612a7dcca54a2e777"
+  },
+  "controlledSpine": {
+    "path": "translations/oshb-spine/zechariah/zechariah-oshb-spine.json",
+    "revisionId": "SRC-zechariah-c7c8144ff3c7",
+    "sha256": "c7c8144ff3c731a9a4025d7d490defee5bc6ddceb648b10802cace52260b3607"
+  },
+  "variants": [
+    {
+      "reference": "Zechariah 1:4",
+      "mtReference": "Zechariah 1:4",
+      "ketiv": {"id": "38BsK", "surface": "ו/מעלילי/כם", "lemma": "c/4611", "morph": "HC/Ncmpc/Sp2mp"},
+      "qere": {"id": "38fsu", "surface": "וּ/מַֽעֲלְלֵי/כֶ֖ם", "lemma": "c/4611", "morph": "HC/Ncmpc/Sp2mp"}
+    },
+    {
+      "reference": "Zechariah 1:16",
+      "mtReference": "Zechariah 1:16",
+      "ketiv": {"id": "386w9", "surface": "ו/קוה", "lemma": "c/6961", "morph": "HC/Ncmsa"},
+      "qere": {"id": "38wA4", "surface": "וְ/קָ֥ו", "lemma": "c/6957 b", "morph": "HC/Ncmsa"}
+    },
+    {
+      "reference": "Zechariah 4:2",
+      "mtReference": "Zechariah 4:2",
+      "ketiv": {"id": "38wik", "surface": "ו/יאמר", "lemma": "c/559", "morph": "HC/Vqw3ms"},
+      "qere": {"id": "38CVM", "surface": "וָ/אֹמַ֡ר", "lemma": "c/559", "morph": "HC/Vqw1cs"}
+    },
+    {
+      "reference": "Zechariah 11:2",
+      "mtReference": "Zechariah 11:2",
+      "ketiv": {"id": "38dS2", "surface": "ה/בצור", "lemma": "d/1208", "morph": "HTd/Vqsmsa"},
+      "qere": {"id": "38ckH", "surface": "הַ/בָּצִֽיר", "lemma": "d/1219", "morph": "HTd/Ncmsa"}
+    },
+    {
+      "reference": "Zechariah 14:2",
+      "mtReference": "Zechariah 14:2",
+      "ketiv": {"id": "38DB1", "surface": "תשגלנה", "lemma": "7693", "morph": "HVNi3fp"},
+      "qere": {"id": "38Uz3", "surface": "תִּשָּׁכַ֑בְנָה", "lemma": "7901", "morph": "HVNi3fp"}
+    },
+    {
+      "reference": "Zechariah 14:6",
+      "mtReference": "Zechariah 14:6",
+      "ketiv": {"id": "38FX1", "surface": "יקפאו/ן", "lemma": "7087 b", "morph": "HVqi3mp/Sn"},
+      "qere": {"id": "38eb2", "surface": "וְ/קִפָּאֽוֹן", "lemma": "c/7087 b", "morph": "HC/Ncmsa"}
+    }
+  ]
+}

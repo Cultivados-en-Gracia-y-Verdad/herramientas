@@ -1,0 +1,30 @@
+{
+  "recordId": "RELMAN-zechariah-92f794998ead",
+  "schemaVersion": 1,
+  "revision": 1,
+  "recordType": "RELEASE_MANIFEST",
+  "book": "zechariah",
+  "edition": "LBF",
+  "version": "1.0.0",
+  "buildId": "LBF-zechariah-1.0.0-8cb0343354a5",
+  "status": "PENDING",
+  "createdBy": "deterministic-release-builder",
+  "aiUsed": false,
+  "createdAt": "2026-08-17T12:58:22+00:00",
+  "inputRevisionIds": {
+    "source": "SRC-zechariah-c7c8144ff3c7",
+    "translation": "TR-zechariah-ac24fdec642c",
+    "alignment": "ALN-zechariah-679cb51cd289"
+  },
+  "bookReviewId": "BOOKREV-zechariah-9c6630a3e78a",
+  "artifacts": {
+    "text": {
+      "file": "zechariah.lbf.md",
+      "sha256": "412a091d8c792e37b893b95b5cc588ada408ff511819c84b11a789d684846555"
+    },
+    "alignment": {
+      "file": "zechariah.alignment.json",
+      "sha256": "679cb51cd289757be99a6c893277c7ea06f949ad28808b4f2c1cb1d107e09064"
+    }
+  }
+}

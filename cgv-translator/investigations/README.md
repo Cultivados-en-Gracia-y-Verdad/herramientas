@@ -43,11 +43,18 @@ If a later book raises a genuinely unresolved translation question, open a book-
 
 Do not treat an old investigation as automatically deciding a new book context without review.
 
+## What is not an investigation
+
+Do not open a book investigation — and never mark one release-blocking — in order to make a translator choose ketiv vs qere or otherwise re-select tokens already fixed in the source snapshot. That choice belongs to the snapshot. Translate the spine.
+
+Occurrence dumps must stay in the language of the book. Greek lemma profiles do not belong in a Hebrew investigation.
+
 ## Release rule
 
 Before a book can pass its final release gate:
 
 - every required investigation owned by that book must be resolved and documented, or explicitly classified as a non-blocking deferred question;
+- source-tokenization inventories (unused qere lists, bootstrap notes) are not required investigations;
 - any investigation whose decision changes Spanish must have the affected translation verification repeated;
 - any investigation whose decision changes alignment must have the affected alignment verification repeated;
 - unresolved blocking investigations keep the book out of `cgv-data`.

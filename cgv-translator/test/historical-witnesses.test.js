@@ -24,3 +24,20 @@ test("Greek occurrence evidence still includes NT historical witnesses", async (
   assert.match(matthew.translations.spnbes, /sirviente/);
   assert.match(matthew.translations.spnvbl, /siervo/);
 });
+
+test("Hebrew occurrence evidence keeps H7087 lexical senses separate", async () => {
+  const report = await getHebrewOccurrencesByStrongs("H7087", { lemma: "7087 b" });
+
+  assert.equal(report.occurrences.length, 2);
+  assert.ok(report.occurrences.every(occurrence => occurrence.reference === "Zechariah 14:6"));
+  assert.deepEqual(
+    report.occurrences.map(occurrence => occurrence.gloss),
+    ["se·cuajarán", "y·congelación"]
+  );
+  assert.equal(report.occurrences[0].historicalFocus.spnbes, "");
+  assert.equal(report.occurrences[0].historicalFocus.spnvbl, "");
+  assert.equal(report.occurrences[1].historicalFocus.rv1909, "ni");
+  assert.match(report.occurrences[1].translations.rv1909, /\*\*ni\*\*/u);
+  assert.doesNotMatch(report.occurrences[1].translations.spnbes, /\*\*/u);
+  assert.doesNotMatch(report.occurrences[1].translations.spnvbl, /\*\*/u);
+});

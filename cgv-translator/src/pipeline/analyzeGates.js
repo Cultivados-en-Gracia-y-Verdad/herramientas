@@ -147,13 +147,41 @@ export async function loadLemmaPolicyIndex(rootDir, bookId) {
   const entries = await readdir(investigationsDir, { withFileTypes: true }).catch(() => []);
   const approved = [];
   const openInvestigations = [];
+  const blockingReferences = [];
 
   for (const entry of entries) {
     if (!entry.isDirectory() || !/^INV-\d{2}-\d{4}$/.test(entry.name)) continue;
+    const readme = await readFile(join(investigationsDir, entry.name, "README.md"), "utf8").catch(() => "");
+    const status = readme.match(/^Status:\s*(.+)$/mi)?.[1]?.trim() || "";
+    const releaseBlocking = readme.match(/^Release-Blocking:\s*(.+)$/mi)?.[1]?.trim() || "";
+    const rawReferences = (readme.match(/^References:\s*(.+)$/mi)?.[1] || "")
+      .split(";")
+      .map(item => item.trim())
+      .filter(Boolean);
+    const bookLabel = rawReferences[0]?.match(/^(.+?)\s+\d+:\d+$/u)?.[1] || "";
+    const references = rawReferences.map(item =>
+      bookLabel && /^\d+:\d+$/u.test(item) ? `${bookLabel} ${item}` : item
+    );
+
     const markdown = await readFile(join(investigationsDir, entry.name, "decision.md"), "utf8").catch(() => "");
     const versions = parseDecisionVersions(markdown);
     const latest = versions.at(-1);
-    if (!latest?.lemma && !latest?.strongs) continue;
+    const isLemmaPolicy = Boolean(latest?.lemma || latest?.strongs);
+    // Source-tokenization notes (ketiv/qere inventories) list verses but do not
+    // control lemma Spanish. They must not block drafting or G0A.
+    if (
+      isLemmaPolicy
+      && /^yes$/i.test(releaseBlocking)
+      && !/^(?:approved|closed|resolved)$/i.test(status)
+      && references.length
+    ) {
+      blockingReferences.push({
+        investigationId: entry.name,
+        status: status || "Open",
+        references
+      });
+    }
+    if (!isLemmaPolicy) continue;
 
     const record = {
       investigationId: entry.name,
@@ -181,7 +209,7 @@ export async function loadLemmaPolicyIndex(rootDir, bookId) {
     }
   }
 
-  return { approved, openInvestigations };
+  return { approved, openInvestigations, blockingReferences };
 }
 
 export async function loadApprovedLemmaPolicies(rootDir, bookId) {
@@ -1279,8 +1307,21 @@ export async function analyzePhraseGates({
   rv1909Text = "",
   priorLbf = []
 }) {
-  const { approved, openInvestigations } = await loadLemmaPolicyIndex(rootDir, bookId);
-  const lemma = analyzeLemmaGate(tokenRows, approved, openInvestigations, reference);
+  const { approved, openInvestigations, blockingReferences } = await loadLemmaPolicyIndex(rootDir, bookId);
+  const analyzedLemma = analyzeLemmaGate(tokenRows, approved, openInvestigations, reference);
+  const sourceBlock = blockingReferences.find(item => item.references.includes(reference));
+  const lemma = sourceBlock
+    ? {
+      ...analyzedLemma,
+      status: "blocked",
+      summary: `Blocked: open release-blocking source investigation ${sourceBlock.investigationId}.`,
+      blockedLemma: "source reading",
+      blockedLemmaForm: "ketiv/qere source variant",
+      blockedStrongs: "",
+      investigationId: sourceBlock.investigationId,
+      blockReason: "source-variant"
+    }
+    : analyzedLemma;
   const morphology = analyzeMorphologyGate(tokenRows, lemma);
   const immediateContext = analyzeImmediateContextGate(tokenRows, greek);
   const generalContext = await analyzeGeneralContextGate({

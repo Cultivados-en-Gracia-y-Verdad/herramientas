@@ -1,0 +1,4389 @@
+{
+  "bookId": "zechariah",
+  "textualBasis": "OSHB/WLC",
+  "schemaVersion": 1,
+  "verseNumbering": "Protestant",
+  "notes": "Reverse interlinear: Spanish unit → OSHB sourceTokenIds. Chapter 1 (phrases 0–20, Protestant 1:1–21 including 1:18–21) is hand-seeded. Remaining phrases are unwalked. No auto-zip. No gloss DP.",
+  "stats": {
+    "phrases": 211,
+    "hand": 21,
+    "unwalked": 190
+  },
+  "links": [
+    {
+      "phraseIndex": 0,
+      "reference": "Zechariah 1:1",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "0:0",
+          "surface": "En el mes",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "h38001001001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:1",
+          "surface": "octavo",
+          "charStart": 10,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "h38001001002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:2",
+          "surface": "en el año",
+          "charStart": 18,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "h38001001003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:3",
+          "surface": "segundo",
+          "charStart": 28,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "h38001001004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:4",
+          "surface": "de Darío",
+          "charStart": 36,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "h38001001005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:5",
+          "surface": "vino",
+          "charStart": 46,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "h38001001006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:6",
+          "surface": "palabra",
+          "charStart": 51,
+          "charEnd": 58,
+          "sourceTokenIds": [
+            "h38001001007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:7",
+          "surface": "de Jehová",
+          "charStart": 59,
+          "charEnd": 68,
+          "sourceTokenIds": [
+            "h38001001008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:8",
+          "surface": "a",
+          "charStart": 69,
+          "charEnd": 70,
+          "sourceTokenIds": [
+            "h38001001009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:9",
+          "surface": "Zacarías",
+          "charStart": 71,
+          "charEnd": 79,
+          "sourceTokenIds": [
+            "h38001001010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:10",
+          "surface": "hijo de",
+          "charStart": 81,
+          "charEnd": 88,
+          "sourceTokenIds": [
+            "h38001001011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:11",
+          "surface": "Berequías",
+          "charStart": 89,
+          "charEnd": 98,
+          "sourceTokenIds": [
+            "h38001001012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:12",
+          "surface": "hijo de",
+          "charStart": 100,
+          "charEnd": 107,
+          "sourceTokenIds": [
+            "h38001001013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:13",
+          "surface": "Iddo",
+          "charStart": 108,
+          "charEnd": 112,
+          "sourceTokenIds": [
+            "h38001001014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:14",
+          "surface": "el profeta",
+          "charStart": 114,
+          "charEnd": 124,
+          "sourceTokenIds": [
+            "h38001001015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:15",
+          "surface": "diciendo",
+          "charStart": 126,
+          "charEnd": 134,
+          "sourceTokenIds": [
+            "h38001001016"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 1,
+      "reference": "Zechariah 1:2",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "1:0",
+          "surface": "Se airó",
+          "charStart": 0,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "h38001002001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "1:1",
+          "surface": "Jehová",
+          "charStart": 8,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "h38001002002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "1:2",
+          "surface": "contra",
+          "charStart": 15,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "h38001002003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "1:3",
+          "surface": "sus padres",
+          "charStart": 22,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "h38001002004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "1:4",
+          "surface": "con ira",
+          "charStart": 33,
+          "charEnd": 40,
+          "sourceTokenIds": [
+            "h38001002005"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 2,
+      "reference": "Zechariah 1:3",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "2:0",
+          "surface": "Y les dirás",
+          "charStart": 0,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "h38001003001",
+            "h38001003002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:1",
+          "surface": "Así",
+          "charStart": 13,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "h38001003003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:2",
+          "surface": "dice",
+          "charStart": 17,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "h38001003004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:3",
+          "surface": "Jehová",
+          "charStart": 22,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "h38001003005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:4",
+          "surface": "de los ejércitos",
+          "charStart": 29,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "h38001003006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:5",
+          "surface": "Vuélvanse",
+          "charStart": 47,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "h38001003007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:6",
+          "surface": "a mí",
+          "charStart": 57,
+          "charEnd": 61,
+          "sourceTokenIds": [
+            "h38001003008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:7",
+          "surface": "declara",
+          "charStart": 63,
+          "charEnd": 70,
+          "sourceTokenIds": [
+            "h38001003009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:8",
+          "surface": "Jehová",
+          "charStart": 71,
+          "charEnd": 77,
+          "sourceTokenIds": [
+            "h38001003010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:9",
+          "surface": "de los ejércitos",
+          "charStart": 78,
+          "charEnd": 94,
+          "sourceTokenIds": [
+            "h38001003011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:10",
+          "surface": "y yo me volveré",
+          "charStart": 96,
+          "charEnd": 111,
+          "sourceTokenIds": [
+            "h38001003012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:11",
+          "surface": "a ustedes",
+          "charStart": 112,
+          "charEnd": 121,
+          "sourceTokenIds": [
+            "h38001003013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:12",
+          "surface": "dice",
+          "charStart": 123,
+          "charEnd": 127,
+          "sourceTokenIds": [
+            "h38001003014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:13",
+          "surface": "Jehová",
+          "charStart": 128,
+          "charEnd": 134,
+          "sourceTokenIds": [
+            "h38001003015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:14",
+          "surface": "de los ejércitos",
+          "charStart": 135,
+          "charEnd": 151,
+          "sourceTokenIds": [
+            "h38001003016"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 3,
+      "reference": "Zechariah 1:4",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "3:0",
+          "surface": "No",
+          "charStart": 0,
+          "charEnd": 2,
+          "sourceTokenIds": [
+            "h38001004001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:1",
+          "surface": "sean",
+          "charStart": 3,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "h38001004002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:2",
+          "surface": "como sus padres",
+          "charStart": 8,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "h38001004003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:3",
+          "surface": "a quienes",
+          "charStart": 25,
+          "charEnd": 34,
+          "sourceTokenIds": [
+            "h38001004004",
+            "h38001004006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:4",
+          "surface": "los primeros profetas",
+          "charStart": 35,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "h38001004007",
+            "h38001004008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:5",
+          "surface": "proclamaron",
+          "charStart": 57,
+          "charEnd": 68,
+          "sourceTokenIds": [
+            "h38001004005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:6",
+          "surface": "diciendo",
+          "charStart": 69,
+          "charEnd": 77,
+          "sourceTokenIds": [
+            "h38001004009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:7",
+          "surface": "Así",
+          "charStart": 79,
+          "charEnd": 82,
+          "sourceTokenIds": [
+            "h38001004010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:8",
+          "surface": "dice",
+          "charStart": 83,
+          "charEnd": 87,
+          "sourceTokenIds": [
+            "h38001004011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:9",
+          "surface": "Jehová",
+          "charStart": 88,
+          "charEnd": 94,
+          "sourceTokenIds": [
+            "h38001004012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:10",
+          "surface": "de los ejércitos",
+          "charStart": 95,
+          "charEnd": 111,
+          "sourceTokenIds": [
+            "h38001004013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:11",
+          "surface": "Vuélvanse",
+          "charStart": 113,
+          "charEnd": 122,
+          "sourceTokenIds": [
+            "h38001004014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:12",
+          "surface": "ahora",
+          "charStart": 123,
+          "charEnd": 128,
+          "sourceTokenIds": [
+            "h38001004015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:13",
+          "surface": "de sus malos caminos",
+          "charStart": 129,
+          "charEnd": 149,
+          "sourceTokenIds": [
+            "h38001004016",
+            "h38001004017"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:14",
+          "surface": "y de sus malas obras",
+          "charStart": 150,
+          "charEnd": 170,
+          "sourceTokenIds": [
+            "h38001004018",
+            "h38001004019"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:15",
+          "surface": "Y no",
+          "charStart": 172,
+          "charEnd": 176,
+          "sourceTokenIds": [
+            "h38001004020"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:16",
+          "surface": "oyeron",
+          "charStart": 177,
+          "charEnd": 183,
+          "sourceTokenIds": [
+            "h38001004021"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:17",
+          "surface": "ni",
+          "charStart": 184,
+          "charEnd": 186,
+          "sourceTokenIds": [
+            "h38001004022"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:18",
+          "surface": "prestaron atención",
+          "charStart": 187,
+          "charEnd": 205,
+          "sourceTokenIds": [
+            "h38001004023"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:19",
+          "surface": "a mí",
+          "charStart": 206,
+          "charEnd": 210,
+          "sourceTokenIds": [
+            "h38001004024"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:20",
+          "surface": "declara",
+          "charStart": 212,
+          "charEnd": 219,
+          "sourceTokenIds": [
+            "h38001004025"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:21",
+          "surface": "Jehová",
+          "charStart": 220,
+          "charEnd": 226,
+          "sourceTokenIds": [
+            "h38001004026"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 4,
+      "reference": "Zechariah 1:5",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "4:0",
+          "surface": "Sus padres",
+          "charStart": 0,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "h38001005001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "4:1",
+          "surface": "dónde",
+          "charStart": 13,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "h38001005002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "4:2",
+          "surface": "están",
+          "charStart": 19,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "h38001005003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "4:3",
+          "surface": "Y los profetas",
+          "charStart": 26,
+          "charEnd": 40,
+          "sourceTokenIds": [
+            "h38001005004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "4:4",
+          "surface": "para siempre",
+          "charStart": 43,
+          "charEnd": 55,
+          "sourceTokenIds": [
+            "h38001005005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "4:5",
+          "surface": "vivirán",
+          "charStart": 56,
+          "charEnd": 63,
+          "sourceTokenIds": [
+            "h38001005006"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 5,
+      "reference": "Zechariah 1:6",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "5:0",
+          "surface": "Pero",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "h38001006001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:1",
+          "surface": "mis palabras",
+          "charStart": 5,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "h38001006002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:2",
+          "surface": "y mis estatutos",
+          "charStart": 18,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "h38001006003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:3",
+          "surface": "que",
+          "charStart": 34,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "h38001006004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:4",
+          "surface": "mandé",
+          "charStart": 38,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "h38001006005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:5",
+          "surface": "a mis siervos",
+          "charStart": 44,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "h38001006006",
+            "h38001006007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:6",
+          "surface": "los profetas",
+          "charStart": 58,
+          "charEnd": 70,
+          "sourceTokenIds": [
+            "h38001006008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:7",
+          "surface": "no",
+          "charStart": 73,
+          "charEnd": 75,
+          "sourceTokenIds": [
+            "h38001006009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:8",
+          "surface": "alcanzaron",
+          "charStart": 76,
+          "charEnd": 86,
+          "sourceTokenIds": [
+            "h38001006010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:9",
+          "surface": "a sus padres",
+          "charStart": 87,
+          "charEnd": 99,
+          "sourceTokenIds": [
+            "h38001006011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:10",
+          "surface": "Y se volvieron",
+          "charStart": 101,
+          "charEnd": 115,
+          "sourceTokenIds": [
+            "h38001006012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:11",
+          "surface": "y dijeron",
+          "charStart": 116,
+          "charEnd": 125,
+          "sourceTokenIds": [
+            "h38001006013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:12",
+          "surface": "Como",
+          "charStart": 127,
+          "charEnd": 131,
+          "sourceTokenIds": [
+            "h38001006014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:13",
+          "surface": "Jehová",
+          "charStart": 132,
+          "charEnd": 138,
+          "sourceTokenIds": [
+            "h38001006016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:14",
+          "surface": "de los ejércitos",
+          "charStart": 139,
+          "charEnd": 155,
+          "sourceTokenIds": [
+            "h38001006017"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:15",
+          "surface": "se propuso",
+          "charStart": 156,
+          "charEnd": 166,
+          "sourceTokenIds": [
+            "h38001006015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:16",
+          "surface": "hacer",
+          "charStart": 167,
+          "charEnd": 172,
+          "sourceTokenIds": [
+            "h38001006018"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:17",
+          "surface": "con nosotros",
+          "charStart": 173,
+          "charEnd": 185,
+          "sourceTokenIds": [
+            "h38001006019"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:18",
+          "surface": "conforme a nuestros caminos",
+          "charStart": 186,
+          "charEnd": 213,
+          "sourceTokenIds": [
+            "h38001006020"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:19",
+          "surface": "y conforme a nuestras obras",
+          "charStart": 214,
+          "charEnd": 241,
+          "sourceTokenIds": [
+            "h38001006021"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:20",
+          "surface": "así",
+          "charStart": 243,
+          "charEnd": 246,
+          "sourceTokenIds": [
+            "h38001006022"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:21",
+          "surface": "hizo",
+          "charStart": 247,
+          "charEnd": 251,
+          "sourceTokenIds": [
+            "h38001006023"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:22",
+          "surface": "con nosotros",
+          "charStart": 252,
+          "charEnd": 264,
+          "sourceTokenIds": [
+            "h38001006024"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 6,
+      "reference": "Zechariah 1:7",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "6:0",
+          "surface": "En el día",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "h38001007001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:1",
+          "surface": "veinticuatro",
+          "charStart": 10,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "h38001007002",
+            "h38001007003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:2",
+          "surface": "del mes",
+          "charStart": 23,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "h38001007006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:3",
+          "surface": "undécimo",
+          "charStart": 31,
+          "charEnd": 39,
+          "sourceTokenIds": [
+            "h38001007004",
+            "h38001007005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:4",
+          "surface": "que es",
+          "charStart": 41,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "h38001007007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:5",
+          "surface": "el mes",
+          "charStart": 48,
+          "charEnd": 54,
+          "sourceTokenIds": [
+            "h38001007008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:6",
+          "surface": "de Sebat",
+          "charStart": 55,
+          "charEnd": 63,
+          "sourceTokenIds": [
+            "h38001007009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:7",
+          "surface": "en el año",
+          "charStart": 65,
+          "charEnd": 74,
+          "sourceTokenIds": [
+            "h38001007010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:8",
+          "surface": "segundo",
+          "charStart": 75,
+          "charEnd": 82,
+          "sourceTokenIds": [
+            "h38001007011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:9",
+          "surface": "de Darío",
+          "charStart": 83,
+          "charEnd": 91,
+          "sourceTokenIds": [
+            "h38001007012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:10",
+          "surface": "vino",
+          "charStart": 93,
+          "charEnd": 97,
+          "sourceTokenIds": [
+            "h38001007013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:11",
+          "surface": "palabra",
+          "charStart": 98,
+          "charEnd": 105,
+          "sourceTokenIds": [
+            "h38001007014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:12",
+          "surface": "de Jehová",
+          "charStart": 106,
+          "charEnd": 115,
+          "sourceTokenIds": [
+            "h38001007015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:13",
+          "surface": "a",
+          "charStart": 116,
+          "charEnd": 117,
+          "sourceTokenIds": [
+            "h38001007016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:14",
+          "surface": "Zacarías",
+          "charStart": 118,
+          "charEnd": 126,
+          "sourceTokenIds": [
+            "h38001007017"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:15",
+          "surface": "hijo de",
+          "charStart": 128,
+          "charEnd": 135,
+          "sourceTokenIds": [
+            "h38001007018"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:16",
+          "surface": "Berequías",
+          "charStart": 136,
+          "charEnd": 145,
+          "sourceTokenIds": [
+            "h38001007019"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:17",
+          "surface": "hijo de",
+          "charStart": 147,
+          "charEnd": 154,
+          "sourceTokenIds": [
+            "h38001007020"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:18",
+          "surface": "Iddo",
+          "charStart": 155,
+          "charEnd": 159,
+          "sourceTokenIds": [
+            "h38001007021"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:19",
+          "surface": "el profeta",
+          "charStart": 161,
+          "charEnd": 171,
+          "sourceTokenIds": [
+            "h38001007022"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:20",
+          "surface": "diciendo",
+          "charStart": 173,
+          "charEnd": 181,
+          "sourceTokenIds": [
+            "h38001007023"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 7,
+      "reference": "Zechariah 1:8",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "7:0",
+          "surface": "Vi",
+          "charStart": 0,
+          "charEnd": 2,
+          "sourceTokenIds": [
+            "h38001008001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:1",
+          "surface": "de noche",
+          "charStart": 3,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "h38001008002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:2",
+          "surface": "y he aquí",
+          "charStart": 13,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "h38001008003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:3",
+          "surface": "un hombre",
+          "charStart": 23,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "h38001008004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:4",
+          "surface": "cabalgando",
+          "charStart": 33,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "h38001008005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:5",
+          "surface": "sobre",
+          "charStart": 44,
+          "charEnd": 49,
+          "sourceTokenIds": [
+            "h38001008006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:6",
+          "surface": "un caballo",
+          "charStart": 50,
+          "charEnd": 60,
+          "sourceTokenIds": [
+            "h38001008007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:7",
+          "surface": "rojo",
+          "charStart": 61,
+          "charEnd": 65,
+          "sourceTokenIds": [
+            "h38001008008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:8",
+          "surface": "y él",
+          "charStart": 67,
+          "charEnd": 71,
+          "sourceTokenIds": [
+            "h38001008009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:9",
+          "surface": "estaba de pie",
+          "charStart": 72,
+          "charEnd": 85,
+          "sourceTokenIds": [
+            "h38001008010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:10",
+          "surface": "entre",
+          "charStart": 86,
+          "charEnd": 91,
+          "sourceTokenIds": [
+            "h38001008011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:11",
+          "surface": "los mirtos",
+          "charStart": 92,
+          "charEnd": 102,
+          "sourceTokenIds": [
+            "h38001008012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:12",
+          "surface": "que",
+          "charStart": 103,
+          "charEnd": 106,
+          "sourceTokenIds": [
+            "h38001008013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:13",
+          "surface": "había en la hondonada",
+          "charStart": 107,
+          "charEnd": 128,
+          "sourceTokenIds": [
+            "h38001008014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:14",
+          "surface": "y detrás de él",
+          "charStart": 130,
+          "charEnd": 144,
+          "sourceTokenIds": [
+            "h38001008015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:15",
+          "surface": "caballos",
+          "charStart": 145,
+          "charEnd": 153,
+          "sourceTokenIds": [
+            "h38001008016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:16",
+          "surface": "rojos",
+          "charStart": 154,
+          "charEnd": 159,
+          "sourceTokenIds": [
+            "h38001008017"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:17",
+          "surface": "alazanes",
+          "charStart": 161,
+          "charEnd": 169,
+          "sourceTokenIds": [
+            "h38001008018"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:18",
+          "surface": "y blancos",
+          "charStart": 170,
+          "charEnd": 179,
+          "sourceTokenIds": [
+            "h38001008019"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 8,
+      "reference": "Zechariah 1:9",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "8:0",
+          "surface": "Y dije",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "h38001009001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:1",
+          "surface": "Qué",
+          "charStart": 9,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "h38001009002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:2",
+          "surface": "son estos",
+          "charStart": 13,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "h38001009003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:3",
+          "surface": "señor mío",
+          "charStart": 24,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "h38001009004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:4",
+          "surface": "Y me dijo",
+          "charStart": 35,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "h38001009005",
+            "h38001009006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:5",
+          "surface": "el ángel",
+          "charStart": 45,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "h38001009007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:6",
+          "surface": "que hablaba",
+          "charStart": 54,
+          "charEnd": 65,
+          "sourceTokenIds": [
+            "h38001009008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:7",
+          "surface": "conmigo",
+          "charStart": 66,
+          "charEnd": 73,
+          "sourceTokenIds": [
+            "h38001009009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:8",
+          "surface": "Yo",
+          "charStart": 75,
+          "charEnd": 77,
+          "sourceTokenIds": [
+            "h38001009010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:9",
+          "surface": "te mostraré",
+          "charStart": 78,
+          "charEnd": 89,
+          "sourceTokenIds": [
+            "h38001009011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:10",
+          "surface": "qué",
+          "charStart": 90,
+          "charEnd": 93,
+          "sourceTokenIds": [
+            "h38001009012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:11",
+          "surface": "son",
+          "charStart": 94,
+          "charEnd": 97,
+          "sourceTokenIds": [
+            "h38001009013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:12",
+          "surface": "estos",
+          "charStart": 98,
+          "charEnd": 103,
+          "sourceTokenIds": [
+            "h38001009014"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 9,
+      "reference": "Zechariah 1:10",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "9:0",
+          "surface": "Y respondió",
+          "charStart": 0,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "h38001010001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:1",
+          "surface": "el hombre",
+          "charStart": 12,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "h38001010002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:2",
+          "surface": "que estaba de pie",
+          "charStart": 22,
+          "charEnd": 39,
+          "sourceTokenIds": [
+            "h38001010003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:3",
+          "surface": "entre",
+          "charStart": 40,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "h38001010004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:4",
+          "surface": "los mirtos",
+          "charStart": 46,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "h38001010005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:5",
+          "surface": "y dijo",
+          "charStart": 58,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "h38001010006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:6",
+          "surface": "Estos",
+          "charStart": 66,
+          "charEnd": 71,
+          "sourceTokenIds": [
+            "h38001010007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:7",
+          "surface": "son los que",
+          "charStart": 72,
+          "charEnd": 83,
+          "sourceTokenIds": [
+            "h38001010008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:8",
+          "surface": "Jehová",
+          "charStart": 84,
+          "charEnd": 90,
+          "sourceTokenIds": [
+            "h38001010010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:9",
+          "surface": "envió",
+          "charStart": 91,
+          "charEnd": 96,
+          "sourceTokenIds": [
+            "h38001010009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:10",
+          "surface": "a recorrer",
+          "charStart": 97,
+          "charEnd": 107,
+          "sourceTokenIds": [
+            "h38001010011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:11",
+          "surface": "la tierra",
+          "charStart": 108,
+          "charEnd": 117,
+          "sourceTokenIds": [
+            "h38001010012"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 10,
+      "reference": "Zechariah 1:11",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "10:0",
+          "surface": "Y respondieron",
+          "charStart": 0,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "h38001011001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:1",
+          "surface": "al ángel",
+          "charStart": 15,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "h38001011002",
+            "h38001011003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:2",
+          "surface": "de Jehová",
+          "charStart": 24,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "h38001011004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:3",
+          "surface": "que estaba de pie",
+          "charStart": 34,
+          "charEnd": 51,
+          "sourceTokenIds": [
+            "h38001011005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:4",
+          "surface": "entre",
+          "charStart": 52,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "h38001011006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:5",
+          "surface": "los mirtos",
+          "charStart": 58,
+          "charEnd": 68,
+          "sourceTokenIds": [
+            "h38001011007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:6",
+          "surface": "y dijeron",
+          "charStart": 70,
+          "charEnd": 79,
+          "sourceTokenIds": [
+            "h38001011008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:7",
+          "surface": "Hemos recorrido",
+          "charStart": 81,
+          "charEnd": 96,
+          "sourceTokenIds": [
+            "h38001011009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:8",
+          "surface": "la tierra",
+          "charStart": 97,
+          "charEnd": 106,
+          "sourceTokenIds": [
+            "h38001011010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:9",
+          "surface": "y he aquí",
+          "charStart": 108,
+          "charEnd": 117,
+          "sourceTokenIds": [
+            "h38001011011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:10",
+          "surface": "toda",
+          "charStart": 118,
+          "charEnd": 122,
+          "sourceTokenIds": [
+            "h38001011012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:11",
+          "surface": "la tierra",
+          "charStart": 123,
+          "charEnd": 132,
+          "sourceTokenIds": [
+            "h38001011013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:12",
+          "surface": "está asentada",
+          "charStart": 133,
+          "charEnd": 146,
+          "sourceTokenIds": [
+            "h38001011014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:13",
+          "surface": "y quieta",
+          "charStart": 147,
+          "charEnd": 155,
+          "sourceTokenIds": [
+            "h38001011015"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 11,
+      "reference": "Zechariah 1:12",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "11:0",
+          "surface": "Y respondió",
+          "charStart": 0,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "h38001012001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:1",
+          "surface": "el ángel",
+          "charStart": 12,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "h38001012002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:2",
+          "surface": "de Jehová",
+          "charStart": 21,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "h38001012003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:3",
+          "surface": "y dijo",
+          "charStart": 31,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "h38001012004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:4",
+          "surface": "Jehová",
+          "charStart": 39,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "h38001012005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:5",
+          "surface": "de los ejércitos",
+          "charStart": 46,
+          "charEnd": 62,
+          "sourceTokenIds": [
+            "h38001012006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:6",
+          "surface": "hasta cuándo",
+          "charStart": 65,
+          "charEnd": 77,
+          "sourceTokenIds": [
+            "h38001012007",
+            "h38001012008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:7",
+          "surface": "tú",
+          "charStart": 78,
+          "charEnd": 80,
+          "sourceTokenIds": [
+            "h38001012009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:8",
+          "surface": "no",
+          "charStart": 81,
+          "charEnd": 83,
+          "sourceTokenIds": [
+            "h38001012010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:9",
+          "surface": "tendrás compasión",
+          "charStart": 84,
+          "charEnd": 101,
+          "sourceTokenIds": [
+            "h38001012011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:10",
+          "surface": "de Jerusalén",
+          "charStart": 102,
+          "charEnd": 114,
+          "sourceTokenIds": [
+            "h38001012012",
+            "h38001012013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:11",
+          "surface": "y",
+          "charStart": 115,
+          "charEnd": 116,
+          "sourceTokenIds": [
+            "h38001012014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:12",
+          "surface": "de las ciudades",
+          "charStart": 117,
+          "charEnd": 132,
+          "sourceTokenIds": [
+            "h38001012015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:13",
+          "surface": "de Judá",
+          "charStart": 133,
+          "charEnd": 140,
+          "sourceTokenIds": [
+            "h38001012016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:14",
+          "surface": "contra las cuales",
+          "charStart": 142,
+          "charEnd": 159,
+          "sourceTokenIds": [
+            "h38001012017"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:15",
+          "surface": "te has indignado",
+          "charStart": 160,
+          "charEnd": 176,
+          "sourceTokenIds": [
+            "h38001012018"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:16",
+          "surface": "estos",
+          "charStart": 177,
+          "charEnd": 182,
+          "sourceTokenIds": [
+            "h38001012019"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:17",
+          "surface": "setenta",
+          "charStart": 183,
+          "charEnd": 190,
+          "sourceTokenIds": [
+            "h38001012020"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:18",
+          "surface": "años",
+          "charStart": 191,
+          "charEnd": 195,
+          "sourceTokenIds": [
+            "h38001012021"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 12,
+      "reference": "Zechariah 1:13",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "12:0",
+          "surface": "Y respondió",
+          "charStart": 0,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "h38001013001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:1",
+          "surface": "Jehová",
+          "charStart": 12,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "h38001013002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:2",
+          "surface": "al ángel",
+          "charStart": 19,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "h38001013003",
+            "h38001013004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:3",
+          "surface": "que hablaba",
+          "charStart": 28,
+          "charEnd": 39,
+          "sourceTokenIds": [
+            "h38001013005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:4",
+          "surface": "conmigo",
+          "charStart": 40,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "h38001013006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:5",
+          "surface": "palabras",
+          "charStart": 48,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "h38001013007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:6",
+          "surface": "buenas",
+          "charStart": 57,
+          "charEnd": 63,
+          "sourceTokenIds": [
+            "h38001013008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:7",
+          "surface": "palabras",
+          "charStart": 65,
+          "charEnd": 73,
+          "sourceTokenIds": [
+            "h38001013009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:8",
+          "surface": "de consuelo",
+          "charStart": 74,
+          "charEnd": 85,
+          "sourceTokenIds": [
+            "h38001013010"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 13,
+      "reference": "Zechariah 1:14",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "13:0",
+          "surface": "Y me dijo",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "h38001014001",
+            "h38001014002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:1",
+          "surface": "el ángel",
+          "charStart": 10,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "h38001014003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:2",
+          "surface": "que hablaba",
+          "charStart": 19,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "h38001014004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:3",
+          "surface": "conmigo",
+          "charStart": 31,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "h38001014005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:4",
+          "surface": "Proclama",
+          "charStart": 40,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "h38001014006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:5",
+          "surface": "diciendo",
+          "charStart": 49,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "h38001014007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:6",
+          "surface": "Así",
+          "charStart": 59,
+          "charEnd": 62,
+          "sourceTokenIds": [
+            "h38001014008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:7",
+          "surface": "dice",
+          "charStart": 63,
+          "charEnd": 67,
+          "sourceTokenIds": [
+            "h38001014009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:8",
+          "surface": "Jehová",
+          "charStart": 68,
+          "charEnd": 74,
+          "sourceTokenIds": [
+            "h38001014010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:9",
+          "surface": "de los ejércitos",
+          "charStart": 75,
+          "charEnd": 91,
+          "sourceTokenIds": [
+            "h38001014011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:10",
+          "surface": "Celé",
+          "charStart": 93,
+          "charEnd": 97,
+          "sourceTokenIds": [
+            "h38001014012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:11",
+          "surface": "por Jerusalén",
+          "charStart": 98,
+          "charEnd": 111,
+          "sourceTokenIds": [
+            "h38001014013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:12",
+          "surface": "y por Sión",
+          "charStart": 112,
+          "charEnd": 122,
+          "sourceTokenIds": [
+            "h38001014014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:13",
+          "surface": "con gran celo",
+          "charStart": 123,
+          "charEnd": 136,
+          "sourceTokenIds": [
+            "h38001014015",
+            "h38001014016"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 14,
+      "reference": "Zechariah 1:15",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "14:0",
+          "surface": "Y con gran ira",
+          "charStart": 0,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "h38001015001",
+            "h38001015002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:1",
+          "surface": "estoy yo",
+          "charStart": 15,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "h38001015003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:2",
+          "surface": "airado",
+          "charStart": 24,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "h38001015004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:3",
+          "surface": "contra",
+          "charStart": 31,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "h38001015005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:4",
+          "surface": "las naciones",
+          "charStart": 38,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "h38001015006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:5",
+          "surface": "que están tranquilas",
+          "charStart": 51,
+          "charEnd": 71,
+          "sourceTokenIds": [
+            "h38001015007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:6",
+          "surface": "las cuales",
+          "charStart": 73,
+          "charEnd": 83,
+          "sourceTokenIds": [
+            "h38001015008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:7",
+          "surface": "yo",
+          "charStart": 84,
+          "charEnd": 86,
+          "sourceTokenIds": [
+            "h38001015009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:8",
+          "surface": "airé",
+          "charStart": 87,
+          "charEnd": 91,
+          "sourceTokenIds": [
+            "h38001015010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:9",
+          "surface": "un poco",
+          "charStart": 92,
+          "charEnd": 99,
+          "sourceTokenIds": [
+            "h38001015011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:10",
+          "surface": "y ellas",
+          "charStart": 101,
+          "charEnd": 108,
+          "sourceTokenIds": [
+            "h38001015012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:11",
+          "surface": "ayudaron",
+          "charStart": 109,
+          "charEnd": 117,
+          "sourceTokenIds": [
+            "h38001015013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:12",
+          "surface": "para mal",
+          "charStart": 118,
+          "charEnd": 126,
+          "sourceTokenIds": [
+            "h38001015014"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 15,
+      "reference": "Zechariah 1:16",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "15:0",
+          "surface": "Por tanto",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "h38001016001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:1",
+          "surface": "así",
+          "charStart": 11,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "h38001016002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:2",
+          "surface": "dice",
+          "charStart": 15,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "h38001016003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:3",
+          "surface": "Jehová",
+          "charStart": 20,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "h38001016004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:4",
+          "surface": "Me he vuelto",
+          "charStart": 28,
+          "charEnd": 40,
+          "sourceTokenIds": [
+            "h38001016005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:5",
+          "surface": "a Jerusalén",
+          "charStart": 41,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "h38001016006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:6",
+          "surface": "con compasiones",
+          "charStart": 53,
+          "charEnd": 68,
+          "sourceTokenIds": [
+            "h38001016007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:7",
+          "surface": "mi casa",
+          "charStart": 70,
+          "charEnd": 77,
+          "sourceTokenIds": [
+            "h38001016008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:8",
+          "surface": "será edificada",
+          "charStart": 78,
+          "charEnd": 92,
+          "sourceTokenIds": [
+            "h38001016009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:9",
+          "surface": "en ella",
+          "charStart": 93,
+          "charEnd": 100,
+          "sourceTokenIds": [
+            "h38001016010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:10",
+          "surface": "declara",
+          "charStart": 102,
+          "charEnd": 109,
+          "sourceTokenIds": [
+            "h38001016011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:11",
+          "surface": "Jehová",
+          "charStart": 110,
+          "charEnd": 116,
+          "sourceTokenIds": [
+            "h38001016012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:12",
+          "surface": "de los ejércitos",
+          "charStart": 117,
+          "charEnd": 133,
+          "sourceTokenIds": [
+            "h38001016013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:13",
+          "surface": "y el cordel",
+          "charStart": 135,
+          "charEnd": 146,
+          "sourceTokenIds": [
+            "h38001016014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:14",
+          "surface": "será tendido",
+          "charStart": 147,
+          "charEnd": 159,
+          "sourceTokenIds": [
+            "h38001016015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:15",
+          "surface": "sobre",
+          "charStart": 160,
+          "charEnd": 165,
+          "sourceTokenIds": [
+            "h38001016016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:16",
+          "surface": "Jerusalén",
+          "charStart": 166,
+          "charEnd": 175,
+          "sourceTokenIds": [
+            "h38001016017"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 16,
+      "reference": "Zechariah 1:17",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "16:0",
+          "surface": "Proclama",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "h38001017002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:1",
+          "surface": "otra vez",
+          "charStart": 9,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "h38001017001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:2",
+          "surface": "diciendo",
+          "charStart": 18,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "h38001017003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:3",
+          "surface": "Así",
+          "charStart": 28,
+          "charEnd": 31,
+          "sourceTokenIds": [
+            "h38001017004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:4",
+          "surface": "dice",
+          "charStart": 32,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "h38001017005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:5",
+          "surface": "Jehová",
+          "charStart": 37,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "h38001017006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:6",
+          "surface": "de los ejércitos",
+          "charStart": 44,
+          "charEnd": 60,
+          "sourceTokenIds": [
+            "h38001017007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:7",
+          "surface": "Aún",
+          "charStart": 62,
+          "charEnd": 65,
+          "sourceTokenIds": [
+            "h38001017008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:8",
+          "surface": "rebosarán",
+          "charStart": 66,
+          "charEnd": 75,
+          "sourceTokenIds": [
+            "h38001017009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:9",
+          "surface": "mis ciudades",
+          "charStart": 76,
+          "charEnd": 88,
+          "sourceTokenIds": [
+            "h38001017010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:10",
+          "surface": "de bien",
+          "charStart": 89,
+          "charEnd": 96,
+          "sourceTokenIds": [
+            "h38001017011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:11",
+          "surface": "y aún consolará",
+          "charStart": 98,
+          "charEnd": 113,
+          "sourceTokenIds": [
+            "h38001017012",
+            "h38001017014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:12",
+          "surface": "Jehová",
+          "charStart": 114,
+          "charEnd": 120,
+          "sourceTokenIds": [
+            "h38001017013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:13",
+          "surface": "a Sión",
+          "charStart": 121,
+          "charEnd": 127,
+          "sourceTokenIds": [
+            "h38001017015",
+            "h38001017016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:14",
+          "surface": "y aún escogerá",
+          "charStart": 129,
+          "charEnd": 143,
+          "sourceTokenIds": [
+            "h38001017017",
+            "h38001017018"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:15",
+          "surface": "a Jerusalén",
+          "charStart": 144,
+          "charEnd": 155,
+          "sourceTokenIds": [
+            "h38001017019"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 17,
+      "reference": "Zechariah 1:18",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "17:0",
+          "surface": "Y alcé",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "h38002001001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "17:1",
+          "surface": "mis ojos",
+          "charStart": 7,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "h38002001002",
+            "h38002001003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "17:2",
+          "surface": "y vi",
+          "charStart": 16,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "h38002001004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "17:3",
+          "surface": "y he aquí",
+          "charStart": 22,
+          "charEnd": 31,
+          "sourceTokenIds": [
+            "h38002001005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "17:4",
+          "surface": "cuatro",
+          "charStart": 32,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "h38002001006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "17:5",
+          "surface": "cuernos",
+          "charStart": 39,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "h38002001007"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 18,
+      "reference": "Zechariah 1:19",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "18:0",
+          "surface": "Y dije",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "h38002002001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:1",
+          "surface": "al ángel",
+          "charStart": 7,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "h38002002002",
+            "h38002002003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:2",
+          "surface": "que hablaba",
+          "charStart": 16,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "h38002002004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:3",
+          "surface": "conmigo",
+          "charStart": 28,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "h38002002005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:4",
+          "surface": "Qué",
+          "charStart": 38,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "h38002002006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:5",
+          "surface": "son estos",
+          "charStart": 42,
+          "charEnd": 51,
+          "sourceTokenIds": [
+            "h38002002007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:6",
+          "surface": "Y me dijo",
+          "charStart": 53,
+          "charEnd": 62,
+          "sourceTokenIds": [
+            "h38002002008",
+            "h38002002009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:7",
+          "surface": "Estos",
+          "charStart": 64,
+          "charEnd": 69,
+          "sourceTokenIds": [
+            "h38002002010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:8",
+          "surface": "son los cuernos",
+          "charStart": 70,
+          "charEnd": 85,
+          "sourceTokenIds": [
+            "h38002002011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:9",
+          "surface": "que",
+          "charStart": 86,
+          "charEnd": 89,
+          "sourceTokenIds": [
+            "h38002002012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:10",
+          "surface": "dispersaron",
+          "charStart": 90,
+          "charEnd": 101,
+          "sourceTokenIds": [
+            "h38002002013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:11",
+          "surface": "a Judá",
+          "charStart": 102,
+          "charEnd": 108,
+          "sourceTokenIds": [
+            "h38002002014",
+            "h38002002015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:12",
+          "surface": "a Israel",
+          "charStart": 110,
+          "charEnd": 118,
+          "sourceTokenIds": [
+            "h38002002016",
+            "h38002002017"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "18:13",
+          "surface": "y a Jerusalén",
+          "charStart": 119,
+          "charEnd": 132,
+          "sourceTokenIds": [
+            "h38002002018"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 19,
+      "reference": "Zechariah 1:20",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "19:0",
+          "surface": "Y me mostró",
+          "charStart": 0,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "h38002003001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "19:1",
+          "surface": "Jehová",
+          "charStart": 12,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "h38002003002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "19:2",
+          "surface": "cuatro",
+          "charStart": 19,
+          "charEnd": 25,
+          "sourceTokenIds": [
+            "h38002003003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "19:3",
+          "surface": "artesanos",
+          "charStart": 26,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "h38002003004"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 20,
+      "reference": "Zechariah 1:21",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "20:0",
+          "surface": "Y dije",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "h38002004001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:1",
+          "surface": "Qué",
+          "charStart": 9,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "h38002004002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:2",
+          "surface": "vienen",
+          "charStart": 13,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "h38002004004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:3",
+          "surface": "estos",
+          "charStart": 20,
+          "charEnd": 25,
+          "sourceTokenIds": [
+            "h38002004003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:4",
+          "surface": "a hacer",
+          "charStart": 26,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "h38002004005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:5",
+          "surface": "Y dijo",
+          "charStart": 35,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "h38002004006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:6",
+          "surface": "diciendo",
+          "charStart": 42,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "h38002004007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:7",
+          "surface": "Estos",
+          "charStart": 52,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "h38002004008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:8",
+          "surface": "son los cuernos",
+          "charStart": 58,
+          "charEnd": 73,
+          "sourceTokenIds": [
+            "h38002004009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:9",
+          "surface": "que",
+          "charStart": 74,
+          "charEnd": 77,
+          "sourceTokenIds": [
+            "h38002004010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:10",
+          "surface": "dispersaron",
+          "charStart": 78,
+          "charEnd": 89,
+          "sourceTokenIds": [
+            "h38002004011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:11",
+          "surface": "a Judá",
+          "charStart": 90,
+          "charEnd": 96,
+          "sourceTokenIds": [
+            "h38002004012",
+            "h38002004013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:12",
+          "surface": "de modo que",
+          "charStart": 98,
+          "charEnd": 109,
+          "sourceTokenIds": [
+            "h38002004014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:13",
+          "surface": "nadie",
+          "charStart": 110,
+          "charEnd": 115,
+          "sourceTokenIds": [
+            "h38002004015",
+            "h38002004016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:14",
+          "surface": "alzó",
+          "charStart": 116,
+          "charEnd": 120,
+          "sourceTokenIds": [
+            "h38002004017"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:15",
+          "surface": "su cabeza",
+          "charStart": 121,
+          "charEnd": 130,
+          "sourceTokenIds": [
+            "h38002004018"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:16",
+          "surface": "y vinieron",
+          "charStart": 132,
+          "charEnd": 142,
+          "sourceTokenIds": [
+            "h38002004019"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:17",
+          "surface": "estos",
+          "charStart": 143,
+          "charEnd": 148,
+          "sourceTokenIds": [
+            "h38002004020"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:18",
+          "surface": "para aterrarlos",
+          "charStart": 149,
+          "charEnd": 164,
+          "sourceTokenIds": [
+            "h38002004021",
+            "h38002004022"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:19",
+          "surface": "para derribar",
+          "charStart": 166,
+          "charEnd": 179,
+          "sourceTokenIds": [
+            "h38002004023"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:20",
+          "surface": "los cuernos",
+          "charStart": 180,
+          "charEnd": 191,
+          "sourceTokenIds": [
+            "h38002004024",
+            "h38002004025"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:21",
+          "surface": "de las naciones",
+          "charStart": 192,
+          "charEnd": 207,
+          "sourceTokenIds": [
+            "h38002004026"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:22",
+          "surface": "que alzan",
+          "charStart": 208,
+          "charEnd": 217,
+          "sourceTokenIds": [
+            "h38002004027"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:23",
+          "surface": "cuerno",
+          "charStart": 218,
+          "charEnd": 224,
+          "sourceTokenIds": [
+            "h38002004028"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:24",
+          "surface": "contra",
+          "charStart": 225,
+          "charEnd": 231,
+          "sourceTokenIds": [
+            "h38002004029"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:25",
+          "surface": "la tierra",
+          "charStart": 232,
+          "charEnd": 241,
+          "sourceTokenIds": [
+            "h38002004030"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:26",
+          "surface": "de Judá",
+          "charStart": 242,
+          "charEnd": 249,
+          "sourceTokenIds": [
+            "h38002004031"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:27",
+          "surface": "para dispersarla",
+          "charStart": 250,
+          "charEnd": 266,
+          "sourceTokenIds": [
+            "h38002004032"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 21,
+      "reference": "Zechariah 2:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 22,
+      "reference": "Zechariah 2:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 23,
+      "reference": "Zechariah 2:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 24,
+      "reference": "Zechariah 2:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 25,
+      "reference": "Zechariah 2:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 26,
+      "reference": "Zechariah 2:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 27,
+      "reference": "Zechariah 2:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 28,
+      "reference": "Zechariah 2:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 29,
+      "reference": "Zechariah 2:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 30,
+      "reference": "Zechariah 2:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 31,
+      "reference": "Zechariah 2:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 32,
+      "reference": "Zechariah 2:12",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 33,
+      "reference": "Zechariah 2:13",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 34,
+      "reference": "Zechariah 3:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 35,
+      "reference": "Zechariah 3:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 36,
+      "reference": "Zechariah 3:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 37,
+      "reference": "Zechariah 3:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 38,
+      "reference": "Zechariah 3:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 39,
+      "reference": "Zechariah 3:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 40,
+      "reference": "Zechariah 3:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 41,
+      "reference": "Zechariah 3:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 42,
+      "reference": "Zechariah 3:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 43,
+      "reference": "Zechariah 3:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 44,
+      "reference": "Zechariah 4:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 45,
+      "reference": "Zechariah 4:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 46,
+      "reference": "Zechariah 4:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 47,
+      "reference": "Zechariah 4:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 48,
+      "reference": "Zechariah 4:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 49,
+      "reference": "Zechariah 4:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 50,
+      "reference": "Zechariah 4:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 51,
+      "reference": "Zechariah 4:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 52,
+      "reference": "Zechariah 4:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 53,
+      "reference": "Zechariah 4:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 54,
+      "reference": "Zechariah 4:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 55,
+      "reference": "Zechariah 4:12",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 56,
+      "reference": "Zechariah 4:13",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 57,
+      "reference": "Zechariah 4:14",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 58,
+      "reference": "Zechariah 5:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 59,
+      "reference": "Zechariah 5:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 60,
+      "reference": "Zechariah 5:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 61,
+      "reference": "Zechariah 5:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 62,
+      "reference": "Zechariah 5:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 63,
+      "reference": "Zechariah 5:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 64,
+      "reference": "Zechariah 5:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 65,
+      "reference": "Zechariah 5:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 66,
+      "reference": "Zechariah 5:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 67,
+      "reference": "Zechariah 5:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 68,
+      "reference": "Zechariah 5:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 69,
+      "reference": "Zechariah 6:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 70,
+      "reference": "Zechariah 6:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 71,
+      "reference": "Zechariah 6:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 72,
+      "reference": "Zechariah 6:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 73,
+      "reference": "Zechariah 6:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 74,
+      "reference": "Zechariah 6:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 75,
+      "reference": "Zechariah 6:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 76,
+      "reference": "Zechariah 6:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 77,
+      "reference": "Zechariah 6:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 78,
+      "reference": "Zechariah 6:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 79,
+      "reference": "Zechariah 6:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 80,
+      "reference": "Zechariah 6:12",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 81,
+      "reference": "Zechariah 6:13",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 82,
+      "reference": "Zechariah 6:14",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 83,
+      "reference": "Zechariah 6:15",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 84,
+      "reference": "Zechariah 7:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 85,
+      "reference": "Zechariah 7:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 86,
+      "reference": "Zechariah 7:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 87,
+      "reference": "Zechariah 7:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 88,
+      "reference": "Zechariah 7:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 89,
+      "reference": "Zechariah 7:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 90,
+      "reference": "Zechariah 7:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 91,
+      "reference": "Zechariah 7:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 92,
+      "reference": "Zechariah 7:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 93,
+      "reference": "Zechariah 7:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 94,
+      "reference": "Zechariah 7:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 95,
+      "reference": "Zechariah 7:12",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 96,
+      "reference": "Zechariah 7:13",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 97,
+      "reference": "Zechariah 7:14",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 98,
+      "reference": "Zechariah 8:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 99,
+      "reference": "Zechariah 8:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 100,
+      "reference": "Zechariah 8:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 101,
+      "reference": "Zechariah 8:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 102,
+      "reference": "Zechariah 8:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 103,
+      "reference": "Zechariah 8:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 104,
+      "reference": "Zechariah 8:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 105,
+      "reference": "Zechariah 8:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 106,
+      "reference": "Zechariah 8:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 107,
+      "reference": "Zechariah 8:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 108,
+      "reference": "Zechariah 8:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 109,
+      "reference": "Zechariah 8:12",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 110,
+      "reference": "Zechariah 8:13",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 111,
+      "reference": "Zechariah 8:14",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 112,
+      "reference": "Zechariah 8:15",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 113,
+      "reference": "Zechariah 8:16",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 114,
+      "reference": "Zechariah 8:17",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 115,
+      "reference": "Zechariah 8:18",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 116,
+      "reference": "Zechariah 8:19",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 117,
+      "reference": "Zechariah 8:20",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 118,
+      "reference": "Zechariah 8:21",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 119,
+      "reference": "Zechariah 8:22",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 120,
+      "reference": "Zechariah 8:23",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 121,
+      "reference": "Zechariah 9:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 122,
+      "reference": "Zechariah 9:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 123,
+      "reference": "Zechariah 9:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 124,
+      "reference": "Zechariah 9:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 125,
+      "reference": "Zechariah 9:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 126,
+      "reference": "Zechariah 9:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 127,
+      "reference": "Zechariah 9:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 128,
+      "reference": "Zechariah 9:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 129,
+      "reference": "Zechariah 9:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 130,
+      "reference": "Zechariah 9:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 131,
+      "reference": "Zechariah 9:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 132,
+      "reference": "Zechariah 9:12",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 133,
+      "reference": "Zechariah 9:13",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 134,
+      "reference": "Zechariah 9:14",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 135,
+      "reference": "Zechariah 9:15",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 136,
+      "reference": "Zechariah 9:16",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 137,
+      "reference": "Zechariah 9:17",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 138,
+      "reference": "Zechariah 10:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 139,
+      "reference": "Zechariah 10:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 140,
+      "reference": "Zechariah 10:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 141,
+      "reference": "Zechariah 10:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 142,
+      "reference": "Zechariah 10:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 143,
+      "reference": "Zechariah 10:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 144,
+      "reference": "Zechariah 10:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 145,
+      "reference": "Zechariah 10:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 146,
+      "reference": "Zechariah 10:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 147,
+      "reference": "Zechariah 10:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 148,
+      "reference": "Zechariah 10:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 149,
+      "reference": "Zechariah 10:12",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 150,
+      "reference": "Zechariah 11:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 151,
+      "reference": "Zechariah 11:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 152,
+      "reference": "Zechariah 11:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 153,
+      "reference": "Zechariah 11:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 154,
+      "reference": "Zechariah 11:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 155,
+      "reference": "Zechariah 11:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 156,
+      "reference": "Zechariah 11:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 157,
+      "reference": "Zechariah 11:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 158,
+      "reference": "Zechariah 11:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 159,
+      "reference": "Zechariah 11:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 160,
+      "reference": "Zechariah 11:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 161,
+      "reference": "Zechariah 11:12",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 162,
+      "reference": "Zechariah 11:13",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 163,
+      "reference": "Zechariah 11:14",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 164,
+      "reference": "Zechariah 11:15",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 165,
+      "reference": "Zechariah 11:16",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 166,
+      "reference": "Zechariah 11:17",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 167,
+      "reference": "Zechariah 12:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 168,
+      "reference": "Zechariah 12:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 169,
+      "reference": "Zechariah 12:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 170,
+      "reference": "Zechariah 12:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 171,
+      "reference": "Zechariah 12:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 172,
+      "reference": "Zechariah 12:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 173,
+      "reference": "Zechariah 12:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 174,
+      "reference": "Zechariah 12:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 175,
+      "reference": "Zechariah 12:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 176,
+      "reference": "Zechariah 12:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 177,
+      "reference": "Zechariah 12:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 178,
+      "reference": "Zechariah 12:12",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 179,
+      "reference": "Zechariah 12:13",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 180,
+      "reference": "Zechariah 12:14",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 181,
+      "reference": "Zechariah 13:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 182,
+      "reference": "Zechariah 13:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 183,
+      "reference": "Zechariah 13:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 184,
+      "reference": "Zechariah 13:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 185,
+      "reference": "Zechariah 13:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 186,
+      "reference": "Zechariah 13:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 187,
+      "reference": "Zechariah 13:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 188,
+      "reference": "Zechariah 13:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 189,
+      "reference": "Zechariah 13:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 190,
+      "reference": "Zechariah 14:1",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 191,
+      "reference": "Zechariah 14:2",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 192,
+      "reference": "Zechariah 14:3",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 193,
+      "reference": "Zechariah 14:4",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 194,
+      "reference": "Zechariah 14:5",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 195,
+      "reference": "Zechariah 14:6",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 196,
+      "reference": "Zechariah 14:7",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 197,
+      "reference": "Zechariah 14:8",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 198,
+      "reference": "Zechariah 14:9",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 199,
+      "reference": "Zechariah 14:10",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 200,
+      "reference": "Zechariah 14:11",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 201,
+      "reference": "Zechariah 14:12",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 202,
+      "reference": "Zechariah 14:13",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 203,
+      "reference": "Zechariah 14:14",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 204,
+      "reference": "Zechariah 14:15",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 205,
+      "reference": "Zechariah 14:16",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 206,
+      "reference": "Zechariah 14:17",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 207,
+      "reference": "Zechariah 14:18",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 208,
+      "reference": "Zechariah 14:19",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 209,
+      "reference": "Zechariah 14:20",
+      "status": "unwalked",
+      "units": []
+    },
+    {
+      "phraseIndex": 210,
+      "reference": "Zechariah 14:21",
+      "status": "unwalked",
+      "units": []
+    }
+  ]
+}

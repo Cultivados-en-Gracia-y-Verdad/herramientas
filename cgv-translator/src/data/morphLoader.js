@@ -27,6 +27,31 @@ async function readFirstExistingFile(candidates) {
   return "";
 }
 
+async function loadOshbGlossIndex(rootDir, book) {
+  const content = await readFirstExistingFile([
+    join(rootDir, "..", "MNA", "datasets", "interlinear", "OT", `${book.bleSlug}.tokens.jsonl`),
+    join(getCgvDataPath(), "datasets", "interlinear", "OT", `${book.bleSlug}.tokens.jsonl`),
+    join(getCgvDataPath(), "interlinears", "OT", `${book.bleSlug}.tokens.jsonl`)
+  ]);
+  const index = new Map();
+  for (const line of content.replace(/\r\n/gu, "\n").split("\n")) {
+    if (!line.trim()) continue;
+    let row;
+    try {
+      row = JSON.parse(line);
+    } catch {
+      continue;
+    }
+    const gloss = bleGlossToText(row?.es || row?.gloss || "");
+    if (!gloss) continue;
+    for (const id of [row?.id, row?.sourceTokenId, row?.source_token_id]) {
+      const key = String(id || "").trim();
+      if (key) index.set(key, gloss);
+    }
+  }
+  return index;
+}
+
 export function parseMorphLine(line) {
   const match = line.match(/^(\d{6})\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(.+)$/u);
   if (!match) return null;
@@ -258,6 +283,7 @@ async function loadOshbSpineUnits(rootDir, book) {
   } catch {
     return null;
   }
+  const glossIndex = await loadOshbGlossIndex(rootDir, book);
   const units = [];
   for (const verse of Object.values(spine.verses || {})) {
     const chapter = Number(verse.ch);
@@ -265,7 +291,10 @@ async function loadOshbSpineUnits(rootDir, book) {
     const reference = `${book.label} ${chapter}:${vs}`;
     const tokenRows = (verse.tokens || []).map(tok => {
       const surface = tok.surface || "";
-      const gloss = tok.es || "";
+      const gloss = tok.es
+        || glossIndex.get(String(tok.oshbId || ""))
+        || glossIndex.get(String(tok.sourceTokenId || ""))
+        || "";
       return {
         sourceTokenId: tok.sourceTokenId || "",
         greek: surface,

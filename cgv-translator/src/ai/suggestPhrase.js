@@ -5,6 +5,7 @@ const DEFAULT_OPENAI_MODEL = process.env.CGV_TRANSLATOR_OPENAI_MODEL || "gpt-4.1
 const DEFAULT_ANTHROPIC_MODEL = process.env.CGV_TRANSLATOR_ANTHROPIC_MODEL || "claude-sonnet-4-5";
 const DEFAULT_OLLAMA_MODEL = process.env.CGV_TRANSLATOR_OLLAMA_MODEL || "qwen2.5:7b";
 const DEFAULT_OLLAMA_BASE_URL = "http://127.0.0.1:11434";
+const DEFAULT_LMSTUDIO_BASE_URL = "http://127.0.0.1:1234/v1";
 
 let translatorRootDir = "";
 
@@ -43,15 +44,26 @@ function resolveOllamaBaseUrl() {
   return String(raw).replace(/\/$/, "");
 }
 
+function resolveLmStudioBaseUrl() {
+  const raw = process.env.CGV_TRANSLATOR_LMSTUDIO_BASE_URL || DEFAULT_LMSTUDIO_BASE_URL;
+  const normalized = String(raw).replace(/\/+$/u, "");
+  return normalized.endsWith("/v1") ? normalized : `${normalized}/v1`;
+}
+
 function getAiConfig() {
   const forced = String(process.env.CGV_TRANSLATOR_PROVIDER || "").trim().toLowerCase();
   const anthropicKey = process.env.ANTHROPIC_API_KEY || process.env.CGV_ANTHROPIC_API_KEY || "";
   const openaiKey = process.env.OPENAI_API_KEY || process.env.CGV_OPENAI_API_KEY || "";
   const ollamaBaseUrl = resolveOllamaBaseUrl();
   const ollamaModel = process.env.CGV_TRANSLATOR_OLLAMA_MODEL || DEFAULT_OLLAMA_MODEL;
+  const lmStudioBaseUrl = resolveLmStudioBaseUrl();
+  const lmStudioModel = String(process.env.CGV_TRANSLATOR_LMSTUDIO_MODEL || "").trim();
 
   if (forced === "ollama") {
     return { provider: "ollama", baseUrl: ollamaBaseUrl, model: ollamaModel };
+  }
+  if (forced === "lmstudio" || forced === "lm-studio") {
+    return { provider: "lmstudio", baseUrl: lmStudioBaseUrl, model: lmStudioModel };
   }
   if (forced === "anthropic") {
     if (!anthropicKey) return null;
@@ -196,15 +208,96 @@ async function callOllama({ baseUrl, model, prompt, system, json }) {
   return String(text).trim();
 }
 
-async function probeOllama(baseUrl) {
+async function listLmStudioModels(baseUrl) {
+  let response;
+  try {
+    response = await fetch(`${baseUrl}/models`, {
+      method: "GET",
+      signal: AbortSignal.timeout(1800)
+    });
+  } catch (error) {
+    const wrapped = new Error(
+      `LM Studio is not reachable at ${baseUrl}. Start the Local Server in LM Studio's Developer tab.`
+    );
+    wrapped.code = "LMSTUDIO_UNREACHABLE";
+    wrapped.cause = error;
+    throw wrapped;
+  }
+  const body = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    const error = new Error(body?.error?.message || `LM Studio model list failed (${response.status})`);
+    error.code = "LMSTUDIO_UNREACHABLE";
+    throw error;
+  }
+  return (Array.isArray(body?.data) ? body.data : [])
+    .map(item => String(item?.id || "").trim())
+    .filter(Boolean);
+}
+
+async function callLmStudio({ baseUrl, model, prompt, system, json }) {
+  const availableModels = await listLmStudioModels(baseUrl);
+  const selectedModel = model || availableModels[0] || "";
+  if (!selectedModel) {
+    const error = new Error("LM Studio is running, but it exposes no model. Load a chat model first.");
+    error.code = "LMSTUDIO_MODEL_MISSING";
+    throw error;
+  }
+
+  let response;
+  try {
+    response = await fetch(`${baseUrl}/chat/completions`, {
+      method: "POST",
+      headers: {
+        Authorization: "Bearer lm-studio",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        model: selectedModel,
+        temperature: 0.2,
+        stream: false,
+        ...(json ? { response_format: { type: "json_object" } } : {}),
+        messages: [
+          { role: "system", content: system },
+          { role: "user", content: prompt }
+        ]
+      })
+    });
+  } catch (error) {
+    const wrapped = new Error(
+      `LM Studio is not reachable at ${baseUrl}. Start the Local Server in LM Studio's Developer tab.`
+    );
+    wrapped.code = "LMSTUDIO_UNREACHABLE";
+    wrapped.cause = error;
+    throw wrapped;
+  }
+
+  const body = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    const error = new Error(body?.error?.message || `LM Studio request failed (${response.status})`);
+    if (/model|load|not found/iu.test(error.message)) error.code = "LMSTUDIO_MODEL_MISSING";
+    throw error;
+  }
+  const text = body?.choices?.[0]?.message?.content;
+  if (!text || !String(text).trim()) {
+    throw new Error("LM Studio returned an empty response.");
+  }
+  return String(text).trim();
+}
+
+async function listOllamaModels(baseUrl) {
   try {
     const response = await fetch(`${baseUrl}/api/tags`, {
       method: "GET",
       signal: AbortSignal.timeout(1500)
     });
-    return response.ok;
+    if (!response.ok) return null;
+    const body = await response.json().catch(() => ({}));
+    return (Array.isArray(body?.models) ? body.models : [])
+      .flatMap(item => [item?.name, item?.model])
+      .map(item => String(item || "").trim())
+      .filter(Boolean);
   } catch {
-    return false;
+    return null;
   }
 }
 
@@ -214,13 +307,13 @@ export async function describeAiAvailability() {
     return {
       available: false,
       message:
-        "Set CGV_TRANSLATOR_PROVIDER=ollama, or add ANTHROPIC_API_KEY / OPENAI_API_KEY in cgv-translator/.env"
+        "Set CGV_TRANSLATOR_PROVIDER=lmstudio or ollama, or add ANTHROPIC_API_KEY / OPENAI_API_KEY in cgv-translator/.env"
     };
   }
 
   if (config.provider === "ollama") {
-    const reachable = await probeOllama(config.baseUrl);
-    if (!reachable) {
+    const models = await listOllamaModels(config.baseUrl);
+    if (models === null) {
       return {
         available: false,
         provider: "ollama",
@@ -229,13 +322,50 @@ export async function describeAiAvailability() {
           `Ollama not running at ${config.baseUrl}. Install from https://ollama.com, then: ollama pull ${config.model}`
       };
     }
+    if (!models.includes(config.model)) {
+      return {
+        available: false,
+        provider: "ollama",
+        model: config.model,
+        baseUrl: config.baseUrl,
+        message: `Ollama is running, but ${config.model} is not installed. Run: ollama pull ${config.model}`
+      };
+    }
+  }
+
+  if (config.provider === "lmstudio") {
+    try {
+      const models = await listLmStudioModels(config.baseUrl);
+      const selectedModel = config.model || models[0] || "";
+      if (!selectedModel) {
+        return {
+          available: false,
+          provider: "lmstudio",
+          baseUrl: config.baseUrl,
+          message: "LM Studio is running, but no model is exposed. Load a chat model first."
+        };
+      }
+      return {
+        available: true,
+        provider: "lmstudio",
+        model: selectedModel,
+        baseUrl: config.baseUrl
+      };
+    } catch (error) {
+      return {
+        available: false,
+        provider: "lmstudio",
+        baseUrl: config.baseUrl,
+        message: error.message || "LM Studio is unavailable."
+      };
+    }
   }
 
   return {
     available: true,
     provider: config.provider,
     model: config.model,
-    ...(config.provider === "ollama" ? { baseUrl: config.baseUrl } : {})
+    ...(["ollama", "lmstudio"].includes(config.provider) ? { baseUrl: config.baseUrl } : {})
   };
 }
 
@@ -247,7 +377,7 @@ export async function runChatCompletion({
   const config = getAiConfig();
   if (!config) {
     const error = new Error(
-      "No AI provider configured. Use Ollama (default) or set ANTHROPIC_API_KEY / OPENAI_API_KEY in .env"
+      "No AI provider configured. Use LM Studio or Ollama locally, or set ANTHROPIC_API_KEY / OPENAI_API_KEY in .env"
     );
     error.code = "AI_NOT_CONFIGURED";
     throw error;
@@ -255,6 +385,15 @@ export async function runChatCompletion({
 
   if (config.provider === "ollama") {
     return callOllama({
+      baseUrl: config.baseUrl,
+      model: config.model,
+      prompt,
+      system,
+      json
+    });
+  }
+  if (config.provider === "lmstudio") {
+    return callLmStudio({
       baseUrl: config.baseUrl,
       model: config.model,
       prompt,

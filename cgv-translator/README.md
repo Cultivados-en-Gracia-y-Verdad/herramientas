@@ -18,23 +18,21 @@ npm run verify:book -- status daniel
 npm run release:status -- daniel
 ```
 
-`prepare` performs strict, mechanical completeness checks and creates a large-text review packet under `verification/{book}/`. It never approves anything. AI verification is prohibited. A named human who directly examined the evidence records one translation decision and one alignment decision per verse:
+`prepare` performs strict, mechanical completeness checks. It never approves anything. AI verification is prohibited.
+
+G0A is a book reading. Read the continuous Spanish. If the book is acceptable, record one PASS on that revision:
 
 ```sh
-npm run verify:book -- record daniel translation "Daniel 1:1" PASS --reviewer "Name" --human-confirmation
-npm run verify:book -- record daniel alignment "Daniel 1:1" PASS --reviewer "Name" --human-confirmation
+npm run verify:book -- record-book daniel translation PASS --reviewer "Name" --human-confirmation
 ```
 
-After directly reviewing every verse in a chapter, the named human can record
-that chapter without 357 separate commands:
+If a verse is wrong, record that finding first:
 
 ```sh
-npm run verify:book -- record-chapter daniel translation 1 PASS --reviewer "Name" --human-confirmation
+npm run verify:book -- record daniel translation "Daniel 1:1" CHANGES_REQUIRED --reviewer "Name" --notes "…" --human-confirmation
 ```
 
-The command records a separate immutable, revision-bound decision for every
-verse. It cannot bypass review independence, cannot record AI review, and cannot
-start alignment review before the current translation revision has G0A `PASS`.
+`record-book` stores one human book attestation on the pending verses. It cannot bypass review independence, cannot record AI review, and cannot start alignment review before the current translation revision has G0A `PASS`.
 `release:status` writes the exact remaining blockers to
 `verification/{book}/release-readiness.json`.
 
@@ -54,16 +52,15 @@ Then open:
 http://127.0.0.1:1424/
 ```
 
-### AI phrase suggestions (Ollama)
+### Optional local AI phrase suggestions (LM Studio)
 
-With no cloud API keys, the prototype uses local [Ollama](https://ollama.com) by default.
+The configured local provider is LM Studio. It may propose drafting suggestions, but it cannot verify, approve, or publish anything.
 
-```sh
-# Install Ollama, then:
-ollama pull qwen2.5:7b
-```
+1. Install LM Studio and load a chat-capable model.
+2. In LM Studio's **Developer** tab, start the Local Server on port `1234`.
+3. CGV Translator discovers the first model returned by `/v1/models`, unless `CGV_TRANSLATOR_LMSTUDIO_MODEL` is set explicitly.
 
-Optional overrides go in `.env` (see `.env.example`). You can also set `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` instead.
+Provider overrides go in `.env` (see `.env.example`). Ollama and the existing cloud providers remain available as alternatives.
 
 ### Translation drafting pipeline
 
@@ -81,13 +78,15 @@ LBF’s Greek authority is **Scrivener 1894 TR**. When a book has a TR spine und
 - `{bookId}-phrases-tr.json` for phrase Spanish / token ids
 - `{bookId}-tr-spine.json` for Greek verse tokens (not MorphGNT/SBLGNT)
 
-Titus and Jude have TR spines. Other books still fall back to MorphGNT until theirs exist.
+Titus, Jude, 1 John, and Revelation have TR spines. Other books still fall back to MorphGNT until theirs exist.
 
 Rebuild from Robinson-parsed UTR:
 
 ```sh
 python3 scripts/build_tr_spine_titus.py
 python3 scripts/build_tr_spine_jude.py
+python3 scripts/build_tr_spine_1john.py
+python3 scripts/build_tr_spine_revelation.py
 ```
 
 Sources: `Biblia-LBF/source/greek/TR1894/robinson-parsed/{TIT,JUDE}.UTR`
@@ -111,7 +110,7 @@ node scripts/ai_seed_titus_reverse_links.mjs --start 11 --limit 10
 ```
 
 This preserves `seeded-hand` entries and writes `seeded-ai` (or `seeded-ai-invalid` if
-validation fails). Requires Ollama or cloud keys (same as the translator AI).
+validation fails). Requires the configured local provider (LM Studio or Ollama) or cloud keys.
 
 In the UI, use the **Reverse interlinear** row — click a unit to highlight linked Greek.
 
