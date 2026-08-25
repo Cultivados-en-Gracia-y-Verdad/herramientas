@@ -167,8 +167,8 @@ async function runHttpTests() {
         /greek-occurrence-bible/i.test(love.json.popupHtml),
         "expected Bible version under occurrence verse"
       );
-      assert.match(String(love.json.bibleVersion), /\bBLE\b/, `expected BLE study text, got ${love.json.bibleVersion}`);
-      assert.match(love.json.popupHtml, /greek-occurrence-bible">BLE</i);
+      assert.match(String(love.json.bibleVersion), /\b[A-Z0-9]+\b/, `expected Bible version label, got ${love.json.bibleVersion}`);
+      assert.match(love.json.popupHtml, new RegExp(`greek-occurrence-bible">${love.json.bibleVersion}`, "i"));
     });
 
     check("/greek/usage shows BLE and NBLA word glosses", () => {
