@@ -54,10 +54,20 @@ Never hand-set `PASS`. That is the producer self-certifying.
 
 1. Jason assists the human until the Observer JSON is complete. Jason is not a workflow stage.
 2. Export the Observer progress into `{NN.Curso}/observation/`.
-3. Compiler Generate → `{NN.Curso}/skeleton/`.
+3. **Check the spans before Generate.** A bad span costs a whole Generate cycle:
+
+```bash
+cgvs/verify-clause-spans.py --progress {NN.Curso}/observation/<libro>-progress-filled.json \
+                            --lbf cgv-data/bibles/LBF/<libro>.lbf.md
+```
+
+   It catches what the skeleton gate cannot — non-contiguous spans, which produce H4s with words
+   silently missing. Repair in Observer; never in the skeleton, which regenerates.
+
+4. Compiler Generate → `{NN.Curso}/skeleton/`.
    **⚠️ The Compiler still exports where it always did.** Until the app changes, move the file
    yourself. Every agent downstream refuses `~/Downloads`.
-4. Record the compile. This is the gate:
+5. Record the compile. This is the gate:
 
 ```bash
 cgv compile record <libro> \

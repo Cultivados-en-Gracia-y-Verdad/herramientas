@@ -77,16 +77,36 @@ def last_surface(text: str) -> str:
     return parts[-1] if parts else ""
 
 
+# Accented Spanish words that fold onto a function word in DANGLING_TAIL but are
+# not leaners. The accent IS the distinction:
+#
+#   más  (adverb, "anymore")   vs  mas  (conjunction, "but")
+#   sí   ("yes")               vs  si   ("if")
+#   qué  (interrogative)       vs  que  (relative / content)
+#   aún  ("still")             vs  aun  ("even")
+#   él   (tonic pronoun)       vs  el   (article)
+#
+# «No tendrán hambre nunca más» is a finished claim, not a clause leaning into the
+# next one. Note the list is deliberately explicit rather than a blanket
+# "accented ⇒ not dangling" rule: «según» carries an accent, folds onto a list
+# word, and really is a leaner.
+TONIC_NOT_DANGLING = {
+    "más", "sí", "qué", "aún", "cómo", "dónde", "adónde",
+    "quién", "quiénes", "cuál", "cuáles", "cuándo", "cuánto", "cuánta",
+    "cuántos", "cuántas", "él", "ella", "ellos", "ellas", "tú", "mí", "ti",
+}
+
+
 def is_dangling_ending(text: str) -> bool:
     """True when the H4 ends on a leaner, not on a finished claim.
 
-    Tonic pronouns Él/Ella fold to el/ella and must not trip the article ban.
+    Accented forms that fold onto a function word are checked first: the accent
+    distinguishes a tonic or interrogative word from the conjunction it folds to.
     """
     surface = last_surface(text)
     if not surface:
         return False
-    # Él / Ella / Ellos / Ellas are valid clause ends («se fue de él»).
-    if surface[0] in "Éé" and fold(surface) in {"el", "ella", "ellos", "ellas"}:
+    if surface.lower() in TONIC_NOT_DANGLING:
         return False
     return fold(surface) in DANGLING_TAIL
 

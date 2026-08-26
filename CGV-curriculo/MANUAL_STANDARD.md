@@ -75,6 +75,26 @@ each ends the verse before the next begins; a gap or overlap means a verse is lo
 `-`, `+` and `=` are reserved for Scripture. A line such as `Actores principales: …` must start
 with `*`. Every scriptural word appears exactly once across `####` / `-` / `+`.
 
+### Scope of the marker contract
+
+**The marker rules above govern the student body.** They stop at the first generated workshop
+section:
+
+```
+## Actores · ## Movimiento · ## Convergencia · ## Tensión · ## Apéndice · # Apéndices
+```
+
+Those sections are Compiler-generated workshop material. They legitimately carry `####` headings
+that are actor names rather than clauses, and `-` lines that are evidence rather than dependent
+clauses. Auditing them against the student-surface contract produces noise, not findings — on
+Apocalipsis it produced 461 reports of "Scripture without italics", every one an actor name in the
+`## Actores` index.
+
+Every checker must cut at the same boundary. `verify-skeleton-h4-packaging.py` and
+`run-manual-checks.py` share the list; a third checker that does not will disagree with both for a
+reason that has nothing to do with the manuscript. **Report what was skipped** — a count of
+appendix `####` lines — so nothing is hidden rather than merely unaudited.
+
 ### The context quote (`=`)
 
 Every `##` H2 opens with its **whole passage**, verbatim from LBF, before any analysis. The reader

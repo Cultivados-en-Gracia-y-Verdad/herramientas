@@ -59,6 +59,18 @@ ATONIC_TAILS = {
     "te", "nos", "esta", "este", "estos", "estas", "ese", "esa", "aquel",
 }
 
+# `norm()` strips diacritics, so `más` folds onto `mas` — a conjunction in the list above.
+# «No tendrán hambre nunca más» is a finished claim, not a clause leaning into the next.
+# Same for sí/si, qué/que, aún/aun, él/el. Explicit rather than "accented ⇒ tonic", because
+# `según` carries an accent, folds onto a list word, and really is atonic.
+# Keep in step with TONIC_NOT_DANGLING in verify-skeleton-h4-packaging.py.
+TONIC_NOT_ATONIC = {
+    "más", "sí", "qué", "aún", "cómo", "dónde", "adónde", "quién", "quiénes",
+    "cuál", "cuáles", "cuándo", "cuánto", "cuánta", "cuántos", "cuántas",
+    "él", "ella", "ellos", "ellas", "tú", "mí", "ti",
+}
+
+
 STOPWORDS = ATONIC_TAILS | {
     "no", "si", "todo", "toda", "todos", "todas", "muy", "asi", "como", "donde",
 }
@@ -82,7 +94,7 @@ def words_of(text: str) -> list[str]:
 
 
 class Line:
-    __slots__ = ("n", "raw", "indent", "marker", "text")
+    __slots__ = ("n", "raw", "indent", "marker", "text", "in_student_body")
 
     def __init__(self, n: int, raw: str):
         self.n = n
@@ -91,6 +103,7 @@ class Line:
         self.indent = len(self.raw) - len(stripped)
         self.marker = ""
         self.text = stripped
+        self.in_student_body = True
         for m in ("######", "#####", "####", "###", "##", "#"):
             if stripped.startswith(m + " "):
                 self.marker = m
@@ -128,8 +141,41 @@ class Line:
         return " ".join(found) if found else self.text
 
 
+# The generated appendices — Actores, Movimiento, Convergencia, Tensión, Apéndice — are
+# workshop material, not the student surface. They legitimately carry `####` headings that
+# are actor names rather than Scripture, and `-` lines that are evidence rather than
+# dependent clauses. The marker contract in MANUAL_STANDARD.md §3 governs the student body.
+#
+# verify-skeleton-h4-packaging.py has always cut here. This script did not, which is why it
+# reported 461 "Scripture lines without italics" on Apocalipsis — every one of them an actor
+# name in the `## Actores` index.
+#
+# Keep this list identical to STOP_SECTIONS in verify-skeleton-h4-packaging.py.
+STOP_SECTIONS = (
+    "\n## Actores", "\n## Movimiento", "\n## Convergencia",
+    "\n## Tensión", "\n## Apéndice", "\n# Apéndices",
+)
+
+
+def student_body_line_count(raw: str) -> int:
+    """Number of lines before the first workshop/appendix section (1-based, inclusive)."""
+    cut = len(raw)
+    for marker in STOP_SECTIONS:
+        i = raw.find(marker)
+        if 0 < i < cut:
+            cut = i
+    return raw[:cut].count("\n") + 1
+
+
 def parse(path: Path) -> list[Line]:
-    return [Line(i, raw) for i, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1)]
+    raw = path.read_text(encoding="utf-8")
+    limit = student_body_line_count(raw)
+    out = []
+    for i, line in enumerate(raw.splitlines(), 1):
+        ln = Line(i, line)
+        ln.in_student_body = i <= limit
+        out.append(ln)
+    return out
 
 
 def load_lbf(path: Path) -> dict[str, str]:
@@ -187,7 +233,12 @@ def main() -> int:
 
     # ---------------------------------------------------------------- counts
     counts = Counter(l.marker for l in lines if l.marker)
-    h4 = [l for l in lines if l.marker == "####"]
+    # Packaging is judged on the student surface only. The generated appendices carry `####`
+    # actor names that are not clauses; counting them made this script disagree with
+    # verify-skeleton-h4-packaging.py for a reason that had nothing to do with the manuscript.
+    h4_all = [l for l in lines if l.marker == "####"]
+    h4 = [l for l in h4_all if l.in_student_body]
+    h4_appendix = len(h4_all) - len(h4)
     h3 = [l for l in lines if l.marker == "###"]
 
     w("## Conteo")
@@ -218,11 +269,14 @@ def main() -> int:
 
     one_word, tails = [], []
     for l in h4:
-        ws = words_of(l.scripture_text())
+        raw_text = l.scripture_text()
+        ws = words_of(raw_text)
         if len(ws) == 1:
-            one_word.append((l.n, l.scripture_text()))
-        if ws and ws[-1] in ATONIC_TAILS and not next_continues(l.n):
-            tails.append((l.n, l.scripture_text(), ws[-1]))
+            one_word.append((l.n, raw_text))
+        surface = re.findall(r"[\wáéíóúüñÁÉÍÓÚÜÑ]+", raw_text)
+        tonic = bool(surface) and surface[-1].lower() in TONIC_NOT_ATONIC
+        if ws and ws[-1] in ATONIC_TAILS and not tonic and not next_continues(l.n):
+            tails.append((l.n, raw_text, ws[-1]))
 
     # Bucketed on purpose. A flat ">=3 consecutive words" rule fires on ordinary
     # repeated noun phrases ("jefe de los eunucos") appearing in two real clauses,
@@ -337,6 +391,7 @@ def main() -> int:
         (l.n, l.text[:70]) for l in lines
         if l.is_scripture and not ITALIC.search(l.text)
         and (l.text.isupper() or ":" in l.text[:28])
+        if l.in_student_body
     ]
 
     w("## Marcado")
@@ -349,6 +404,7 @@ def main() -> int:
       f"{' — ' + ', '.join(sorted(defs - refs)) if defs - refs else ''}")
     w(f"- Rachas de 2+ líneas en blanco: **{len(blank_runs)}**")
     w(f"- Líneas con espacio final: **{trailing}**")
+    w(f"- `####` en apéndices generados (no auditados): **{h4_appendix}**")
     w(f"- Líneas Escritura sin cursivas (posible texto no bíblico): **{len(non_scripture)}**")
     w("")
     if non_scripture:
