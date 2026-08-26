@@ -23,9 +23,6 @@ def course_dir(pid):
     if not COURSES.is_dir():
         raise SystemExit(f"Courses directory not found: {COURSES}\n"
                          f"Set CGV_COURSES to the curriculo checkout.")
-    direct = COURSES / pid
-    if direct.is_dir():
-        return direct
     want = _fold(pid)
     hits = [d for d in sorted(COURSES.iterdir())
             if d.is_dir() and _fold(d.name.split(".", 1)[-1]) == want]
