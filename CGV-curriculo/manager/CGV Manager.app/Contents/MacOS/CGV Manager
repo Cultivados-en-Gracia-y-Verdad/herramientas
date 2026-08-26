@@ -1,0 +1,3 @@
+#!/bin/zsh
+MANAGER_DIR="${0:A:h:h:h:h}"
+exec /usr/bin/python3 "$MANAGER_DIR/app.py"

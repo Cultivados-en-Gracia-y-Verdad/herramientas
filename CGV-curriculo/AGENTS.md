@@ -24,6 +24,10 @@ Then, for the book in hand:
 
 If a rule you need is not in one of those, it is not a rule yet. Ask; do not invent it.
 
+For the order of work and the command at each gate, see **`RUNBOOK.md`** in the method repo.
+`cgv status {libro}` always tells you the current gate and the next action — the Manager is
+authoritative, and no agent may infer state from a conversation.
+
 ## Where things live
 
 ```

@@ -113,7 +113,42 @@ def transition_gate(state, gate, new_status, actor="human", notes=""):
     recompute(state)
     record_event(state, actor, f"{cur} -> {new_status}", gate, notes)
 
-def verify_gate0_attestation(att, project_id):
+
+def skip_gate(state, gate, actor="human", notes=""):
+    """Record an explicit human waiver without pretending that the gate passed."""
+    if not notes.strip():
+        raise ValueError("A skipped gate requires a reason and the person who decided.")
+    cur = state["gates"][gate]["status"]
+    if cur not in {"READY", "NOT_STARTED", "BLOCKED"}:
+        raise ValueError(f"Illegal skip: {gate} is {cur}.")
+    idx = GATES.index(gate)
+    for prev in GATES[:idx]:
+        if state["gates"][prev]["status"] not in {"PASS", "SKIPPED"}:
+            raise ValueError(f"{gate} cannot be skipped: {prev} has not passed or been explicitly skipped.")
+    state["gates"][gate]["status"] = "SKIPPED"
+    state["gates"][gate]["skip_reason"] = notes
+    if idx + 1 < len(GATES):
+        nxt = GATES[idx + 1]
+        if state["gates"][nxt]["status"] in {"BLOCKED", "NOT_STARTED"}:
+            state["gates"][nxt]["status"] = "READY"
+    recompute(state)
+    record_event(state, actor, f"{cur} -> SKIPPED", gate, notes)
+
+
+def record_gate_status(state, gate, new_status, actor="human", notes=""):
+    """Apply an operator decision while preserving the state machine transitions.
+
+    RUNBOOK commands record terminal results directly (for example READY -> PASS).
+    Internally we still record the required RUNNING transition first.
+    """
+    if new_status == "SKIPPED":
+        return skip_gate(state, gate, actor, notes)
+    cur = state["gates"][gate]["status"]
+    if cur == "READY" and new_status in {"PASS", "FAIL", "REVIEW_REQUIRED"}:
+        transition_gate(state, gate, "RUNNING", actor, "Gate work began.")
+    transition_gate(state, gate, new_status, actor, notes)
+
+def verify_gate0_attestation(att, project_id, base: Path | None = None):
     errors = []
     if att.get("schema_version") != "0.1":
         errors.append("unsupported schema version")
@@ -166,15 +201,19 @@ def verify_gate0_attestation(att, project_id):
         errors.append("attestation has unresolved blockers")
 
     for label, obj in [("source",source),("alignment",alignment)]:
-        p = Path(obj.get("path",""))
+        p = Path(obj.get("path", "")).expanduser()
+        if base is not None and not p.is_absolute():
+            p = base / p
         if p.exists():
             if checksum(p) != obj.get("checksum_sha256"):
                 errors.append(f"{label} checksum mismatch")
+        else:
+            errors.append(f"{label} file not found for checksum verification: {p}")
 
     return errors
 
-def accept_gate0(state, att, attestation_path, actor="human"):
-    errors = verify_gate0_attestation(att, state["project"]["id"])
+def accept_gate0(state, att, attestation_path, actor="human", base: Path | None = None):
+    errors = verify_gate0_attestation(att, state["project"]["id"], base)
     if errors:
         raise ValueError("Gate 0 attestation rejected:\n- " + "\n- ".join(errors))
 
@@ -218,6 +257,193 @@ def accept_gate0(state, att, attestation_path, actor="human"):
     state["workflow"]["regeneration_required"] = True
     recompute(state)
 
+# ---------------------------------------------------------------------------
+# G1_COMPILE provenance
+#
+# STATE_MODEL.md §11 requires the compile to record which inputs produced which
+# artifact. Without it the Manager cannot tell a fresh skeleton from a stale one,
+# and §12 staleness cannot be computed — it can only be believed.
+# ---------------------------------------------------------------------------
+
+def short_rev(digest: str) -> str:
+    return digest[:12]
+
+
+def resolve(base: Path, declared: str) -> Path:
+    p = Path(declared).expanduser()
+    return p if p.is_absolute() else (base / p)
+
+
+def waive_gate0(state, base: Path, actor="human", notes=""):
+    """Proceed without certification while pinning the exact inputs by checksum.
+
+    This is not a PASS and does not claim independent verification. The snapshots
+    are needed so G1 can still refuse a compile if either input later changes.
+    """
+    if state["gates"]["G0_ALIGNMENT"]["status"] != "READY":
+        raise ValueError("G0_ALIGNMENT can only be waived while READY.")
+    snapshots = {}
+    for label in ("source", "alignment"):
+        obj = state.get(label, {})
+        declared = obj.get("path", "")
+        if not declared:
+            raise ValueError(f"Cannot waive Gate 0: {label} path is missing.")
+        path = resolve(base, declared)
+        if not path.exists():
+            raise ValueError(f"Cannot waive Gate 0: {label} file is missing: {path}")
+        digest = checksum(path)
+        obj["checksum"] = digest
+        obj["revision"] = obj.get("revision") or f"sha256-{digest[:12]}"
+        snapshots[label] = digest
+    state["source"]["validated"] = False
+    state["alignment"]["status"] = "SKIPPED"
+    state["gates"]["G0_ALIGNMENT"].update({
+        "waived": True,
+        "source_checksum": snapshots["source"],
+        "alignment_checksum": snapshots["alignment"],
+    })
+    skip_gate(state, "G0_ALIGNMENT", actor, notes)
+    state["artifact"]["current"] = False
+    state["workflow"]["regeneration_required"] = True
+    recompute(state)
+
+
+def input_drift(state, base: Path):
+    """Recompute the declared inputs and report anything that no longer matches state.
+
+    Returns a list of (what, detail). Empty means every declared input is unchanged.
+    This is evidence. Marking gates STALE is a separate, recorded decision.
+    """
+    findings = []
+    for label in ("source", "alignment"):
+        obj = state.get(label, {})
+        declared, recorded = obj.get("path"), obj.get("checksum")
+        if not declared:
+            findings.append((label, "no path declared in state"))
+            continue
+        f = resolve(base, declared)
+        if not f.exists():
+            findings.append((label, f"declared file is missing: {f}"))
+            continue
+        if not recorded:
+            findings.append((label, "no checksum recorded — provenance was never established"))
+            continue
+        actual = checksum(f)
+        if actual != recorded:
+            findings.append((label, f"checksum changed\n      recorded {recorded[:16]}…\n      actual   {actual[:16]}…"))
+
+    art = state.get("artifact", {})
+    if art.get("path"):
+        f = resolve(base, art["path"])
+        if not f.exists():
+            findings.append(("artifact", f"declared artifact is missing: {f}"))
+        elif art.get("checksum") and checksum(f) != art["checksum"]:
+            findings.append(("artifact", "artifact changed on disk since it was recorded"))
+
+    if art.get("current"):
+        if art.get("generated_from_source_revision") != state.get("source", {}).get("revision"):
+            findings.append(("artifact", "marked current but built from a different source revision"))
+        if art.get("generated_from_alignment_revision") != state.get("alignment", {}).get("revision"):
+            findings.append(("artifact", "marked current but built from a different alignment revision"))
+    return findings
+
+
+def record_compile(state, base: Path, skeleton, progress=None, compiler_version="", actor="human"):
+    """Record a Compiler Generate: which inputs, which output, and their checksums.
+
+    Refuses when the declared inputs no longer match what G0 approved — a compile
+    run against changed source is not a compile of the approved book.
+    """
+    sk = resolve(base, str(skeleton))
+    if not sk.exists():
+        raise ValueError(f"Skeleton not found: {sk}")
+
+    drift = [d for d in input_drift(state, base) if d[0] in ("source", "alignment")]
+    if drift:
+        raise ValueError(
+            "Refusing to record the compile — its declared inputs no longer match state:\n- "
+            + "\n- ".join(f"{w}: {d}" for w, d in drift)
+            + "\nResolve at G0 first. A compile against changed source is not a compile of the approved book."
+        )
+
+    art_sum = checksum(sk)
+    g = state["gates"]["G1_COMPILE"]
+    g.update({
+        "compiler_version": compiler_version or "unrecorded",
+        "input_source_revision": state["source"].get("revision", ""),
+        "input_alignment_revision": state["alignment"].get("revision", ""),
+        "input_source_checksum": state["source"].get("checksum", ""),
+        "input_alignment_checksum": state["alignment"].get("checksum", ""),
+        "output_artifact_revision": short_rev(art_sum),
+        "output_checksum": art_sum,
+        "generated_at": now_iso(),
+    })
+    if progress:
+        pf = resolve(base, str(progress))
+        if not pf.exists():
+            raise ValueError(f"Observer progress file not found: {pf}")
+        g["input_progress_path"] = str(progress)
+        g["input_progress_checksum"] = checksum(pf)
+
+    state["artifact"].update({
+        "path": str(skeleton),
+        "revision": short_rev(art_sum),
+        "checksum": art_sum,
+        "generated_from_source_revision": state["source"].get("revision", ""),
+        "generated_from_alignment_revision": state["alignment"].get("revision", ""),
+        "generated_at": g["generated_at"],
+        "current": True,
+    })
+    state["compiler"].update({
+        "name": state.get("compiler", {}).get("name") or "CGV Reader Compiler",
+        "version": compiler_version or "unrecorded",
+        "last_run_at": g["generated_at"],
+    })
+    state["workflow"]["regeneration_required"] = False
+
+    if state["gates"]["G1_COMPILE"]["status"] == "STALE":
+        transition_gate(state, "G1_COMPILE", "READY", actor, "Regenerating after upstream change.")
+    if state["gates"]["G1_COMPILE"]["status"] == "READY":
+        transition_gate(state, "G1_COMPILE", "RUNNING", actor, "Compiler Generate recorded.")
+    if state["gates"]["G1_COMPILE"]["status"] == "RUNNING":
+        transition_gate(state, "G1_COMPILE", "PASS", actor,
+                        f"artifact {short_rev(art_sum)} from source {state['source'].get('revision','?')}")
+    record_event(state, actor, "compile recorded", "G1_COMPILE",
+                 f"artifact={short_rev(art_sum)} compiler={compiler_version or 'unrecorded'}")
+    recompute(state)
+    return art_sum
+
+
+def mark_stale(state, reasons, actor="human", from_gate="G0_ALIGNMENT"):
+    """STATE_MODEL §12 — an upstream change invalidates downstream passes.
+
+    Only PASS gates become STALE; the transition table forbids anything else.
+    """
+    start = GATES.index(from_gate)
+    touched, blocked = [], []
+    why = "; ".join(reasons)[:200]
+    for g in GATES[start:]:
+        st = state["gates"][g]["status"]
+        if st == "PASS":
+            transition_gate(state, g, "STALE", actor, why)
+            touched.append(g)
+        elif st in {"READY", "NOT_STARTED", "RUNNING", "REVIEW_REQUIRED"}:
+            # A gate cannot be eligible while a prerequisite is stale (STATE_MODEL §12).
+            if st in {"RUNNING", "REVIEW_REQUIRED"}:
+                transition_gate(state, g, "BLOCKED", actor, why)
+            else:
+                state["gates"][g]["status"] = "BLOCKED"
+            blocked.append(g)
+    if blocked:
+        record_event(state, actor, "downstream gates blocked", from_gate, ", ".join(blocked))
+    state["artifact"]["current"] = False
+    state["workflow"]["regeneration_required"] = True
+    state["workflow"]["release_status"] = "NOT_RELEASED"
+    record_event(state, actor, "upstream change — downstream marked STALE", from_gate, "; ".join(reasons)[:300])
+    recompute(state)
+    return touched
+
+
 def validate_state(state):
     errors = []
     for idx, g in enumerate(GATES):
@@ -226,6 +452,12 @@ def validate_state(state):
             for prev in GATES[:idx]:
                 if state["gates"][prev]["status"] not in {"PASS","SKIPPED"}:
                     errors.append(f"{g} passed while {prev} has not passed")
+    if state["gates"]["G1_COMPILE"]["status"] == "PASS":
+        g1 = state["gates"]["G1_COMPILE"]
+        if not g1.get("output_checksum"):
+            errors.append("G1_COMPILE passed with no output checksum — provenance was never recorded")
+        if not g1.get("input_source_revision"):
+            errors.append("G1_COMPILE passed with no input source revision")
     if state["artifact"].get("current"):
         if state["artifact"].get("generated_from_source_revision") != state["source"].get("revision"):
             errors.append("current artifact source revision mismatch")

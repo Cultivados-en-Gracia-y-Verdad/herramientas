@@ -96,13 +96,31 @@ class Line:
                 self.marker = m
                 self.text = stripped[len(m) + 1:]
                 return
-        if stripped[:2] in ("- ", "+ ", "* ", "> "):
+        if stripped[:2] in ("- ", "+ ", "* ", "> ", "= "):
             self.marker = stripped[0]
             self.text = stripped[2:]
 
     @property
     def is_scripture(self) -> bool:
+        """The ANALYSIS surface only.
+
+        `=` is Scripture too — the H2 context quote — but it is deliberately excluded
+        here (MANUAL_STANDARD.md §3). Two reasons, and both matter:
+
+        * once-only accounting: the context quote is a second *presentation* of the
+          same text, not a second copy. Counting it reads every manual as duplicated.
+        * coverage: `=` carries every verse of the span verbatim. If it counted, a
+          manual could satisfy a verse-coverage check purely from its context quotes
+          while the analysis surface was missing verses outright — which is exactly
+          the Daniel 9:25 failure this script exists to catch, wearing a disguise.
+
+        Never add "=" to this tuple.
+        """
         return self.marker in ("####", "-", "+")
+
+    @property
+    def is_context_quote(self) -> bool:
+        return self.marker == "="
 
     def scripture_text(self) -> str:
         """Text inside italics, else the raw text (Scripture is italicised in CGV)."""

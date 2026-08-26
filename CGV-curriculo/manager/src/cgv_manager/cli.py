@@ -11,6 +11,8 @@ TEMPLATE = CGV / "templates" / "state.template.yaml"
 # Per-book state lives with the book, not in the method repo (WORKFLOW.md §29).
 # Override for a non-standard checkout with CGV_COURSES.
 COURSES = Path(os.environ.get("CGV_COURSES", CGV.parents[1] / "curriculo"))
+# Repo root that relative paths in state.yaml resolve against.
+REPOS = Path(os.environ.get("CGV_REPOS", COURSES.parent))
 
 
 def _fold(s):
@@ -77,7 +79,18 @@ def cmd_status(a):
 
 def cmd_gate(a):
     p,s=get(a.project)
-    transition_gate(s,a.gate,a.status,a.actor,a.notes or "")
+    notes = a.notes or ""
+    if a.gate == "G0_ALIGNMENT" and a.status == "PASS":
+        raise SystemExit("G0_ALIGNMENT cannot be hand-set to PASS. Accept a verified attestation instead.")
+    if a.gate == "G1_COMPILE" and a.status == "PASS":
+        raise SystemExit("G1_COMPILE cannot be hand-set to PASS. Use 'compile record' instead.")
+    try:
+        if a.gate == "G0_ALIGNMENT" and a.status == "SKIPPED":
+            waive_gate0(s, REPOS, a.actor, notes)
+        else:
+            record_gate_status(s,a.gate,a.status,a.actor,notes)
+    except ValueError as e:
+        print(e); raise SystemExit(1)
     save_yaml(p,s)
     print(f"{a.gate}: {s['gates'][a.gate]['status']}")
     print("Next:", next_action(s))
@@ -87,7 +100,7 @@ def cmd_gate0_accept(a):
     ap=Path(a.attestation).expanduser().resolve()
     if not ap.exists(): raise SystemExit(f"Attestation not found: {ap}")
     try:
-        accept_gate0(s, load_yaml(ap), str(ap), a.actor)
+        accept_gate0(s, load_yaml(ap), str(ap), a.actor, REPOS)
     except ValueError as e:
         print(e); raise SystemExit(1)
     save_yaml(p,s)
@@ -96,6 +109,45 @@ def cmd_gate0_accept(a):
     print(f"Alignment revision: {s['alignment']['revision']}")
     print("G1_COMPILE: READY")
     print("Next:", next_action(s))
+
+def cmd_compile_record(a):
+    p, s = get(a.project)
+    try:
+        digest = record_compile(s, REPOS, a.skeleton, a.progress, a.compiler_version or "", a.actor)
+    except ValueError as e:
+        print(e); raise SystemExit(1)
+    save_yaml(p, s)
+    g = s["gates"]["G1_COMPILE"]
+    print("G1_COMPILE: PASS")
+    print(f"  artifact revision   {g['output_artifact_revision']}")
+    print(f"  artifact checksum   {digest}")
+    print(f"  from source rev     {g['input_source_revision'] or '[none]'}")
+    print(f"  from alignment rev  {g['input_alignment_revision'] or '[none]'}")
+    print(f"  compiler            {g['compiler_version']}")
+    if g.get("input_progress_checksum"):
+        print(f"  observer progress   {g['input_progress_checksum'][:16]}…")
+    print("Next:", next_action(s))
+
+
+def cmd_provenance(a):
+    p, s = get(a.project)
+    findings = input_drift(s, REPOS)
+    if not findings:
+        print("PASS  every declared input matches what state records.")
+        print("The reading is still required: that the recorded inputs are the right ones.")
+        return
+    print(f"DRIFT  {len(findings)} finding(s)\n")
+    for what, detail in findings:
+        print(f"  {what}\n      {detail}")
+    if not a.apply:
+        print("\nThis is evidence, not a verdict. Re-run with --apply to mark downstream gates STALE.")
+        raise SystemExit(1)
+    touched = mark_stale(s, [f"{w}: {d.splitlines()[0]}" for w, d in findings], a.actor)
+    save_yaml(p, s)
+    print("\nMarked STALE:", ", ".join(touched) or "nothing was PASS")
+    print("regeneration_required = true")
+    print("Next:", next_action(s))
+
 
 def cmd_validate(a):
     _,s=get(a.project)
@@ -113,6 +165,20 @@ def parser():
     p=sub.add_parser("init"); p.add_argument("project"); p.add_argument("--title"); p.set_defaults(func=cmd_init)
     p=sub.add_parser("status"); p.add_argument("project"); p.set_defaults(func=cmd_status)
     p=sub.add_parser("validate"); p.add_argument("project"); p.set_defaults(func=cmd_validate)
+
+    c=sub.add_parser("compile", help="record a Compiler Generate against the declared inputs")
+    cs=c.add_subparsers(dest="ccmd", required=True)
+    p=cs.add_parser("record")
+    p.add_argument("project"); p.add_argument("--skeleton", required=True)
+    p.add_argument("--progress"); p.add_argument("--compiler-version", dest="compiler_version")
+    p.add_argument("--actor", default="human")
+    p.set_defaults(func=cmd_compile_record)
+
+    p=sub.add_parser("provenance", help="recompute declared inputs and report drift")
+    p.add_argument("project"); p.add_argument("--apply", action="store_true",
+                   help="mark downstream gates STALE when drift is found")
+    p.add_argument("--actor", default="human")
+    p.set_defaults(func=cmd_provenance)
 
     p=sub.add_parser("gate")
     p.add_argument("project"); p.add_argument("gate",choices=GATES)
