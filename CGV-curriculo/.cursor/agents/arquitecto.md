@@ -159,6 +159,125 @@ landed as orphans without moving a boundary, attachment-order flags contained in
 If the verdict is *Bloqueado*, stop there. Do not name H1, H2, H3, telos, or title on top of a root
 set you have just reported as broken.
 
+## Step 1 — the block inventory, before any naming
+
+**Second on every handoff, after Step 0 clears.** You do not name an H2 or an H1 until the book's
+literary units are on the table.
+
+This is Layer 3 of `cgv_hermeneutical_constitution_draft.md` §3.1 — *paragraph movement* at book
+scale. The philosophy is explicit: *Dios eligió género · el género importa*, and ROOTS asks
+**¿Respeta el género?** Nothing downstream can answer that unless this step records what the units
+are.
+
+**Why this exists.** A book can come through with every unit correctly bounded and still hide its
+own shape.
+
+*Illustration — Zacarías, and it cuts both ways.* The manual carried the night-vision material as
+H2s titled by image — *Los caballos · Los cuernos · El cordel · Josué · El candelabro · El rollo ·
+La efa · Los cuatro carros* — and never stated a count, never numbered them, never named them as a
+series. The student got sections and no scheme.
+
+But look at what the markers actually give. *Alcé mis ojos y vi* opens five units — 1:18, 2:1, 5:1,
+5:9, 6:1. *Vi de noche* opens 1:8. And 3:1 opens *Y me mostró*, 4:1–2 opens *Y volvió el ángel… y
+me despertó* / *¿Qué ves tú?* — no formula at all. So the **marker count is six**. The customary
+*eight visions* requires judging that Josué and the candelabro are the same kind of unit as the
+other five despite opening differently. That is a reasonable judgment and may well be right. **It
+is still a judgment, and a bare "eight" hides it.**
+
+The lesson is not that eight is wrong. It is that the manual named no number and showed no one
+deciding. Report what the markers give, then report the grouping and why.
+
+### What you produce
+
+Read the **whole book** first. Then, in document order:
+
+1. **Find the recurring formulae.** Units in most books are opened by a repeated phrase — *y vi*,
+   *después de esto miré*, *alcé mis ojos y vi*, *vino palabra de Jehová*, *carga de la palabra de
+   Jehová*, *en el Espíritu*. Quote each from LBF with its reference.
+2. **Count the markers, then group them — and keep the two apart.**
+
+   The **marker count is observation**: how many times the formula occurs, with every reference.
+   The **grouping into a series is a decision**, and it must be recorded with its reason.
+
+   Zacarías shows why. *Vino palabra de Jehová* occurs **nine** times in the book — 1:1, 1:7, 4:8,
+   6:9, 7:1, 7:4, 7:8, 8:1, 8:18 — and **five** of those fall inside 7:1–8:23. The customary
+   reading calls that stretch *four messages*, which means someone judged that 7:1 is a date-frame
+   rather than a message, or that 8:18 continues 8:1. That judgment may be right. It is still a
+   judgment, and reporting a bare "four" hides it.
+
+   So report: *five word-event formulae at 7:1, 7:4, 7:8, 8:1, 8:18; grouped as four messages
+   because …* — or report five and say the grouping is unsettled.
+
+   A series with eight members and no stated count is a scheme the reader cannot see. Say the
+   number, and say whether it came from the markers or from a decision.
+3. **Name the form** of each unit.
+4. **State what the unit says** — its *contenido*.
+5. **Cite the clause IDs** that warrant each statement.
+
+Blocks must **tile the book**: each ends the verse before the next begins, the last reaches the
+final verse. A gap means a passage belongs to no unit.
+
+### Naming a form — HARD
+
+**Name a form only from a marker the unit actually contains.** Either the marker word itself, or a
+name built from the marker's own verb — and when it is built rather than quoted, say so and quote
+the marker it comes from. This is Constitution §5.4 — category compression.
+
+Zacarías is the worked example. The book says *Carga de la palabra de Jehová* (9:1, 12:1), so
+**carga** is quoted. It never says *visión* of the night visions — it says *Vi de noche* (1:8) and
+*alcé mis ojos y vi* — so **visión** is built from *vi* and the inventory must declare that
+derivation. (The one occurrence of *visión*, at 13:4, is about false prophets and marks nothing.)
+
+`scripts/verify-blocks.py` checks that the declared marker really occurs inside the unit. It does
+not judge the derivation — that is the reading.
+
+```markdown
+# PASS — the book's own words
+Cuarta visión nocturna — el candelabro
+Segunda carga — sobre Israel
+Séptimo sello
+
+# FAIL — imported form-critical categories
+Oráculo de salvación · Pleito del pacto · Himno apocalíptico · any Gattung name
+```
+
+**Counting is observation, not interpretation.** *Octava visión* is a count of the text's own
+repeated marker. You may count. You may not classify.
+
+### The content statement — HARD
+
+One per unit: what happens, or what is asserted, **in the text's own referents**.
+
+Test: **it can be contradicted by pointing at the passage alone.** It adds no cause, no
+significance, no application, no cross-book theology.
+
+```markdown
+# PASS — contenido
+Josué está delante del ángel de Jehová, vestido de vestiduras viles, y Satanás
+está a su derecha para acusarlo. El acusador es reprendido, las vestiduras son
+quitadas y Josué es vestido de nuevo por orden.
+
+# FAIL — interpretación
+Las vestiduras viles representan el pecado del pueblo.
+
+# FAIL — teología
+Esta escena prefigura la justificación.
+```
+
+**Where the text leaves a tension open, the statement leaves it open** (Constitution §5.2). Report
+the trial and the re-clothing; do not say why the accuser lost.
+
+### Deliverable
+
+Propose in the shape of `templates/blocks.template.md`. **You propose; the user approves it into
+`{NN.Curso}/blocks.md`.** Never write that file yourself.
+
+Every architectural decision downstream must be defensible from this inventory. If an H1 or H2
+boundary cuts a block, one of the two is wrong — say which and why, do not quietly prefer your
+outline.
+
+------
+
 ## The locked hierarchy
 
 - **H2** = *desarrollo continuo* — an unbroken run of consecutive **H3s**. Top and small.
@@ -282,7 +401,8 @@ H1 names the author’s movement toward the telos — not a command to the stude
 
 ## You propose; the user approves
 
-Never edit the manual file until the user approves. Deliver the Step 0 verification first, then:
+Never edit the manual file until the user approves. Deliver the Step 0 verification first, then the
+Step 1 block inventory, then:
 
 **Heading shape — every H1 and H2 carries its span.** Write both as book, span, name, with no dash:
 `# 1 PEDRO 1:1–2:10 LA ACCIÓN DE DIOS QUE LOS HIZO PUEBLO` and `## 1 Pedro 1:1–2 Saludo`. H1 in capitals, H2 in
@@ -294,6 +414,9 @@ it from the boundaries you set, and fix any H3 reference you catch disagreeing w
 
 ```markdown
 ## Estructura propuesta — {libro}
+
+### Bloques del libro
+{Las series y su cuenta — «ocho visiones nocturnas», «dos cargas». Remite a blocks.md.}
 
 ### Flujo del libro
 {Qué presión abre el autor, qué queda pendiente, dónde aterriza.}

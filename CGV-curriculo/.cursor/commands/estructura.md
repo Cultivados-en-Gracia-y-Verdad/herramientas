@@ -33,6 +33,19 @@ Then give the verdict. **If the verdict is *Bloqueado*, stop there** and hand ba
 Observer must fix. Do not name a single H1 over a root set you have just called unreliable. Only
 continue in the same pass if the user tells you to proceed anyway.
 
+## Step 1 is also a gate
+
+After Step 0 clears and **before you name a single H1 or H2**, deliver the **block inventory**: the
+book's literary units, the recurring formula that opens each, the series they form **with the count
+stated**, the form of each unit named in the text's own marker vocabulary, what each unit says, and
+the clause IDs that warrant it.
+
+Propose it in the shape of `templates/blocks.template.md`. The user approves it into
+`{NN.Curso}/blocks.md`. You never write that file.
+
+A form name that does not appear as a word in the LBF text of its unit is a Constitution §5.4
+violation — imported category. Counting a repeated marker is observation; classifying is not.
+
 ## Then the proposal
 
 Deliver in the shape the skill specifies, in Spanish: flow of the book, open and closed pressures, the

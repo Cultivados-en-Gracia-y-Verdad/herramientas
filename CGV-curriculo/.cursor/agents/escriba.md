@@ -98,6 +98,23 @@ Bring the author’s pressure into clear view; never hide it; never resolve in `
 - *…aman sin haberlo <u>visto</u>* is good — that is what the text says. Adding *y por eso su fe vale más* is not: Peter has not said it yet.
 - Ask of every `>` line: **would the original reader know this yet?** If not yet, delay the explanation and let the author give it where he gives it. Never import a conclusion from later in the letter.
 
+**Evaluative observation — attribution required (HARD)**
+- Irony, hypocrisy, sarcasm, self-interest, misplaced grief: write these **only when the text makes
+  the evaluation**. Either someone in the text says it — quote them with the reference — or the
+  author builds the collision and you can name **both halves and where each is**.
+- Zacarías 7:5–6 is the model: Jehová asks *¿de ayunar me ayunaron a mí, yo?* and *¿no son ustedes
+  los que comen y ustedes los que beben?* You are reporting the question the text asks, not a
+  motive you inferred.
+- **Name the collision, never the motive.** **Do not name the tone** — *irónico*, *sarcástico*,
+  *hipócrita* are classifications the text does not use. Show the move: *el texto pregunta*, *la
+  respuesta no responde*, *el mismo verbo vuelve con otro sujeto*.
+- Assign no interior state the text does not assign. Never write a line whose effect is *we see
+  through these people* — that is preaching, and the reader is not the exception in the passage.
+- If the book resolves it later, point forward to where. If it does not, leave it standing.
+- If you cannot attribute it, it is not yours to write: record it as an issue and route it.
+
+See **MANUAL_STANDARD.md** §4, *Evaluative observation — the attribution test*.
+
 **Questions — only the author's**
 - Questions are excellent, but only the ones **the text itself opens** (something named and its purpose delayed, a condition held open, an actor unnamed).
 - When the author delays, let the reader feel the delay; say what is pending, do not fill it.
@@ -238,6 +255,11 @@ wording when asked; you do not decide boundaries. Title/Subtitle are Arquitecto'
 
 **Book introduction (when asked)**
 - Runs after Arquitecto. Job: make the reader want to read the book and know where they stand.
+- **HARD — read `{NN.Curso}/blocks.md` first, and make the book's shape visible.** If the book has
+  a series, the introduction says so and says how many: *ocho visiones nocturnas*, *dos cargas*,
+  *siete sellos*. A student who finishes the introduction and cannot say what the book is made of
+  has been failed by it, however good the prose. Name the series, in the book's own vocabulary,
+  with the count. Do not classify, do not interpret, do not import a category the text never uses.
 - Include who wrote to whom, brief concrete historical context, the movement of the book
   (Arquitecto's H1s said as a path), and the telos quoted with its reference.
 - **HARD — every manual:** weave Compiler’s book-level **Actores dominantes** and **Tono observado**

@@ -69,10 +69,29 @@ each ends the verse before the next begins; a gap or overlap means a verse is lo
 | `-` | dependent clause — **Scripture only** | nobody |
 | `+` | phrase — **Scripture only** | Escriba may split; no word may be lost |
 | `*` | mechanical / evidence (actors, grammar, Def/XRef) | nobody |
-| `>` | writer commentary | Escriba |
+| `>` | writer commentary | Escriba · Corrector |
+| `=` | **context quote** — the H2's whole passage, **Scripture only**, generated | nobody |
 
-`-` and `+` are reserved for Scripture. A line such as `Actores principales: …` must start
+`-`, `+` and `=` are reserved for Scripture. A line such as `Actores principales: …` must start
 with `*`. Every scriptural word appears exactly once across `####` / `-` / `+`.
+
+### The context quote (`=`)
+
+Every `##` H2 opens with its **whole passage**, verbatim from LBF, before any analysis. The reader
+meets the unit entire before it is taken apart — the plainest possible answer to the final test in
+§4.
+
+- One `=` line per verse: `= **7** En el día veinticuatro del mes undécimo…`
+- **Generated, never typed.** `scripts/build-context-quotes.py` emits it from the H2 span, and the
+  same script in `--check` mode proves every line is byte-identical to LBF. Scripture never enters
+  the manual through an agent's hands.
+- No commentary, no `<u>`, no italics, no edits, no omissions. Nothing attaches to a `=` line.
+- **Excluded from the once-only count above.** The context quote is a second presentation of the
+  same text, not a second copy of it. The packaging checker must skip `=` lines when accounting for
+  scriptural words, or it will read every manual as duplicated.
+- Consecutive `=` lines are grouped into slides under the ~280-character budget. A long passage is
+  many slides; that is expected, not a defect.
+- The quote is the H2's whole span, however long. It is never shortened for pacing.
 
 Indentation left→right is structural depth. A dependent nests under the clause it actually
 depends on; a hanging participle or relative sits under its noun host with no blank line
@@ -137,6 +156,46 @@ Ask of every line: **would the original reader know this yet, here?**
 
 **The final test:** does the reader meet the words of the text first, or your words about the
 text? If the answer is unclear, the passage needs correction.
+
+### Evaluative observation — the attribution test
+
+Irony, hypocrisy, sarcasm, self-interest, false confidence, misplaced grief. These are the most
+valuable observations a manual can carry and the most dangerous, because they are judgments about
+people's hearts and they are the usual door through which moralizing enters.
+
+**An evaluative observation may be written only when the text itself makes the evaluation.** One of
+two things must be true, and the note must show which:
+
+1. **Someone in the text says it.** Quote them, with the reference. In Zacarías 7:5 Jehová asks
+   *¿de ayunar me ayunaron a mí, yo?* and in 7:6 *¿no son ustedes los que comen y ustedes los que
+   beben?* The gap between fasting-for-him and eating-for-themselves is not the reader's inference.
+   It is the question the text poses.
+2. **The author builds the collision structurally** — two statements set side by side, a stated
+   motive answered by a contrary one, one term repeated in incompatible senses. Name **both halves
+   and where each one is**. If you cannot point at both, you are supplying one of them.
+
+If neither holds, the observation is the reader's judgment about other people's motives. It does
+not go in the manual. It goes in the report as a finding, for the stage that owns it.
+
+**Further constraints, all of them hard:**
+
+- **Name the collision, never the motive.** *El texto pregunta si el ayuno fue para él* — not
+  *ayunaban por egoísmo*. The first is what the page says; the second is what you concluded.
+- **Do not name the tone.** *Irónico*, *sarcástico*, *hipócrita* are classifications, and a
+  classification the text does not use is category compression (Constitution §5.4). Show the move
+  instead: *el texto pregunta*, *la respuesta no responde a la pregunta*, *el mismo verbo vuelve
+  con otro sujeto*.
+- **Assign no interior state** the text does not assign.
+- **Never let the note flatter the reader.** A line whose effect is *we see through these people*
+  has stopped observing and started preaching. The reader is not the exception in the passage.
+- **If the book resolves it, point forward to where; if not, leave it open** (Constitution §5.2).
+  In Zacarías the self-directed lament of 7:5 returns in 12:10–12 as lament directed *a mí, a quien
+  traspasaron* — the book closes its own thread, and the note follows the book rather than
+  anticipating it.
+
+This is what the `Tensión` thread convention is for. An evaluative observation is a tension the
+text itself names, and it is carried the same way: name the two terms that collide, say where they
+are, do not reconcile them, do not propose what the author meant, do not advance the application.
 
 Language: Latin American Spanish, around 8th grade — never dumbed down, never cut for brevity.
 

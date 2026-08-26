@@ -46,7 +46,8 @@ verse before the next begins, the last reaches the final verse.
 ## Verification
 
 - [ ] Blocks tile the book — no gap, no overlap *(script)*
-- [ ] Every form name appears as a word in the LBF text of the unit it labels *(script)*
+- [ ] Every unit declares a boundary marker that actually occurs in its verse range *(script)*
+- [ ] Every form name is quoted from that marker or declares its derivation from it *(script + reading)*
 - [ ] Every content statement cites clause IDs that exist *(script)*
 - [ ] Boundaries are real, read against the text *(reading)*
 - [ ] No content statement resolves a tension the text leaves open *(reading)*

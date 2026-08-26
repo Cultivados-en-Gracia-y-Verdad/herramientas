@@ -747,9 +747,21 @@ After approval:
 
 # 16. Phase 4 — Manual Architecture
 
-**Agent:** Architect
+**Agent:** Arquitecto
 
-Architect receives the approved Compiled Skeleton.
+Arquitecto receives the approved Compiled Skeleton and produces two artifacts.
+
+### First — the block inventory
+
+Before any heading is named, Arquitecto proposes the book's literary units: boundaries, the
+recurring formula that marks each, the series they form **with the count stated**, the form of each
+unit named in the text's own marker vocabulary, what each unit says, and the clause IDs that
+warrant it. This is Constitution Layer 3 and it is what makes ROOTS' *¿Respeta el género?*
+answerable.
+
+The user approves it into `{NN.Curso}/blocks.md`. Arquitecto proposes; it never writes the file.
+
+### Then — the architecture
 
 Architect establishes:
 
@@ -761,7 +773,8 @@ Architect establishes:
 - progression;
 - approved architectural relationships.
 
-The architecture must be defensible from the skeleton.
+The architecture must be defensible from the skeleton **and from the approved block inventory**.
+A heading boundary that cuts a block means one of the two is wrong; Arquitecto says which.
 
 Architect should not impose an attractive outline that overrides the textual structure.
 
@@ -779,6 +792,10 @@ Architecture must be reviewed before writing begins.
 
 The review asks whether:
 
+- the block inventory is approved, and every series is visible with its count stated;
+- no H1 or H2 boundary cuts a block without the conflict being named;
+- every form name appears as a word in the LBF text of the unit it labels (Constitution §5.4);
+- every content statement cites clause IDs and resolves no tension the text leaves open (§5.2);
 - all major divisions are supported;
 - hierarchy is coherent;
 - sections remain accountable to the skeleton;
@@ -801,9 +818,14 @@ Escriba writes the manual using only approved inputs.
 Required inputs include:
 
 - approved LBF text;
+- **approved block inventory, `{NN.Curso}/blocks.md`**;
 - approved Compiled Skeleton;
 - approved Manual Architecture;
 - applicable manual specification.
+
+The block inventory is not optional context. If the book has a series, the manual must let the
+student see it — named in the book's own vocabulary, with its count. An inventory that reaches
+no student-facing page has not been used.
 
 Escriba may develop the material into readable, teachable prose.
 
@@ -844,6 +866,7 @@ A draft is not approved merely because the prose is strong.
 
 Review must determine, as applicable:
 
+- the book's series are visible to the student, named and counted, where the book has them;
 - architecture was followed;
 - skeleton observations were preserved;
 - unsupported material was not introduced;

@@ -47,9 +47,9 @@ género?* — this section is what makes that question answerable.
 | Formula | Where it recurs | What it marks |
 |---|---|---|
 
-**Naming rule (Constitution §5.4 — category compression).** A form may be named **only in the
-text's own marker vocabulary**. If the word does not appear in the LBF text of the unit it labels,
-it may not be used as a form name.
+**Naming rule (Constitution §5.4 — category compression).** A form may be named **only from a
+marker the unit actually contains** — the marker word itself, or a name built from the marker's own
+verb, with the derivation declared in `blocks.md`.
 
 - Permitted: the words the book itself uses — *visión*, *carga*, *palabra de Jehová*, *proverbio*.
 - Forbidden: imported form-critical categories — *oráculo de salvación*, *pleito del pacto*, any

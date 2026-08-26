@@ -25,6 +25,10 @@ If you are about to add a rule, find its owner below first.
 Book-specific rules live in `{NN.Curso}/spec.md` and never here. If a rule mentions a book name,
 it is in the wrong file.
 
+`{NN.Curso}/blocks.md` is the book's literary-unit inventory — Constitution Layer 3. **Arquitecto
+proposes it; the human approves it; no agent writes it.** Every architectural decision must be
+defensible from it, and `scripts/verify-blocks.py` is its deterministic witness.
+
 ---
 
 ## 2. The vocabulary registry
