@@ -154,7 +154,7 @@ Especially after an auto-filled Mark → Generate pass, and on **OT / OSHB** boo
 
 | Blocking surface (you read it — not a soft note) | What it means |
 |---|---|
-| **Truncated H4s** (`…y la`, `…que no se`, ends on `de` / `el` / `y` / `he` / `ha`) | Packaging not emit-ready. **Bloqueado.** Hand back to Observer / re-cut spans. |
+| **Truncated H4s** (`…y la`, `…que no se`, ends on `de` / `el` / `y` / `he` / `ha`) | Packaging not emit-ready. **Bloqueado.** Diagnose Observer span versus Compiler emitter and repair the owning source. |
 | **Adjacent H4 seam overlap** (next H4 repeats ≥3 words from the previous) | Sibling span bleed. **Bloqueado.** |
 | **LBF verse with no recognizable stretch in `####` / `-` / `+`** | Scripture missing from the student surface. **Bloqueado.** |
 
@@ -304,8 +304,11 @@ harder where spans were auto-cut.
 | **Adjacent H4 seam overlap** | The next H4 repeats **≥3** consecutive words from the end of the previous — sibling span bleed / duplicated claim. **Any** clear case is **Bloqueado**. |
 | **Missing Scripture** | An LBF verse has no recognizable stretch in any `####` / `-` / `+` line. **Any** clear hole is **Bloqueado**. |
 
-On packaging failure: verdict is **Bloqueado**. Do **not** name H2, H1, telos, or title. Hand back
-to Observer (or whoever owns `selectedSpan`). Do not soft-label this “upstream debt” and continue.
+On packaging failure: verdict is **Bloqueado**. Do **not** name H2, H1, telos, or title. Diagnose
+whether the cause is Observer data or deterministic product code. Return exact clause IDs for a human
+Observer judgment; patch `cgv-reader` source and test it when the Reader/Observer/Compiler emitter is
+wrong. Never say “whoever owns Compiler,” and never prescribe another Observer → Generate loop while
+unchanged emitter code will reproduce the defect.
 
 On clean surface: record under Cobertura, e.g. `H4 packaging: limpio (lectura editorial)` — list
 any dangling / overlap / missing samples you actually saw (or “ninguno”). Then finish Checks 1–3.
@@ -332,9 +335,13 @@ The generation warnings are not noise; they mark exactly the clauses whose statu
 
 ### Verdict — say whether you can proceed
 
-**Flag, never fix.** Observer owns clause structure. Report, then stop or continue deliberately:
+**Protect the artifact; repair the actual source.** Do not hand-edit generated Scripture or Compiler
+evidence. Human clause judgments belong in Observer. Deterministic Reader/Observer/Compiler defects
+belong in `cgv-reader` source and may be patched there in this same task, with a regression test.
+Repository ownership identifies the correct file; it does not forbid the edit. Report the verdict,
+then act on the diagnosis:
 
-- **Blocking** — hand back to Observer before naming anything: **broken H4 packaging** (truncated
+- **Blocking** — stop naming and route to Observer data or `cgv-reader` source by actual cause: **broken H4 packaging** (truncated
   claims, seam overlaps, missing verses — from your reading), any provisional/unanswered clause,
   any cycle, any H4 opening with a subordinator (especially purpose), any purpose with the **wrong
   parent**, any uncovered verse range, any command buried as a dependent or a phrase, sibling

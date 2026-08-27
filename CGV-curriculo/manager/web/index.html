@@ -4,120 +4,76 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CGV Manager</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css?v=13">
 </head>
 <body>
-  <header class="topbar">
-    <div>
-      <p class="eyebrow">CGV CURRÍCULO</p>
-      <h1>Manager</h1>
+  <header>
+    <div class="brand">
+      <span class="mark">CGV</span>
+      <div><strong>Manager</strong><small>Manual production</small></div>
     </div>
-    <div class="toolbar">
-      <label for="course">Course</label>
-      <select id="course"></select>
-      <button id="refresh" class="secondary">Refresh</button>
-      <button data-action="open-course" class="secondary">Open course folder</button>
+    <div class="header-actions">
+      <select id="course" aria-label="Course"></select>
+      <button id="open-course" class="quiet">Open folder</button>
+      <button id="refresh" class="quiet">Refresh</button>
     </div>
   </header>
 
   <main>
-    <section id="notice" class="notice hidden" aria-live="polite"></section>
+    <div id="notice" class="notice hidden" aria-live="polite"></div>
 
-    <section class="hero panel">
+    <section class="course-heading">
       <div>
-        <p id="course-folder" class="eyebrow"></p>
-        <h2 id="course-title">Loading…</h2>
-        <p id="next-action" class="next-action"></p>
+        <p id="course-folder" class="kicker"></p>
+        <h1 id="course-title">Loading…</h1>
       </div>
-      <div class="hero-status">
-        <span id="project-status" class="pill"></span>
-        <span id="release-status" class="muted"></span>
+      <div class="progress-wrap">
+        <span id="progress-label"></span>
+        <div class="progress-track"><span id="progress-bar"></span></div>
       </div>
     </section>
 
-    <section class="summary-grid">
-      <article class="panel summary-card">
-        <p class="eyebrow">CURRENT GATE</p>
-        <h3 id="current-gate"></h3>
-        <p id="current-gate-label"></p>
-      </article>
-      <article class="panel summary-card">
-        <p class="eyebrow">SKELETON</p>
-        <h3 id="artifact-status"></h3>
-        <p id="artifact-path" class="path"></p>
-      </article>
-      <article class="panel summary-card warning-card">
-        <p class="eyebrow">OPEN BLOCKERS</p>
-        <h3 id="blocker-count"></h3>
-        <p id="blocker-text"></p>
-      </article>
-    </section>
+    <section class="operator-shell">
+      <nav id="step-list" aria-label="Book workflow"></nav>
 
-    <section class="workspace-grid">
-      <div>
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">APOCALIPSIS RUN</p>
-            <h2>What to do next</h2>
-          </div>
-          <p class="section-note">The first unfinished item is highlighted.</p>
+      <article class="work-panel">
+        <div class="work-topline">
+          <span id="step-number" class="step-number"></span>
+          <span id="step-status" class="status"></span>
         </div>
-        <div id="steps" class="steps"></div>
-      </div>
+        <p id="now-label" class="kicker">DO THIS NOW</p>
+        <h2 id="step-title"></h2>
+        <p id="step-detail" class="instruction"></p>
+        <div id="step-note" class="evidence"></div>
 
-      <aside>
-        <section class="panel action-panel">
-          <p class="eyebrow">VERIFIED IMPORTS</p>
-          <h2>Bring work into the course</h2>
-          <label class="file-action">
-            <span>Gate 0 attestation</span>
-            <input id="attestation-file" type="file" accept=".yaml,.yml">
-          </label>
-          <button id="accept-attestation">Verify and accept Gate 0</button>
-          <hr>
-          <label class="file-action">
-            <span>Observer progress</span>
-            <input id="observer-file" type="file" accept=".json">
-          </label>
-          <button id="import-observer">Import Observer progress</button>
-          <hr>
-          <label class="file-action">
-            <span>Compiler skeleton</span>
-            <input id="skeleton-file" type="file" accept=".md,.markdown,.txt">
-          </label>
-          <label class="file-action">
-            <span>Compiler version</span>
-            <input id="compiler-version" type="text" value="cgv-reader 2026-08-26">
-          </label>
-          <button id="import-skeleton">Import skeleton</button>
-          <p class="help">The file is copied into the selected course. G1 is recorded only when Gate 0, Observer progress, and the Compiler version are all present.</p>
-        </section>
+        <div id="step-controls" class="controls"></div>
 
-        <section id="gate-action-panel" class="panel action-panel">
-          <p class="eyebrow">GATE DECISION</p>
-          <h2>Record the current result</h2>
-          <textarea id="gate-notes" rows="4" placeholder="Short evidence or reason…"></textarea>
-          <div id="gate-actions" class="button-stack"></div>
-        </section>
+        <div id="decision" class="decision hidden">
+          <label for="gate-notes">What you checked, who checked it, and the result</label>
+          <textarea id="gate-notes" rows="3"></textarea>
+          <div id="gate-actions" class="actions"></div>
+        </div>
 
-        <section class="panel">
-          <p class="eyebrow">ALL GATES</p>
-          <div id="gates" class="gates"></div>
-        </section>
+        <footer>
+          <button id="previous-step" class="quiet">Previous</button>
+          <button id="return-current" class="quiet hidden">Return to current task</button>
+          <button id="next-step" class="quiet">Next</button>
+        </footer>
+      </article>
+    </section>
 
-        <section class="panel">
-          <p class="eyebrow">RECENT RECORD</p>
-          <div id="provenance" class="provenance"></div>
-        </section>
-
-        <section class="panel gaps-panel">
-          <p class="eyebrow">KNOWN GAPS</p>
-          <h2>Watch these during Apocalipsis</h2>
-          <div id="known-gaps" class="known-gaps"></div>
-        </section>
-      </aside>
+    <section class="below">
+      <details>
+        <summary>Why work cannot move forward</summary>
+        <div id="blockers" class="detail-body"></div>
+      </details>
+      <details>
+        <summary>Recent activity</summary>
+        <div id="provenance" class="detail-body"></div>
+      </details>
     </section>
   </main>
-  <script src="/app.js"></script>
+
+  <script src="/app.js?v=13"></script>
 </body>
 </html>

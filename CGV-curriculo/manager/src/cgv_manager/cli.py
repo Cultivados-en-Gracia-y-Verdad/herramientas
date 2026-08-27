@@ -149,6 +149,59 @@ def cmd_provenance(a):
     print("Next:", next_action(s))
 
 
+def cmd_check(a):
+    """Run every gate script for this book and print one verdict."""
+    import subprocess
+    course = course_dir(a.project)
+    scripts = CGV / "scripts"
+    lbf = None
+    for cand in (REPOS/"cgv-data/bibles/LBF"/f"{a.project}.lbf.md",):
+        if cand.exists(): lbf = cand
+    if lbf is None:
+        raise SystemExit(f"No LBF text found for {a.project}")
+
+    def newest(folder, pattern):
+        hits = sorted(folder.glob(pattern), key=lambda f: f.stat().st_mtime, reverse=True) if folder.is_dir() else []
+        return hits[0] if hits else None
+
+    progress = newest(course/"observation", "*progress*.json")
+    skeleton = newest(course/"skeleton", "*skeleton*.md")
+    manual   = newest(course/"manual", "*.md")
+    blocks   = course/"blocks.md"
+
+    steps = []
+    if progress: steps.append(("Spans (Observer)", [scripts/"verify-clause-spans.py", "--progress", progress, "--lbf", lbf]))
+    if skeleton: steps.append(("Skeleton packaging", [scripts/"verify-skeleton-h4-packaging.py", "--manual", skeleton, "--lbf", lbf]))
+    if skeleton: steps.append(("Manual checks", [scripts/"run-manual-checks.py", "--manual", skeleton, "--lbf", lbf,
+                                                 "--book", a.project, "--out", course/"reports/PYTHON_REPORT.md"]))
+    if blocks.exists() and "NOT STARTED" not in blocks.read_text(encoding="utf-8"):
+        steps.append(("Block inventory", [scripts/"verify-blocks.py", "--blocks", blocks, "--lbf", lbf]))
+    if manual: steps.append(("Context quotes", [scripts/"build-context-quotes.py", "--manual", manual, "--lbf", lbf, "--check"]))
+
+    if not steps:
+        raise SystemExit(f"Nothing to check yet in {course.name} — no export, skeleton, blocks or manual.")
+
+    print(f"CGV CHECK — {a.project}\n")
+    results = []
+    for label, argv in steps:
+        r = subprocess.run(["python3", *[str(x) for x in argv]], capture_output=True, text=True)
+        ok = r.returncode == 0
+        results.append((label, ok, r.stdout))
+        print(f"{'PASS' if ok else 'FAIL'}  {label}")
+    print()
+    bad = [(l, out) for l, ok, out in results if not ok]
+    if not bad:
+        print("All checks pass. The reading is still required — a script is one witness, not the gate.")
+        return 0
+    for label, out in bad:
+        print("─" * 68)
+        print(f"{label}\n")
+        print("\n".join(out.strip().splitlines()[:24]))
+    print("─" * 68)
+    print(f"\n{len(bad)} of {len(results)} failed. Evidence, not a verdict.")
+    return 1
+
+
 def cmd_validate(a):
     _,s=get(a.project)
     errs=validate_state(s)
@@ -165,6 +218,9 @@ def parser():
     p=sub.add_parser("init"); p.add_argument("project"); p.add_argument("--title"); p.set_defaults(func=cmd_init)
     p=sub.add_parser("status"); p.add_argument("project"); p.set_defaults(func=cmd_status)
     p=sub.add_parser("validate"); p.add_argument("project"); p.set_defaults(func=cmd_validate)
+
+    p=sub.add_parser("check", help="run every gate script for this book and print one verdict")
+    p.add_argument("project"); p.set_defaults(func=cmd_check)
 
     c=sub.add_parser("compile", help="record a Compiler Generate against the declared inputs")
     cs=c.add_subparsers(dest="ccmd", required=True)
@@ -194,4 +250,6 @@ def parser():
     return ap
 
 def main():
-    a=parser().parse_args(); a.func(a)
+    a=parser().parse_args()
+    rc = a.func(a)
+    if isinstance(rc, int) and rc: raise SystemExit(rc)

@@ -108,6 +108,49 @@ def main():
         if not cl or not re.search(r"\d+:\d+:\d+", cl):
             bad(u, "contenido cites no clause IDs (Constitution §5.5)")
 
+    # 2b — series must state a count, and say where the count came from
+    series_lines = []
+    grab = False
+    for raw in open(a.blocks, encoding="utf-8"):
+        low = fold(raw)
+        if raw.startswith("#") and "series" in low:
+            grab = True; continue
+        if raw.startswith("#") and grab and "series" not in low:
+            grab = False
+        if grab and raw.strip().startswith("|") and not set(raw.strip()) <= set("|-: "):
+            series_lines.append(raw.strip())
+    header_skipped = False
+    for row in series_lines:
+        cells = [c.strip() for c in row.strip("|").split("|")]
+        if not header_skipped:
+            header_skipped = True
+            if fold(cells[0]) in ("series", "serie"):
+                continue
+        name = cells[0] or "(unnamed series)"
+        joined = fold(" ".join(cells))
+        if not re.search(r"\b\d+\b|\b(dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|doce)\b", joined):
+            findings.append((name[:56], "series states no count — say how many, in the book's own words"))
+        # Template column 3 is "Marker that defines it". A non-empty marker cell is
+        # the count's source. Also accept an explicit decisión / agrupación note.
+        marker_cell = fold(cells[2]) if len(cells) > 2 else ""
+        if not (
+            marker_cell
+            or re.search(r"marcador|marker|formula|f[oó]rmula|decisi[oó]n|juicio|agrupad", joined)
+        ):
+            findings.append((name[:56],
+                "does not say whether the count came from the markers or from a decision "
+                "(Constitution §5.4 — a bare number hides a judgment)"))
+
+    # 2c — form names must come from the book, not from a category system
+    IMPORTED = ("apocalipti", "gattung", "oraculo de salvacion", "pleito del pacto",
+                "himno", "midrash", "vaticinio", "teofania generica")
+    for u in units:
+        blob = fold(u["heading"] + " " + " ".join(u["fields"].values()))
+        for bad in IMPORTED:
+            if bad in blob:
+                findings.append((u["heading"][:56],
+                    f"form named with an imported category ({bad!r}) — use the text's own word"))
+
     # 3 — tiling
     spans = sorted((u["ref"][0], u["ref"][1], u["heading"][:58]) for u in units)
     for i in range(len(spans) - 1):

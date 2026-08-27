@@ -198,7 +198,7 @@ def build_steps(folder: Path, state: dict, repos: list[dict]):
             "title": "Check the skeleton with two witnesses",
             "detail": "Run the blocking H4 packaging check and the evidence-only manual checks, then read the surface yourself.",
             "status": step_status(g["G2_MECHANICAL"]["status"] == "PASS", active=g["G2_MECHANICAL"]["status"] in {"READY", "RUNNING", "REVIEW_REQUIRED"}, blocked=g["G2_MECHANICAL"]["status"] == "BLOCKED"),
-            "note": (f"Scripts match {skeleton_files[0].name}; the human reading is still required" if skeleton_checked else f"G2 Mechanical: {g['G2_MECHANICAL']['status']}"),
+            "note": ("File check passed. Next: run /estructura." if skeleton_checked else "Ready to check."),
             "action": "check-skeleton" if skeleton_files and g["G1_COMPILE"]["status"] == "PASS" else "",
         },
         {
@@ -278,6 +278,63 @@ def gate_actions(state: dict):
     return allowed
 
 
+
+def artifact_milestones(folder: Path, state: dict | None = None) -> dict:
+    architecture = files_in(folder / "architecture", {".md", ".markdown", ".txt"})
+    skeleton = files_in(folder / "skeleton", {".md", ".markdown", ".txt"})
+
+    step0_candidates = [path for path in architecture + skeleton if "step0" in path.stem.lower()]
+    step0_candidates.sort(key=lambda path: path.stat().st_mtime, reverse=True)
+    step0 = step0_candidates[0] if step0_candidates else None
+    step0_status = "missing"
+    if step0:
+        text = step0.read_text(encoding="utf-8", errors="ignore")
+        if "**Puedo continuar" in text:
+            step0_status = "clear"
+        elif "**Bloqueado" in text:
+            step0_status = "corrections"
+
+    block_proposals = [
+        path for path in architecture
+        if "block" in path.stem.lower() and ("propuesta" in path.stem.lower() or "proposal" in path.stem.lower())
+    ]
+    block_proposal = block_proposals[0] if block_proposals else None
+
+    blocks = folder / "blocks.md"
+    blocks_approved = blocks.exists() and "NOT STARTED" not in blocks.read_text(encoding="utf-8", errors="ignore")
+
+    structure_proposals = [
+        path for path in architecture
+        if "outline" in path.stem.lower() or "estructura" in path.stem.lower()
+    ]
+    structure_proposal = structure_proposals[0] if structure_proposals else None
+    evidence = (state or {}).get("manager", {}).get("evidence", {})
+    structure_approved = bool(
+        structure_proposal
+        and evidence.get("structure_approved_checksum") == checksum(structure_proposal)
+    )
+
+    manuals = files_in(folder / "manual", {".md", ".markdown"})
+    context_quote_count = 0
+    if manuals:
+        manual_text = manuals[0].read_text(encoding="utf-8", errors="ignore")
+        context_quote_count = sum(
+            1 for section in manual_text.split("\n## ")[1:] if "\n= " in section
+        )
+    context_quotes_built = bool(
+        context_quote_count and evidence.get("context_quotes_built_at")
+    )
+    return {
+        "step0Status": step0_status,
+        "step0File": relative(step0) if step0 else "",
+        "blockProposalFile": relative(block_proposal) if block_proposal else "",
+        "blocksApproved": blocks_approved,
+        "structureProposalFile": relative(structure_proposal) if structure_proposal else "",
+        "structureApproved": structure_approved,
+        "contextQuotesBuilt": context_quotes_built,
+        "contextQuoteCount": context_quote_count,
+        "manualFile": relative(manuals[0]) if manuals else "",
+    }
 def dashboard(course: str):
     folder, _, state = state_for(course)
     repos = repo_snapshot()
@@ -295,6 +352,7 @@ def dashboard(course: str):
         "blockers": open_blockers(state),
         "validationErrors": errors,
         "repos": repos,
+        "milestones": artifact_milestones(folder, state),
         "steps": build_steps(folder, state, repos),
         "gates": [{"id": gate, "label": GATE_LABELS[gate], "status": state["gates"][gate]["status"]} for gate in GATES],
         "gateActions": gate_actions(state),
@@ -341,6 +399,12 @@ class ManagerHandler(SimpleHTTPRequestHandler):
 
     def log_message(self, format, *args):
         return
+
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-store, max-age=0")
+        self.send_header("Pragma", "no-cache")
+        self.send_header("Expires", "0")
+        super().end_headers()
 
     def send_json(self, value, status=200):
         data = json_bytes(value)
@@ -402,9 +466,44 @@ class ManagerHandler(SimpleHTTPRequestHandler):
             if self.path == "/api/import-observer":
                 form = self.read_form()
                 course = form.getfirst("course", "")
-                folder, _, _ = state_for(course)
+                folder, state_path, state = state_for(course)
                 target = safe_upload(form["file"], folder / "observation", {".json"})
+                if state["gates"]["G1_COMPILE"]["status"] == "PASS":
+                    state["gates"]["G1_COMPILE"].update({"input_progress_path": relative(target), "input_progress_checksum": checksum(target)})
+                    record_event(state, "human", "Observer progress attached", "G1_COMPILE", relative(target))
+                    save_yaml(state_path, state)
                 return self.send_json({"message": f"Imported {target.name} into {folder.name}/observation/."})
+
+            if self.path == "/api/import-compiler":
+                form = self.read_form()
+                course = form.getfirst("course", "")
+                with STATE_LOCK:
+                    folder, state_path, state = state_for(course)
+                    progress = None
+                    if "observer" in form and getattr(form["observer"], "filename", ""):
+                        progress = safe_upload(form["observer"], folder / "observation", {".json"})
+                    target = safe_upload(form["skeleton"], folder / "skeleton", {".md", ".markdown", ".txt"})
+                    if state["gates"]["G0_ALIGNMENT"]["status"] == "READY":
+                        waive_gate0(
+                            state,
+                            REPOS,
+                            "manager",
+                            "Manual production inherited the existing source files; alignment work is upstream of this stage.",
+                        )
+                    version = form.getfirst("compiler_version", "").strip() or "cgv-reader unrecorded"
+                    record_compile(
+                        state,
+                        REPOS,
+                        relative(target),
+                        relative(progress) if progress else None,
+                        version,
+                        actor="human",
+                    )
+                    save_yaml(state_path, state)
+                message = f"Imported and recorded {target.name}."
+                if progress:
+                    message += f" Observer progress {progress.name} is attached."
+                return self.send_json({"message": message})
 
             if self.path == "/api/import-skeleton":
                 form = self.read_form()
@@ -432,12 +531,17 @@ class ManagerHandler(SimpleHTTPRequestHandler):
                     if not skeletons:
                         raise ValueError("No staged skeleton was found.")
                     progress = files_in(folder / "observation", {".json"})
-                    if not progress:
-                        raise ValueError("No Observer progress JSON was found in observation/.")
                     version = str(body.get("compilerVersion", "")).strip()
                     if not version:
                         raise ValueError("Enter the Compiler version before recording G1.")
-                    record_compile(state, REPOS, relative(skeletons[0]), relative(progress[0]), version, actor="human")
+                    if state["gates"]["G0_ALIGNMENT"]["status"] == "READY":
+                        waive_gate0(
+                            state,
+                            REPOS,
+                            "manager",
+                            "Manual production inherited the existing source files; alignment work is upstream of this stage.",
+                        )
+                    record_compile(state, REPOS, relative(skeletons[0]), relative(progress[0]) if progress else None, version, actor="human")
                     save_yaml(state_path, state)
                 return self.send_json({"message": f"Recorded {skeletons[0].name}; G1 passed."})
 
@@ -472,18 +576,44 @@ class ManagerHandler(SimpleHTTPRequestHandler):
 
             if self.path == "/api/open":
                 body = self.read_json()
-                folder, _, _ = state_for(body["course"])
+                folder, _, state = state_for(body["course"])
+                milestones = artifact_milestones(folder, state)
                 targets = {
                     "course": folder,
                     "observation": folder / "observation",
                     "blocks": folder / "blocks.md",
                     "manual": folder / "manual",
+                    "step0": REPOS / milestones["step0File"] if milestones["step0File"] else folder / "architecture",
+                    "block-proposal": REPOS / milestones["blockProposalFile"] if milestones["blockProposalFile"] else folder / "architecture",
+                    "structure-proposal": REPOS / milestones["structureProposalFile"] if milestones["structureProposalFile"] else folder / "architecture",
                 }
                 target = targets.get(body.get("target"), folder)
                 if not target.exists() and target.suffix == "":
                     target.mkdir(parents=True, exist_ok=True)
                 subprocess.Popen(["open", str(target)])
                 return self.send_json({"message": f"Opened {target.name}."})
+
+            if self.path == "/api/approve-structure":
+                body = self.read_json()
+                with STATE_LOCK:
+                    folder, state_path, state = state_for(body["course"])
+                    milestones = artifact_milestones(folder, state)
+                    if not milestones["structureProposalFile"]:
+                        raise ValueError("No structure proposal was found.")
+                    proposal = REPOS / milestones["structureProposalFile"]
+                    state.setdefault("manager", {}).setdefault("evidence", {}).update({
+                        "structure_approved_checksum": checksum(proposal),
+                        "structure_approved_at": now_iso(),
+                    })
+                    record_event(
+                        state,
+                        "human",
+                        "structure approved",
+                        "G5_ARCHITECTURE",
+                        f"Approved {relative(proposal)}. Next: build context quotes.",
+                    )
+                    save_yaml(state_path, state)
+                return self.send_json({"message": "Structure approved. Next: build context quotes."})
 
             if self.path == "/api/verify-blocks":
                 body = self.read_json()

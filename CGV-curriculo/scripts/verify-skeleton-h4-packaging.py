@@ -47,11 +47,19 @@ DANGLING_TAIL = {
 # slipped through. Tune only with an explicit product decision, not ad hoc.
 MAX_DANGLING_FRACTION = 0.05   # >5% of H4s ending on a connector → FAIL
 MAX_DANGLING_ABS = 10          # or more than 10 absolute, even on a short book
-MAX_ADJACENT_OVERLAPS = 0      # any ≥3-word seam repeat → FAIL
+# Scripture repeats itself across a verse boundary — Apocalipsis 12:13/12:14 both carry
+# «a la mujer», and the spans are correct. A ≥3-word rule cannot tell a real span error from
+# the text saying the same thing twice, and a gate that cries wolf gets ignored.
+# 6+ consecutive shared words is a span defect; 3–5 is informational, as in run-manual-checks.py.
+OVERLAP_WORDS = 6
+MAX_ADJACENT_OVERLAPS = 0      # any ≥6-word seam repeat → FAIL
 MAX_MISSING_VERSE_3GRAMS = 0   # any LBF verse without a 3-gram in Scripture → FAIL
 
 H4_RE = re.compile(r"^#### \*(.+?)\*\s*$", re.M)
-DEP_RE = re.compile(r"^[-+] \*(.+?)\*\s*$", re.M)
+# Dependent Scripture can be nested several levels beneath its host H4. Leading
+# indentation expresses that relationship; it must not make the verse invisible
+# to the coverage audit.
+DEP_RE = re.compile(r"^\s*[-+] \*(.+?)\*\s*$", re.M)
 STOP_SECTIONS = (
     "\n## Actores",
     "\n## Movimiento",
@@ -108,6 +116,12 @@ def is_dangling_ending(text: str) -> bool:
         return False
     if surface.lower() in TONIC_NOT_DANGLING:
         return False
+    # Spanish sets off a postposed particle with a comma: «Recuerda, pues» · «Mira, no».
+    # The clause is complete; the comma is the author's own signal that the word is not
+    # leaning into what follows. A leaner never carries a comma before it: «a Dios y»,
+    # «porque te ha» are still caught.
+    if re.search(r",\s*" + re.escape(surface) + r"\s*$", text.strip()):
+        return False
     return fold(surface) in DANGLING_TAIL
 
 
@@ -137,6 +151,16 @@ def load_lbf_verses(path: Path) -> dict[tuple[int, int], str]:
         buf = []
 
     for line in path.read_text(encoding="utf-8").splitlines():
+# LBF ships as one verse per line: "apocalipsis 1:1 texto…".
+        # The old `### N:N` heading form is also accepted. Getting this wrong loaded ZERO
+        # verses and made "verses missing 3-gram: 0" vacuously true — a false PASS on a
+        # skeleton nobody had checked. If no verses parse, this script now refuses to run.
+        m = re.match(r"^\S+\s+(\d+):(\d+)\s+(.*)$", line)
+        if m:
+            flush()
+            cur = (int(m.group(1)), int(m.group(2)))
+            buf.append(m.group(3).strip())
+            continue
         m = re.match(r"^###\s+(\d+):(\d+)\s*$", line)
         if m:
             flush()
@@ -145,6 +169,11 @@ def load_lbf_verses(path: Path) -> dict[tuple[int, int], str]:
         if cur and line.strip() and not line.startswith("#") and not line.startswith(">"):
             buf.append(line.strip())
     flush()
+    if not verses:
+        raise SystemExit(
+            f"FAIL  parsed 0 verses from {path}\n"
+            "      A verse-coverage check over an empty text always passes. Refusing to run."
+        )
     return verses
 
 
@@ -178,7 +207,7 @@ def audit(manual_path: Path, lbf_path: Path | None) -> dict:
     overlaps: list[tuple[int, int, str, str]] = []
     for i, (a, b) in enumerate(zip(h4s, h4s[1:])):
         wa, wb = words(a), words(b)
-        for n in range(min(8, len(wa), len(wb)), 2, -1):
+        for n in range(min(12, len(wa), len(wb)), OVERLAP_WORDS - 1, -1):
             if wa[-n:] == wb[:n]:
                 overlaps.append((i + 1, n, a[:80], b[:80]))
                 break
@@ -212,7 +241,7 @@ def audit(manual_path: Path, lbf_path: Path | None) -> dict:
         )
     if len(overlaps) > MAX_ADJACENT_OVERLAPS:
         fail_reasons.append(
-            f"adjacent H4 seam overlaps (≥3 words): {len(overlaps)} "
+            f"adjacent H4 seam overlaps (≥6 words): {len(overlaps)} "
             f"(fail if >{MAX_ADJACENT_OVERLAPS})"
         )
     if lbf_path and len(missing_verses) > MAX_MISSING_VERSE_3GRAMS:
