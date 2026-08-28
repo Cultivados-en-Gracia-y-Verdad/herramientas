@@ -7,6 +7,76 @@ page numbers, and student/teacher fill-in variants.
 Typography uses **Iowan Old Style** when available (Georgia / DejaVu fallback), with a
 clear indent ladder for outline depth and open leading for readable interior pages.
 
+## Outline hierarchy
+
+`cgv_structure.py` owns the hierarchy. The exporter never infers depth from a
+Markdown list parser, because mixed `+` / `-` markers are read as separate or
+nested lists by general Markdown libraries.
+
+**Depth comes only from the spaces before the marker.**
+
+| leading spaces | depth |
+|---|---|
+| 0 | 0 |
+| 2 | 1 |
+| 4 | 2 |
+| 6 | 3 |
+
+The marker never changes depth. These are three siblings at depth 0:
+
+```markdown
++ item
+- item
++ item
+```
+
+and `new root` lands on exactly the same x as `parent`:
+
+```markdown
++ parent
+  - child
+    + grandchild
++ new root
+```
+
+`*` grammar notes and `>` writer commentary are **annotations**, not structure.
+They attach to the nearest preceding item with strictly smaller indentation
+(the manual's `owner indent + 2` convention) and render at a small fixed offset
+from that item, so a comment can never be mistaken for a nested level and can
+never push the tree to the right. An annotation before any item in its section
+belongs to the section root. Each item travels with its own annotations across
+a page break.
+
+Indentation is validated: it must be a **multiple of two spaces**, and **tabs
+are rejected** — a tab has no defined width in the source, so expanding one
+would invent a depth. A malformed line stops the export with the file name, the
+line number and the indentation found. `--indent-policy warn` downgrades this to
+a warning and skips the offending line rather than rounding it into a depth.
+
+The one layout formula is `item_x = base_x + depth × indent_step`, configurable
+with `--indent-base`, `--indent-step` and `--annotation-offset` (all in inches;
+defaults 0.20 / 0.30 / 0.14). Depth is clamped so a deep item always keeps a
+readable measure before the right margin.
+
+Headings stay on their own ladder, independent of item depth: `#` major
+division, `##` passage section, `###` observational unit, `####` clause. `###`
+and `####` differ in weight, size and left position, and a depth-0 item always
+starts at the configured structural base for its section, never from the current
+heading level.
+
+## Tests
+
+```bash
+python3 -m unittest discover -s tests -t .
+```
+
+`tests/test_structure.py` covers the parser (mixed markers, nesting, returns to
+root, sibling branches, blank lines, wrapping, odd indentation, tabs, page
+breaks, and the Revelation 1:1 regression fixture). `tests/test_layout_pdf.py`
+exports a small manual and asserts real PDF text coordinates: equal depths share
+one x, marker type never moves an item, wrapped lines hang under the item text,
+and indentation survives a page break.
+
 ## Install
 
 ```bash
@@ -41,6 +111,8 @@ Useful options:
 
 - `--body-size 13`: make the manual text larger or smaller.
 - `--no-cover`: start directly with the Markdown content.
+- `--indent-step 0.30`, `--indent-base 0.20`, `--annotation-offset 0.14`: tune the indent ladder, in inches.
+- `--indent-policy warn`: report malformed indentation instead of stopping the export.
 - `--logo assets/cgv-logo.png`: place a logo on the cover. If `assets/cgv-logo.png` exists, it is used by default.
 - `--cover images/portada.png`: use a full-page cover image, with no margin.
 - `--label-color "#111111"`: set the cover manual label color.
@@ -80,10 +152,10 @@ Locked outline roles (see `manual-markdown-format-spec.md`):
 | `##` | Development navigation | Centered, smaller / muted (“top and small”) |
 | `###` | Section context title | Left-aligned; `### En síntesis` gets a distinct tint |
 | `####` | Independent clause (Scripture) | Bold italic — outline root |
-| `-` | Dependent clause (Scripture) | Italic; indent = dependency depth |
-| `+` | Phrase (Scripture) | Italic; indent = dependency depth |
-| `*` | Mechanical insert | Smaller, muted roman (actors, grammar, triples) |
-| `>` | Writer commentary | Roman body; indented with its outline line |
+| `-` | Dependent clause (Scripture) | Italic; depth = leading spaces ÷ 2 |
+| `+` | Phrase (Scripture) | Italic; depth = leading spaces ÷ 2 |
+| `*` | Mechanical insert | Smaller, muted roman; hangs off its item, adds no depth |
+| `>` | Writer commentary | Roman body; hangs off its item, adds no depth |
 | `[^id]` / `[^id]:` | Footnote cite / definition | Superscript cite; appendix definition lines |
 
 Other:

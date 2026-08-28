@@ -7,6 +7,7 @@ import argparse
 import html
 import os
 import re
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
@@ -31,9 +32,19 @@ from reportlab.platypus import (
     TableStyle,
 )
 
+from cgv_structure import (
+    INCH,
+    Annotation,
+    IndentLadder,
+    StructuralIndentError,
+    StructuralItem,
+    scan_structure,
+)
+
 
 VERSE_HEADING_RE = re.compile(r"^[1-3]?\s?[A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+\s+\d+:\d+")
-LIST_RE = re.compile(r"^(?P<indent>\s*)(?P<marker>[-*+])\s+(?P<text>.+)$")
+# Only `+` and `-` are structural, and cgv_structure.scan_structure owns them.
+# `*` notes and `>` commentary are annotations, never list items.
 NUMBERED_LIST_RE = re.compile(r"^(?P<indent>\s*)(?P<marker>\d+[.)])\s+(?P<text>.+)$")
 IMAGE_RE = re.compile(r"^!\[(?P<alt>[^\]]*)\]\((?P<path>[^)]+)\)$")
 FOOTNOTE_DEF_RE = re.compile(r"^\[\^(?P<id>[^\]]+)\]:\s*(?P<text>.+)$")
@@ -66,6 +77,9 @@ FONT_DIRS = [
     Path("/System/Library/Fonts/Supplemental"),
     Path("/Library/Fonts"),
     Path("/System/Library/Fonts"),
+    # Linux fallbacks so the exporter still runs (and can be tested) off macOS.
+    Path("/usr/share/fonts/truetype/dejavu"),
+    Path("/usr/share/fonts/truetype/liberation"),
     Path("/Users/johnwry/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype"),
 ]
 IOWAN_TTC = Path("/System/Library/Fonts/Supplemental/Iowan Old Style.ttc")
@@ -75,9 +89,26 @@ MERMAID_NODE_DEF_RE = re.compile(
 )
 MERMAID_EDGE_RE = re.compile(r"(?P<left>[A-Za-z][\w-]*).*?(?:-->|---|==>|\.-\.)\s*(?P<right>[A-Za-z][\w-]*)")
 
-# 2 spaces in source = one outline depth step. Wide enough to read as a tree.
-INDENT_STEP = 0.30 * inch
-INDENT_BASE = 0.06 * inch
+# One indentation formula for the whole document, in exactly one object.
+# 2 spaces of source indentation = one structural depth step.
+LADDER = IndentLadder()
+
+
+def configure_ladder(
+    *,
+    indent_step: float | None = None,
+    indent_base: float | None = None,
+    annotation_offset: float | None = None,
+) -> IndentLadder:
+    """Set the document-wide indent ladder. Values are in points."""
+    global LADDER
+    fields = {
+        "step": indent_step,
+        "base_x": indent_base,
+        "annotation_offset": annotation_offset,
+    }
+    LADDER = IndentLadder(**{k: v for k, v in fields.items() if v is not None})
+    return LADDER
 
 
 @dataclass(frozen=True)
@@ -373,6 +404,7 @@ def register_fonts() -> tuple[str, str, str, str]:
     )
     symbol_candidates = [
         Path("/System/Library/Fonts/SFNS.ttf"),
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
         Path("/System/Library/Fonts/SFNSMono.ttf"),
         Path("/System/Library/Fonts/Apple Symbols.ttf"),
         Path("/System/Library/Fonts/Supplemental/AppleGothic.ttf"),
@@ -394,6 +426,7 @@ def register_fonts() -> tuple[str, str, str, str]:
 
     hebrew_candidates = [
         Path("/System/Library/Fonts/Supplemental/Times New Roman.ttf"),
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
         Path("/System/Library/Fonts/Supplemental/Arial Unicode.ttf"),
         Path("/Library/Fonts/Arial Unicode.ttf"),
     ]
@@ -473,14 +506,15 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             spaceAfter=8,
             keepWithNext=True,
         ),
-        # H3 — section context title
+        # H3 — section context title (parent of H4)
         "h3": ParagraphStyle(
             "Heading3",
             parent=base,
             fontName=font_bold,
             fontSize=13.0,
             leading=17.5,
-            spaceBefore=18,
+            leftIndent=0,
+            spaceBefore=20,
             spaceAfter=9,
             keepWithNext=True,
         ),
@@ -495,14 +529,19 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             spaceAfter=8,
             keepWithNext=True,
         ),
-        # H4 — independent clause (Scripture root)
+        # H4 — independent clause (Scripture root), child of H3.
+        # Deliberate design: H4 keeps its own typography (bold italic, one step
+        # larger) AND sits one small step right of H3, so the parent/child
+        # relation reads even when an H4 follows an H3 immediately. Structural
+        # items then start one further step right, at LADDER.base_x.
         "h4": ParagraphStyle(
             "Heading4",
             parent=base,
             fontName=font_bold_italic,
             fontSize=theme.body_size + 0.8,
             leading=theme.leading + 1.5,
-            spaceBefore=14,
+            leftIndent=LADDER.heading_child_indent,
+            spaceBefore=12,
             spaceAfter=8,
             keepWithNext=True,
         ),
@@ -956,8 +995,18 @@ def append_mermaid_diagram(
     return append_box_diagram(parse_mermaid_boxes(code), story, styles, variant, left_indent)
 
 
-def outline_left(indent_levels: int, base: float = INDENT_BASE) -> float:
-    return base + max(0, indent_levels) * INDENT_STEP
+def outline_left(depth: int) -> float:
+    """Left edge of a structural item at ``depth``.
+
+    The single call point for the indentation formula
+    ``item_x = base_x + depth * indent_step``. Marker type is not an input.
+    """
+    return LADDER.item_x(depth)
+
+
+def annotation_left(owner_depth: int) -> float:
+    """Left edge of a ``*`` note or ``>`` comment owned by an item at ``owner_depth``."""
+    return LADDER.annotation_x(owner_depth)
 
 
 GREEK_RE = re.compile(r"[\u0370-\u03FF\u1F00-\u1FFF]")
@@ -965,7 +1014,10 @@ HANGER_RE = re.compile(r"^↳")
 
 
 def classify_outline_line(marker: str, text: str) -> str:
-    """Role from content first — manuals sometimes overload `-` across roles."""
+    """Role from content first - manuals sometimes overload `-` across roles.
+
+    This decides *typography*, never depth.
+    """
     clean = text.strip()
     if ACTORS_LINE_RE.match(clean) or TONO_LINE_RE.match(clean):
         return "actors_line"
@@ -987,101 +1039,117 @@ def classify_outline_line(marker: str, text: str) -> str:
     return "mechanical"
 
 
-def append_outline_item(
-    indent: int,
-    marker: str,
-    text: str,
+@dataclass
+class RenderNode:
+    """One laid-out outline line: its role and the x the layout model gave it."""
+
+    role: str  # "item" | "grammar" | "commentary" | "numbered"
+    marker: str
+    text: str
+    left: float
+    depth: int
+    group_id: int
+    #: a blank source line stood between this node and the one before it
+    blank_before: bool = False
+
+
+def indent_style(name: str, parent: ParagraphStyle, left: float, **kwargs) -> ParagraphStyle:
+    """Build a style whose x comes from the layout model and nowhere else.
+
+    ``firstLineIndent=0`` is what makes a wrapped line hang under the item's own
+    text instead of falling back to the page margin or faking a deeper level.
+    """
+    key = f"{name}{int(round(left * 100))}"
+    return ParagraphStyle(key, parent=parent, leftIndent=left, firstLineIndent=0, **kwargs)
+
+
+def append_outline_node(
+    node: RenderNode,
     story: list[Flowable],
     styles: dict[str, ParagraphStyle],
     variant: str,
 ) -> LayoutContext:
-    kind = classify_outline_line(marker, text)
-    left = outline_left(indent)
+    left = node.left
+
+    if node.role == "numbered":
+        style = indent_style("Numbered", styles["bullet"], left)
+        style.firstLineIndent = -0.16 * inch
+        story.append(Paragraph(format_inline(node.text, variant), style))
+        return LayoutContext(left, "body")
+
+    if node.role == "commentary":
+        style = indent_style("Writer", styles["writer"], left, spaceBefore=2, spaceAfter=4)
+        story.append(make_paragraph(node.text, style, variant))
+        return LayoutContext(left, "writer")
+
+    kind = classify_outline_line(node.marker, node.text)
 
     if kind in {"scripture_phrase", "dependent_clause"}:
-        parent = styles[kind]
-        style = ParagraphStyle(
-            f"{kind}{indent}",
-            parent=parent,
-            leftIndent=left,
-        )
-        story.append(make_paragraph(text, style, variant, scripture_style=True))
+        style = indent_style(kind, styles[kind], left)
+        story.append(make_paragraph(node.text, style, variant, scripture_style=True))
         return LayoutContext(left, "scripture")
 
     if kind == "actor_triple":
-        style = ParagraphStyle(
-            f"ActorTriple{indent}",
-            parent=styles["actor_triple"],
-            leftIndent=left,
-        )
-        story.append(make_paragraph(text, style, variant, scripture_style=True))
+        style = indent_style("ActorTriple", styles["actor_triple"], left)
+        story.append(make_paragraph(node.text, style, variant, scripture_style=True))
         return LayoutContext(left, "actor_triple")
 
     if kind == "actors_line":
-        style = ParagraphStyle(
-            f"ActorsLine{indent}",
-            parent=styles["actors_line"],
-            leftIndent=left,
-        )
-        story.append(make_paragraph(text, style, variant))
+        style = indent_style("ActorsLine", styles["actors_line"], left)
+        story.append(make_paragraph(node.text, style, variant))
         return LayoutContext(left, "actors_line")
 
-    if kind == "mechanical":
-        style = ParagraphStyle(
-            f"Mechanical{indent}",
-            parent=styles["mechanical"],
-            leftIndent=left + 0.04 * inch,
-        )
-        story.append(make_paragraph(text, style, variant))
-        return LayoutContext(left, "mechanical")
-
-    # Numbered lists (rare in manuals)
-    style = ParagraphStyle(
-        f"Numbered{indent}",
-        parent=styles["bullet"],
-        leftIndent=left,
-        firstLineIndent=-0.16 * inch,
-    )
-    story.append(Paragraph(format_inline(text, variant), style))
-    return LayoutContext(left, "body")
+    style = indent_style("Mechanical", styles["mechanical"], left)
+    story.append(make_paragraph(node.text, style, variant))
+    return LayoutContext(left, "mechanical")
 
 
-def append_list_group(
-    items: list[tuple[int, str, str]],
+#: Biggest item+annotations block still kept unbroken across a page boundary.
+#: Larger groups are split, but the item always keeps its first annotation so a
+#: line never ends up stranded at the foot of a page without its own commentary.
+MAX_KEEP_TOGETHER = 7
+
+
+def append_outline_group(
+    nodes: list[RenderNode],
     story: list[Flowable],
     styles: dict[str, ParagraphStyle],
     variant: str,
 ) -> LayoutContext | None:
-    if not items:
+    """Render buffered nodes, keeping each item together with its own annotations."""
+    if not nodes:
         return None
 
-    # Keep a noun-host `+` with its immediate nested `*` hangers on one page when possible.
-    blocks: list[list[tuple[int, str, str]]] = []
-    current: list[tuple[int, str, str]] = []
-    for item in items:
-        indent, marker, _ = item
-        if not current:
-            current = [item]
-            continue
-        prev_indent, prev_marker, _ = current[0]
-        if prev_marker == "+" and marker == "*" and indent > prev_indent and len(current) < 6:
-            current.append(item)
-        else:
-            blocks.append(current)
-            current = [item]
-    if current:
-        blocks.append(current)
+    last: LayoutContext | None = None
+    block: list[Flowable] = []
+    current_group: int | None = None
 
-    last_context: LayoutContext | None = None
-    for block in blocks:
-        flowables: list[Flowable] = []
-        for indent, marker, text in block:
-            last_context = append_outline_item(indent, marker, text, flowables, styles, variant)
-        if len(flowables) > 1:
-            story.append(KeepTogether(flowables))
+    def flush_block() -> None:
+        nonlocal block
+        if not block:
+            return
+        if len(block) == 1:
+            story.extend(block)
+        elif len(block) <= MAX_KEEP_TOGETHER:
+            story.append(KeepTogether(block))
         else:
-            story.extend(flowables)
-    return last_context
+            story.append(KeepTogether(block[:2]))
+            story.extend(block[2:])
+        block = []
+
+    for node in nodes:
+        if node.group_id != current_group:
+            flush_block()
+            current_group = node.group_id
+            if node.blank_before:
+                story.append(Spacer(1, 3))
+        elif node.blank_before:
+            # Air inside a group, but still inside the same unbreakable block:
+            # a blank line in the source must not strand an item from its notes.
+            block.append(Spacer(1, 3))
+        last = append_outline_node(node, block, styles, variant)
+    flush_block()
+    return last
 
 
 def flush_paragraph(
@@ -1093,6 +1161,7 @@ def flush_paragraph(
     *,
     in_sintesis: bool = False,
 ) -> None:
+    """Unmarked prose inherits the position of the line it follows."""
     if not lines:
         return
     text = " ".join(line.strip() for line in lines if line.strip())
@@ -1107,10 +1176,11 @@ def flush_paragraph(
     else:
         parent = styles["body"]
 
+    left = context.paragraph_left if context.paragraph_parent != "body" else 0
     style = ParagraphStyle(
-        f"ContextPara{context.paragraph_parent}{int(context.paragraph_left)}{int(in_sintesis)}",
+        f"ContextPara{context.paragraph_parent}{int(round(left * 100))}{int(in_sintesis)}",
         parent=parent,
-        leftIndent=context.paragraph_left if context.paragraph_parent != "body" else 0,
+        leftIndent=left,
         firstLineIndent=0,
         spaceBefore=1 if in_sintesis else 2,
         spaceAfter=4 if in_sintesis else 5,
@@ -1132,28 +1202,53 @@ def parse_markdown(
     styles: dict[str, ParagraphStyle],
     variant: str = "teacher",
     source_path: Path | None = None,
+    *,
+    line_offset: int = 0,
+    indent_strict: bool = True,
 ) -> list[Flowable]:
+    """Render Markdown, taking every outline x from the structural layout model."""
+    filename = source_path.name if source_path else "<manual>"
+    index = scan_structure(markdown, filename, line_offset=line_offset, strict=indent_strict)
+    for problem in index.problems:
+        print(f"warning: {problem.message}", file=sys.stderr)
+
     story: list[Flowable] = []
     paragraph_lines: list[str] = []
-    list_items: list[tuple[int, str, str]] = []
+    nodes: list[RenderNode] = []
     context = LayoutContext()
     in_sintesis = False
     pending_blank = False
     code_lang: str | None = None
     code_lines: list[str] = []
+    extra_group = 0
+    pending_gap = False
 
-    def flush_lists() -> None:
-        nonlocal context
-        list_context = append_list_group(list_items, story, styles, variant)
-        if list_context:
-            context = list_context
-        list_items.clear()
+    def next_extra_group() -> int:
+        nonlocal extra_group
+        extra_group -= 1
+        return extra_group
+
+    def flush_nodes() -> None:
+        nonlocal context, pending_gap
+        node_context = append_outline_group(nodes, story, styles, variant)
+        if node_context:
+            context = node_context
+        nodes.clear()
+        if pending_gap:
+            story.append(Spacer(1, 3))
+            pending_gap = False
+
+    def take_gap() -> bool:
+        nonlocal pending_gap
+        gap, pending_gap = pending_gap, False
+        return gap
 
     def flush_all() -> None:
         flush_paragraph(paragraph_lines, story, styles, context, variant, in_sintesis=in_sintesis)
-        flush_lists()
+        flush_nodes()
 
-    for raw in markdown.splitlines():
+    for offset, raw in enumerate(markdown.splitlines(), 1):
+        line_no = offset + line_offset
         line = raw.rstrip()
         stripped = line.strip()
         fence_match = FENCE_RE.match(stripped)
@@ -1175,9 +1270,13 @@ def parse_markdown(
             continue
 
         if not stripped:
-            flush_all()
-            # Blank lines are slide breaks in the source; give the page a little air.
-            if not pending_blank:
+            # Blank lines are slide breaks in the source; give the page a little
+            # air. While outline nodes are buffered the gap is remembered rather
+            # than flushed, so an item keeps its own notes across a page break.
+            flush_paragraph(paragraph_lines, story, styles, context, variant, in_sintesis=in_sintesis)
+            if nodes:
+                pending_gap = True
+            elif not pending_blank:
                 story.append(Spacer(1, 3))
                 pending_blank = True
             continue
@@ -1224,50 +1323,81 @@ def parse_markdown(
             append_markdown_image(image_match, story, styles, source_path, variant)
             continue
 
-        list_match = LIST_RE.match(line) or NUMBERED_LIST_RE.match(line)
-        if list_match:
+        node = index.by_line.get(line_no)
+
+        # Structural outline line: depth already decided by source indentation.
+        if isinstance(node, StructuralItem):
             in_sintesis = False
             flush_paragraph(paragraph_lines, story, styles, context, variant, in_sintesis=False)
-            indent_spaces = len(list_match.group("indent").replace("\t", "    "))
-            indent = indent_spaces // 2
-            list_items.append((indent, list_match.group("marker"), list_match.group("text")))
+            nodes.append(
+                RenderNode(
+                    role="item",
+                    marker=node.marker,
+                    text=node.content,
+                    left=outline_left(node.depth),
+                    depth=node.depth,
+                    group_id=node.group_id,
+                    blank_before=take_gap(),
+                )
+            )
             continue
 
-        # Writer comments: honor source indent so nested `>` tracks the outline tree.
-        writer_match = re.match(r"^(?P<indent>\s*)>\s?(?P<text>.*)$", line)
-        if writer_match:
-            flush_all()
-            quote = writer_match.group("text").strip()
-            image_match = IMAGE_RE.match(quote)
-            indent_spaces = len(writer_match.group("indent").replace("\t", "    "))
-            indent = indent_spaces // 2
-            if indent_spaces > 0:
-                left = outline_left(indent)
-            elif context.paragraph_parent in {"scripture", "actor_triple", "mechanical"}:
-                left = context.paragraph_left
-            else:
-                left = INDENT_BASE
-            if image_match:
-                append_markdown_image(image_match, story, styles, source_path, variant, left)
-                continue
-            if quote.strip().lower() == "en síntesis":
-                story.append(make_paragraph("En síntesis", styles["h3_sintesis"], variant))
-                context = LayoutContext()
-                in_sintesis = True
-                continue
-            if append_break_diagram(quote, story, styles, variant, left):
-                context = LayoutContext(left, "writer")
-                in_sintesis = False
-                continue
-            quote_style = ParagraphStyle(
-                f"Writer{int(left * 100)}",
-                parent=styles["writer"],
-                leftIndent=left,
-                spaceBefore=2,
-                spaceAfter=4,
+        # Annotation: hangs off its owning item, never advances the ladder.
+        if isinstance(node, Annotation):
+            left = annotation_left(node.owner_depth)
+            if node.marker == ">":
+                quote = node.content
+                quote_image = IMAGE_RE.match(quote)
+                if quote_image:
+                    flush_all()
+                    append_markdown_image(quote_image, story, styles, source_path, variant, left)
+                    context = LayoutContext(left, "writer")
+                    continue
+                if quote.lower() == "en síntesis":
+                    flush_all()
+                    story.append(make_paragraph("En síntesis", styles["h3_sintesis"], variant))
+                    context = LayoutContext()
+                    in_sintesis = True
+                    continue
+                if BR_RE.search(quote):
+                    flush_all()
+                    if append_break_diagram(quote, story, styles, variant, left):
+                        context = LayoutContext(left, "writer")
+                        in_sintesis = False
+                        continue
+                if not quote:
+                    continue
+            in_sintesis = False
+            flush_paragraph(paragraph_lines, story, styles, context, variant, in_sintesis=False)
+            nodes.append(
+                RenderNode(
+                    role="commentary" if node.marker == ">" else "grammar",
+                    marker=node.marker,
+                    text=node.content,
+                    left=left,
+                    depth=node.owner_depth,
+                    group_id=node.group_id,
+                    blank_before=take_gap(),
+                )
             )
-            story.append(make_paragraph(quote, quote_style, variant))
-            context = LayoutContext(left, "writer")
+            continue
+
+        numbered = NUMBERED_LIST_RE.match(line)
+        if numbered:
+            in_sintesis = False
+            flush_paragraph(paragraph_lines, story, styles, context, variant, in_sintesis=False)
+            depth = len(numbered.group("indent").replace("\t", "  ")) // 2
+            nodes.append(
+                RenderNode(
+                    role="numbered",
+                    marker=numbered.group("marker"),
+                    text=numbered.group("text"),
+                    left=outline_left(depth),
+                    depth=depth,
+                    group_id=next_extra_group(),
+                    blank_before=take_gap(),
+                )
+            )
             continue
 
         flush_all()
@@ -1340,12 +1470,24 @@ def read_body(path: Path) -> str:
     if not path.exists():
         return ""
     _, body = parse_front_matter(path.read_text(encoding="utf-8"))
-    return "\n".join(line for line in body.splitlines() if "page-break-after" not in line)
+    # Blank the line instead of dropping it so reported line numbers stay true.
+    return "\n".join("" if "page-break-after" in line else line for line in body.splitlines())
 
 
-def build_pdf(markdown_path: Path, output_path: Path, theme: Theme, no_cover: bool, variant: str = "teacher") -> None:
+def build_pdf(
+    markdown_path: Path,
+    output_path: Path,
+    theme: Theme,
+    no_cover: bool,
+    variant: str = "teacher",
+    *,
+    indent_strict: bool = True,
+) -> None:
     styles = build_styles(theme)
-    _, text = parse_front_matter(markdown_path.read_text(encoding="utf-8"))
+    raw_source = markdown_path.read_text(encoding="utf-8")
+    _, text = parse_front_matter(raw_source)
+    # Line numbers in indentation errors must point at the real file.
+    line_offset = len(raw_source.splitlines()) - len(text.splitlines())
     story: list[Flowable] = []
 
     if not no_cover:
@@ -1355,11 +1497,20 @@ def build_pdf(markdown_path: Path, output_path: Path, theme: Theme, no_cover: bo
     for intro_file in [project_dir / "CGV.md", project_dir / "proposito-del-manual.md"]:
         intro_body = read_body(intro_file)
         if intro_body:
-            story.extend(parse_markdown(intro_body, styles, variant, intro_file))
+            story.extend(parse_markdown(intro_body, styles, variant, intro_file, indent_strict=indent_strict))
             story.append(PageBreak())
 
     append_toc(story, styles, toc_entries(text))
-    story.extend(parse_markdown(text, styles, variant, markdown_path))
+    story.extend(
+        parse_markdown(
+            text,
+            styles,
+            variant,
+            markdown_path,
+            line_offset=line_offset,
+            indent_strict=indent_strict,
+        )
+    )
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     doc = SimpleDocTemplate(
@@ -1401,11 +1552,37 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--single", choices=["student", "teacher"], help="Export only one version")
     parser.add_argument("--body-size", type=float, default=12.8, help="Main text size in points")
     parser.add_argument("--no-cover", action="store_true", help="Start the PDF directly from the Markdown content")
+    parser.add_argument(
+        "--indent-step",
+        type=float,
+        help="Horizontal distance in inches between two structural depths (default 0.30)",
+    )
+    parser.add_argument(
+        "--indent-base",
+        type=float,
+        help="Inches from the left margin to a depth-0 structural item (default 0.20)",
+    )
+    parser.add_argument(
+        "--annotation-offset",
+        type=float,
+        help="Inches a `*` note or `>` comment sits right of its item (default 0.14)",
+    )
+    parser.add_argument(
+        "--indent-policy",
+        choices=["strict", "warn"],
+        default="strict",
+        help="strict: stop on malformed structural indentation. warn: report and skip the line.",
+    )
     return parser.parse_args(argv)
 
 
 def main(argv: Iterable[str] | None = None) -> int:
     args = parse_args(argv)
+    configure_ladder(
+        indent_step=args.indent_step * INCH if args.indent_step else None,
+        indent_base=args.indent_base * INCH if args.indent_base else None,
+        annotation_offset=args.annotation_offset * INCH if args.annotation_offset else None,
+    )
     default_input = Path("manual.md") if Path("manual.md").exists() else DEFAULT_MANUAL_PATH
     input_path = (args.input or default_input).expanduser().resolve()
     metadata, _ = parse_front_matter(input_path.read_text(encoding="utf-8"))
@@ -1458,7 +1635,18 @@ def main(argv: Iterable[str] | None = None) -> int:
             page_offset=-2 if not args.no_cover else 0,
             cover_enabled=not args.no_cover,
         )
-        build_pdf(input_path, output_path, theme, args.no_cover, variant)
+        try:
+            build_pdf(
+                input_path,
+                output_path,
+                theme,
+                args.no_cover,
+                variant,
+                indent_strict=args.indent_policy == "strict",
+            )
+        except StructuralIndentError as error:
+            print(str(error), file=sys.stderr)
+            return 2
         written.append(output_path)
 
     for path in written:
