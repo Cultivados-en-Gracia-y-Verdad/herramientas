@@ -3,7 +3,7 @@
  */
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { findBook, sourceTokenId, NT_BOOKS, OT_PILOT_BOOKS } from "./bookCatalog.js";
+import { findBook, sourceTokenId, NT_BOOKS, OT_PILOT_BOOKS, resolveLbfRoot } from "./bookCatalog.js";
 
 function oshbStrongsFromLemma(lemma) {
   const match = String(lemma || "").match(/(\d{3,5})/u);
@@ -304,6 +304,10 @@ export async function loadNtBookUnits(rootDir, bookId = "titus") {
   const book = findBook(bookId) || findBook("titus");
   if (!book) throw new Error(`Unknown book: ${bookId}`);
 
+  if (book.spine === "lbf") {
+    return { book, units: [], textualBasis: "OSHB/WLC" };
+  }
+
   const oshbLoaded = await loadOshbSpineUnits(rootDir, book);
   if (oshbLoaded) return oshbLoaded;
 
@@ -426,7 +430,7 @@ export function listNtBooks() {
 export async function loadOshbPilotChapter(rootDir, bookId = "jonah", chapter = 1) {
   const book = OT_PILOT_BOOKS.find(b => b.id === String(bookId || "").toLowerCase()) || null;
   if (!book) throw new Error(`Unknown OT pilot book: ${bookId}`);
-  const xmlPath = join(rootDir, "..", "Biblia-LBF", "source", "hebrew", "OSHB", "morphhb", "wlc", book.oshbFile);
+  const xmlPath = join(resolveLbfRoot(rootDir), "source", "hebrew", "OSHB", "morphhb", "wlc", book.oshbFile);
   const xml = await readFile(xmlPath, "utf8");
   const chapterRe = new RegExp(`<chapter n="${chapter}">([\\s\\S]*?)</chapter>`, "u");
   const chapterMatch = xml.match(chapterRe);

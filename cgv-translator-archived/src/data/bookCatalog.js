@@ -2,6 +2,8 @@
  * NT/OT book catalog for Translator → LBF export.
  * MorphGNT filenames follow SBLGNT numbering (61-Mt … 87-Rev).
  */
+import { existsSync } from "node:fs";
+import { join, resolve } from "node:path";
 
 export const NT_BOOKS = [
   { id: "matthew", label: "Matthew", morphFile: "61-Mt-morphgnt.txt", bleSlug: "mateo", usfm: "MAT", number: 40, bookCode: 40 },
@@ -34,8 +36,8 @@ export const NT_BOOKS = [
 ];
 
 export const OT_PILOT_BOOKS = [
-  { id: "genesis", label: "Genesis", oshbFile: "Gen.xml", bleSlug: "genesis", usfm: "GEN", number: 1 },
-  { id: "jonah", label: "Jonah", oshbFile: "Jonah.xml", bleSlug: "jonas", usfm: "JON", number: 32 }
+  { id: "genesis", label: "Genesis", oshbFile: "Gen.xml", bleSlug: "genesis", usfm: "GEN", number: 1, bookCode: 1, spine: "lbf", testament: "ot" },
+  { id: "jonah", label: "Jonah", oshbFile: "Jonah.xml", bleSlug: "jonas", usfm: "JON", number: 32, bookCode: 32, spine: "lbf", testament: "ot" }
 ];
 
 /** OT books with JSON OSHB spine under translations/oshb-spine/{id}/ */
@@ -52,7 +54,33 @@ export const OSHB_SPINE_BOOKS = [
 ];
 
 export function allTranslatorBooks() {
-  return [...NT_BOOKS, ...OSHB_SPINE_BOOKS];
+  return [...NT_BOOKS, ...OT_PILOT_BOOKS, ...OSHB_SPINE_BOOKS];
+}
+
+/** Canonical Biblia-LBF root. Prefer STATUS.md so the herramientas stub is skipped. */
+export function resolveLbfRoot(fromDir) {
+  const env = process.env.BIBLIA_LBF || process.env.LBF_ROOT;
+  const candidates = [
+    env,
+    resolve(fromDir, "..", "Biblia-LBF"),
+    resolve(fromDir, "..", "..", "Biblia-LBF")
+  ].filter(Boolean);
+  for (const candidate of candidates) {
+    if (existsSync(join(candidate, "STATUS.md")) && existsSync(join(candidate, "translation"))) {
+      return candidate;
+    }
+  }
+  return candidates.at(-1) || resolve(fromDir, "..", "..", "Biblia-LBF");
+}
+
+export function lbfBookPaths(lbfRoot, book) {
+  const testament = book.testament || "ot";
+  const alignDir = join(lbfRoot, "alignment", testament, book.id);
+  return {
+    phraseFile: join(alignDir, `${book.id}-phrases.json`),
+    reverseLinksFile: join(alignDir, `${book.id}-reverse-links.json`),
+    documentFile: join(lbfRoot, "translation", testament, `${book.bleSlug}.md`)
+  };
 }
 
 export function findBook(idOrLabel) {

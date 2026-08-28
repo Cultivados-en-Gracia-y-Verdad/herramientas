@@ -8,7 +8,7 @@ import { describeAiAvailability, loadTranslatorEnv } from "./src/ai/suggestPhras
 import { analyzePhraseGates } from "./src/pipeline/analyzeGates.js";
 import { assistPhraseGates } from "./src/pipeline/assistGates.js";
 import { createInvestigationFromLemma, languageFromStrongs } from "./src/investigations/createInvestigation.js";
-import { findBook, allTranslatorBooks } from "./src/data/bookCatalog.js";
+import { findBook, allTranslatorBooks, resolveLbfRoot, lbfBookPaths } from "./src/data/bookCatalog.js";
 import { loadNtBookUnits } from "./src/data/morphLoader.js";
 
 const rootDir = fileURLToPath(new URL(".", import.meta.url));
@@ -33,6 +33,17 @@ function bookIdFromRequest(url, body = null) {
 
 function translationPathsForBook(bookId) {
   const book = resolveBook(bookId);
+  if (book.spine === "lbf") {
+    const lbf = lbfBookPaths(resolveLbfRoot(rootDir), book);
+    return {
+      book,
+      phraseFile: lbf.phraseFile,
+      defaultPhraseFile: lbf.phraseFile,
+      documentFile: lbf.documentFile,
+      reverseLinksFile: lbf.reverseLinksFile,
+      spineKind: "lbf"
+    };
+  }
   const oshbPhraseFile = join(translationsDir, "oshb-spine", book.id, `${book.id}-phrases.json`);
   const oshbReverseLinksFile = join(translationsDir, "oshb-spine", book.id, `${book.id}-reverse-links.json`);
   // Prefer TR-remapped phrases when the TR spine pilot exists for this book.
@@ -62,7 +73,7 @@ function translationPathsForBook(bookId) {
 async function resolvePhraseFile(bookId) {
   const paths = translationPathsForBook(bookId);
   const { book, phraseFile, defaultPhraseFile, documentFile, spineKind } = paths;
-  if (spineKind === "oshb") {
+  if (spineKind === "lbf" || spineKind === "oshb") {
     try {
       await stat(phraseFile);
       return { book, phraseFile, documentFile, textualBasis: "OSHB/WLC", spineKind };
@@ -164,14 +175,17 @@ function normalizeTranslationPhrases(value) {
         ? item.sourceTokenIds.map(String)
         : tokenRows.map(row => row.sourceTokenId).filter(Boolean);
       const greekFromTokens = tokenRows.map(row => row.greek).filter(Boolean).join(" ");
+      const hebrew = typeof item.hebrew === "string" ? item.hebrew : "";
+      const greek = typeof item.greek === "string" && item.greek.trim()
+        ? item.greek
+        : (hebrew || greekFromTokens);
       return {
         reference: typeof item.reference === "string" && item.reference.trim()
           ? item.reference.trim()
           : "Titus 1:1",
         phraseIndex: Number.isInteger(Number(item.phraseIndex)) ? Number(item.phraseIndex) : index,
-        greek: typeof item.greek === "string" && item.greek.trim()
-          ? item.greek
-          : greekFromTokens,
+        hebrew,
+        greek,
         spanish: typeof item.spanish === "string" ? item.spanish : "",
         sourceTokenIds,
         tokenRows,
@@ -203,8 +217,38 @@ async function readExistingTranslationPhrases(phraseFile) {
   }
 }
 
+function toLbfPhraseRecord(phrase) {
+  const tokenRows = Array.isArray(phrase.tokenRows)
+    ? phrase.tokenRows.map(row => ({
+      sourceTokenId: row.sourceTokenId || "",
+      surface: row.surface || row.greek || "",
+      lemma: row.lemma || "",
+      morph: row.morph || row.rmac || "",
+      oshbId: row.oshbId || ""
+    }))
+    : [];
+  return {
+    phraseIndex: phrase.phraseIndex,
+    reference: phrase.reference,
+    chapter: phrase.chapter,
+    verse: phrase.verse,
+    spanish: phrase.spanish || "",
+    hebrew: phrase.hebrew || phrase.greek || "",
+    sourceTokenIds: Array.isArray(phrase.sourceTokenIds) ? phrase.sourceTokenIds : [],
+    tokenRows
+  };
+}
+
 async function writeTranslationPhrases(phraseFile, phrases, book, textualBasis) {
   await mkdir(dirname(phraseFile), { recursive: true });
+  if (book?.spine === "lbf") {
+    await writeFile(
+      phraseFile,
+      `${JSON.stringify(phrases.map(toLbfPhraseRecord), null, 2)}\n`,
+      "utf8"
+    );
+    return;
+  }
   if (book?.spine === "oshb") {
     let existing = {};
     try {
@@ -262,7 +306,8 @@ function mergeTranslationPhraseSaves(incoming, existing) {
       phraseIndex: key,
       // Keep seed identity stable; client may only revise Spanish (+ source label).
       reference: prev.reference,
-      greek: prev.greek || item.greek || "",
+      hebrew: prev.hebrew || item.hebrew || "",
+      greek: prev.greek || item.greek || prev.hebrew || item.hebrew || "",
       sourceTokenIds: prev.sourceTokenIds?.length ? prev.sourceTokenIds : item.sourceTokenIds,
       rv1909Text: item.rv1909Text || prev.rv1909Text || "",
       bleText: item.bleText || prev.bleText || "",
@@ -555,7 +600,7 @@ async function enrichTranslationPhraseRecords(phrases, bookId = "titus") {
   ]);
   const units = loaded.units || loaded || [];
   const unitsByReference = new Map(units.map(unit => [unit.reference, unit]));
-  const isOshb = book?.spine === "oshb";
+  const isOshb = book?.spine === "oshb" || book?.spine === "lbf";
   const aquiferBook = book?.number != null ? String(book.number).padStart(2, "0") : "";
 
   return phrases.map(phrase => {
@@ -592,7 +637,7 @@ async function enrichTranslationPhraseRecords(phrases, bookId = "titus") {
 
     return {
       ...phrase,
-      greek: greekFromTokens || phrase.greek || "",
+      greek: greekFromTokens || phrase.greek || phrase.hebrew || "",
       sourceTokenIds: tokenIds,
       tokenRows,
       rv1909Text,
@@ -1147,7 +1192,10 @@ async function handleTranslation(request, response, url) {
     const existing = await readExistingTranslationPhrases(phraseFile);
     const merged = mergeTranslationPhraseSaves(incoming, existing);
     const phrases = await enrichTranslationPhraseRecords(merged, bookId);
-    await mkdir(translationsDir, { recursive: true });
+    if (book.spine !== "lbf") {
+      await mkdir(translationsDir, { recursive: true });
+    }
+    await mkdir(dirname(documentFile), { recursive: true });
     await writeFile(documentFile, content.endsWith("\n") ? content : `${content}\n`, "utf8");
     await writeTranslationPhrases(phraseFile, phrases, book, textualBasis);
     sendJson(response, 200, {
@@ -1280,22 +1328,21 @@ async function handleApi(request, response, url) {
       spine: book.spine || "nt"
     }));
     await Promise.all(books.map(async book => {
+      const catalog = allTranslatorBooks().find(item => item.id === book.id);
+      const lbfPaths = catalog?.spine === "lbf"
+        ? lbfBookPaths(resolveLbfRoot(rootDir), catalog)
+        : null;
       const candidates = [
-        join(translationsDir, "oshb-spine", book.id, `${book.id}-phrases.json`),
-        join(translationsDir, "tr-spine", book.id, `${book.id}-phrases-tr.json`),
-        join(translationsDir, `${book.id}-phrases.json`)
+        ...(lbfPaths ? [[lbfPaths.phraseFile, "OSHB/WLC"]] : []),
+        [join(translationsDir, "oshb-spine", book.id, `${book.id}-phrases.json`), "OSHB/WLC"],
+        [join(translationsDir, "tr-spine", book.id, `${book.id}-phrases-tr.json`), "Scrivener 1894 TR"],
+        [join(translationsDir, `${book.id}-phrases.json`), "MorphGNT/SBLGNT (fallback)"]
       ];
-      for (const candidate of candidates) {
+      for (const [candidate, textualBasis] of candidates) {
         try {
           await stat(candidate);
           book.hasPhrases = true;
-          if (candidate.includes("oshb-spine")) {
-            book.textualBasis = "OSHB/WLC";
-          } else if (candidate.includes("tr-spine")) {
-            book.textualBasis = "Scrivener 1894 TR";
-          } else {
-            book.textualBasis = "MorphGNT/SBLGNT (fallback)";
-          }
+          book.textualBasis = textualBasis;
           break;
         } catch {
           // try next
@@ -1341,7 +1388,7 @@ async function handleApi(request, response, url) {
   if (request.method === "GET" && url.pathname === "/api/translation/reverse-links") {
     const bookId = bookIdFromRequest(url);
     const { book, reverseLinksFile } = translationPathsForBook(bookId);
-    const fallbackBasis = book.spine === "oshb" ? "OSHB/WLC" : "Scrivener 1894 TR";
+    const fallbackBasis = (book.spine === "oshb" || book.spine === "lbf") ? "OSHB/WLC" : "Scrivener 1894 TR";
     try {
       const raw = await readFile(reverseLinksFile, "utf8");
       const doc = JSON.parse(raw);
@@ -1355,7 +1402,7 @@ async function handleApi(request, response, url) {
     } catch {
       sendJson(response, 200, {
         bookId: book.id,
-        textualBasis: book.spine === "oshb" ? "OSHB/WLC" : "",
+        textualBasis: (book.spine === "oshb" || book.spine === "lbf") ? "OSHB/WLC" : "",
         schemaVersion: 1,
         stats: {},
         links: []

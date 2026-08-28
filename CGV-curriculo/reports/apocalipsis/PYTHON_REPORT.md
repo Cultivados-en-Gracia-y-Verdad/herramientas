@@ -1,6 +1,6 @@
 # PYTHON_REPORT — apocalipsis
 
-Manual: `/Users/johnwry/Nextcloud/Documents/GitHub/curriculo/23.Apocalipsis/skeleton/apocalipsis-manual-skeleton.md`  ·  15226 líneas
+Manual: `/Users/johnwry/Nextcloud/Documents/GitHub/curriculo/23.Apocalipsis/manual/apocalipsis-manual-editor.md`  ·  19214 líneas
 Fuente LBF: `/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/apocalipsis.lbf.md`
 
 **Este reporte es evidencia, no un veredicto.** Ver «Lo que este script no puede ver».
@@ -9,14 +9,14 @@ Fuente LBF: `/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/apoca
 
 | Marcador | n |
 |---|---|
-| `#` | 1 |
-| `##` | 7 |
-| `###` | 814 |
-| `####` | 1271 |
-| `-` | 1996 |
-| `+` | 452 |
-| `*` | 3244 |
-| `>` | 0 |
+| `#` | 5 |
+| `##` | 29 |
+| `###` | 837 |
+| `####` | 1272 |
+| `-` | 1998 |
+| `+` | 411 |
+| `*` | 3391 |
+| `>` | 3603 |
 
 ## Empaquetado H4
 
@@ -27,87 +27,87 @@ Fuente LBF: `/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/apoca
 
 ### H4 de una palabra
 
-- L388 — `Escribe`
-- L566 — `arrepiéntete`
-- L928 — `Arrepiéntete`
-- L1373 — `guárdalo`
-- L1666 — `Retén`
-- L3834 — `quemó`
-- L4695 — `Tómalo`
-- L4802 — `Levántate`
-- L6939 — `Vayan`
-- L8075 — `Cayó`
-- L8158 — `Devuélvanle`
-- L8750 — `Alegrémonos`
-- L8818 — `Escribe`
-- L9799 — `Escribe`
-- L10810 — `Ven`
-- L10830 — `Ven`
+- L546 — `Escribe`
+- L796 — `arrepiéntete`
+- L1288 — `Arrepiéntete`
+- L1881 — `guárdalo`
+- L2263 — `Retén`
+- L5252 — `quemó`
+- L6379 — `Tómalo`
+- L6518 — `Levántate`
+- L9461 — `Vayan`
+- L11008 — `Cayó`
+- L11123 — `Devuélvanle`
+- L11919 — `Alegrémonos`
+- L12006 — `Escribe`
+- L13396 — `Escribe`
+- L14730 — `Ven`
+- L14757 — `Ven`
 
 ### Colas átonas
 
-- L486 — termina en **son** — `y no lo son`
-- L550 — termina en **pues** — `Recuerda, pues`
-- L1353 — termina en **pues** — `Recuerda, pues`
-- L1903 — termina en **pues** — `Sé celoso, pues`
-- L3497 — termina en **son** — `Estos que están vestidos con las túnicas blancas, ¿quiénes son`
-- L5275 — termina en **es** — `damos gracias, Señor Dios, el Todopoderoso, el que es`
-- L6290 — termina en **son** — `Estos son`
-- L6443 — termina en **sera** — `también él beberá del vino de la furia de Dios, preparado sin mezcla en la copa de su ira,`
-- L6957 — termina en **fue** — `Y el primero fue`
-- L7054 — termina en **es** — `Justo eres, Señor, el que es`
-- L7065 — termina en **era** — `y el que era`
-- L7075 — termina en **ser** — `y el que ha de ser`
-- L7646 — termina en **era** — `La bestia era`
-- L7654 — termina en **es** — `y no es`
-- L7767 — termina en **es** — `uno es`
+- L697 — termina en **son** — `y no lo son`
+- L774 — termina en **pues** — `Recuerda, pues`
+- L1853 — termina en **pues** — `Recuerda, pues`
+- L2581 — termina en **pues** — `Sé celoso, pues`
+- L4703 — termina en **son** — `Estos que están vestidos con las túnicas blancas, ¿quiénes son`
+- L7122 — termina en **es** — `damos gracias, Señor Dios, el Todopoderoso, el que es`
+- L8581 — termina en **son** — `Estos son`
+- L8775 — termina en **sera** — `también él beberá del vino de la furia de Dios, preparado sin mezcla en la copa de su ira,`
+- L9484 — termina en **fue** — `Y el primero fue`
+- L9605 — termina en **es** — `Justo eres, Señor, el que es`
+- L9619 — termina en **era** — `y el que era`
+- L9631 — termina en **ser** — `y el que ha de ser`
+- L10454 — termina en **era** — `La bestia era`
+- L10465 — termina en **es** — `y no es`
+- L10606 — termina en **es** — `uno es`
 
 ### Solapamiento de costura (≥6 palabras — defecto de span)
 
-- L9596 → L9606 — repiten: `a los muertos que habia en`
+- L13064 → L13076 — repiten: `a los muertos que habia en`
 
 ### Coincidencias de 3–5 palabras (revisar a ojo)
 
-- L1589 → L1641 — `a los que`
-- L2073 → L2087 — `semejante en apariencia a una`
-- L2087 → L2099 — `alrededor del trono`
-- L2171 → L2183 — `ser viviente semejante a un`
-- L2354 → L2368 — `abrir el libro`
-- L2847 → L2860 — `por un denario`
-- L3000 → L3010 — `y se les`
-- L3256 → L3269 — `de la tribu de`
-- L3269 → L3279 — `de la tribu de`
-- L3279 → L3289 — `de la tribu de`
-- L3289 → L3299 — `de la tribu de`
-- L3299 → L3309 — `de la tribu de`
-- L3309 → L3319 — `de la tribu de`
-- L3319 → L3329 — `de la tribu de`
-- L3329 → L3339 — `de la tribu de`
-- L3339 → L3349 — `de la tribu de`
-- L3349 → L3359 — `de la tribu de`
-- L3359 → L3369 — `de la tribu de`
-- L3859 → L3869 — `la tercera parte`
-- L3869 → L3882 — `la tercera parte de`
-- L4043 → L4053 — `pozo del abismo`
-- L4063 → L4073 — `humo del pozo`
-- L4093 → L4105 — `y se les`
-- L4105 → L4128 — `y se les`
-- L4357 → L4368 — `los cuatro angeles que`
-- L4413 → L4423 — `de las bocas de ellos`
-- L4423 → L4448 — `de las personas`
-- L4448 → L4475 — `no se arrepintieron de`
-- L5002 → L5012 — `los cadaveres de ellos`
-- L5339 → L5349 — `el santuario de`
-- L5685 → L5702 — `a la mujer`
-- L5878 → L5890 — `a la bestia`
-- L5952 → L5964 — `y le fue`
-- L6541 → L6556 — `sobre la nube`
-- L6867 → L6882 — `los siete angeles`
-- L7065 → L7075 — `y el que`
-- L9359 → L9369 — `la primera resurreccion`
-- L9421 → L9437 — `de la tierra`
-- L9626 → L9647 — `al lago de fuego`
-- L9677 → L9692 — `desde el cielo`
+- L2167 → L2230 — `a los que`
+- L2871 → L2887 — `semejante en apariencia a una`
+- L2887 → L2902 — `alrededor del trono`
+- L2999 → L3014 — `ser viviente semejante a un`
+- L3223 → L3239 — `abrir el libro`
+- L3876 → L3890 — `por un denario`
+- L4063 → L4075 — `y se les`
+- L4379 → L4397 — `de la tribu de`
+- L4397 → L4411 — `de la tribu de`
+- L4411 → L4425 — `de la tribu de`
+- L4425 → L4439 — `de la tribu de`
+- L4439 → L4453 — `de la tribu de`
+- L4453 → L4467 — `de la tribu de`
+- L4467 → L4481 — `de la tribu de`
+- L4481 → L4495 — `de la tribu de`
+- L4495 → L4509 — `de la tribu de`
+- L4509 → L4523 — `de la tribu de`
+- L4523 → L4537 — `de la tribu de`
+- L5291 → L5303 — `la tercera parte`
+- L5303 → L5319 — `la tercera parte de`
+- L5521 → L5533 — `pozo del abismo`
+- L5545 → L5557 — `humo del pozo`
+- L5581 → L5600 — `y se les`
+- L5600 → L5629 — `y se les`
+- L5918 → L5933 — `los cuatro angeles que`
+- L5999 → L6011 — `de las bocas de ellos`
+- L6011 → L6053 — `de las personas`
+- L6053 → L6084 — `no se arrepintieron de`
+- L6782 → L6794 — `los cadaveres de ellos`
+- L7192 → L7204 — `el santuario de`
+- L7670 → L7695 — `a la mujer`
+- L7992 → L8007 — `a la bestia`
+- L8094 → L8109 — `y le fue`
+- L8895 → L8914 — `sobre la nube`
+- L9369 → L9391 — `los siete angeles`
+- L9619 → L9631 — `y el que`
+- L12745 → L12759 — `la primera resurreccion`
+- L12827 → L12849 — `de la tierra`
+- L13100 → L13127 — `al lago de fuego`
+- L13230 → L13252 — `desde el cielo`
 
 ## Cobertura de Escritura
 
@@ -117,9 +117,9 @@ Fuente LBF: `/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/apoca
 
 ## Marcado
 
-- `<u>` abre **0** / cierra **0**
-- Notas al pie referenciadas sin definir: **1** — hoste
-- Notas al pie definidas sin usar: **4** — alla, dioti, hos, oun
+- `<u>` abre **3545** / cierra **3545**
+- Notas al pie referenciadas sin definir: **0**
+- Notas al pie definidas sin usar: **5** — dioti, e, inf, oun, part
 - Rachas de 2+ líneas en blanco: **0**
 - Líneas con espacio final: **0**
 - `####` en apéndices generados (no auditados): **462**
@@ -128,7 +128,7 @@ Fuente LBF: `/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/apoca
 ## Duplicación (idéntica — cierta)
 
 - H4 repetidos: **17**
-- Comentarios `>` repetidos: **0**
+- Comentarios `>` repetidos: **15**
 
   - ×2 — `Yo soy el Alfa y la Omega, el principio y el fin`
   - ×3 — `Escribe`
@@ -147,6 +147,21 @@ Fuente LBF: `/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/apoca
   - ×2 — `Mira, no`
   - ×2 — `Adora a Dios`
   - ×2 — `Ven`
+  - ×7 — `El recuento ya no es el que tiene oído. Quien habla es el <u>Espíritu</u>.`
+  - ×2 — `Quien dice es el <u>Espíritu</u>. Lo alcanzado es lo que: eso hay que oír. A las`
+  - ×2 — `El don no es al ángel por serlo. Es al que <u>vence</u>.`
+  - ×3 — `Quien dice es el <u>Espíritu</u>. Lo alcanzado es lo que: eso hay que oír. A las`
+  - ×2 — `Quien ve es <u>Yo</u>, Juan. La flecha se detiene en vi. Qué oye, todavía no.`
+  - ×3 — `Sigue <u>Yo</u>, Juan, uno. Ya no solo ve. Ahora oye.`
+  - ×2 — `Siguen los <u>veinticuatro</u> ancianos, uno. Ya no solo caen. Ahora adoran.`
+  - ×4 — `A quien se manda es <u>Yo</u>, Juan. La flecha se detiene en Ven. Y mira queda e`
+  - ×3 — `Sigue <u>Yo</u>, Juan, uno. Le dijeron Ven y mira. Ahora ve.`
+  - ×2 — `Ese <u>y</u> no suma otro mandato. Tras Ven y mira, Juan ve.`
+  - ×2 — `El griego no trae verbo. El español pone son. La afirmación es <u>verdaderos</u>`
+  - ×2 — `Quien viste es <u>Yo</u>, Juan. Lo alcanzado queda en viste. Qué, los diez cuern`
+  - ×3 — `El griego no trae verbo. El español no lo necesita. La afirmación es <u>Ay</u>, `
+  - ×2 — `El recuento vuelve a <u>Yo</u>, Juan, uno. El ángel dice. Juan es mandado.`
+  - ×2 — `A quien se manda es <u>Yo</u>, Juan. La flecha se detiene en Escribe.`
 
 ## Lo que este script NO puede ver
 
@@ -170,6 +185,5 @@ y ninguna se cierra sin que un humano lea la superficie.
 - **empaquetado** — 16 H4 de una palabra
 - **empaquetado** — 15 colas átonas
 - **empaquetado** — 1 solapamientos de costura ≥6 palabras
-- **marcado** — 1 notas al pie sin definición
-- **duplicación** — 17 H4 y 0 comentarios repetidos
+- **duplicación** — 17 H4 y 15 comentarios repetidos
 
