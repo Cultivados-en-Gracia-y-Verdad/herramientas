@@ -94,6 +94,7 @@ const cgvRepository = {
   coursesPath: "courses"
 };
 const cgvRepositoryBaseUrl = `https://github.com/${cgvRepository.owner}/${cgvRepository.repo}/${cgvRepository.coursesPath}`;
+const cgvRepositoryDisplaySource = `${cgvRepository.repo}/${cgvRepository.coursesPath}`;
 const cgvApiBaseUrl = `https://api.github.com/repos/${cgvRepository.owner}/${cgvRepository.repo}`;
 const cgvRawBaseUrl = `https://raw.githubusercontent.com/${cgvRepository.owner}/${cgvRepository.repo}/${cgvRepository.branch}/${cgvRepository.coursesPath}`;
 const defaultSongRepository = {
@@ -740,6 +741,7 @@ function loadCourseRepositoryConfig() {
   return {
     name: "CGV Course Repository",
     url: cgvRepositoryBaseUrl,
+    source: cgvRepositoryDisplaySource,
     downloadDir: courseLibraryDir,
     suggestedDownloadDir: defaultCourseLibraryDir,
     needsCourseLibrary: !courseLibraryDir,

@@ -16,6 +16,16 @@ function setRepositoryStatus(message) {
   repositoryStatus.textContent = message;
 }
 
+function getRepositorySourceLabel(config, catalog) {
+  return config.source || catalog?.source || config.url || catalog?.url || "cgv-data/courses";
+}
+
+function getInstallLocationLabel(config) {
+  return config.downloadDir
+    ? `${t("installedTo")}: ${config.downloadDir}`
+    : t("chooseLibraryBeforeDownload");
+}
+
 function getCourseActionLabel(course) {
   if (!course.available && !course.installed) return t("comingSoon");
   if (course.updateAvailable) return t("updateAndLoad");
@@ -93,11 +103,7 @@ function renderCourses() {
 async function loadRepositorySettings() {
   try {
     const config = await readJson(await fetch("/courses/repository"));
-    const library = config.downloadDir
-      ? `Library: ${config.downloadDir}`
-      : t("chooseLibraryBeforeDownload");
-
-    setRepositoryStatus(`Source: ${config.url}. ${library}`);
+    setRepositoryStatus(`${t("source")}: ${getRepositorySourceLabel(config)}. ${getInstallLocationLabel(config)}`);
     await refreshCatalog();
   } catch (error) {
     setRepositoryStatus(error.message || t("couldNotLoadRepository"));
@@ -114,9 +120,7 @@ async function refreshCatalog() {
     catalogCourses = catalog.courses || [];
     renderCourses();
     const courseWord = catalogCourses.length === 1 ? t("courseSingular") : t("coursePlural");
-    setRepositoryStatus(`${catalog.name}: ${catalogCourses.length} ${courseWord} ${t("available")}. ${
-      config.downloadDir ? `Library: ${config.downloadDir}` : t("chooseLibraryMenu")
-    }`);
+    setRepositoryStatus(`${t("source")}: ${getRepositorySourceLabel(config, catalog)}. ${catalogCourses.length} ${courseWord} ${t("available")}. ${getInstallLocationLabel(config)}`);
   } catch (error) {
     catalogCourses = [];
     renderCourses();

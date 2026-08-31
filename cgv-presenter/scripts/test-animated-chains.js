@@ -9,7 +9,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const DEFAULT_MANUAL = "/Users/johnwry/Nextcloud/Documents/GitHub/curriculo/20.1Juan/1-juan-manual-skeleton (6).md";
+const DEFAULT_MANUAL = "/Users/johnwry/Nextcloud/Documents/GitHub/curriculo/20.1Juan/1juan.1.32.md";
 const animatedChainMarker = "::roots-animated-chain::";
 
 function stripMarkdownEmphasis(value) {
