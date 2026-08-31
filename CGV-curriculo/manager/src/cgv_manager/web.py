@@ -63,6 +63,15 @@ def preferred_manual(folder: Path):
     return manuals[0] if manuals else None
 
 
+def editor_inventory(folder: Path, project_id: str) -> Path | None:
+    manual_dir = folder / "manual"
+    for name in (f"{project_id}-manual-editor.md", "apocalipsis-manual-editor.md"):
+        p = manual_dir / name
+        if p.is_file():
+            return p
+    return None
+
+
 def files_in(folder: Path, suffixes=None):
     if not folder.is_dir():
         return []
@@ -339,9 +348,10 @@ def artifact_milestones(folder: Path, state: dict | None = None) -> dict:
     )
 
     manuals = files_in(folder / "manual", {".md", ".markdown"})
+    gate_manual = preferred_manual(folder)
     context_quote_count = 0
-    if manuals:
-        manual_text = manuals[0].read_text(encoding="utf-8", errors="ignore")
+    if gate_manual:
+        manual_text = gate_manual.read_text(encoding="utf-8", errors="ignore")
         context_quote_count = sum(
             1 for section in manual_text.split("\n## ")[1:] if "\n= " in section
         )
@@ -357,7 +367,10 @@ def artifact_milestones(folder: Path, state: dict | None = None) -> dict:
         "structureApproved": structure_approved,
         "contextQuotesBuilt": context_quotes_built,
         "contextQuoteCount": context_quote_count,
-        "manualFile": relative(manuals[0]) if manuals else "",
+        "manualFile": relative(gate_manual) if gate_manual else (relative(manuals[0]) if manuals else ""),
+        "gateManual": relative(gate_manual) if gate_manual else "",
+        "g6WritingPass": (state or {}).get("gates", {}).get("G6_WRITING", {}).get("status") == "PASS",
+        "editorInventory": relative(editor_inventory(folder, (state or {}).get("project", {}).get("id", ""))) if state and editor_inventory(folder, state["project"]["id"]) else "",
     }
 def dashboard(course: str):
     folder, _, state = state_for(course)

@@ -158,6 +158,64 @@ def cmd_correct_g7(a):
     return cmd_verify_g7(_A())
 
 
+def _editor_inventory(course: Path, project: str) -> Path | None:
+    manual_dir = course / "manual"
+    for name in (f"{project}-manual-editor.md", "apocalipsis-manual-editor.md"):
+        p = manual_dir / name
+        if p.is_file():
+            return p
+    return None
+
+
+def cmd_enrich_comments(a):
+    """Merge missing commentary from editor inventory, then strip stock glosses."""
+    import subprocess
+    p, s = get(a.project)
+    course = course_dir(a.project)
+    manual = _preferred_manual(course)
+    editor = _editor_inventory(course, a.project)
+    if not manual:
+        raise SystemExit(f"No gate surface in {course}/manual/manual.md")
+    if not editor:
+        raise SystemExit(f"No editor inventory in {course}/manual/")
+    merge = subprocess.run(
+        [
+            "python3",
+            str(CGV / "scripts" / "merge-editor-comments.py"),
+            "--manual",
+            str(manual),
+            "--editor",
+            str(editor),
+        ],
+        capture_output=True,
+        text=True,
+    )
+    print(merge.stdout, end="")
+    if merge.returncode != 0:
+        print(merge.stderr, end="")
+        raise SystemExit(merge.returncode)
+    clean = subprocess.run(
+        ["python3", str(CGV / "scripts" / "cleanup-stock-comments.py"), "--manual", str(manual)],
+        capture_output=True,
+        text=True,
+    )
+    print(clean.stdout, end="")
+    if clean.returncode != 0:
+        print(clean.stderr, end="")
+        raise SystemExit(clean.returncode)
+    record_event(
+        s,
+        "enrich-comments",
+        f"merge + cleanup on {manual.name}",
+        "G6_WRITING",
+        (merge.stdout + clean.stdout)[-400:],
+    )
+    invalidate_stale_mechanical_passes(s, manual)
+    save_yaml(p, s)
+    print("Next:", next_action(s))
+    return 0
+
+
 def cmd_verify_g7(a):
     """Run speaker/hearing G7 and auto-record PASS or FAIL."""
     import subprocess
@@ -374,6 +432,10 @@ def parser():
 
     p=sub.add_parser("check", help="run every gate script for this book and print one verdict")
     p.add_argument("project"); p.set_defaults(func=cmd_check)
+
+    p=sub.add_parser("enrich-comments", help="merge editor inventory into gate surface, then cleanup stock glosses")
+    p.add_argument("project")
+    p.set_defaults(func=cmd_enrich_comments)
 
     p=sub.add_parser("verify-g7", help="run speaker/hearing G7 and auto PASS/FAIL")
     p.add_argument("project"); p.set_defaults(func=cmd_verify_g7)

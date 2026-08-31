@@ -46,7 +46,8 @@ undoes a manual rename. Report it; do not patch it.
 
 ## Procedure
 
-1. Run `python3 scripts/run-manual-checks.py --manual <manual.md> --lbf <source.md> --book <libro>`.
+1. Run `python3 scripts/run-manual-checks.py --manual <gate-surface.md> --lbf <source.md> --book <libro>`.
+   Gate surface is **`manual/manual.md`** when present.
 2. Read the surface yourself. **A script and a reading are two different witnesses** — if they
    disagree, the verdict is blocked (`MANUAL_STANDARD.md` §2).
 3. Repair only what is on the list above.

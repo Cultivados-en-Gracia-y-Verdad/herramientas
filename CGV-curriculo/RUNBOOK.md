@@ -168,14 +168,37 @@ The script packs whole LBF verses into `=` slides under ~280 characters (never s
 across slides):
 
 ```bash
-cgvs/build-context-quotes.py --manual {NN.Curso}/manual/<libro>-manual.md \
+cgvs/build-context-quotes.py --manual {NN.Curso}/manual/manual.md \
                              --lbf cgv-data/bibles/LBF/<libro>.lbf.md --write
 ```
 
-For hearing remaps, prefer the working surface `manual/manual.md` when present. Escriba follows
+`manual/manual.md` is the **gate surface** when present (G6–G10, verify-g7/g8, PDF). Legacy
+`{libro}-manual.md` / `{libro}-manual-editor.md` files are workshop inventory only — not the gate.
+
+For hearing remaps, Escriba works on **`manual/manual.md`** only.
 the **H2 loop** above — one approved hierarchy span per pass — not “one Compiler H3 with flechas.”
 The book introduction must still name series with their counts. A student who finishes the
 introduction and cannot say what the book is made of has been failed by it.
+
+### Post-hearing commentary enrichment (when the gate surface is thin)
+
+After the H2 hearing remap, compare `manual/manual.md` to the legacy editor draft
+(`{libro}-manual-editor.md`). If commentary density collapsed (one `>` per H4 instead of
+nested observations on `-` / `+` hangers — see `MANUAL_STANDARD.md` § *Commentary density*),
+recover missing `>` lines **without** re-importing workshop `*` lines or stock connector glosses:
+
+```bash
+python3 scripts/merge-editor-comments.py \
+  --manual {NN.Curso}/manual/manual.md \
+  --editor {NN.Curso}/manual/{libro}-manual-editor.md
+
+python3 scripts/cleanup-stock-comments.py \
+  --manual {NN.Curso}/manual/manual.md
+```
+
+Or via Manager: `cgv enrich-comments <libro>` (merge + cleanup). Then
+`python3 scripts/check-authority.py --before … --after … --agent escriba` must PASS.
+Any change to the gate surface marks **G7/G8 STALE** — rerun `cgv verify-g7` and `cgv verify-g8`.
 
 ---
 

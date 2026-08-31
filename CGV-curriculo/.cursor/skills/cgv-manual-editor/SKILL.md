@@ -103,7 +103,12 @@ current — same filename, same date in the name — but they are not. Tells tha
 
 **Never diff the working manuscript against a snapshot to hunt for “lost” content, and never
 raise EDITORIAL REVIEW REQUIRED from such a diff.** Differences are pipeline history, not defects.
-The user's working file is the manuscript; the JSON is the data.
+The user's working file is **`manual/manual.md`** (gate surface) when present.
+
+**Exception — intentional inventory:** `{libro}-manual-editor.md` is a deliberate workshop copy
+used to recover missing `>` after a hearing remap (`scripts/merge-editor-comments.py`). That diff
+is allowed; run `scripts/cleanup-stock-comments.py` afterward. Do not treat the editor file as
+the gate surface for verify-g7/g8 or PDF export.
 
 ### What the manual legitimately lacks mid-pass
 

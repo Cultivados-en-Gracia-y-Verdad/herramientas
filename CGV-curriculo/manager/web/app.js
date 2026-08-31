@@ -79,6 +79,16 @@ async function refresh(keepSelection = false) {
   const structureApproved = Boolean(milestones.structureApproved);
   const contextQuotesBuilt = Boolean(milestones.contextQuotesBuilt);
   const contextQuoteCount = Number(milestones.contextQuoteCount || 0);
+  const gates = Object.fromEntries((data.gates || []).map(g => [g.id, g.status]));
+  const g6Pass = gates.G6_WRITING === "PASS";
+  const g7Status = gates.G7_EDITORIAL || "NOT_STARTED";
+  const g7Pass = g7Status === "PASS";
+  const g8Status = gates.G8_FINAL_VERIFY || "NOT_STARTED";
+  const g8Pass = g8Status === "PASS";
+  const g9Pass = gates.G9_HUMAN_REVIEW === "PASS";
+  const g10Pass = gates.G10_RELEASE === "PASS";
+  const releaseStatus = data.releaseStatus || "NOT_RELEASED";
+  const nextAction = data.nextAction || "";
 
   app.steps = [
     {
@@ -145,28 +155,42 @@ async function refresh(keepSelection = false) {
     {
       key: "manual",
       title: "Write the manual",
-      status: contextQuotesBuilt ? "active" : "waiting",
-      detail: "In Cursor, type /manual. Escriba writes one H3 per pass, reading blocks.md.",
-      note: contextQuotesBuilt
-        ? `The ${contextQuoteCount} context passages are in place. Next: type /manual in Cursor.`
-        : "The introduction must name the book’s series and their counts.",
-      action: contextQuotesBuilt ? "open-manual" : ""
+      status: g6Pass ? "done" : (contextQuotesBuilt ? "active" : "waiting"),
+      detail: g6Pass
+        ? "G6 writing is recorded on manual/manual.md (gate surface)."
+        : "In Cursor, type /manual. Escriba remaps each H2 onto the approved hierarchy (hearing template). Work on manual/manual.md.",
+      note: g6Pass
+        ? `G6_WRITING: PASS · ${contextQuoteCount} context passages · Gate surface: manual/manual.md`
+        : contextQuotesBuilt
+          ? `The ${contextQuoteCount} context passages are in place. Next: /manual on manual/manual.md.`
+          : "The introduction must name the book’s series and their counts.",
+      action: g6Pass ? "open-manual" : (contextQuotesBuilt ? "open-manual" : "")
     },
     {
       key: "editorial",
       title: "Edit and correct",
-      status: "waiting",
-      detail: "Run @editor for mechanical work, then @corrector for prose.",
-      note: "Editor first; Corrector second.",
-      action: ""
+      status: g7Pass ? "done" : (g6Pass ? "active" : "waiting"),
+      detail: g7Pass
+        ? "G7 mechanical speaker/hearing PASS is on record."
+        : "Run G7 mechanical verify on manual/manual.md. On FAIL: correct-g7, then @corrector for remaining CRITICAL, then re-verify.",
+      note: g7Pass
+        ? `G7_EDITORIAL: PASS`
+        : `G7_EDITORIAL: ${g7Status}${g7Status === "STALE" ? " — gate surface changed; re-run verify" : ""}. ${nextAction}`,
+      action: g6Pass && !g7Pass
+        ? (g7Status === "FAIL" ? "run-g7-correct" : "run-g7-check")
+        : ""
     },
     {
       key: "release",
       title: "Final review and release",
-      status: "waiting",
-      detail: "Run the final checks, complete the human reading, approve the finished manual, and release it.",
-      note: "Nothing releases automatically.",
-      action: ""
+      status: releaseStatus === "RELEASED" ? "done" : (g7Pass && g8Pass ? "active" : "waiting"),
+      detail: g8Pass
+        ? (g9Pass ? "G8 mechanical PASS. G9 sufficiency reading recorded. Approve release when ready." : "G8 mechanical PASS. Complete G9 sufficiency reading, then G10.")
+        : "Run G8 mechanical verify after G7 PASS. Then human sufficiency reading (G9) and release (G10).",
+      note: g8Pass
+        ? `G8: ${g8Status} · G9: ${gates.G9_HUMAN_REVIEW || "?"} · G10: ${gates.G10_RELEASE || "?"} · ${releaseStatus}`
+        : `G8_FINAL_VERIFY: ${g8Status}${g8Status === "STALE" ? " — re-run after manual edits" : ""}`,
+      action: g7Pass && !g8Pass ? "run-final-checks" : ""
     }
   ].map((step, index) => ({...step, number: String(index + 1)}));
 

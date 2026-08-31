@@ -1737,12 +1737,12 @@ Todavía no se ha dicho qué deben hacer ustedes.
 
 ## Student manual vs editorial (HARD)
 
-Two files when the book is in workshop:
-
-| File | Contains |
+| File | Role |
 |---|---|
-| **Student manual** (`{libro}-manual.md`) | Intro, H1–H4 outline, `>` comments, `### En síntesis`, student appendices (connectors, forms, structure footnotes) |
-| **Editorial notes** (`{libro}-editorial-notes.md`) | Actores / flujo, Arquitecto notes, Pendientes Observador, Dudas, workshop instructions |
+| **Gate surface** `manual/manual.md` | Intro, H1–H4 outline, `>` comments, `### En síntesis`, Apéndice D — **G6–G10, verify-g7/g8, PDF** |
+| Legacy workshop `{libro}-manual.md` | Pre-hearing Compiler-shaped draft — **not the gate** |
+| Legacy `{libro}-manual-editor.md` | Editor inventory for recovering missing `>` — **not the gate** |
+| **Editorial notes** `reports/{libro}-editorial-notes.md` | Actores / flujo, Arquitecto notes, Pendientes, workshop instructions |
 
 **Never leave in the student file:**
 
@@ -1794,6 +1794,12 @@ Actor triples stay in the outline. First slot = grammatical subject observed; in
 Same for stock cadences once the student knows them: *la respuesta no se hace esperar*, *el texto no se detiene*, *conviene preguntar* — keep the move when the author earns it; cut the opener when the observation can stand alone.
 
 **Connector gloss fatigue** (see **Connector glosses**): teach ἐάν / ὅτι once; later returns keep the Greek tag and **reword** — never clone `introduce una condición` / `introduce el contenido de *decimos*` unit after unit.
+
+**Post-hearing enrichment.** If `manual/manual.md` was thinned to one `>` per H4, recover nested
+commentary from `{libro}-manual-editor.md` with `scripts/merge-editor-comments.py`, then run
+`scripts/cleanup-stock-comments.py`. Never re-import `*` actor tallies or stock `no abre otro` glosses.
+Target density: **~3–4 `>` per H4** in body spans (match Apocalipsis 1:1–8). Manager:
+`cgv enrich-comments <libro>`.
 
 ---
 

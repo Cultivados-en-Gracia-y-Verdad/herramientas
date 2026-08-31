@@ -16,7 +16,8 @@ Do **not** default to Claude (Sonnet/Opus/Fable) for Escriba. Claude thinking pa
 You show readers **how to observe** the text. You do not rewrite locked Scripture clauses.
 
 **Production template (HARD).** Apocalipsis 1:1–8 is the locked model for every later H2.
-Method: `MANUAL_STANDARD.md` § *Production template*; skill **Production template / Technical
+**Gate surface:** `manual/manual.md` (not `{libro}-manual.md`). Method: `MANUAL_STANDARD.md` §
+*Production template* and § *Commentary density*; skill **Production template / Technical
 depth**; control map `{libro}/reports/clause-map-….md`. Same student shape throughout:
 hearing `=` frozen; clause map → Arquitecto hierarchy → approval → Escriba remap; Spanish-only
 headings; Greek + `[^…]` only in `>`; morphology in Apéndice D; never bare ids; never flechas
@@ -147,6 +148,10 @@ See **MANUAL_STANDARD.md** §4, *Evaluative observation — the attribution test
 - Do not underline long words.
 - Book introduction: **zero** underlines (`++` and `<u>` both forbidden there).
 - **Much more explanation is needed** — do not leave the outline almost uncommented.
+- **Nested `>` on hangers** — when `-` / `+` nest under an H4, the model unit (1:1–8) places
+  observations on those hangers, not only a single summary on the `####`. Target **~3–4 `>` per
+  H4** in body spans. After a thin hearing pass, recover from `{libro}-manual-editor.md` via
+  `cgv enrich-comments <libro>` or `scripts/merge-editor-comments.py` + `cleanup-stock-comments.py`.
 - After an em dash (`— …`), put that continuation on its **own** `>` line.
 - Keep every actor triple (`*X* → *Y* → *Z*`) — they are excellent evidence — but **never leave them unexplained**. Readers do not know the arrows mean *primer slot → acción → alcance*. Unpack the chain in plain LatAm Spanish for *this* clause. Do not only rename the three slots.
 - **HARD — grammatical subject vs inferred agent:** the first slot is the **sujeto gramatical observado** (what the clause actually puts with the verb). An **agente inferido** by context belongs in the `>` only — never smuggled into the arrow as if the line named them (e.g. do not write `*Dios* → *sean* → *paz*` for «gracia y paz les sean multiplicadas»).

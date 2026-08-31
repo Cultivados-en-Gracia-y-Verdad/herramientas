@@ -28,11 +28,19 @@ bash
 
 ```bash
 python3 CGV-curriculo/scripts/build-context-quotes.py \
-  --manual 23.Apocalipsis/manual/apocalipsis-manual.md \
+  --manual 23.Apocalipsis/manual/manual.md \
   --lbf cgv-data/bibles/LBF/apocalipsis.lbf.md --write
 ```
 
-**8. `/manual`** — Escriba, one H3 per pass, reading `blocks.md`; the introduction must name the series with its counts.
+**8. `/manual`** — Escriba on **`manual/manual.md`** (gate surface), one H3 per pass, reading `blocks.md`; the introduction must name the series with its counts.
+
+**8b. Post-hearing enrichment** (if commentary is thin — one `>` per H4):
+
+```bash
+cd herramientas/CGV-curriculo/manager && python3 manager.py enrich-comments apocalipsis
+```
+
+Then `cgv verify-g7 apocalipsis` and `cgv verify-g8 apocalipsis` (gate surface changed → G7/G8 STALE).
 
 **9. `@editor`** (mechanical) **then `@corrector`** (prose). `@corrector` is what `@editor` used to be.
 

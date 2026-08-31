@@ -336,6 +336,32 @@ uncertain (neutral + footnote; never resolve in the body).
 `architecture/apocalipsis-hierarchy-1-1-8.md` · student unit under
 `## Apocalipsis 1:1–8` in `manual/manual.md`.
 
+### Commentary density (HARD)
+
+The hearing remap is **not** “one summary `>` per H4.” The locked model (1:1–8) averages
+**~3–4 `>` blocks per H4** in analysis spans, with nested observations on `-` / `+` hangers
+when the outline nests them.
+
+| Signal | Thin (fail) | Target (pass) |
+|---|---|---|
+| Comments per H4 (body spans) | ~1.0, summary only | ~3–4, like 1:1–8 |
+| Nested hangers | `-` lines with no `>` | Movement, grammar, cross-refs on hangers |
+| H4 with zero comments | any | none |
+
+**Gate surface:** `manual/manual.md` when present. Legacy `{libro}-manual-editor.md` is an
+**inventory** for recovering missing `>` (see `RUNBOOK.md` § *Post-hearing commentary enrichment*);
+never PDF-export the legacy file by mistake.
+
+**Banned in `>` (stock connector glosses — teach once, then name what is new):**
+
+- `Ese <u>…</u> no abre otro/otra …`
+- `No suma otro/otra …`
+- `Este <u>que</u> no abre otro …`
+- `No cuelga suelto` / `No queda suelto` / `Eso decían`
+- `…, todavía no` / `Qué, abajo` / `Lo alcanzado:` as filler
+
+Use `scripts/cleanup-stock-comments.py` after a bulk merge from the editor draft.
+
 ### Protected content
 
 Never altered by any agent, in any mode:

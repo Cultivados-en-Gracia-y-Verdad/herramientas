@@ -51,7 +51,7 @@ curriculo/NN.Curso/               the products — everything a stage emits
   observation/                    Observer + Jason: progress JSON, clause IDs
   skeleton/                       Compiler export
   architecture/                   Arquitecto: blocks, hierarchy-{span}, outline
-  manual/                         drafts (hearing surface: manual.md)
+  manual/                         gate surface (`manual.md`) + legacy workshop drafts
   reports/                        agent reports, clause maps, editorial notes
   slides/                         assembled output — Presenter entry, do not reorganize
 ```

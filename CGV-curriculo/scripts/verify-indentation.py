@@ -10,7 +10,7 @@ every time an agent nests a line by hand. This script compares the two and state
 exactly where they disagree.
 
     python3 scripts/verify-indentation.py \
-        --manual  "curriculo/23.Apocalipsis/manual/apocalipsis-manual.md" \
+        --manual  "curriculo/23.Apocalipsis/manual/manual.md" \
         --outline "curriculo/23.Apocalipsis/architecture/apocalipsis-outline.md" \
         --log     "curriculo/23.Apocalipsis/reports/INDENT_LOG.md"
 

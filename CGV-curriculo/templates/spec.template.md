@@ -11,8 +11,9 @@ repeated here. Literary units live in [`blocks.md`](blocks.md).
 
 | What | Path |
 |---|---|
-| Manual (working) | `manual/{libro}-manual.md` |
-| Manual (assembled) | `slides/manual.md` |
+| **Gate surface (student manual)** | `manual/manual.md` |
+| Legacy workshop (inventory only, if kept) | `manual/{libro}-manual.md`, `manual/{libro}-manual-editor.md` |
+| Manual (assembled / Presenter) | `slides/manual.md` |
 | LBF Spanish text | |
 | Alignment | |
 | Observer progress | `observation/{libro}-progress-filled.json` |
