@@ -1,4 +1,5 @@
 const { execSync } = require('child_process');
+const asar = require('@electron/asar');
 const fs = require('fs');
 const path = require('path');
 
@@ -6,6 +7,7 @@ const root = path.resolve(__dirname, '..');
 const { version } = require('../package.json');
 
 const appBundle = path.join(root, 'out', 'CGV Presenter-darwin-arm64', 'CGV Presenter.app');
+const appBundleDir = path.dirname(appBundle);
 const installerScript = path.join(__dirname, 'Install CGV Presenter.js');
 const installerApp = path.join(root, 'out', 'make', 'Install CGV Presenter.app');
 const readmeSource = path.join(__dirname, 'macos-release-readme.txt');
@@ -21,7 +23,20 @@ function quote(value) {
 }
 
 if (!fs.existsSync(appBundle)) {
-  throw new Error(`Packaged app not found: ${appBundle}. Run npm run make:mac first.`);
+  fs.mkdirSync(path.dirname(appBundleDir), { recursive: true });
+}
+
+fs.rmSync(appBundleDir, { recursive: true, force: true });
+run('npm run package');
+
+if (!fs.existsSync(appBundle)) {
+  throw new Error(`Packaged app not found after packaging: ${appBundle}.`);
+}
+
+const packagedAppAsar = path.join(appBundle, 'Contents', 'Resources', 'app.asar');
+const packagedVersion = JSON.parse(asar.extractFile(packagedAppAsar, 'package.json').toString()).version;
+if (packagedVersion !== version) {
+  throw new Error(`Packaged app version mismatch: expected ${version}, got ${packagedVersion}.`);
 }
 
 fs.mkdirSync(path.dirname(releaseZip), { recursive: true });
