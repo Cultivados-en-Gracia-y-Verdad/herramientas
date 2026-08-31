@@ -16,10 +16,13 @@ from .cli import CGV, COURSES, REPOS, course_dir
 from .model import (
     GATES,
     GATE_LABELS,
+    MECHANICAL_PASS_GATES,
     VALID_TRANSITIONS,
     accept_gate0,
+    apply_mechanical_gate_result,
     checksum,
     compute_current_gate,
+    invalidate_stale_mechanical_passes,
     load_yaml,
     input_drift,
     next_action,
@@ -29,6 +32,7 @@ from .model import (
     recompute,
     save_yaml,
     record_gate_status,
+    transition_gate,
     validate_state,
     waive_gate0,
 )
@@ -48,6 +52,15 @@ def now_iso() -> str:
 
 def json_bytes(value) -> bytes:
     return json.dumps(value, ensure_ascii=False).encode("utf-8")
+
+
+def preferred_manual(folder: Path):
+    """Student surface for G7/G8: prefer manual.md, else newest markdown."""
+    named = folder / "manual" / "manual.md"
+    if named.is_file():
+        return named
+    manuals = files_in(folder / "manual", {".md", ".markdown"})
+    return manuals[0] if manuals else None
 
 
 def files_in(folder: Path, suffixes=None):
@@ -72,7 +85,12 @@ def state_for(course: str):
     if not state_path.exists():
         raise ValueError(f"No state.yaml exists in {folder.name}.")
     state = load_yaml(state_path)
+    before = {g: state["gates"][g]["status"] for g in MECHANICAL_PASS_GATES}
+    invalidate_stale_mechanical_passes(state, preferred_manual(folder))
     recompute(state)
+    after = {g: state["gates"][g]["status"] for g in MECHANICAL_PASS_GATES}
+    if before != after:
+        save_yaml(state_path, state)
     return folder, state_path, state
 
 
@@ -227,24 +245,27 @@ def build_steps(folder: Path, state: dict, repos: list[dict]):
         },
         {
             "number": "G7",
-            "title": "Editor, then Corrector",
-            "detail": "Run @editor for mechanical work, enforce its authority by diff, then run @corrector for prose.",
-            "status": step_status(g["G7_EDITORIAL"]["status"] == "PASS", active=g["G7_EDITORIAL"]["status"] in {"READY", "RUNNING", "REVIEW_REQUIRED"}, blocked=g["G7_EDITORIAL"]["status"] == "BLOCKED"),
+            "title": "Editor · Corrector · mechanical speaker/hearing",
+            "detail": "Agents edit; PASS only when verify-g7 exits 0. On FAIL: mechanical Corrector (correct-g7), then agent Corrector for remaining CRITICAL, then re-verify.",
+            "status": step_status(g["G7_EDITORIAL"]["status"] == "PASS", active=g["G7_EDITORIAL"]["status"] in {"READY", "RUNNING", "REVIEW_REQUIRED", "FAIL", "STALE"}, blocked=g["G7_EDITORIAL"]["status"] == "BLOCKED"),
             "note": f"G7 Editorial: {g['G7_EDITORIAL']['status']}",
-            "action": "",
+            "action": (
+                "run-g7-correct" if manuals and g["G7_EDITORIAL"]["status"] == "FAIL"
+                else ("run-g7-check" if manuals and g["G7_EDITORIAL"]["status"] != "BLOCKED" else "")
+            ),
         },
         {
             "number": "G8",
-            "title": "Final checks, provenance, and sufficiency reading",
-            "detail": "Re-run manual, quote, and block checks; recompute provenance; then decide whether a student can explain every block and the book's shape.",
-            "status": step_status(g["G8_FINAL_VERIFY"]["status"] == "PASS", active=g["G8_FINAL_VERIFY"]["status"] in {"READY", "RUNNING", "REVIEW_REQUIRED"}, blocked=g["G8_FINAL_VERIFY"]["status"] == "BLOCKED"),
-            "note": ("Automated evidence matches the current manual; sufficiency still requires human reading" if final_checked else f"G8 Final verification: {g['G8_FINAL_VERIFY']['status']}"),
-            "action": "run-final-checks" if manuals else "",
+            "title": "Mechanical final stream (auto PASS/FAIL)",
+            "detail": "verify-g8-final.py records PASS or FAIL. Human sufficiency reading is G9 only.",
+            "status": step_status(g["G8_FINAL_VERIFY"]["status"] == "PASS", active=g["G8_FINAL_VERIFY"]["status"] in {"READY", "RUNNING", "REVIEW_REQUIRED", "FAIL", "STALE"}, blocked=g["G8_FINAL_VERIFY"]["status"] == "BLOCKED"),
+            "note": f"G8 Final verification: {g['G8_FINAL_VERIFY']['status']}",
+            "action": "run-final-checks" if manuals and g["G8_FINAL_VERIFY"]["status"] != "BLOCKED" else "",
         },
         {
             "number": "G9–10",
             "title": "Human review and release",
-            "detail": "Run the release manifest gate, record the named human review, and bind approval to the exact final checksum. Default remains NOT RELEASED.",
+            "detail": "Only after G7 and G8 mechanical PASS: sufficiency reading, release manifest, named human approval. Default remains NOT RELEASED.",
             "status": step_status(g["G10_RELEASE"]["status"] == "PASS" and state["workflow"]["release_status"] == "RELEASED", active=g["G9_HUMAN_REVIEW"]["status"] in {"READY", "RUNNING", "REVIEW_REQUIRED"} or g["G10_RELEASE"]["status"] in {"READY", "RUNNING", "REVIEW_REQUIRED"}, blocked=g["G9_HUMAN_REVIEW"]["status"] == "BLOCKED"),
             "note": f"G9 Human: {g['G9_HUMAN_REVIEW']['status']} · G10 Release: {g['G10_RELEASE']['status']} · {state['workflow']['release_status']}",
             "action": "",
@@ -258,6 +279,9 @@ def gate_actions(state: dict):
     if gate == "G0_ALIGNMENT" and status == "READY":
         return [{"status": "SKIPPED", "label": "Proceed without attestation"}]
     if gate == "G1_COMPILE":
+        return []
+    # G7/G8: humans never click PASS — only run mechanical verify.
+    if gate in MECHANICAL_PASS_GATES:
         return []
     labels = {
         "RUNNING": "Start this gate",
@@ -565,6 +589,11 @@ class ManagerHandler(SimpleHTTPRequestHandler):
                         raise ValueError("Gate 0 cannot be hand-set to PASS. Import an attestation.")
                     if gate == "G1_COMPILE":
                         raise ValueError("G1 must be completed by recording a Compiler skeleton.")
+                    if gate in MECHANICAL_PASS_GATES and body["status"] == "PASS":
+                        raise ValueError(
+                            f"{gate} PASS is recorded only by mechanical verify "
+                            "(run-g7-check / run-final-checks). Do not hand-approve."
+                        )
                     if body["status"] in {"PASS", "FAIL", "REVIEW_REQUIRED", "BLOCKED"} and not notes:
                         raise ValueError("Add a short note explaining this decision.")
                     if gate == "G0_ALIGNMENT" and body["status"] == "SKIPPED":
@@ -573,6 +602,189 @@ class ManagerHandler(SimpleHTTPRequestHandler):
                         record_gate_status(state, gate, body["status"], "human", notes)
                     save_yaml(state_path, state)
                 return self.send_json({"message": f"{gate} is now {body['status']}."})
+
+            if self.path == "/api/run-g7-check":
+                body = self.read_json()
+                with STATE_LOCK:
+                    folder, state_path, state = state_for(body["course"])
+                    manual = preferred_manual(folder)
+                    if not manual:
+                        raise ValueError("No manual Markdown file was found.")
+                    reports = folder / "reports"
+                    reports.mkdir(parents=True, exist_ok=True)
+                    out = reports / "SPEAKER_HEARING_REPORT.md"
+                    run = subprocess.run(
+                        [
+                            "/usr/bin/python3",
+                            str(CGV / "scripts" / "verify-g7-editorial.py"),
+                            "--manual",
+                            str(manual),
+                            "--out",
+                            str(out),
+                        ],
+                        capture_output=True,
+                        text=True,
+                        timeout=180,
+                        check=False,
+                    )
+                    output = (run.stdout + run.stderr).strip()
+                    passed = run.returncode == 0
+                    dig = checksum(manual)
+                    apply_mechanical_gate_result(
+                        state,
+                        "G7_EDITORIAL",
+                        passed,
+                        manual_checksum=dig,
+                        notes=output[-500:] or ("G7 mechanical PASS" if passed else "G7 mechanical FAIL"),
+                        actor="verify-g7-editorial",
+                    )
+                    save_yaml(state_path, state)
+                if not passed:
+                    return self.send_json(
+                        {"error": output or "G7 speaker/hearing verification failed.", "gate": "G7_EDITORIAL", "status": "FAIL"},
+                        400,
+                    )
+                return self.send_json({"message": "G7_EDITORIAL PASS — speaker/hearing mechanical verify exited 0.", "gate": "G7_EDITORIAL", "status": "PASS"})
+
+            if self.path == "/api/run-g7-correct":
+                body = self.read_json()
+                with STATE_LOCK:
+                    folder, state_path, state = state_for(body["course"])
+                    manual = preferred_manual(folder)
+                    if not manual:
+                        raise ValueError("No manual Markdown file was found.")
+                    run = subprocess.run(
+                        [
+                            "/usr/bin/python3",
+                            str(CGV / "scripts" / "correct-g7-surface.py"),
+                            "--manual",
+                            str(manual),
+                        ],
+                        capture_output=True,
+                        text=True,
+                        timeout=180,
+                        check=False,
+                    )
+                    output = (run.stdout + run.stderr).strip()
+                    if run.returncode not in (0, 1):
+                        raise ValueError(output or "correct-g7-surface failed")
+                    record_event(
+                        state,
+                        "correct-g7-surface",
+                        "mechanical Corrector applied on gate surface",
+                        "G7_EDITORIAL",
+                        output[-400:],
+                    )
+                    st = state["gates"]["G7_EDITORIAL"]["status"]
+                    if st in {"FAIL", "STALE"}:
+                        transition_gate(
+                            state, "G7_EDITORIAL", "READY", "correct-g7-surface",
+                            "Re-open after mechanical Corrector.",
+                        )
+                    # Chain verify
+                    reports = folder / "reports"
+                    reports.mkdir(parents=True, exist_ok=True)
+                    out = reports / "SPEAKER_HEARING_REPORT.md"
+                    vrun = subprocess.run(
+                        [
+                            "/usr/bin/python3",
+                            str(CGV / "scripts" / "verify-g7-editorial.py"),
+                            "--manual",
+                            str(manual),
+                            "--out",
+                            str(out),
+                        ],
+                        capture_output=True,
+                        text=True,
+                        timeout=180,
+                        check=False,
+                    )
+                    vout = (vrun.stdout + vrun.stderr).strip()
+                    passed = vrun.returncode == 0
+                    apply_mechanical_gate_result(
+                        state,
+                        "G7_EDITORIAL",
+                        passed,
+                        manual_checksum=checksum(manual),
+                        notes=vout[-500:] or ("PASS" if passed else "FAIL after Corrector"),
+                        actor="verify-g7-editorial",
+                    )
+                    save_yaml(state_path, state)
+                msg = output + "\n\n" + vout
+                if not passed:
+                    return self.send_json(
+                        {
+                            "error": msg or "G7 still FAIL after mechanical Corrector — run @corrector for remaining CRITICAL.",
+                            "gate": "G7_EDITORIAL",
+                            "status": "FAIL",
+                        },
+                        400,
+                    )
+                return self.send_json({
+                    "message": "Mechanical Corrector applied; G7_EDITORIAL PASS.",
+                    "gate": "G7_EDITORIAL",
+                    "status": "PASS",
+                })
+
+            if self.path == "/api/run-final-checks":
+                body = self.read_json()
+                with STATE_LOCK:
+                    folder, state_path, state = state_for(body["course"])
+                    manual = preferred_manual(folder)
+                    if not manual:
+                        raise ValueError("No manual Markdown file was found.")
+                    source = Path(state["source"]["path"])
+                    source = source if source.is_absolute() else REPOS / source
+                    blocks = folder / "blocks.md"
+                    cmd = [
+                        "/usr/bin/python3",
+                        str(CGV / "scripts" / "verify-g8-final.py"),
+                        "--manual",
+                        str(manual),
+                        "--book",
+                        state["project"]["id"],
+                        "--reports-dir",
+                        str(folder / "reports"),
+                    ]
+                    if source.is_file():
+                        cmd.extend(["--lbf", str(source)])
+                    if blocks.is_file():
+                        cmd.extend(["--blocks", str(blocks)])
+                    run = subprocess.run(cmd, capture_output=True, text=True, timeout=300, check=False)
+                    output = (run.stdout + run.stderr).strip()
+                    if run.returncode == 0:
+                        drift = input_drift(state, REPOS)
+                        if drift:
+                            raise ValueError(
+                                "Provenance drift found: "
+                                + "; ".join(f"{kind}: {detail.splitlines()[0]}" for kind, detail in drift)
+                            )
+                    passed = run.returncode == 0
+                    dig = checksum(manual)
+                    apply_mechanical_gate_result(
+                        state,
+                        "G8_FINAL_VERIFY",
+                        passed,
+                        manual_checksum=dig,
+                        notes=output[-500:] or ("G8 mechanical PASS" if passed else "G8 mechanical FAIL"),
+                        actor="verify-g8-final",
+                    )
+                    state.setdefault("manager", {}).setdefault("evidence", {}).update({
+                        "final_verify_checksum": dig,
+                        "final_verify_at": now_iso(),
+                        "final_verify_outputs": [output],
+                    })
+                    save_yaml(state_path, state)
+                if not passed:
+                    return self.send_json(
+                        {"error": output or "G8 mechanical stream failed.", "gate": "G8_FINAL_VERIFY", "status": "FAIL"},
+                        400,
+                    )
+                return self.send_json({
+                    "message": "G8_FINAL_VERIFY PASS — mechanical stream exited 0. Human sufficiency reading is G9.",
+                    "gate": "G8_FINAL_VERIFY",
+                    "status": "PASS",
+                })
 
             if self.path == "/api/open":
                 body = self.read_json()
@@ -663,53 +875,20 @@ class ManagerHandler(SimpleHTTPRequestHandler):
                 body = self.read_json()
                 with STATE_LOCK:
                     folder, state_path, state = state_for(body["course"])
-                    manuals = files_in(folder / "manual", {".md", ".markdown"})
-                    if not manuals:
+                    manual = preferred_manual(folder) or (files_in(folder / "manual", {".md", ".markdown"}) or [None])[0]
+                    if not manual:
                         raise ValueError("No manual Markdown file was found.")
                     source = Path(state["source"]["path"])
                     source = source if source.is_absolute() else REPOS / source
                     script = CGV / "scripts" / "build-context-quotes.py"
-                    run = subprocess.run(["/usr/bin/python3", str(script), "--manual", str(manuals[0]), "--lbf", str(source), "--write"], capture_output=True, text=True, timeout=120, check=False)
+                    run = subprocess.run(["/usr/bin/python3", str(script), "--manual", str(manual), "--lbf", str(source), "--write"], capture_output=True, text=True, timeout=120, check=False)
                     output = (run.stdout + run.stderr).strip()
                     if run.returncode:
                         raise ValueError(output or "Context quote build failed.")
-                    state.setdefault("manager", {}).setdefault("evidence", {}).update({"context_quotes_checksum": checksum(manuals[0]), "context_quotes_built_at": now_iso()})
+                    state.setdefault("manager", {}).setdefault("evidence", {}).update({"context_quotes_checksum": checksum(manual), "context_quotes_built_at": now_iso()})
                     record_event(state, "manager", "context quotes built", "G5_ARCHITECTURE", output[-300:])
                     save_yaml(state_path, state)
                 return self.send_json({"message": output or "Context quotes were written."})
-
-            if self.path == "/api/run-final-checks":
-                body = self.read_json()
-                with STATE_LOCK:
-                    folder, state_path, state = state_for(body["course"])
-                    manuals = files_in(folder / "manual", {".md", ".markdown"})
-                    if not manuals:
-                        raise ValueError("No manual Markdown file was found.")
-                    source = Path(state["source"]["path"])
-                    source = source if source.is_absolute() else REPOS / source
-                    commands = [
-                        ["/usr/bin/python3", str(CGV / "scripts" / "run-manual-checks.py"), "--manual", str(manuals[0]), "--lbf", str(source), "--book", state["project"]["id"]],
-                        ["/usr/bin/python3", str(CGV / "scripts" / "build-context-quotes.py"), "--manual", str(manuals[0]), "--lbf", str(source), "--check"],
-                        ["/usr/bin/python3", str(CGV / "scripts" / "verify-blocks.py"), "--blocks", str(folder / "blocks.md"), "--lbf", str(source)],
-                    ]
-                    outputs = []
-                    for command in commands:
-                        run = subprocess.run(command, capture_output=True, text=True, timeout=120, check=False)
-                        output = (run.stdout + run.stderr).strip()
-                        outputs.append(output)
-                        if run.returncode:
-                            raise ValueError(output or f"Final check failed: {Path(command[1]).name}")
-                    drift = input_drift(state, REPOS)
-                    if drift:
-                        raise ValueError("Provenance drift found: " + "; ".join(f"{kind}: {detail.splitlines()[0]}" for kind, detail in drift))
-                    state.setdefault("manager", {}).setdefault("evidence", {}).update({
-                        "final_verify_checksum": checksum(manuals[0]),
-                        "final_verify_at": now_iso(),
-                        "final_verify_outputs": outputs,
-                    })
-                    record_event(state, "manager", "final automated evidence recorded", "G8_FINAL_VERIFY", "Manual, quote, block, and provenance checks completed. Sufficiency reading remains required.")
-                    save_yaml(state_path, state)
-                return self.send_json({"message": "Automated final evidence is recorded and provenance is unchanged. The sufficiency reading is still required before G8 can pass."})
 
             return self.send_json({"error": "Unknown action."}, 404)
         except Exception as exc:

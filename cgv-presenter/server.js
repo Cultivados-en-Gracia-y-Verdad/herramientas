@@ -2378,7 +2378,9 @@ function buildFootnoteMarkup(id, labelText, options = {}) {
   } else if (labelText != null && String(labelText).length) {
     labelHtml = paren ? `(${escapeHtml(labelText)})` : escapeHtml(labelText);
   } else {
-    labelHtml = `<sup class="footnote-marker">${escapeHtml(id)}</sup>`;
+    // Never paint the raw id (ap-1-1-hen) into the slide. Markdown keeps
+    // (ἣν)[^ap-1-1-hen]; the reader sees Greek + a silent marker.
+    labelHtml = `<sup class="footnote-marker" aria-label="${escapeHtml(id)}">†</sup>`;
   }
 
   return `<span class="bible-ref footnote-ref" tabindex="0" role="button" data-reference="${referenceKey}" data-footnote-id="${escapeHtml(id)}" data-verse-count="1">${labelHtml}<span class="bible-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><strong>${escapeHtml(id)}</strong> ${noteHtml}</span></span></span>`;
@@ -3197,6 +3199,15 @@ function renderLine(line) {
 
   if (isImageBlockquoteLine(line)) {
     return enrichPresentationMarkup(renderMarkdown(unwrapBlockquotePrefix(line))).trim();
+  }
+
+  if (isContextQuoteLine(line)) {
+    const body = String(line || "").replace(/^=\s+/, "").trim();
+    return `
+      <p class="scripture-line">
+        ${enrichPresentationMarkup(renderMarkdownInline(body)).trim()}
+      </p>
+    `.trim();
   }
 
   if (isStandaloneScriptureLine(line)) {
@@ -4671,7 +4682,10 @@ function normalizeCommentGlosses(text) {
   // word-study marker that is often written with unbalanced emphasis. Convert it
   // into a lexeme span so the marker reads as a defined term instead of leaving a
   // stray asterisk in the rendered comment.
-  return String(text || "").replace(/\*"([^"\n]+)"\*?/g, '<span class="lexeme">"$1"</span>');
+  let value = String(text || "").replace(/\*"([^"\n]+)"\*?/g, '<span class="lexeme">"$1"</span>');
+  // Repair bold-italic closed with five asterisks: ***dio*****: → ***dio***:
+  value = value.replace(/\*\*\*([^*\n]+)\*\*\*\*\*([:.,;!?])/g, "***$1***$2");
+  return value;
 }
 
 function unwrapBlockquotePrefix(line) {

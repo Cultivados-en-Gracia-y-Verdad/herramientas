@@ -43,7 +43,14 @@ def ppath(pid): return course_dir(pid) / "state.yaml"
 def get(pid):
     p = ppath(pid)
     if not p.exists(): raise SystemExit(f"Project not found: {pid}")
-    return p, load_yaml(p)
+    s = load_yaml(p)
+    before = {g: s["gates"][g]["status"] for g in MECHANICAL_PASS_GATES}
+    invalidate_stale_mechanical_passes(s, _preferred_manual(course_dir(pid)))
+    recompute(s)
+    after = {g: s["gates"][g]["status"] for g in MECHANICAL_PASS_GATES}
+    if before != after:
+        save_yaml(p, s)
+    return p, s
 
 def cmd_init(a):
     p = ppath(a.project)          # fails loudly if the course folder does not exist
@@ -80,10 +87,16 @@ def cmd_status(a):
 def cmd_gate(a):
     p,s=get(a.project)
     notes = a.notes or ""
-    if a.gate == "G0_ALIGNMENT" and a.status == "PASS":
-        raise SystemExit("G0_ALIGNMENT cannot be hand-set to PASS. Accept a verified attestation instead.")
-    if a.gate == "G1_COMPILE" and a.status == "PASS":
-        raise SystemExit("G1_COMPILE cannot be hand-set to PASS. Use 'compile record' instead.")
+    if a.gate in HAND_FORBIDDEN_PASS and a.status == "PASS":
+        if a.gate in MECHANICAL_PASS_GATES:
+            raise SystemExit(
+                f"{a.gate} PASS is set only by mechanical verify. "
+                f"Use: cgv verify-g7 {a.project}  or  cgv verify-g8 {a.project}"
+            )
+        if a.gate == "G0_ALIGNMENT":
+            raise SystemExit("G0_ALIGNMENT cannot be hand-set to PASS. Accept a verified attestation instead.")
+        if a.gate == "G1_COMPILE":
+            raise SystemExit("G1_COMPILE cannot be hand-set to PASS. Use 'compile record' instead.")
     try:
         if a.gate == "G0_ALIGNMENT" and a.status == "SKIPPED":
             waive_gate0(s, REPOS, a.actor, notes)
@@ -94,6 +107,146 @@ def cmd_gate(a):
     save_yaml(p,s)
     print(f"{a.gate}: {s['gates'][a.gate]['status']}")
     print("Next:", next_action(s))
+
+
+def _preferred_manual(course: Path):
+    named = course / "manual" / "manual.md"
+    if named.is_file():
+        return named
+    hits = sorted((course / "manual").glob("*.md"), key=lambda f: f.stat().st_mtime, reverse=True) if (course / "manual").is_dir() else []
+    return hits[0] if hits else None
+
+
+def cmd_correct_g7(a):
+    """Mechanical Corrector on gate surface after G7 FAIL, then re-verify."""
+    import subprocess
+    p, s = get(a.project)
+    course = course_dir(a.project)
+    manual = _preferred_manual(course)
+    if not manual:
+        raise SystemExit(f"No manual in {course}/manual/")
+    r = subprocess.run(
+        ["python3", str(CGV / "scripts" / "correct-g7-surface.py"), "--manual", str(manual)],
+        capture_output=True, text=True,
+    )
+    print(r.stdout, end="")
+    if r.stderr:
+        print(r.stderr, end="")
+    if r.returncode not in (0, 1):
+        raise SystemExit(r.returncode)
+    record_event(
+        s, "correct-g7-surface", "mechanical Corrector applied on gate surface",
+        "G7_EDITORIAL", (r.stdout or "")[-400:],
+    )
+    # Re-open FAIL/STALE so verify can set PASS/FAIL again
+    st = s["gates"]["G7_EDITORIAL"]["status"]
+    if st in {"FAIL", "STALE"}:
+        try:
+            if st == "FAIL":
+                transition_gate(s, "G7_EDITORIAL", "READY", "correct-g7-surface", "Re-open after Corrector.")
+            elif st == "STALE":
+                transition_gate(s, "G7_EDITORIAL", "READY", "correct-g7-surface", "Re-open after Corrector.")
+        except ValueError as e:
+            print(e)
+    save_yaml(p, s)
+    if a.no_verify:
+        print("Next: cgv verify-g7", a.project)
+        return 0
+    # Chain verify
+    class _A:
+        project = a.project
+    return cmd_verify_g7(_A())
+
+
+def cmd_verify_g7(a):
+    """Run speaker/hearing G7 and auto-record PASS or FAIL."""
+    import subprocess
+    p, s = get(a.project)
+    course = course_dir(a.project)
+    invalidate_stale_mechanical_passes(s, _preferred_manual(course))
+    manual = _preferred_manual(course)
+    if not manual:
+        raise SystemExit(f"No manual in {course}/manual/")
+    out = course / "reports" / "SPEAKER_HEARING_REPORT.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    r = subprocess.run(
+        ["python3", str(CGV / "scripts" / "verify-g7-editorial.py"), "--manual", str(manual), "--out", str(out)],
+        capture_output=True, text=True,
+    )
+    print(r.stdout, end="")
+    if r.stderr:
+        print(r.stderr, end="")
+    passed = r.returncode == 0
+    try:
+        apply_mechanical_gate_result(
+            s, "G7_EDITORIAL", passed,
+            manual_checksum=checksum(manual),
+            notes=(r.stdout + r.stderr)[-500:] or ("PASS" if passed else "FAIL"),
+            actor="verify-g7-editorial",
+        )
+    except ValueError as e:
+        print(e); raise SystemExit(1)
+    save_yaml(p, s)
+    print(f"G7_EDITORIAL: {s['gates']['G7_EDITORIAL']['status']}")
+    print("Next:", next_action(s))
+    raise SystemExit(0 if passed else 1)
+
+
+def cmd_verify_g8(a):
+    """Run G8 mechanical stream and auto-record PASS or FAIL."""
+    import subprocess
+    p, s = get(a.project)
+    course = course_dir(a.project)
+    invalidate_stale_mechanical_passes(s, _preferred_manual(course))
+    manual = _preferred_manual(course)
+    if not manual:
+        raise SystemExit(f"No manual in {course}/manual/")
+    lbf = None
+    for cand in (REPOS / "cgv-data/bibles/LBF" / f"{a.project}.lbf.md", Path(s.get("source", {}).get("path") or "")):
+        if cand and Path(cand).is_file():
+            lbf = Path(cand) if Path(cand).is_absolute() else (REPOS / cand)
+            if lbf.is_file():
+                break
+            lbf = None
+    src = s.get("source", {}).get("path")
+    if lbf is None and src:
+        cand = Path(src) if Path(src).is_absolute() else REPOS / src
+        if cand.is_file():
+            lbf = cand
+    blocks = course / "blocks.md"
+    cmd = [
+        "python3", str(CGV / "scripts" / "verify-g8-final.py"),
+        "--manual", str(manual),
+        "--book", a.project,
+        "--reports-dir", str(course / "reports"),
+    ]
+    if lbf:
+        cmd.extend(["--lbf", str(lbf)])
+    if blocks.is_file():
+        cmd.extend(["--blocks", str(blocks)])
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    print(r.stdout, end="")
+    if r.stderr:
+        print(r.stderr, end="")
+    if r.returncode == 0:
+        drift = input_drift(s, REPOS)
+        if drift:
+            print("Provenance drift:", drift)
+            raise SystemExit(1)
+    passed = r.returncode == 0
+    try:
+        apply_mechanical_gate_result(
+            s, "G8_FINAL_VERIFY", passed,
+            manual_checksum=checksum(manual),
+            notes=(r.stdout + r.stderr)[-500:] or ("PASS" if passed else "FAIL"),
+            actor="verify-g8-final",
+        )
+    except ValueError as e:
+        print(e); raise SystemExit(1)
+    save_yaml(p, s)
+    print(f"G8_FINAL_VERIFY: {s['gates']['G8_FINAL_VERIFY']['status']}")
+    print("Next:", next_action(s))
+    raise SystemExit(0 if passed else 1)
 
 def cmd_gate0_accept(a):
     p,s=get(a.project)
@@ -221,6 +374,17 @@ def parser():
 
     p=sub.add_parser("check", help="run every gate script for this book and print one verdict")
     p.add_argument("project"); p.set_defaults(func=cmd_check)
+
+    p=sub.add_parser("verify-g7", help="run speaker/hearing G7 and auto PASS/FAIL")
+    p.add_argument("project"); p.set_defaults(func=cmd_verify_g7)
+
+    p=sub.add_parser("correct-g7", help="mechanical Corrector on gate surface after G7 FAIL, then re-verify")
+    p.add_argument("project")
+    p.add_argument("--no-verify", action="store_true", help="apply Corrector only; do not chain verify-g7")
+    p.set_defaults(func=cmd_correct_g7)
+
+    p=sub.add_parser("verify-g8", help="run G8 mechanical stream and auto PASS/FAIL")
+    p.add_argument("project"); p.set_defaults(func=cmd_verify_g8)
 
     c=sub.add_parser("compile", help="record a Compiler Generate against the declared inputs")
     cs=c.add_subparsers(dest="ccmd", required=True)

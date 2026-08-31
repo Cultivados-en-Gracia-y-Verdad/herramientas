@@ -117,6 +117,8 @@ cgv gate <libro> G4_SPECIALISTS SKIPPED --notes "no specialist question arose"
 
 ## G5_ARCHITECTURE — blocks first, then structure
 
+Book-level architecture still runs first when the book is new:
+
 `/estructura` in Cursor. Arquitecto runs in order:
 
 **Step 0 — independent clauses.** A verdict before anything is named. `Bloqueado` stops the pass;
@@ -138,55 +140,93 @@ cgvs/verify-blocks.py --blocks {NN.Curso}/blocks.md --lbf cgv-data/bibles/LBF/<l
 cgv gate <libro> G5_ARCHITECTURE PASS --notes "blocks approved; architecture rests on them"
 ```
 
+### Hearing production — H2 loop (locked)
+
+Once H2 spans exist, **student analysis is remapped one H2 at a time**. Model unit:
+Apocalipsis 1:1–8. See `MANUAL_STANDARD.md` § *Production template*.
+
+```text
+clause map → Arquitecto hierarchy → your approval → Escriba remap → Apéndice D → audits
+```
+
+1. Complete / refresh `reports/clause-map-{span}.md` (`templates/clause-map.template.md`).
+2. `/estructura` on that span — Arquitecto writes `architecture/{libro}-hierarchy-{span}.md`.
+3. You approve (one sentence).
+4. `/manual` — Escriba remaps **only that H2** onto the approved tree (leave `=` frozen).
+5. Footnote definitions go under **Apéndice D** at end of file.
+6. Audits for that span, then the next H2.
+
+Do **not** Arquitecto-all-first. Do **not** mass-rewrite the book in one pass. Every finished H2
+must look like `## Apocalipsis 1:1–8` in the working manual.
+
 ---
 
 ## G6_WRITING — context quotes, then Escriba
 
-Once the H2 spans exist, generate the context quotes. **Scripture is never typed by an agent:**
+Once the H2 spans exist, generate the context quotes. **Scripture is never typed by an agent.**
+The script packs whole LBF verses into `=` slides under ~280 characters (never splits a verse
+across slides):
 
 ```bash
 cgvs/build-context-quotes.py --manual {NN.Curso}/manual/<libro>-manual.md \
                              --lbf cgv-data/bibles/LBF/<libro>.lbf.md --write
 ```
 
-`/manual` in Cursor — Escriba, **one H3 per pass**. It reads `blocks.md`, and the book introduction
-must name the series with their counts. A student who finishes the introduction and cannot say what
-the book is made of has been failed by it.
+For hearing remaps, prefer the working surface `manual/manual.md` when present. Escriba follows
+the **H2 loop** above — one approved hierarchy span per pass — not “one Compiler H3 with flechas.”
+The book introduction must still name series with their counts. A student who finishes the
+introduction and cannot say what the book is made of has been failed by it.
 
 ---
 
-## G7_EDITORIAL — two roles, in order
+## G7_EDITORIAL — two roles, then mechanical PASS
 
-`@editor` first — mechanical only: markers, indentation, heading shape, slides, footnotes. **It
-never changes wording.** Then `@corrector` — prose, pacing, transitions, síntesis, Actores as
-prose. `@corrector` is what `@editor` used to be.
+`@editor` first — mechanical only. Then `@corrector` on the **gate surface**
+(`manual/manual.md` when present). Agents do **not** mark the gate.
 
 ```bash
 cgvs/check-authority.py --before <a>.md --after <b>.md --agent editor
+cgv verify-g7 <libro>          # auto PASS/FAIL — no hand gate
 ```
 
-The diff is the verdict; the agent does not get to explain itself.
+### When verify-g7 FAILs → Corrector (required)
+
+```bash
+cgv correct-g7 <libro>         # mechanical Corrector on gate surface, then re-verify
+# if still FAIL: @corrector for remaining CRITICAL (speakers), then:
+cgv verify-g7 <libro>
+```
+
+Mechanical Corrector (`scripts/correct-g7-surface.py`) deletes Actores, stock
+*El recuento* / *Esto es lo que hay que oír*, and known speaker-poison triples.
+It does not invent prose. Agent Corrector owns the rest.
+
+Witness: `contracts/SPEAKER_HEARING_CONTRACT.md` · `reports/SPEAKER_HEARING_REPORT.md`.
+Do **not** `cgv gate … G7_EDITORIAL PASS`.
 
 ---
 
-## G8_FINAL_VERIFY
+## G8_FINAL_VERIFY — mechanical stream (auto PASS/FAIL)
 
 ```bash
-cgvs/run-manual-checks.py     --manual … --lbf … --book <libro>
-cgvs/build-context-quotes.py  --manual … --lbf … --check
-cgvs/verify-blocks.py         --blocks … --lbf …
+cgv verify-g8 <libro>
 cgv provenance <libro>
 ```
+
+`verify-g8` runs `verify-g8-final.py` (speaker `--gate g8`, manual checks, quotes, blocks) and
+records **PASS or FAIL**. No hand PASS. Human sufficiency reading is **G9 only**.
 
 `provenance` recomputes every declared input. Drift means something moved under you; `--apply`
 marks the affected gates `STALE` and blocks what depends on them.
 
-Then the sufficiency reading: **can a student who reads only this manual say what happens in each
-block, and what shape the book has?** No script answers that.
-
 ---
 
 ## G9_HUMAN_REVIEW · G10_RELEASE
+
+Only after G7 and G8 mechanical PASS:
+
+**Sufficiency reading:** can a student who reads only this manual say what happens in each block,
+and what shape the book has? Scripts do not answer that — humans do, here.
 
 ```bash
 cgvs/release-gate.py --manifest {NN.Curso}/release-manifest.json

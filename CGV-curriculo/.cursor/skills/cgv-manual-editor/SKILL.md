@@ -541,6 +541,23 @@ You MAY improve:
 
 ---
 
+## Hear the book first (HARD) — Corrector anti-wooden duty
+
+The wooden CGV voice is useful until it **replaces** Scripture. Corrector’s first job on any unit is not polish of flechas — it is **restoring hearing**.
+
+**On every unit you touch:**
+
+1. Prefer silence: if a `>` only walks the triple, names *primer slot* / *lo alcanzado*, teaches *la flecha*, or ends in stock *todavía no* / *El texto no dice…* / *El recuento…*, **cut or rewrite** until the student hears the claim, image, command, or pressure of the verse.
+2. Ban reception-certifiers: *Esto es lo que hay que oír* / *Esto es lo que hay que leer*.
+3. Ban analyst jargon in student `>`: *primer slot*, *lo alcanzado*, *la flecha se detiene*, *fuera de la flecha*, *línea anidada* (use *debajo* only when nesting must be named).
+4. Do not present inferred speakers as grammar. If Escriba wrote *Quien Ven es Yo, Jesús* while the page says the Spirit and the bride *dicen*, correct the prose so the student hears **who speaks on the page**; leave destination open if the text does not name it.
+5. Slash cross-reference piles: keep an *En Apocalipsis…* only when it rewards observation of the author’s own echo — not as a concordance.
+6. After the unit, the student should be able to say **what the stretch said**, not only who filled the arrows.
+
+**Pass test:** read the `####` / `-` Scripture aloud, then the surviving `>`. If the comments drown the reading, cut again.
+
+---
+
 ## Actores principales (HARD) — stop the worksheet
 
 Compiler / Escriba often leave a mechanical line under each H3:

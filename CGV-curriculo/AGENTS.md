@@ -13,7 +13,8 @@ Three documents, three altitudes. Each owns its rules; none repeats another.
 2. **`WORKFLOW.md`** — *what must happen, in what order, with what evidence.* Phases, gates,
    artifact chain, state model, provenance, ownership, definition of done.
 3. **`MANUAL_STANDARD.md`** — *how a manual is built.* Markers, hierarchy, commentary, slides,
-   content standard, report protocol, model tiering.
+   content standard, **production template** (Apocalipsis 1:1–8 is the locked student shape),
+   report protocol, model tiering.
 
 Then, for the book in hand:
 
@@ -38,7 +39,7 @@ herramientas/CGV-curriculo/       the method — never book-specific
   WORKFLOW.md                     governance: phases, gates, provenance
   MANUAL_STANDARD.md              production: markers, hierarchy, content
   STATE_MODEL.md                  the state machine
-  contracts/                      GATE0 · verification independence · attestation
+  contracts/                      GATE0 · verification independence · speaker/hearing · attestation
   config/models.yaml              model tiering
   manager/                        the orchestrator (was cgv-MANAGER)
   templates/                      spec · blocks · state
@@ -49,9 +50,9 @@ curriculo/NN.Curso/               the products — everything a stage emits
   spec.md  blocks.md  state.yaml  book specification · units · workflow state
   observation/                    Observer + Jason: progress JSON, clause IDs
   skeleton/                       Compiler export
-  architecture/                   Arquitecto: step0, H2/H1/telos/H3, outline
-  manual/                         manual drafts
-  reports/                        agent reports, editorial notes
+  architecture/                   Arquitecto: blocks, hierarchy-{span}, outline
+  manual/                         drafts (hearing surface: manual.md)
+  reports/                        agent reports, clause maps, editorial notes
   slides/                         assembled output — Presenter entry, do not reorganize
 ```
 

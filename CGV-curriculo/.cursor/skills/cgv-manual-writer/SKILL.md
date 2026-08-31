@@ -88,7 +88,7 @@ Meaning for Escriba:
 - **Listen first** — stay under the author’s words, order, and unfinished threads.
 - **Learn with the student** — write as someone still looking, not as someone who already closed the case.
 - **Walk the process** — guide observation step by step (who acts, what hangs where, what the connector does, what repeats, what is still open) **and** how this step continues the author’s path.
-- **Name the obvious** — do not skip plain facts because they seem “too simple.” What is obvious in the text is often what students most need pointed out.
+- **Name the obvious** — do not skip plain facts because they seem “too simple.” What is obvious in the text is often what students most need pointed out. **Observation leads; grammar accompanies.** A mute Scripture host with only Greek tags under it has failed — especially opening claims (*Revelación de Jesús Cristo*, titles, names). First help the student hear what the line *says*; then the relative / infinitive / flecha may serve that hearing.
 - **Bring tension into view** — never fear showing the pressure the text itself builds; keep the suspense alive until the author resolves it.
 - **Refuse hurry** — do not rush to resolve, summarize, or answer ahead of the author’s pace. Let Scripture teach and resolve.
 - **Stay inside the text** — do not teach what Scripture does not teach. If the passage does not say it, Escriba does not say it.
@@ -114,20 +114,91 @@ After many pages, the student should never wonder *what job this comment is doin
 
 #### Before every `>`
 
-Ask **one** question:
+Ask **two** questions, in this order:
 
-> **What is the most valuable thing I can help the student notice here?**
+1. **Can the student hear what Scripture just said without me?** If yes, prefer silence.
+2. **What is the most valuable thing I can help the student notice here?** Not: *What else can I say?*
 
-Not: *What else can I say?*
+The student must leave the unit having **heard the book**, not having learned our worksheet. Grammar, flechas, and actor tallies serve that hearing — they are never the product.
 
 Then assign the comment **one primary purpose** (see below). If you cannot name the purpose in one word, do not write the comment — or cut until one purpose remains.
+
+#### Hear the book first (HARD) — anti-wooden rule
+
+CGV manuals may sound wooden when observation becomes the narrator. That is a failure mode, not a house style.
+
+**Forma y contenido juntos (HARD).** Grammar neither governs the passage nor sits in a quarantined “Notas de forma” bin at the end. Place each form under the exact declaration whose force it reveals: text → declaration → the grammatical feature that makes that relation, sequence, or emphasis audible. If a form does not help hear *this* phrase, cut it or leave it for a true appendix.
+
+**Production template (HARD).** Do not hand-author hierarchy. Pipeline: clause map → **Arquitecto**
+hierarchy (`architecture/…-hierarchy-….md`) → approval → Escriba remap → Apéndice D footnotes →
+audits. Model student shape: Apocalipsis 1:1–8. See **MANUAL_STANDARD.md** § *Production template*.
+Skill: **Clause-map → hierarchy**. Work **one H2 at a time**.
+
+**Numbering:** student movements use `2:10a` / `2:10b`. Clauses and technical refs use `2:10:1`,
+`2:10:6`. Do not put Compiler token ids on `###` headings.
+
+Until Arquitecto’s hierarchy for the span is approved, do not treat a hand-built outline as the
+model for the rest of the book.
+
+**Emphasis (HARD).** Prefer `***quoted expression***` for highlighted Spanish in `>`.
+Never close with five asterisks: `***dio*****: ` is a defect; use `***dio***: `.
+Do not wrap an already-italic `*word*` in `**…**` (that yields `***word****`).
+When mixing bold prose and bold-italic quotes, close each run before the next begins:
+
+```markdown
+> ***Para mostrar*** (δεῖξαι)[^ap-1-1-deixai] declara el propósito. El infinitivo depende de ***dio***: Dios dio la revelación para mostrar.
+```
+
+**Technical depth = three layers (HARD).** Outline Spanish only → observation carries meaning +
+visible Greek + `[^…]` → footnote carries morphology. Never Greek or footnote markers on
+`####` / `-` / `+`. Never bare ids.
+
+```markdown
+#### *Revelación de Jesús Cristo*
+
+> El libro comienza nombrándose: *Revelación de Jesús Cristo* (Ἀποκάλυψις Ἰησοῦ Χριστοῦ)[^ap-1-1-apokalypsis].
+```
+
+(Definition of `[^ap-1-1-apokalypsis]` belongs in **Apéndice D**, not under the H2.)
+
+Footnote order: **form → lemma → morphology → syntactic function → relevance → variant if needed.**
+Passage-stable ids. Name the Greek edition (Apocalipsis: Scrivener 1894). Certainty: explicit /
+grammatical / inference (mark or omit) / uncertain (neutral + footnote).
+**Definitions** go only in `# Apéndices` → **Apéndice D — Notas técnicas por pasaje** (end of
+file). Body: citations only — never mid-file definition dumps after En síntesis.
+
+**Participant continuity (HARD).** Hear who speaks or acts through syntax and progression — not
+mechanical actor counts. Three categories only: participant+action · speaker+declaration ·
+subject+state/assignment. Never tally *que* / *gracia* / *el tiempo* / relatives as actors.
+Name a continuity transition in `>` only when it materially affects the flow (e.g. 1:5–6 → 1:7
+*viene*). Keep `actor_basis` honest: explicit · implied_by_grammar · referent_continued_by_context ·
+unresolved — never promote a plausible antecedent into a named subject on the page.
+
+**Discourse order ≠ event chronology (HARD).** Clause order is textual sequence, not a timeline.
+Do not use *después*, *luego*, *ahora*, *a continuación*, *antes*, *todavía*, *aún* as event
+chronology unless the text (or warranted grammar) establishes that time link. If the clause map
+has `temporal_relation: unspecified`, invent no *then* / *next in time*. Prefer *la declaración
+siguiente*, *el texto pasa de… a…*, *en la lectura*, *a continuación en el texto*. See
+**MANUAL_STANDARD** § Discourse order.
+
+**Pass the unit only if:**
+
+- At least one `>` (when any are needed) helps the student **hear the claim, image, command, or pressure** of the Scripture on the page — not only who fills a triple slot.
+- Grammar `>` is rare: only to prevent a likely misread. Cap usually **one** short grammar beat per clause that needs it.
+- You never teach the flecha as a lesson (*primer slot*, *lo alcanzado*, *la flecha se detiene*, *fuera de la flecha*).
+- You never certify reception (*Esto es lo que hay que oír*, *Esto es lo que hay que leer*).
+- You do not end most units with stock *todavía no* / *El texto no dice…* / *El recuento…* as filler cadence.
+- Cross-references (*En Apocalipsis…*) are sparse: only when the author himself echoes, and never as a guided concordance.
+- You do **not** present inferred speakers/subjects as grammar facts. If the text does not name who speaks or who is addressed, leave it open or mark it as open — never *Quien Ven es Yo, Jesús* when the speakers on the page are others.
+
+**Fail the unit if** a student could read only the `>` lines and reconstruct our apparatus, but could not retell what the biblical stretch said.
 
 #### Five primary purposes (pick one)
 
 | Purpose | Job | Student should feel |
 |---|---|---|
 | **Point** | Help them notice something on the page | “I see that now.” |
-| **Connect** | Show how this clause joins the previous or next movement | “Ah — that’s why it comes here.” |
+| **Connect** | Show how this clause joins the previous or next **declaration** (discourse order) | “Ah — that’s why it stands here.” |
 | **Build pressure** | Highlight an unresolved question or tension the author is developing | “How will he answer this?” |
 | **Prevent a mistake** | Clarify grammar or structure **only** when a likely misread would hurt the reading | “I almost got that wrong.” |
 | **Reward observation** | Show the significance of something easy to overlook — still on the page, still not doctrine | “I never noticed that.” |
@@ -171,8 +242,8 @@ If I can understand the comment simply by rereading the verse, the comment proba
 **Rule 3 — Show pressure.**  
 A stretch should leave the student asking *How will the author answer this?* — not only *Interesting.* Prefer pressure comments over restatement.
 
-**Rule 4 — Point forward intentionally.**  
-The author is always building. Comments often end with *Todavía no…* / *Eso llega…* / *La respuesta vendrá…* when the text earns the delay. Do this on purpose, not as filler cadence.
+**Rule 4 — Point forward intentionally — and sparsely.**  
+The author is always building. A forward glance (*Todavía no…* / *Eso llega…*) is earned only when the delay itself is the pressure. Do **not** end unit after unit with *todavía no*: that converts suspense into procedure and steals the author’s timing. Prefer silence until the next line arrives.
 
 **Rule 5 — Reward careful reading.**  
 Best comments make the student think *I never noticed that* — not *Yes, I already read that.*
@@ -538,8 +609,10 @@ This is the same craft as **Reward observation** / argument-layer comments — p
 
 - **Keep Greek on short `*` tags** Compiler emitted for hangers and hosts (word + form, `[^rel]`, `[^hina]`, etc.) when they help the tree.
 - **Strip** long connector-continuation lectures (*Esta frase va unida con *y*…*) — see above.
-- **In `>` commentary, do not teach Greek.** Prefer the Spanish of the line and the message move. A Greek word may appear once when the connector itself is the hinge — then immediately say what that does for the claim.
-- Never turn a unit into a Greek class: no parsing drills, no “el aoristo indica…”, no stacking transliterations.
+- **In `>` commentary:** natural Spanish observation; Greek **surface form** beside the Spanish
+  expression + `[^…]` footnote (see **Technical depth = three layers**). Do not put Greek or
+  `[^…]` on `####` / `-` / `+`. Do not dump lemma/morphology into the body. Never bare ids.
+- Never turn a unit into a Greek class: no parsing drills, no stacking transliterations, no third running grammar layer.
 - Full book-name Scripture references stay in Spanish (*1 Juan 1:3*), not Greek titles.
 
 ### Comments as Scripture speaks
@@ -1310,8 +1383,8 @@ Fail any test → rewrite or omit.
 
 ### Marker reservation (HARD)
 
-- **`-`** — reserved for **dependent-clause Scripture only**. Never put actors, tono, grammar labels, or Writer prose on `-`.
-- **`+`** — reserved for **phrase Scripture only**. Never put actors, tono, grammar labels, or Writer prose on `+`.
+- **`-`** — reserved for **dependent-clause Scripture only**. Never put actors, tono, grammar labels, clause-type notes, or Writer prose on `-`.
+- **`+`** — reserved for **phrase Scripture only**. Never put actors, tono, grammar labels, clause-type notes, or Writer prose on `+`.
 - **`*`** — Observer / Compiler mechanical lines (and evidence). Actor lines **must** start with `*`:
 
 ```markdown
@@ -1319,6 +1392,8 @@ Fail any test → rewrite or omit.
 ```
 
 Never leave that line mute — see **Actores principales — a book-long human thread**.
+
+**Nominal clauses:** mark once, lightly — `* Cláusula nominal[^nom].` — never a repeated mini-lesson («no presenta verbo expreso…») that steals a slide. Definition lives in **Apéndice C** (`[^nom]`). Never on `-` / `+`.
 
 ### Connector glosses must name their target (HARD)
 

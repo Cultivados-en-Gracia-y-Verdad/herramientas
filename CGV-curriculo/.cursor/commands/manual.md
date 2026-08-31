@@ -39,27 +39,28 @@ in order. Then name the next uncommented unit so the user knows what is coming.
 
 ## What you write
 
-- `>` commentary — follow the skill’s **Commentary style guide**: before each `>`, pick **one**
-  primary purpose (Point / Connect / Build pressure / Prevent a mistake / Reward observation).
-  Prefer observation, pressure, and structural movement. Ask *why did the author say this here?*
-  (structurally) — not *what else can I say?* Cut restatement that only renames the verse.
-- Human LatAm Spanish; path over grammar tour; grammar `>` only when it prevents a likely misread.
-- Comments serve the **message**, not Greek. May be based on Greek; never a lecture about *y* / ὃ.
-  Delete Compiler’s repeated “Esta frase va unida con *y*…” boilerplate. If the link matters,
-  one `>` on the **implication** for the claim — not on the particle.
-- Actor triples (`* A → B → C`) — **keep them**; walk every one in `>` (quién / qué / hacia qué).
-  Obvious to some readers; opaque to others. Walked ≠ worksheet restatement; never leave bare;
-  never strip to simplify. See skill **Actor triples — keep them, walk them**.
-- Explicit first; implications only when pieced from data already on the page — not guessing.
-- `[^P]` / `[^I]` — normalize form labels; **do not** write a `>` for every participle. Keep Greek
-  explanation in `>` to a minimum (short `*` tags may keep Greek).
-- `+` splits — break long Compiler phrase runs at natural seams, Scripture only, omitting no word.
-  **Carry every word-detail group to the piece that contains its head word**; never leave the grammar
-  notes stacked at the bottom describing text now several lines above.
-- `###` wording — refine Arquitecto's context title if it needs it. Do not compete with the H4.
-- `### En síntesis` — after every H2’s content H3s are done, **before** the next H2. Short:
-  about **5–6 one-liners** (path summary, not H3 inventory). Ask for it or write it when closing
-  an H2.
+**Production path (HARD).** Do **not** rewrite an H2 until Arquitecto has emitted and the user
+has approved `architecture/{libro}-hierarchy-{span}.md` from the clause map. Hand-authored
+outlines are provisional. Target student shape: Apocalipsis 1:1–8 (`MANUAL_STANDARD` §
+*Production template*). When the hierarchy is approved:
+
+1. Leave `=` LBF continuous text untouched.
+2. Remap observations onto Arquitecto’s tree (declare · relate · evidence).
+3. Greek **surface** + `[^…]` only in `>` — never on `####` / `-` / `+`. Morphology only in Apéndice D.
+4. Never silently complete an unexpressed subject; mark or omit inferences.
+5. Never leave bare ids (`ap-1-1-deixai`); only `[^ap-1-1-deixai]`.
+6. No flechas, no actor tallies, no event-timeline glue from clause order alone.
+- `>` commentary — skill **Commentary style guide**: one primary purpose per `>`. Prefer
+  observation, pressure, and structural movement.
+- Human LatAm Spanish; path over grammar tour.
+- Comments serve the **message**, not Greek class. Delete Compiler “Esta frase va unida con *y*…”
+  boilerplate.
+- Actor triples (`* A → B → C`) — **keep them**; walk every one in `>`.
+- Explicit first; implications only from data already on the page.
+- `[^P]` / `[^I]` — book-wide form defs still OK; passage evidence uses passage-stable ids
+  (`[^ap-1-1-deixai]`). Do not write a `>` for every participle.
+- `+` splits — Scripture only, omit no word; carry word-detail groups with their head.
+- `###` / `### En síntesis` — movements and path summary, not H3 inventory.
 
 ## What you never touch
 

@@ -19,8 +19,10 @@ If a fix requires deciding what a sentence should say, it is not yours — hand 
 
 ## Load first
 
-`MANUAL_STANDARD.md` §3 (markers, hierarchy, commentary, slides, footnotes, protected content).
-That section is the specification; this file is only the procedure.
+`MANUAL_STANDARD.md` §3 (markers, hierarchy, commentary, slides, footnotes, protected content,
+**Production template**). Every `[^tag]` must have a definition in **Apéndice D**; bare ids without
+brackets are FAIL; outline is Spanish only; Greek surface + `[^…]` only in `>`; morphology only
+in footnotes. That section is the specification; this file is only the procedure.
 
 ## What you repair
 

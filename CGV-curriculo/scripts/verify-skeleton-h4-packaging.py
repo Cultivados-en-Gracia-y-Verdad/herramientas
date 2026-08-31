@@ -54,6 +54,11 @@ MAX_DANGLING_ABS = 10          # or more than 10 absolute, even on a short book
 OVERLAP_WORDS = 6
 MAX_ADJACENT_OVERLAPS = 0      # any ≥6-word seam repeat → FAIL
 MAX_MISSING_VERSE_3GRAMS = 0   # any LBF verse without a 3-gram in Scripture → FAIL
+# An H4 is one independent clause for the student slide. Past ~180 chars it is almost
+# always several coordinated claims packed as one — unpresentable and unverified until now.
+# Soft report from WARN_H4_CHARS; hard FAIL from MAX_H4_CHARS (p99 on Apocalipsis ≈ 180).
+WARN_H4_CHARS = 160
+MAX_H4_CHARS = 180
 
 H4_RE = re.compile(r"^#### \*(.+?)\*\s*$", re.M)
 # Dependent Scripture can be nested several levels beneath its host H4. Leading
@@ -231,6 +236,10 @@ def audit(manual_path: Path, lbf_path: Path | None) -> dict:
             if not found:
                 missing_verses.append((f"{ch}:{vs}", text[:100]))
 
+    long_h4s = [(len(h), h) for h in h4s if len(h) > WARN_H4_CHARS]
+    long_h4s.sort(reverse=True)
+    oversized_h4s = [(n, h) for n, h in long_h4s if n > MAX_H4_CHARS]
+
     n = max(len(h4s), 1)
     dangling_frac = len(dangling) / n
     fail_reasons: list[str] = []
@@ -249,6 +258,11 @@ def audit(manual_path: Path, lbf_path: Path | None) -> dict:
             f"LBF verses with no 3-gram in ####/-/+: {len(missing_verses)} "
             f"(fail if >{MAX_MISSING_VERSE_3GRAMS})"
         )
+    if oversized_h4s:
+        fail_reasons.append(
+            f"oversized H4 claims: {len(oversized_h4s)} "
+            f"(fail if any H4 >{MAX_H4_CHARS} chars — likely several clauses packed as one)"
+        )
 
     return {
         "manual": str(manual_path),
@@ -259,6 +273,8 @@ def audit(manual_path: Path, lbf_path: Path | None) -> dict:
         "midStartCount": len(mid_starts),
         "adjacentOverlapCount": len(overlaps),
         "missingVerseCount": len(missing_verses),
+        "longH4Count": len(long_h4s),
+        "oversizedH4Count": len(oversized_h4s),
         "danglingSamples": [
             {"n": n, "endsWith": w, "h4": h4[:100]} for n, h4, w in dangling[:12]
         ],
@@ -268,6 +284,9 @@ def audit(manual_path: Path, lbf_path: Path | None) -> dict:
         ],
         "missingVerseSamples": [
             {"ref": r, "lbf": t} for r, t in missing_verses[:12]
+        ],
+        "longH4Samples": [
+            {"chars": n, "h4": h[:120]} for n, h in long_h4s[:12]
         ],
         "verdict": "FAIL" if fail_reasons else "PASS",
         "failReasons": fail_reasons,
@@ -304,6 +323,10 @@ def main() -> None:
         )
         print(f"mid-phrase H4 starts: {report['midStartCount']} (informational)")
         print(f"adjacent overlaps: {report['adjacentOverlapCount']}")
+        print(
+            f"long H4s (>{WARN_H4_CHARS} chars): {report['longH4Count']}  "
+            f"oversized (>{MAX_H4_CHARS}): {report['oversizedH4Count']}"
+        )
         if report["lbf"]:
             print(f"LBF verses missing 3-gram: {report['missingVerseCount']}")
         print()
@@ -323,8 +346,16 @@ def main() -> None:
                 print("\nmissing-verse samples:")
                 for s in report["missingVerseSamples"][:5]:
                     print(f"  {s['ref']}: {s['lbf']}")
+            if report.get("longH4Samples"):
+                print("\noversized / long H4 samples:")
+                for s in report["longH4Samples"][:5]:
+                    print(f"  {s['chars']} chars: {s['h4']}")
         else:
             print("PASS — H4 packaging gate clear.")
+            if report.get("longH4Samples"):
+                print("\nlong H4 samples (informational, ≤ fail threshold):")
+                for s in report["longH4Samples"][:5]:
+                    print(f"  {s['chars']} chars: {s['h4']}")
 
     sys.exit(1 if report["verdict"] == "FAIL" else 0)
 

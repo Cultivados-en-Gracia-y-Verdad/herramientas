@@ -1,14 +1,13 @@
 ---
 name: cgv-structure-architect
 description: >-
-  Names CGV manual editorial navigation from a compiled skeleton. Use when Arquitecto is
-  invoked, when verifying a skeleton's independent clauses (H4s) before structuring — Step 0
-  always first (read the student H4 surface yourself: truncated claims, seam overlaps, missing
-  verses, buried imperatives, false purpose H4s, wrong purpose parents, biblical reading order;
-  mechanical / OT / OSHB handoffs), naming H2 developments from consecutive H3s, naming H1 major
-  developments from consecutive H2s, identifying a book's telos, or proposing a book Title and
-  Subtitle. Keeps workshop notes out of the student manual. Do not use for Writer `>` commentary
-  (that is Escriba) or Observer JSON (Jason AI / Observer UI).
+  Names CGV manual editorial navigation from a compiled skeleton or from a clause map.
+  Use when Arquitecto is invoked, when verifying independent clauses (H4s) before structuring
+  (Step 0), when building literary hierarchy from reports/clause-map-*.md (governor edges — not
+  verse cuts), naming H2 developments from consecutive H3s, naming H1 major developments from
+  consecutive H2s, identifying a book's telos, or proposing a book Title and Subtitle. Keeps
+  workshop notes out of the student manual. Do not use for Writer `>` commentary (Escriba) or
+  Observer JSON (Jason AI / Observer UI).
 ---
 
 # CGV Structure Architect (Arquitecto skill set)
@@ -28,6 +27,46 @@ packaging D). That MD is the base for the next step.
 |---|---|---|
 | **1. Outline view** | Clean navigable MD: named **H1 / H2** over the Compiler’s H3/H4 outline (Version A look). Scripture structure + navigation only — no `>`, no workshop dumps. | Log, teaching/read preview, human review. **Escriba does not depend on this file.** |
 | **2. Manual skeleton** | The working student-manual MD: same H1/H2 names applied on the Compiler base (YAML, `*`, outline, slots for Writer). | **Escriba’s input** — commentary is written here. |
+
+### Clause-map path (production / hearing manuals) — HARD
+
+When a **clause map** exists for a span (`{NN.Curso}/reports/clause-map-….md`, template
+`templates/clause-map.template.md`), Arquitecto has a **third job** for that span before Escriba
+rewrites:
+
+| Output | What it is |
+|---|---|
+| **3. Hierarchy from clause map** | Literary movements + principal `####` clusters + indent tree that mirrors `governor` / `relation` edges — written to `{NN.Curso}/architecture/{libro}-hierarchy-{span}.md` |
+
+**Verse numbers locate; they do not structure.** Never cut a movement because a verse ends.
+Never treat chapter:verse as a governor. Build from the inventory’s edges.
+
+**Production template:** Apocalipsis 1:1–8 is the locked student shape (`MANUAL_STANDARD` §
+*Production template*). Every H2 remapped this way must match that look.
+
+Pipeline for each H2 span:
+
+```text
+Complete clause map (inventory + edges)
+  → Arquitecto hierarchy proposal (movements, #### clusters, indent)
+  → human approval
+  → Escriba remaps observations onto that tree
+  → technical footnotes in Apéndice D
+  → four audits
+```
+
+**Forbidden:** hand-authoring student hierarchy for one section in a shape the system cannot
+reproduce. If the map is incomplete, **FALLA** and demand the inventory — do not invent edges.
+Work **one H2 at a time**. Do not Arquitecto-all-first.
+
+Hand-off when the clause-map path is active:
+
+```text
+Clause map
+  → Arquitecto → architecture/{libro}-hierarchy-{span}.md
+       → (after approval) apply indent + movement names onto manual skeleton / working manual
+       → Escriba
+```
 
 Compiler leaves navigation unassigned on purpose:
 
@@ -52,16 +91,102 @@ Compiler MD
   → Arquitecto
        ├─ Outline view MD   (clean log / view; Escriba does not depend on it)
        └─ Manual skeleton MD  → Escriba → Editor
+
+Clause map (when present for a span)
+  → Arquitecto
+       └─ architecture/{libro}-hierarchy-{span}.md  → (approval) → Escriba remap
 ```
 
 Primary references:
 
+- `templates/clause-map.template.md` — inventory fields and relation rules
 - `curriculo/08.Navegando-el-texto/CGV Editorial Architecture.md`
 - `docs/suite/manual-markdown-format-spec.md`
 - `docs/observer/h2-movements-spec.md`, `docs/observer/h3-flow-spec.md`
 - `docs/observer/skeleton-telos-spec.md`
 - `docs/observer/book-threads-spec.md`
 - `docs/compiler/compiler-manual-generation-spec.md` (book-level `*` evidence lines)
+
+---
+
+## Clause-map → hierarchy (procedure)
+
+When the user points at a clause map (or a span that has one), run this **instead of** inventing
+student headings by verse.
+
+### CM-0 — inventory gate
+
+Read the whole map. **FALLA** if any non-root row lacks `governor`, if `certainty: uncertain`
+rows are missing, or if the graph contradicts itself. Do not invent missing edges.
+
+### CM-1 — independent roots
+
+List every `level: independent` row in reading order. These are candidates for principal
+declarations (`####`) or movement openers. Dependents/embedded never open a movement alone.
+
+### CM-2 — literary movements
+
+Group consecutive roots **and all nodes that hang from them** into movements by continuity of
+thought (same discourse chain, same accumulation, same suspension). Name each movement by what
+the author **does** in that run — not by a verse bucket title.
+
+**Anti-pattern (FAIL):** `### Apocalipsis 1:1–3` as a cut because verses 1–3 exist.
+**Pass pattern:** a movement that happens to span 1:1–3 because c01→…→c10 is one discourse arc.
+
+After the cut is decided, **then** attach the locating reference span to the heading.
+
+### CM-3 — principal clusters vs nested only
+
+Not every independent gets its own `####`. Promote clusters that land as major declarations;
+keep pure coordinates or tiny peers nested when one `####` already carries the drama (e.g. one
+coming-seeing-mourning unit). State the choice under **Dudas** when borderline.
+
+### CM-4 — indent tree
+
+Emit markdown outline whose nesting **is** the `governor` graph:
+
+- `####` / `-` / `+` = **Spanish Scripture only** (from map `es`) — no Greek, no `[^…]`
+- Coordinate peers at the same indent under the shared head or as sibling independents per CM-3
+
+Greek and footnotes are Escriba’s job in `>` after approval. Do not reorder against biblical
+reading order. Do not resolve `uncertain` subjects in titles.
+
+### CM-5 — write the hierarchy file
+
+Path: `{NN.Curso}/architecture/{libro}-hierarchy-{span}.md`
+
+Shape:
+
+```markdown
+# Hierarchy from clause map — {libro} {span}
+
+**Source map:** reports/clause-map-….md
+**Greek edition:** Scrivener 1894 (or named)
+**Status:** PROPOSAL — awaiting human approval before Escriba rewrite
+
+## Movements
+
+### {Movement name} · locates {ref–ref}
+- Roots: c01, c05, …
+- Why this cut (one sentence from continuity, not verse numbers)
+
+## Student outline (no `>`)
+
+#### *…*
+- *…*
+  - *…*
+
+## Dudas
+- …
+```
+
+Stop for one-sentence approval: *¿apruebo, o qué cambio?* Do **not** rewrite the student manual
+in the same pass unless the user already approved this file.
+
+### CM-6 — after approval
+
+Escriba owns remapping observations and footnotes. Arquitecto may apply approved movement names
+and indent onto the working manual’s analysis section for that span — still **no** `>`.
 
 ---
 
@@ -644,6 +769,11 @@ next begins at 2:11 with 2:10 missing is also a defect.
 Do **not** compute the span by reading the H3 references underneath alone. Clause-id H3s
 (`1:9:7`) name the finite; the movement span is where the development begins and ends. Correct any
 unit/reference you catch disagreeing with the text it holds.
+
+**Intra-verse movements (hearing production):** when one verse holds two literary movements, student
+`###` locators are `2:10a` / `2:10b` — never `2:10 (primera parte)` and never Compiler `2:10:2`.
+Clause maps and technical refs stay `2:10:1`, `2:10:6`. See **MANUAL_STANDARD** § *Production
+template*.
 
 ### Where Arquitecto’s notes live
 

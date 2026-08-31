@@ -56,7 +56,7 @@ def page_html(status: dict | None = None, form: dict | None = None) -> bytes:
         "label_location": "lower-quarter",
         "logo_location": "bottom-right",
         "logo_background": "70%",
-        "body_size": "12.8",
+        "body_size": "12.5",
         "variant": "both",
     }
     if form:
@@ -344,7 +344,7 @@ def run_export(form: dict[str, str]) -> dict:
         "--logo-background",
         form.get("logo_background", "70%"),
         "--body-size",
-        form.get("body_size", "12.2"),
+        form.get("body_size", "12.5"),
     ]
     variant = form.get("variant", "both")
     if variant in {"student", "teacher"}:

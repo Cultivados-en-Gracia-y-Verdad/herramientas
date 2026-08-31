@@ -267,12 +267,16 @@ def main() -> int:
         nxt = by_n.get(i)
         return bool(nxt and nxt.marker == "-")
 
-    one_word, tails = [], []
+    one_word, tails, oversized = [], [], []
+    MAX_H4_CHARS = 180
+    WARN_H4_CHARS = 160
     for l in h4:
         raw_text = l.scripture_text()
         ws = words_of(raw_text)
         if len(ws) == 1:
             one_word.append((l.n, raw_text))
+        if len(raw_text) > MAX_H4_CHARS:
+            oversized.append((l.n, len(raw_text), raw_text[:100]))
         surface = re.findall(r"[\wáéíóúüñÁÉÍÓÚÜÑ]+", raw_text)
         tonic = bool(surface) and surface[-1].lower() in TONIC_NOT_ATONIC
         if ws and ws[-1] in ATONIC_TAILS and not tonic and not next_continues(l.n):
@@ -294,6 +298,7 @@ def main() -> int:
     w("")
     w(f"- H4 de una sola palabra: **{len(one_word)}**")
     w(f"- H4 que terminan en palabra átona o auxiliar: **{len(tails)}**")
+    w(f"- H4 sobredimensionados (>{MAX_H4_CHARS} caracteres): **{len(oversized)}**")
     w(f"- Solapamientos entre H4 adyacentes, ≥6 palabras seguidas (defecto de span): **{len(overlaps)}**")
     w(f"- Coincidencias de 3–5 palabras (puede ser una frase repetida legítima): **{len(overlaps_weak)}**")
     w("")
@@ -302,6 +307,12 @@ def main() -> int:
         w("")
         for n, t in one_word[:60]:
             w(f"- L{n} — `{t}`")
+        w("")
+    if oversized:
+        w(f"### H4 sobredimensionados (>{MAX_H4_CHARS} caracteres)")
+        w("")
+        for n, chars, t in oversized[:40]:
+            w(f"- L{n} — **{chars}** caracteres — `{t}…`")
         w("")
     if tails:
         w("### Colas átonas")
@@ -322,7 +333,8 @@ def main() -> int:
             w(f"- L{n1} → L{n2} — `{run}`")
         w("")
     for label, seq in (("H4 de una palabra", one_word), ("colas átonas", tails),
-                       ("solapamientos de costura ≥6 palabras", overlaps)):
+                       ("solapamientos de costura ≥6 palabras", overlaps),
+                       (f"H4 sobredimensionados (>{MAX_H4_CHARS} caracteres)", oversized)):
         if seq:
             findings.append(("empaquetado", f"{len(seq)} {label}"))
 

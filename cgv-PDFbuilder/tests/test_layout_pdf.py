@@ -234,6 +234,48 @@ class RenderedLayoutTest(unittest.TestCase):
         self.assertGreater(h4["x"], h3["x"])
         self.assertLess(h4["x"], self.x("Revelacion de Jesus Cristo"))
 
+    def test_inside_title_page_places_book_before_title_and_subtitle(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            md = Path(tmp) / "fixture.md"
+            md.write_text("# Introducción\nTexto.\n", encoding="utf-8")
+            pdf_path = Path(tmp) / "fixture.pdf"
+            theme = exporter.Theme(
+                book="Apocalipsis",
+                title="Lo que debe suceder pronto",
+                subtitle="La revelación de Jesús Cristo a sus siervos",
+                version="1.0",
+            )
+            exporter.build_pdf(md, pdf_path, theme, no_cover=False, variant="teacher")
+            with pdfplumber.open(str(pdf_path)) as pdf:
+                title_page_text = pdf.pages[2].extract_text() or ""
+
+        book_position = title_page_text.index("APOCALIPSIS")
+        title_position = title_page_text.index("Lo que debe suceder pronto")
+        subtitle_position = title_page_text.index("La revelación de Jesús Cristo a sus siervos")
+        self.assertLess(book_position, title_position)
+        self.assertLess(title_position, subtitle_position)
+
+    def test_scripture_and_appendix_d_are_rendered_without_the_equals_marker(self) -> None:
+        source = (
+            "# Unidad\n"
+            "= **1** *Texto LBF completo.*\n"
+            "## Apéndice D — Notas técnicas\n"
+            "[^tech]: Definición técnica conservada.\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            md = Path(tmp) / "fixture.md"
+            md.write_text(source, encoding="utf-8")
+            pdf_path = Path(tmp) / "fixture.pdf"
+            theme = exporter.Theme(cover_enabled=False, title="Fixture")
+            exporter.build_pdf(md, pdf_path, theme, no_cover=True, variant="teacher")
+            with pdfplumber.open(str(pdf_path)) as pdf:
+                rendered = "\n".join((page.extract_text() or "") for page in pdf.pages)
+
+        self.assertIn("1 Texto LBF completo.", rendered)
+        self.assertNotIn("= 1 Texto LBF completo.", rendered)
+        self.assertIn("Apéndice D — Notas técnicas", rendered)
+        self.assertIn("tech Definición técnica conservada.", rendered)
+
 
 if __name__ == "__main__":
     unittest.main()

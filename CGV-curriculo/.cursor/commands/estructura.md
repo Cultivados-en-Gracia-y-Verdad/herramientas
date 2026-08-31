@@ -41,6 +41,18 @@ Read `/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/CGV-curriculo/.curs
 else, and follow it exactly. It is the authority on hierarchy, evidence, continuity of thought, telos,
 naming and the shape of your deliverable. Do not work from memory of it.
 
+## Clause-map path (production — when a map exists)
+
+If the user names a span that has `reports/clause-map-*.md` (template:
+`herramientas/CGV-curriculo/templates/clause-map.template.md`), load the skill section
+**Clause-map → hierarchy** and run CM-0 through CM-5 **before** any student-manual rewrite.
+
+- Build movements from `governor` / `relation` edges, not from verse boundaries.
+- Write `architecture/{libro}-hierarchy-{span}.md` and stop for one-sentence approval.
+- Do not polish or replace hand-authored analysis until that file is approved.
+- Student shape target: Apocalipsis 1:1–8 (`MANUAL_STANDARD` § *Production template*).
+- One H2 span per pass — do not invent the whole book’s hierarchies first.
+
 ## Find the skeleton
 
 Use the file the user names. If they name none, take the most recently modified

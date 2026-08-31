@@ -32,12 +32,14 @@ from reportlab.platypus import (
     TableStyle,
 )
 
+from cgv_pdf_content import prepare_pdf_markdown
 from cgv_structure import (
     INCH,
     Annotation,
     IndentLadder,
     StructuralIndentError,
     StructuralItem,
+    apply_outline_depths,
     scan_structure,
 )
 
@@ -49,6 +51,7 @@ NUMBERED_LIST_RE = re.compile(r"^(?P<indent>\s*)(?P<marker>\d+[.)])\s+(?P<text>.
 IMAGE_RE = re.compile(r"^!\[(?P<alt>[^\]]*)\]\((?P<path>[^)]+)\)$")
 FOOTNOTE_DEF_RE = re.compile(r"^\[\^(?P<id>[^\]]+)\]:\s*(?P<text>.+)$")
 FOOTNOTE_CITE_RE = re.compile(r"\[\^(?P<id>[^\]]+)\]")
+SCRIPTURE_BLOCK_RE = re.compile(r"^[ \t]*=[ \t]+(?P<text>.+)$")
 HTML_COMMENT_RE = re.compile(r"^<!--.*?-->$")
 BR_RE = re.compile(r"<br\s*/?>", re.IGNORECASE)
 FENCE_RE = re.compile(r"^```(?P<lang>[\w-]*)\s*$")
@@ -83,7 +86,7 @@ FONT_DIRS = [
     Path("/Users/johnwry/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype"),
 ]
 IOWAN_TTC = Path("/System/Library/Fonts/Supplemental/Iowan Old Style.ttc")
-ARROW_SYMBOLS_RE = re.compile(r"([→⇒➡➜⟶⤷↪↓⤵↧⇣↳])")
+ARROW_SYMBOLS_RE = re.compile(r"([→⇒➡➜⟶⤷↩↪↓⤵↧⇣↳])")
 MERMAID_NODE_DEF_RE = re.compile(
     r"(?P<id>[A-Za-z][\w-]*)\s*(?:\[\s*\"(?P<quoted>[^\"]+)\"\s*\]|\[(?P<bracket>[^\]]+)\]|\(\s*\"(?P<round_quoted>[^\"]+)\"\s*\)|\((?P<round>[^)]+)\))"
 )
@@ -118,9 +121,10 @@ class Theme:
     margin_x: float = 0.80 * inch
     margin_top: float = 0.72 * inch
     margin_bottom: float = 0.82 * inch
-    body_size: float = 12.8
-    leading: float = 19.0
+    body_size: float = 12.5
+    leading: float = 17.0
     footer_size: float = 8.4
+    book: str = ""
     title: str = "Manual"
     subtitle: str = ""
     telos: str = ""
@@ -245,6 +249,20 @@ class PageNumberCanvas:
         text_width = page_width - 1.75 * inch
         text_x = (page_width - text_width) / 2
         current_y = page_height - 3.48 * inch
+
+        if self.theme.book:
+            book_style = ParagraphStyle(
+                "InsideTitlePageBook",
+                fontName=font_bold,
+                fontSize=16,
+                leading=20,
+                alignment=TA_CENTER,
+                textColor=colors.HexColor("#6a635a"),
+            )
+            book = Paragraph(escape_inline(self.theme.book.upper()), book_style)
+            _, book_height = book.wrap(text_width, 0.5 * inch)
+            book.drawOn(canvas, text_x, current_y - book_height)
+            current_y -= book_height + 0.18 * inch
 
         title_style = ParagraphStyle(
             "InsideTitlePageTitle",
@@ -403,17 +421,19 @@ def register_fonts() -> tuple[str, str, str, str]:
         boldItalic="CGVSerif-BoldItalic",
     )
     symbol_candidates = [
-        Path("/System/Library/Fonts/SFNS.ttf"),
+        # DejaVu reliably contains every outline arrow. SFNS can register while
+        # still drawing a missing-glyph box for the ↳ annotation marker.
+        Path(
+            "/Users/johnwry/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype/DejaVuSans.ttf"
+        ),
         Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
-        Path("/System/Library/Fonts/SFNSMono.ttf"),
         Path("/System/Library/Fonts/Apple Symbols.ttf"),
+        Path("/System/Library/Fonts/SFNS.ttf"),
+        Path("/System/Library/Fonts/SFNSMono.ttf"),
         Path("/System/Library/Fonts/Supplemental/AppleGothic.ttf"),
         Path("/System/Library/Fonts/Supplemental/AppleMyungjo.ttf"),
         Path("/System/Library/Fonts/Supplemental/Arial Unicode.ttf"),
         Path("/Library/Fonts/Arial Unicode.ttf"),
-        Path(
-            "/Users/johnwry/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype/DejaVuSans.ttf"
-        ),
     ]
     for symbol_font in symbol_candidates:
         if not symbol_font.exists():
@@ -486,8 +506,8 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             "Heading1",
             parent=base,
             fontName=font_bold,
-            fontSize=14.5,
-            leading=19,
+            fontSize=17.0,
+            leading=22,
             alignment=TA_CENTER,
             spaceBefore=22,
             spaceAfter=12,
@@ -498,8 +518,8 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             "Heading2",
             parent=base,
             fontName=font_bold,
-            fontSize=11.2,
-            leading=14.5,
+            fontSize=14.5,
+            leading=18.5,
             alignment=TA_CENTER,
             textColor=muted,
             spaceBefore=18,
@@ -511,8 +531,8 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             "Heading3",
             parent=base,
             fontName=font_bold,
-            fontSize=13.0,
-            leading=17.5,
+            fontSize=15.5,
+            leading=20,
             leftIndent=0,
             spaceBefore=20,
             spaceAfter=9,
@@ -522,8 +542,8 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             "Heading3Sintesis",
             parent=base,
             fontName=font_bold,
-            fontSize=14.8,
-            leading=18,
+            fontSize=16.2,
+            leading=20.5,
             textColor=accent,
             spaceBefore=18,
             spaceAfter=8,
@@ -549,8 +569,8 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             "Heading5",
             parent=base,
             fontName=font_bold,
-            fontSize=12.2,
-            leading=16,
+            fontSize=13.5,
+            leading=17.5,
             spaceBefore=10,
             spaceAfter=5,
             keepWithNext=True,
@@ -559,8 +579,8 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             "Heading6",
             parent=base,
             fontName=font_bold,
-            fontSize=11.8,
-            leading=15.5,
+            fontSize=13.0,
+            leading=17,
             spaceBefore=8,
             spaceAfter=4,
             keepWithNext=True,
@@ -584,6 +604,17 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             leading=theme.leading + 0.4,
             spaceBefore=4,
             spaceAfter=3,
+        ),
+        "scripture_block": ParagraphStyle(
+            "ScriptureBlock",
+            parent=base,
+            fontName=font_italic,
+            fontSize=theme.body_size + 0.1,
+            leading=theme.leading + 0.8,
+            leftIndent=0.18 * inch,
+            rightIndent=0.12 * inch,
+            spaceBefore=5,
+            spaceAfter=5,
         ),
         "dependent_clause": ParagraphStyle(
             "DependentClause",
@@ -1205,10 +1236,20 @@ def parse_markdown(
     *,
     line_offset: int = 0,
     indent_strict: bool = True,
+    outline_text: str | None = None,
+    outline_filename: str = "<outline>",
 ) -> list[Flowable]:
     """Render Markdown, taking every outline x from the structural layout model."""
     filename = source_path.name if source_path else "<manual>"
     index = scan_structure(markdown, filename, line_offset=line_offset, strict=indent_strict)
+    if outline_text:
+        apply_outline_depths(
+            index,
+            markdown,
+            outline_text,
+            source_line_offset=line_offset,
+            outline_filename=outline_filename,
+        )
     for problem in index.problems:
         print(f"warning: {problem.message}", file=sys.stderr)
 
@@ -1323,6 +1364,21 @@ def parse_markdown(
             append_markdown_image(image_match, story, styles, source_path, variant)
             continue
 
+        scripture_block = SCRIPTURE_BLOCK_RE.match(line)
+        if scripture_block:
+            flush_all()
+            story.append(
+                make_paragraph(
+                    scripture_block.group("text"),
+                    styles["scripture_block"],
+                    variant,
+                    scripture_style=True,
+                )
+            )
+            context = LayoutContext(0, "scripture")
+            in_sintesis = False
+            continue
+
         node = index.by_line.get(line_no)
 
         # Structural outline line: depth already decided by source indentation.
@@ -1415,12 +1471,17 @@ def parse_markdown(
                 story.append(heading)
                 context = LayoutContext()
                 in_sintesis = key == "h3_sintesis"
+                # Heading styles already provide spaceAfter. Suppress a source
+                # blank line here so keepWithNext reaches the first real block
+                # instead of stopping at a Spacer and orphaning the heading.
+                pending_blank = True
             continue
 
         if VERSE_HEADING_RE.match(stripped):
             story.append(KeepTogether([make_paragraph(stripped, styles["h4"], variant)]))
             context = LayoutContext()
             in_sintesis = False
+            pending_blank = True
             continue
 
         paragraph_lines.append(stripped)
@@ -1474,6 +1535,24 @@ def read_body(path: Path) -> str:
     return "\n".join("" if "page-break-after" in line else line for line in body.splitlines())
 
 
+def discover_outline_path(markdown_path: Path, metadata: dict[str, str]) -> Path | None:
+    """Find the hierarchy source beside a curriculum manual, if one exists."""
+    configured = metadata.get("outline", "").strip()
+    if configured:
+        candidate = Path(configured).expanduser()
+        if not candidate.is_absolute():
+            candidate = markdown_path.parent / candidate
+        return candidate.resolve() if candidate.exists() else None
+
+    book = metadata.get("book", "").strip().casefold()
+    slug = re.sub(r"[^a-z0-9]+", "-", book).strip("-")
+    candidates = [
+        markdown_path.parent.parent / "architecture" / f"{slug}-outline.md",
+        markdown_path.parent / f"{slug}-outline.md",
+    ]
+    return next((path.resolve() for path in candidates if slug and path.exists()), None)
+
+
 def build_pdf(
     markdown_path: Path,
     output_path: Path,
@@ -1482,13 +1561,18 @@ def build_pdf(
     variant: str = "teacher",
     *,
     indent_strict: bool = True,
+    outline_path: Path | None = None,
 ) -> None:
     styles = build_styles(theme)
     raw_source = markdown_path.read_text(encoding="utf-8")
-    _, text = parse_front_matter(raw_source)
+    metadata, unfiltered_text = parse_front_matter(raw_source)
+    content_result = prepare_pdf_markdown(unfiltered_text)
+    text = content_result.markdown
     # Line numbers in indentation errors must point at the real file.
-    line_offset = len(raw_source.splitlines()) - len(text.splitlines())
+    line_offset = len(raw_source.splitlines()) - len(unfiltered_text.splitlines())
     story: list[Flowable] = []
+    authoritative_outline = outline_path or discover_outline_path(markdown_path, metadata)
+    outline_text = authoritative_outline.read_text(encoding="utf-8") if authoritative_outline else None
 
     if not no_cover:
         append_cover(story, styles, theme)
@@ -1509,6 +1593,8 @@ def build_pdf(
             markdown_path,
             line_offset=line_offset,
             indent_strict=indent_strict,
+            outline_text=outline_text,
+            outline_filename=authoritative_outline.name if authoritative_outline else "<outline>",
         )
     )
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1550,7 +1636,12 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
         help="Cover logo badge white background opacity from 0 to 1",
     )
     parser.add_argument("--single", choices=["student", "teacher"], help="Export only one version")
-    parser.add_argument("--body-size", type=float, default=12.8, help="Main text size in points")
+    parser.add_argument("--body-size", type=float, default=12.5, help="Main text size in points")
+    parser.add_argument(
+        "--outline",
+        type=Path,
+        help="Authoritative hierarchy Markdown (auto-discovered from book metadata when omitted)",
+    )
     parser.add_argument("--no-cover", action="store_true", help="Start the PDF directly from the Markdown content")
     parser.add_argument(
         "--indent-step",
@@ -1618,6 +1709,7 @@ def main(argv: Iterable[str] | None = None) -> int:
         theme = Theme(
             body_size=args.body_size,
             leading=args.body_size * 1.36,
+            book=book,
             title=args.title or metadata.get("title") or book or "Manual",
             subtitle=args.subtitle if args.subtitle is not None else metadata.get("subtitle", ""),
             telos=metadata.get("telos", ""),
@@ -1643,6 +1735,7 @@ def main(argv: Iterable[str] | None = None) -> int:
                 args.no_cover,
                 variant,
                 indent_strict=args.indent_policy == "strict",
+                outline_path=args.outline.expanduser().resolve() if args.outline else None,
             )
         except StructuralIndentError as error:
             print(str(error), file=sys.stderr)

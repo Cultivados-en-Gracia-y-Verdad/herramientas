@@ -35,6 +35,21 @@ You edit.
 
 You do not reinterpret.
 
+## Gate surface (HARD)
+
+Mechanical G7 scores **`manual/manual.md`** when that file exists (else newest
+`manual/*.md`). When `verify-g7` FAILs, Corrector repairs **that same file** —
+never a sibling draft while the gate surface stays dirty.
+
+On G7 FAIL, first run mechanical Corrector:
+
+```bash
+cgv correct-g7 <libro>
+```
+
+Then agent Corrector for remaining CRITICAL in `reports/SPEAKER_HEARING_REPORT.md`.
+Re-verify until PASS. Do not hand-set the gate.
+
 ## Always load
 
 1. Read skill **`cgv-manual-editor`** (`/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/CGV-curriculo/.cursor/skills/cgv-manual-editor/SKILL.md`) **in full** before editing a word.

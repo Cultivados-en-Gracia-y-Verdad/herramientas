@@ -4,14 +4,27 @@ Plain Markdown → PDF exporter for CGV study manuals in the locked outline form
 (`####` / `-` / `+` / `*` / `>`). Letter-sized pages, cover + interior title, índice,
 page numbers, and student/teacher fill-in variants.
 
+The presentation and PDF exporters share the Manager's canonical `manual.md`
+gate surface. PDF export preserves every section and footnote. Lines beginning
+with `=` are rendered as LBF Scripture blocks without printing the syntax marker;
+all appendices, including Appendix D, remain in the manual. The shared source
+file is never rewritten.
+
 Typography uses **Iowan Old Style** when available (Georgia / DejaVu fallback), with a
 clear indent ladder for outline depth and open leading for readable interior pages.
+The default body size is 12.5 pt and remains adjustable with `--body-size` or the
+local control panel.
 
 ## Outline hierarchy
 
 `cgv_structure.py` owns the hierarchy. The exporter never infers depth from a
 Markdown list parser, because mixed `+` / `-` markers are read as separate or
 nested lists by general Markdown libraries.
+
+When a curriculum supplies `architecture/<book>-outline.md`, that file is the
+authority for matching structural-item depths. The manual remains the content
+source; its presentation-oriented indentation is overlaid by the outline depth.
+Use `--outline path/to/outline.md` when the outline cannot be auto-discovered.
 
 **Depth comes only from the spaces before the marker.**
 
@@ -109,7 +122,7 @@ If there is no local `manual.md`, it reads
 
 Useful options:
 
-- `--body-size 13`: make the manual text larger or smaller.
+- `--body-size 12.5`: make the manual text larger or smaller.
 - `--no-cover`: start directly with the Markdown content.
 - `--indent-step 0.30`, `--indent-base 0.20`, `--annotation-offset 0.14`: tune the indent ladder, in inches.
 - `--indent-policy warn`: report malformed indentation instead of stopping the export.
@@ -119,7 +132,7 @@ Useful options:
 - `--label-location lower-quarter`: set the cover manual label position. Options: `top-center`, `center`, `lower-quarter`, `bottom-center`.
 - `--logo-location bottom-right`: set the logo badge position. Options: `bottom-right`, `bottom-left`, `top-right`, `top-left`.
 - `--logo-background 70%`: set the white logo badge opacity. You can also use `0.7`.
-- the interior title page uses the YAML `title`, `subtitle`, `telos`, and `version`, plus the exported manual type.
+- the interior title page uses the YAML `book`, `title`, `subtitle`, `telos`, and `version`, plus the exported manual type.
 - `--single student` or `--single teacher`: export only `Manual del Alumno` or `Manual del Maestro`.
 - `--footer-left`, `--footer-center`, `--footer-right`: set footer text.
 - `---` on its own line in the Markdown inserts a page break.

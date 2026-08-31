@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from cgv_structure import (  # noqa: E402
     IndentLadder,
     StructuralIndentError,
+    apply_outline_depths,
     scan_structure,
 )
 
@@ -87,6 +88,53 @@ class ReturnToRootTest(unittest.TestCase):
     def test_new_root_has_no_parent(self) -> None:
         index = scan_structure("+ parent\n  - child\n    + grandchild\n+ new root\n", "f.md")
         self.assertIsNone(index.items[-1].parent_line)
+
+
+class AuthoritativeOutlineTest(unittest.TestCase):
+    def test_outline_overrides_presentation_indentation(self) -> None:
+        manual = (
+            "### Abertura\n"
+            "+ *Revelación de Jesús Cristo*\n"
+            "  - *que Dios le dio para mostrar a sus siervos*\n"
+            "    - *las cosas que deben suceder pronto*\n"
+            "  - *y la dio a conocer*\n"
+            "    + *Dios*\n"
+            "      - *quien dio testimonio*\n"
+            "      + *Juan*\n"
+            "        - *de todo lo que vio*\n"
+        )
+        outline = (
+            "### Abertura\n"
+            "+ *Revelación de Jesús Cristo*\n"
+            "- *que Dios le dio para mostrar a sus siervos*\n"
+            "  - *las cosas que deben suceder pronto*\n"
+            "- *y la dio a conocer*\n"
+            "+ *Dios*\n"
+            "  - *quien dio testimonio*\n"
+            "  + *Juan*\n"
+            "    - *de todo lo que vio*\n"
+        )
+        index = scan_structure(manual, "manual.md")
+        result = apply_outline_depths(index, manual, outline, outline_filename="outline.md")
+        self.assertEqual([item.depth for item in index.items], [0, 0, 1, 0, 0, 1, 1, 2])
+        self.assertEqual(result.matched, 8)
+        self.assertEqual(result.unresolved, 0)
+
+    def test_unlisted_manual_item_keeps_its_source_depth(self) -> None:
+        manual = "### Unidad\n+ known\n  - generated only\n"
+        outline = "### Unidad\n+ known\n"
+        index = scan_structure(manual, "manual.md")
+        result = apply_outline_depths(index, manual, outline)
+        self.assertEqual([item.depth for item in index.items], [0, 1])
+        self.assertEqual(result.unresolved, 1)
+
+    def test_repeated_content_uses_outline_occurrence_order(self) -> None:
+        manual = "### Unidad\n  + voice\n    + voice\n"
+        outline = "### Unidad\n+ voice\n  + voice\n"
+        index = scan_structure(manual, "manual.md")
+        result = apply_outline_depths(index, manual, outline)
+        self.assertEqual([item.depth for item in index.items], [0, 1])
+        self.assertEqual(result.ambiguous, 0)
 
 
 class SiblingBranchesTest(unittest.TestCase):

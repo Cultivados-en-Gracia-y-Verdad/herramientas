@@ -26,6 +26,10 @@ GATE_LABELS = {
     "G10_RELEASE": "Release Gate",
 }
 
+# PASS is recorded only by mechanical verify (never hand-set by a human).
+MECHANICAL_PASS_GATES = frozenset({"G7_EDITORIAL", "G8_FINAL_VERIFY"})
+HAND_FORBIDDEN_PASS = frozenset({"G0_ALIGNMENT", "G1_COMPILE"}) | MECHANICAL_PASS_GATES
+
 VALID_TRANSITIONS = {
     "NOT_STARTED": {"READY","BLOCKED"},
     "READY": {"RUNNING","BLOCKED"},
@@ -140,13 +144,106 @@ def record_gate_status(state, gate, new_status, actor="human", notes=""):
 
     RUNBOOK commands record terminal results directly (for example READY -> PASS).
     Internally we still record the required RUNNING transition first.
+
+    G7/G8 PASS are never hand-set: use apply_mechanical_gate_result after the scripts.
     """
+    if new_status == "PASS" and gate in HAND_FORBIDDEN_PASS and actor == "human":
+        if gate in MECHANICAL_PASS_GATES:
+            raise ValueError(
+                f"{gate} PASS is recorded only when mechanical verification exits 0 "
+                f"(verify-g7-editorial / verify-g8-final). Do not hand-set PASS."
+            )
+        if gate == "G0_ALIGNMENT":
+            raise ValueError("G0_ALIGNMENT cannot be hand-set to PASS. Accept a verified attestation instead.")
+        if gate == "G1_COMPILE":
+            raise ValueError("G1_COMPILE cannot be hand-set to PASS. Use compile record instead.")
+    if new_status == "PASS" and gate in MECHANICAL_PASS_GATES:
+        _require_mechanical_pass_evidence(state, gate)
     if new_status == "SKIPPED":
         return skip_gate(state, gate, actor, notes)
     cur = state["gates"][gate]["status"]
     if cur == "READY" and new_status in {"PASS", "FAIL", "REVIEW_REQUIRED"}:
         transition_gate(state, gate, "RUNNING", actor, "Gate work began.")
+    if cur == "FAIL" and new_status in {"PASS", "FAIL"}:
+        transition_gate(state, gate, "READY", actor, "Re-open after prior FAIL.")
+        transition_gate(state, gate, "RUNNING", actor, "Gate work began.")
+    if cur == "STALE" and new_status in {"PASS", "FAIL"}:
+        transition_gate(state, gate, "READY", actor, "Re-open after STALE.")
+        transition_gate(state, gate, "RUNNING", actor, "Gate work began.")
+    if cur == "PASS" and new_status == "PASS":
+        return  # idempotent
     transition_gate(state, gate, new_status, actor, notes)
+
+
+def _require_mechanical_pass_evidence(state, gate):
+    """Block PASS for G7/G8 without recorded mechanical witnesses."""
+    ev = state.get("manager", {}).get("evidence", {}) or {}
+    if gate == "G7_EDITORIAL":
+        if not ev.get("g7_speaker_hearing_pass"):
+            raise ValueError(
+                "G7_EDITORIAL PASS requires verify-g7-editorial.py exit 0 "
+                "(speaker/hearing). See contracts/SPEAKER_HEARING_CONTRACT.md."
+            )
+    if gate == "G8_FINAL_VERIFY":
+        if not ev.get("g8_final_mechanical_pass"):
+            raise ValueError(
+                "G8_FINAL_VERIFY PASS requires verify-g8-final.py exit 0. "
+                "See contracts/SPEAKER_HEARING_CONTRACT.md. "
+                "Human sufficiency reading is G9, not G8."
+            )
+
+
+def apply_mechanical_gate_result(
+    state,
+    gate: str,
+    passed: bool,
+    *,
+    manual_checksum: str,
+    notes: str,
+    actor: str,
+):
+    """Record script evidence and set PASS or FAIL. Called only by Manager/CLI verify."""
+    if gate not in MECHANICAL_PASS_GATES:
+        raise ValueError(f"{gate} is not a mechanical-pass gate")
+    ev = state.setdefault("manager", {}).setdefault("evidence", {})
+    if gate == "G7_EDITORIAL":
+        ev["g7_speaker_hearing_pass"] = bool(passed)
+        ev["g7_manual_checksum"] = manual_checksum
+        ev["g7_verified_at"] = now_iso()
+    else:
+        ev["g8_final_mechanical_pass"] = bool(passed)
+        ev["g8_manual_checksum"] = manual_checksum
+        ev["g8_verified_at"] = now_iso()
+    cur = state["gates"][gate]["status"]
+    if cur == "PASS" and not passed:
+        transition_gate(state, gate, "STALE", actor, "Mechanical re-verify failed.")
+    if cur == "BLOCKED":
+        raise ValueError(f"{gate} is BLOCKED; unblock before running mechanical verify.")
+    status = "PASS" if passed else "FAIL"
+    record_gate_status(state, gate, status, actor=actor, notes=notes)
+
+
+def invalidate_stale_mechanical_passes(state, manual_path: Path | None):
+    """If the manual moved under a recorded PASS, mark G7/G8 STALE."""
+    if manual_path is None or not Path(manual_path).is_file():
+        return
+    dig = checksum(Path(manual_path))
+    ev = state.get("manager", {}).get("evidence", {}) or {}
+    for gate, flag, key in (
+        ("G7_EDITORIAL", "g7_speaker_hearing_pass", "g7_manual_checksum"),
+        ("G8_FINAL_VERIFY", "g8_final_mechanical_pass", "g8_manual_checksum"),
+    ):
+        st = state["gates"][gate]["status"]
+        if st != "PASS":
+            continue
+        if not ev.get(flag) or ev.get(key) != dig:
+            transition_gate(
+                state,
+                gate,
+                "STALE",
+                "manager",
+                "Manual checksum no longer matches mechanical PASS evidence.",
+            )
 
 def verify_gate0_attestation(att, project_id, base: Path | None = None):
     errors = []
@@ -475,7 +572,22 @@ def next_action(state):
     if st == "READY": return f"Start {g} — {label}"
     if st == "RUNNING": return f"Complete {g} — {label}"
     if st == "REVIEW_REQUIRED": return f"Review {g} — {label}"
-    if st == "FAIL": return f"Resolve failures and reset {g} to READY"
-    if st == "STALE": return f"Rerun {g} — {label}"
+    if st == "FAIL":
+        if g == "G7_EDITORIAL":
+            return (
+                "G7 FAIL → Corrector on gate surface (manual.md): "
+                "cgv correct-g7 <libro>, then agent @corrector for remaining CRITICAL, "
+                "then cgv verify-g7 <libro>"
+            )
+        if g == "G8_FINAL_VERIFY":
+            return (
+                "G8 FAIL → fix SPEAKER_HEARING / quote / blocks findings, "
+                "then cgv verify-g8 <libro>"
+            )
+        return f"Resolve failures and reset {g} to READY"
+    if st == "STALE":
+        if g in MECHANICAL_PASS_GATES:
+            return f"Rerun mechanical verify: cgv verify-g7/verify-g8 — {label}"
+        return f"Rerun {g} — {label}"
     if st == "BLOCKED": return f"{g} — {label} is blocked"
     return f"Review {g} — {label}"

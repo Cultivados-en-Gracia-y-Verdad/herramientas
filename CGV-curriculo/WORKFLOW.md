@@ -307,7 +307,8 @@ happening in the text.
 
 ## 6.4 Arquitecto
 
-**Purpose:** Establish the manual's structural architecture from the approved Compiled Skeleton.
+**Purpose:** Establish the manual's structural architecture from the approved Compiled Skeleton
+**and**, for hearing remaps, from each span’s clause map.
 
 Architect determines:
 
@@ -318,9 +319,13 @@ Architect determines:
 - major section boundaries;
 - sequence;
 - structural progression;
-- approved architectural/telos decisions where required.
+- approved architectural/telos decisions where required;
+- **per-H2 literary hierarchy** from `reports/clause-map-{span}.md` →
+  `architecture/{libro}-hierarchy-{span}.md` (governor edges, not verse cuts).
 
-Architect must work from the approved skeleton.
+Architect must work from the approved skeleton for book-level naming, and from the clause map
+when remapping a hearing H2. Student shape target: Apocalipsis 1:1–8
+(`MANUAL_STANDARD` § *Production template*).
 
 Architect may not silently rewrite translation, alignment, or Reader analysis.
 
@@ -335,8 +340,9 @@ Escriba receives:
 1. the approved LBF text;
 2. the approved alignment where required;
 3. the approved Compiled Skeleton;
-4. the approved Manual Architecture;
-5. applicable manual specifications.
+4. the approved Manual Architecture (book-level) **and** the approved per-H2 hierarchy file when
+   remapping a hearing unit;
+5. applicable manual specifications (`MANUAL_STANDARD` § *Production template*).
 
 Escriba may:
 
@@ -346,9 +352,12 @@ Escriba may:
 - organize authorized content;
 - improve pedagogical clarity;
 - write transitions;
-- turn the approved structure into a coherent manual.
+- turn the approved structure into a coherent manual;
+- remap one H2 at a time onto an approved hierarchy (leave `=` frozen; footnotes in Apéndice D).
 
 Escriba may not silently invent new textual evidence or overwrite upstream analysis.
+Escriba may not invent event chronology from clause order, restore flechas/actor tallies, or
+dump footnote definitions mid-file.
 
 Questions must be flagged and routed to the responsible stage.
 
@@ -492,13 +501,20 @@ Arquitecto              architecture, telos                    G5_ARCHITECTURE
         ↓
 Escriba                 manual prose                           G6_WRITING
         ↓
-Editor + Corrector      mechanical + prose                     G7_EDITORIAL
-        ↓
-Verificador             final verification                     G8_FINAL_VERIFY
-        ↓
-Human                   review                                 G9_HUMAN_REVIEW
+Editor + Corrector      prose work on gate surface (`manual.md`)
+verify-g7               speaker/hearing mechanical             G7 PASS or FAIL
+        ↓ (on FAIL)
+correct-g7              mechanical Corrector → re-verify       (then @corrector if CRITICAL remain)
+        ↓ (on PASS)
+verify-g8               speaker g8 + checks + quotes + blocks  G8 PASS or FAIL
+        ↓ (on PASS)
+Human                   sufficiency review only                G9_HUMAN_REVIEW
                         release                                G10_RELEASE
 ```
+
+G7/G8 PASS are recorded only by `cgv verify-g7` / `cgv verify-g8` (or Manager buttons). Hand PASS is rejected.
+G7 FAIL requires Corrector on the gate surface (`cgv correct-g7`, then agent if needed) — see
+`contracts/SPEAKER_HEARING_CONTRACT.md` and `RUNBOOK.md`.
 
 A project may not skip a required gate merely because a later agent believes the result is
 acceptable. A gate is skipped only as `SKIPPED` under STATE_MODEL §6, with a recorded human reason.
@@ -776,6 +792,11 @@ Architect establishes:
 The architecture must be defensible from the skeleton **and from the approved block inventory**.
 A heading boundary that cuts a block means one of the two is wrong; Arquitecto says which.
 
+**Hearing remaps (production):** for each H2 being rewritten to the production template, Arquitecto
+also emits `architecture/{libro}-hierarchy-{span}.md` from `reports/clause-map-{span}.md`
+(governor edges). That file must be human-approved before Escriba remaps the unit. Model look:
+Apocalipsis 1:1–8. Work one H2 at a time — do not invent every span’s hierarchy before writing.
+
 Architect should not impose an attractive outline that overrides the textual structure.
 
 Architectural decisions must remain distinguishable from direct textual observations.
@@ -821,11 +842,18 @@ Required inputs include:
 - **approved block inventory, `{NN.Curso}/blocks.md`**;
 - approved Compiled Skeleton;
 - approved Manual Architecture;
-- applicable manual specification.
+- **for each hearing H2 remap:** approved `architecture/{libro}-hierarchy-{span}.md` from the
+  clause map;
+- applicable manual specification (`MANUAL_STANDARD` § *Production template* — Apocalipsis 1:1–8
+  is the locked student shape).
 
 The block inventory is not optional context. If the book has a series, the manual must let the
 student see it — named in the book's own vocabulary, with its count. An inventory that reaches
 no student-facing page has not been used.
+
+Escriba remaps **one H2 at a time** onto the approved hierarchy: leave `=` frozen; Spanish-only
+outline; `>` carries meaning + Greek + `[^…]`; footnote definitions only in Apéndice D; no
+flechas; no actor tallies; discourse order ≠ event chronology.
 
 Escriba may develop the material into readable, teachable prose.
 
@@ -921,24 +949,22 @@ Editor must escalate upstream defects to their owning stage.
 
 # 21. G8_FINAL_VERIFY — Final Verification
 
-Final verification is broader than editing.
+Final verification is a **mechanical stream first**, then classification of anything still open.
 
-Required verification may include:
+**Required to mark the gate PASS** (`scripts/verify-g8-final.py`):
 
-- structural/mechanical audit;
-- textual verification;
-- lexical verification;
-- historical verification;
-- specialist review;
-- architecture comparison;
-- skeleton comparison;
-- source comparison;
-- unresolved-finding review;
-- artifact/provenance validation.
+- speaker/hearing `--gate g8` (includes G7 speaker rules + woodenness density);
+- `run-manual-checks.py` evidence written;
+- context-quote check against LBF;
+- `verify-blocks.py` when blocks exist;
+- provenance unchanged for declared inputs.
 
-A final verifier identifies and classifies defects.
+Contract: `contracts/SPEAKER_HEARING_CONTRACT.md`.
 
-Verification does not automatically authorize silent rewriting.
+Specialist / lexical / historical findings that remain open are classified here as evidence for
+G9 — they do not replace the mechanical FAIL. Verification does not authorize silent rewriting.
+
+**G9**, not G8, is the human sufficiency reading.
 
 ------
 

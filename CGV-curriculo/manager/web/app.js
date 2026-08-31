@@ -234,7 +234,9 @@ function renderControls(step) {
     "open-blocks": "Open blocks.md",
     "build-quotes": "Build context quotes",
     "open-manual": "Open the manual folder",
-    "run-final-checks": "Run final automated evidence",
+    "run-g7-check": "Run G7 mechanical verify (auto PASS/FAIL)",
+    "run-g7-correct": "Corrector (mechanical) then re-verify G7",
+    "run-final-checks": "Run G8 mechanical stream (auto PASS/FAIL)",
   };
   box.innerHTML = action && labels[action] ? `<button class="primary-action" data-command="${esc(action)}">${esc(labels[action])}</button>` : "";
 }
@@ -265,6 +267,8 @@ async function handleCommand(command) {
   if (command === "approve-structure") return jsonAction("/api/approve-structure", {course: app.course}, false);
   if (command === "verify-blocks") return jsonAction("/api/verify-blocks", {course: app.course});
   if (command === "build-quotes") return jsonAction("/api/build-quotes", {course: app.course});
+  if (command === "run-g7-check") return jsonAction("/api/run-g7-check", {course: app.course});
+  if (command === "run-g7-correct") return jsonAction("/api/run-g7-correct", {course: app.course});
   if (command === "run-final-checks") return jsonAction("/api/run-final-checks", {course: app.course});
   if (command === "open-observation") return jsonAction("/api/open", {course: app.course, target: "observation"});
   if (command === "open-blocks") return jsonAction("/api/open", {course: app.course, target: "blocks"});

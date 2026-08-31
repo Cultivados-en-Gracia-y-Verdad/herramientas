@@ -64,6 +64,7 @@ rounded into a neighbouring depth.
 from __future__ import annotations
 
 import re
+from difflib import SequenceMatcher
 from dataclasses import dataclass, field
 from typing import Iterable, Literal
 
@@ -179,6 +180,15 @@ class StructureIndex:
     @property
     def max_depth(self) -> int:
         return max((item.depth for item in self.items), default=0)
+
+
+@dataclass(frozen=True)
+class OutlineResolution:
+    """Summary of depths overlaid from an authoritative outline."""
+
+    matched: int
+    unresolved: int
+    ambiguous: int
 
 
 @dataclass(frozen=True)
@@ -356,6 +366,146 @@ def scan_structure(
     if strict and index.problems:
         raise StructuralIndentError(index.problems)
     return index
+
+
+def _normal(text: str) -> str:
+    """Normalize a heading/item only for cross-file identity matching."""
+    text = re.sub(r"<[^>]+>", "", text)
+    text = text.replace("*", "").replace("_", "").replace("`", "")
+    return re.sub(r"\s+", " ", text).strip().casefold()
+
+
+def _heading_paths(text: str, *, line_offset: int = 0) -> dict[int, tuple[str, ...]]:
+    """Return the active level 1-4 heading path for every source line."""
+    active: dict[int, str] = {}
+    paths: dict[int, tuple[str, ...]] = {}
+    in_fence = False
+    for offset, raw in enumerate(text.splitlines(), 1):
+        line_no = offset + line_offset
+        line = raw.rstrip()
+        if _FENCE_RE.match(line):
+            in_fence = not in_fence
+            paths[line_no] = tuple(active.get(level, "") for level in range(1, 5))
+            continue
+        if not in_fence:
+            heading = _HEADING_RE.match(line)
+            if heading:
+                level = len(heading.group("hashes"))
+                if level <= 4:
+                    active[level] = _normal(heading.group("text"))
+                    for deeper in range(level + 1, 5):
+                        active.pop(deeper, None)
+        paths[line_no] = tuple(active.get(level, "") for level in range(1, 5))
+    return paths
+
+
+def apply_outline_depths(
+    source: StructureIndex,
+    source_text: str,
+    outline_text: str,
+    *,
+    source_line_offset: int = 0,
+    outline_filename: str = "<outline>",
+) -> OutlineResolution:
+    """Overlay structural depth from a separate authoritative outline.
+
+    The shared editor Markdown still supplies every word and annotation. Exact
+    content plus heading context identifies the corresponding outline item; its
+    source indentation supplies the PDF depth. Items that do not exist in the
+    outline (for example generated appendix analytics) retain their own depth.
+    """
+    outline = scan_structure(outline_text, outline_filename)
+    source_paths = _heading_paths(source_text, line_offset=source_line_offset)
+    outline_paths = _heading_paths(outline_text)
+
+    # Exact sequence blocks disambiguate repeated short labels such as ``voz``
+    # and ``ángel`` even when editorial heading text differs between files.
+    matcher = SequenceMatcher(
+        None,
+        [_normal(item.content) for item in source.items],
+        [_normal(item.content) for item in outline.items],
+        autojunk=False,
+    )
+    sequence_depths = {
+        source.items[source_start + offset].line_no: outline.items[outline_start + offset].depth
+        for source_start, outline_start, size in matcher.get_matching_blocks()
+        for offset in range(size)
+    }
+
+    by_path: dict[tuple[tuple[str, ...], str], list[int]] = {}
+    by_nearest: dict[tuple[str, str], list[int]] = {}
+    by_content: dict[str, set[int]] = {}
+    for item in outline.items:
+        content = _normal(item.content)
+        path = outline_paths.get(item.line_no, ("", "", "", ""))
+        nearest = next((heading for heading in reversed(path) if heading), "")
+        by_path.setdefault((path, content), []).append(item.depth)
+        by_nearest.setdefault((nearest, content), []).append(item.depth)
+        by_content.setdefault(content, set()).add(item.depth)
+
+    matched = 0
+    unresolved = 0
+    ambiguous = 0
+    path_occurrences: dict[tuple[tuple[str, ...], str], int] = {}
+    nearest_occurrences: dict[tuple[str, str], int] = {}
+    for item in source.items:
+        content = _normal(item.content)
+        path = source_paths.get(item.line_no, ("", "", "", ""))
+        if path[0] in {"apéndices", "appendices"}:
+            # The outline governs the book body. Generated appendix analytics
+            # are independent material and keep their own source indentation.
+            unresolved += 1
+            continue
+        nearest = next((heading for heading in reversed(path) if heading), "")
+        path_key = (path, content)
+        nearest_key = (nearest, content)
+        resolved_depth: int | None = sequence_depths.get(item.line_no)
+
+        path_sequence = by_path.get(path_key, [])
+        path_index = path_occurrences.get(path_key, 0)
+        path_occurrences[path_key] = path_index + 1
+        nearest_sequence = by_nearest.get(nearest_key, [])
+        nearest_index = nearest_occurrences.get(nearest_key, 0)
+        nearest_occurrences[nearest_key] = nearest_index + 1
+        if resolved_depth is None and path_index < len(path_sequence):
+            resolved_depth = path_sequence[path_index]
+        elif resolved_depth is None and nearest_index < len(nearest_sequence):
+            resolved_depth = nearest_sequence[nearest_index]
+
+        choices = by_content.get(content, set())
+        if resolved_depth is None and len(choices) == 1:
+            resolved_depth = next(iter(choices))
+        elif resolved_depth is None and item.depth in choices:
+            # The content exists at more than one outline depth, but the shared
+            # source already uses one of those valid positions.
+            resolved_depth = item.depth
+
+        if resolved_depth is not None:
+            item.depth = resolved_depth
+            matched += 1
+        elif choices:
+            ambiguous += 1
+        else:
+            unresolved += 1
+
+    items_by_line = {item.line_no: item for item in source.items}
+    for annotation in source.annotations:
+        owner = items_by_line.get(annotation.owner_line or -1)
+        annotation.owner_depth = owner.depth if owner else 0
+
+    stack: list[StructuralItem] = []
+    active_path: tuple[str, ...] | None = None
+    for item in source.items:
+        path = source_paths.get(item.line_no, ("", "", "", ""))
+        if path != active_path:
+            stack.clear()
+            active_path = path
+        while stack and stack[-1].depth >= item.depth:
+            stack.pop()
+        item.parent_line = stack[-1].line_no if stack else None
+        stack.append(item)
+
+    return OutlineResolution(matched=matched, unresolved=unresolved, ambiguous=ambiguous)
 
 
 def depth_report(index: StructureIndex) -> list[tuple[int, str, int, str]]:
