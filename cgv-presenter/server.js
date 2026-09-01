@@ -4142,6 +4142,10 @@ function isStandaloneScriptureLine(line) {
   return /^\*[^\s*][\s\S]*\*\s*$/.test(String(line || ""));
 }
 
+function isContextQuoteLine(line) {
+  return /^=\s+\S/.test(String(line || ""));
+}
+
 function isGrammarNoteLine(line) {
   // * grammar, definitions, observations
   return /^\*\s+\S/.test(String(line || ""));
