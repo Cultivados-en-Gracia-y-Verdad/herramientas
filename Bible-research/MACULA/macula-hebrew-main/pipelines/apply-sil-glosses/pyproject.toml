@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "apply-sil-glosses"
+version = "0.0.1"
+description = "Apply gloss mappings from CSV to nodes XML files"
+authors = ["Biblica's Bible Technology Team"]
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+lxml = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "isort (>=7.0.0,<8.0.0)",
+    "black (>=26.1.0,<27.0.0)"
+]
