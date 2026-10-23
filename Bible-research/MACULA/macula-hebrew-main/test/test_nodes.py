@@ -1,0 +1,76 @@
+import pytest
+import os
+import codecs
+import re
+import unicodedata
+from lxml import etree
+from test import __nodes_files__, run_xpath_for_file
+
+
+@pytest.mark.parametrize("node_file", __nodes_files__)
+def test_file_exists(node_file):
+    size = os.path.getsize(node_file)
+    assert size > 0
+
+
+@pytest.mark.parametrize("node_file", __nodes_files__)
+def test_file_is_valid_utf8(node_file):
+    lines = codecs.open(node_file, encoding="utf-8", errors="strict").readlines()
+    assert lines != ""
+
+
+@pytest.mark.parametrize("node_file", __nodes_files__)
+def test_file_is_valid_xml(node_file):
+    assert etree.parse(node_file)
+
+
+@pytest.mark.parametrize("node_file", __nodes_files__)
+def test_ref_attr_correct_format(node_file):
+    pattern = "^[A-Z0-9]{3} [0-9]+:[0-9]+![0-9]+$"  # USFM Ref
+    nodes = run_xpath_for_file("//w", node_file)
+    for node in nodes:
+        assert node.attrib["ref"] != ""
+        assert re.match(pattern, node.attrib["ref"])
+
+
+@pytest.mark.parametrize("node_file", __nodes_files__)
+def test_required_attrs_exist_on_w_elements(node_file):
+    required_attrs = [
+        "ref",
+        "class",
+        "{http://www.w3.org/XML/1998/namespace}id",  # @xml:id
+        "morph",
+        "unicode",
+    ]
+    nodes = run_xpath_for_file("//w", node_file)
+    for node in nodes:
+        for attr in required_attrs:
+            assert attr in node.attrib
+
+
+@pytest.mark.parametrize("node_file", __nodes_files__)
+def test_file_is_nfc(node_file):
+    """All text in the file must be Unicode NFC."""
+    text = open(node_file, encoding="utf-8").read()
+    assert unicodedata.normalize("NFC", text) == text, "File contains non-NFC text"
+
+
+@pytest.mark.parametrize("node_file", __nodes_files__)
+def test_no_cgj_anywhere(node_file):
+    """CGJ (U+034F) must not appear anywhere in the file."""
+    text = open(node_file, encoding="utf-8").read()
+    assert "\u034f" not in text, "File contains CGJ (U+034F)"
+
+
+@pytest.mark.parametrize("node_file", __nodes_files__)
+def test_last_m_in_tree_after_not_missing_or_empty(node_file):
+    xpath = "//Tree/descendant::m[last()][not(@after) or @after='']"
+    assert not run_xpath_for_file(xpath, node_file)
+
+
+def test_number_of_nodes_words():
+    total_count = 0
+    for node_file in __nodes_files__:
+        count = run_xpath_for_file("//m", node_file)
+        total_count += len(count)
+    assert total_count == 475911
