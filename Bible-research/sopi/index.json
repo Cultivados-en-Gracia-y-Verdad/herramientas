@@ -1,0 +1,746 @@
+{
+  "method": {
+    "name": "SOPI step 1",
+    "authority": "The biblical text only. MACULA Hebrew/Greek clauses are the linguistic source, not an interpretation layer.",
+    "versification": "Protestant (eng). MACULA org refs are stored only as clause ids.",
+    "not_used": [
+      "theological systems",
+      "external prophecy catalogs",
+      "later books to classify an earlier saying",
+      "Spanish renderings invented without a declared Spanish source"
+    ],
+    "status": {
+      "predictive": "The clause presents something that will happen (yiqtol / weqatal / Greek future), including a stated condition.",
+      "candidate": "The speaker states an intended or possible act that has not yet occurred, but the unit is not yet raised to predictive.",
+      "not_recorded": "Immediate fiat (let there be), narrative, permission, etiology, questions. Listed under excluded, not as records."
+    },
+    "interpretation": "Always null at step 1.",
+    "later_scripture": "Always null at step 1. A later book quoting this saying does not close or classify it.",
+    "discovery": "Each chapter is walked in MACULA clauses. A record is taken only if the narrator marks YHWH/Elohim said, spoke, or commanded, and a clause in that speech presents a coming act (yiqtol, weqatal, or a participle the gloss marks as about.to). No verse is added because a catalog, a doctrine, or later Scripture treats it as prophecy. Second-person you-will of assigned work (make, cover, take) stays out: the addressee is told what to do now. Pace: scripts/propose_sopi_from_speeches.py builds a review shortlist from said_speeches + marked_formulas; it does not write records. Accept or reject into this file by hand.",
+    "files": {
+      "canonical": "sopi/index.json",
+      "tsv": "sopi/index.tsv",
+      "proposals": "sopi/proposals.json",
+      "proposals_tsv": "sopi/proposals.tsv"
+    }
+  },
+  "tally": {
+    "GEN 1": {"predictive": 0, "candidate": 2},
+    "GEN 2": {"predictive": 1, "candidate": 1},
+    "GEN 3": {"predictive": 4, "candidate": 1},
+    "GEN 4": {"predictive": 3, "candidate": 2},
+    "GEN 5": {"predictive": 0, "candidate": 1},
+    "GEN 6": {"predictive": 4, "candidate": 1},
+    "GEN 7": {"predictive": 1, "candidate": 0},
+    "total": {"predictive": 13, "candidate": 8}
+  },
+  "excluded": [
+    {"ref": "GEN 1:3–13", "why": "Jussive fiat of making; the narrator then records that it was so. Not a later event."},
+    {"ref": "GEN 1:28", "why": "Imperatives to the humans now (be fruitful, fill, rule), not a stated later event."},
+    {"ref": "GEN 2:10", "why": "Geographic description of the river."},
+    {"ref": "GEN 2:16", "why": "Permission: you may eat. Not a prediction."},
+    {"ref": "GEN 2:23–24", "why": "Naming and a general therefore-clause about a man and his wife. Not recorded as prediction."},
+    {"ref": "GEN 3:13", "why": "Question and the woman’s report. No coming act stated by YHWH."},
+    {"ref": "GEN 3:20–21, 23–24", "why": "Narrator: naming, clothing, sending out, placing the cherubim."},
+    {"ref": "GEN 4:1–5, 8, 16–22, 25–26", "why": "Narrator: births, offerings, the killing, genealogy, Seth."},
+    {"ref": "GEN 4:6, 9–10", "why": "YHWH’s questions, and the blood crying out (participle of what is now happening), not a coming act."},
+    {"ref": "GEN 4:15b", "why": "Narrator: YHWH appointed a sign. Wayyiqtol of what he did, not a saying of what will happen."},
+    {"ref": "GEN 4:23", "why": "Lamech’s qatal: I have killed. Past report, not a coming act."},
+    {"ref": "GEN 5:1–28, 30–32", "why": "Genealogy: lived, fathered, died. Narrator wayyiqtol, not a coming act."},
+    {"ref": "GEN 5:24", "why": "Narrator: Enoch walked with God; he was not; God took him (qatal). Not a saying of what will happen."},
+    {"ref": "GEN 6:1–2, 4–6, 8–12, 22", "why": "Narrator (including 6:4 in those days). Not YHWH/Elohim speaking a coming act. 6:4 yiqtol leaked under the 6:3 said-span; speaker is still the narrator."},
+    {"ref": "GEN 6:14–16, 19, 21", "why": "Same speech as 6:13, but imperative / second-person you-will of making, covering, bringing, taking. Assigned work for Noah now, not a clause stating what the world will do."},
+    {"ref": "GEN 7:1", "why": "Same YHWH-to-Noah speech: imperative go; qatal I.have.seen righteous. Not a coming act."},
+    {"ref": "GEN 7:2–3", "why": "Same speech: second-person you.will.take; bird/livestock counts; infinitive preserve.alive. Assigned work and counts for Noah now."},
+    {"ref": "GEN 7:5–24", "why": "Narrator: Noah did; flood came; waters rose; all died; YHWH closed the ark (wayyiqtol of what he did). 7:5/9/16 צוה qatal points back to the prior speech; not a new saying."}
+  ],
+  "records": [
+    {
+      "id": "GEN-01-001",
+      "ref": "GEN 1:14",
+      "status": "candidate",
+      "clause_ids": ["H000056", "H000057", "H000059"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "יְהִ֤י מְאֹרֹת֙ … וְהָי֤וּ לְאֹתֹת֙ וּלְמוֹעֲדִ֔ים וּלְיָמִ֖ים וְשָׁנִֽים",
+        "gloss": "let.it.be luminaries … they.will.become (into) signs and.(into) appointed times and (into) days and years",
+        "morphology": [
+          {"id": "H000057", "verb": "היה", "form": "qal jussive third singular"},
+          {"id": "H000059", "verb": "היה", "form": "qal weqatal third plural"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "אלהים",
+        "addressee": null,
+        "concerning": ["מאור"]
+      },
+      "prediction": {
+        "actions": ["they.will.become signs / appointed times / days / years"],
+        "condition": null,
+        "time": null,
+        "place": "firmament of the heavens"
+      },
+      "basis": "After Elohim said let there be luminaries, a weqatal states what they will be for. Not raised to predictive: it is the stated function of the lights in the same making-speech.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-01-002",
+      "ref": "GEN 1:26",
+      "status": "candidate",
+      "clause_ids": ["H000101", "H000103", "H000104"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "נַֽעֲשֶׂ֥ה אָדָ֛ם … וְיִרְדּוּ֩ בִדְגַ֨ת הַיָּ֜ם",
+        "gloss": "let.us.make humankind … that.they.may.rule over the.fish of the.sea …",
+        "morphology": [
+          {"id": "H000103", "verb": "עשה", "form": "qal yiqtol first plural"},
+          {"id": "H000104", "verb": "רדה", "form": "qal jussive third plural"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "אלהים",
+        "addressee": null,
+        "concerning": ["אדם"]
+      },
+      "prediction": {
+        "actions": ["let.us.make humankind", "that.they.may.rule"],
+        "condition": null,
+        "time": null,
+        "place": null
+      },
+      "basis": "Elohim states an act of making and a purpose of ruling. Candidate: intended act in the making-speech, not a prediction of a later day.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-02-001",
+      "ref": "GEN 2:17",
+      "status": "predictive",
+      "clause_ids": ["H000189", "H000194", "H000195", "H000196"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "לֹ֥א תֹאכַ֖ל מִמֶּ֑נּוּ כִּ֗י בְּיוֹם אֲכָלְךָ֥ מִמֶּ֖נּוּ מ֥וֹת תָּמֽוּת",
+        "gloss": "not you.must.eat from it … on the.day eat you from it surely.(die) you.will.die",
+        "morphology": [
+          {"id": "H000194", "verb": "אכל", "form": "qal yiqtol second singular"},
+          {"id": "H000195", "verb": "מות", "form": "qal yiqtol second singular"},
+          {"id": "H000196", "verb": "אכל", "form": "qal infinitive construct"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה אלהים",
+        "addressee": "האדם",
+        "concerning": ["האדם"]
+      },
+      "prediction": {
+        "actions": ["you.will.die"],
+        "condition": "eat from the tree of the knowledge of good and evil",
+        "time": "ביום — on the.day of your eating from it",
+        "place": null
+      },
+      "basis": "YHWH God commanded the man. A yiqtol states the man will die on the day of eating from that tree. The death is presented as what will follow the condition. No later chapter is used.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-02-002",
+      "ref": "GEN 2:18",
+      "status": "candidate",
+      "clause_ids": ["H000197", "H000200"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "אֶֽעֱשֶׂהּ־לּ֥וֹ עֵ֖זֶר כְּנֶגְדּֽוֹ",
+        "gloss": "I.will.make for him a.helper like before him",
+        "morphology": [
+          {"id": "H000200", "verb": "עשה", "form": "qal yiqtol first singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה אלהים",
+        "addressee": null,
+        "concerning": ["האדם"],
+        "beneficiary": "האדם"
+      },
+      "prediction": {
+        "actions": ["I.will.make a helper corresponding to him"],
+        "condition": null,
+        "time": null,
+        "place": null
+      },
+      "basis": "YHWH God said he will make a helper. First-person yiqtol of an act not yet done. Kept as candidate: not every divine I-will is raised to predictive.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-03-001",
+      "ref": "GEN 3:14",
+      "status": "predictive",
+      "clause_ids": ["H000307", "H000309", "H000310", "H000311"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "אָר֤וּר אַתָּה֙ … עַל־גְּחֹנְךָ֣ תֵלֵ֔ךְ וְעָפָ֥ר תֹּאכַ֖ל כָּל־יְמֵ֥י חַיֶּֽיךָ",
+        "gloss": "[are].cursed you … on belly your you.will.go … dust you.will.eat all the.days your.life your",
+        "morphology": [
+          {"id": "H000309", "verb": "ארר", "form": "qal participle passive singular"},
+          {"id": "H000310", "verb": "הלך", "form": "qal yiqtol second singular"},
+          {"id": "H000311", "verb": "אכל", "form": "qal yiqtol second singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה אלהים",
+        "addressee": "הנחש",
+        "concerning": ["הנחש"]
+      },
+      "prediction": {
+        "actions": ["you.will.go on your belly", "you.will.eat dust all the days of your life"],
+        "condition": "you.have.done this (stated as grounds, not as a future if)",
+        "time": "all the.days your.life",
+        "place": null
+      },
+      "basis": "YHWH God said to the snake. Two yiqtols state how the snake will go and what it will eat for the days of its life. The participle cursed you is the accompanying verdict, not a later-book meaning.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-03-002",
+      "ref": "GEN 3:15",
+      "status": "predictive",
+      "clause_ids": ["H000312", "H000313", "H000314"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "וְאֵיבָ֣ה אָשִׁ֗ית בֵּינְךָ֙ וּבֵ֣ין הָֽאִשָּׁ֔ה וּבֵ֥ין זַרְעֲךָ֖ וּבֵ֣ין זַרְעָ֑הּ ה֚וּא יְשׁוּפְךָ֣ רֹ֔אשׁ וְאַתָּ֖ה תְּשׁוּפֶ֥נּוּ עָקֵֽב",
+        "gloss": "enmity I.will.put between you and between the woman and between offspring your and between offspring her | he he will.bruise.you head | you you will.bruise.him heel",
+        "morphology": [
+          {"id": "H000312", "verb": "שית", "form": "qal yiqtol first singular"},
+          {"id": "H000313", "verb": "שוף", "form": "qal yiqtol third singular"},
+          {"id": "H000314", "verb": "שוף", "form": "qal yiqtol second singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה אלהים",
+        "addressee": "הנחש",
+        "concerning": ["הנחש", "האשה", "זרע"]
+      },
+      "prediction": {
+        "actions": [
+          "I.will.put enmity between you and the woman, and between your offspring and her offspring",
+          "he will.bruise you, head",
+          "you will.bruise him, heel"
+        ],
+        "condition": null,
+        "time": null,
+        "place": null
+      },
+      "basis": "Same speech as GEN 3:14. Three yiqtols: YHWH will put enmity; he (the woman’s offspring, הוא) will bruise the snake as to the head; the snake will bruise him as to the heel. No identity of הוא is supplied from later text. No fulfillment is recorded.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-03-003",
+      "ref": "GEN 3:16",
+      "status": "predictive",
+      "clause_ids": ["H000315", "H000316", "H000317", "H000318", "H000319"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "הַרְבָּ֤ה אַרְבֶּה֙ עִצְּבוֹנֵ֣ךְ וְהֵֽרֹנֵ֔ךְ בְּעֶ֖צֶב תֵּֽלְדִ֣י בָנִ֑ים וְאֶל־אִישֵׁךְ֙ תְּשׁ֣וּקָתֵ֔ךְ וְה֖וּא יִמְשָׁל־בָּֽךְ",
+        "gloss": "I.will.increase pain your and pregnancy your | with pain you.will.bear children | [will.be].to husband your desire your | he he.will.rule over you",
+        "morphology": [
+          {"id": "H000316", "verb": "רבה", "form": "hiphil yiqtol first singular"},
+          {"id": "H000317", "verb": "ילד", "form": "qal yiqtol second singular"},
+          {"id": "H000319", "verb": "משל", "form": "qal yiqtol third singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה אלהים",
+        "addressee": "האשה",
+        "concerning": ["האשה", "איש"]
+      },
+      "prediction": {
+        "actions": [
+          "I.will.increase your pain and your pregnancy",
+          "you.will.bear children with pain",
+          "your desire will be toward your husband",
+          "he will.rule over you"
+        ],
+        "condition": null,
+        "time": null,
+        "place": null
+      },
+      "basis": "To the woman he said. First- and second- and third-person yiqtols (and a nominal clause of desire) state what will hold for her. No later text is used.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-03-004",
+      "ref": "GEN 3:17–19",
+      "status": "predictive",
+      "clause_ids": ["H000320", "H000326", "H000327", "H000328", "H000329", "H000330", "H000334"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "אֲרוּרָ֤ה הָֽאֲדָמָה֙ בַּֽעֲבוּרֶ֔ךָ … בְּעִצָּבוֹן֙ תֹּֽאכֲלֶ֔נָּה … ק֥וֹץ וְדַרְדַּ֖ר תַּצְמִ֣יחַֽ לָ֑ךְ … אֶל־עָפָ֖ר תָּשֽׁוּב",
+        "gloss": "[is].cursed the ground because of you | in pain you will.eat.it all the.days your.life your | thorn[s] and thistle[s] it.will.cause.to.sprout for you | you.will.eat the.vegetation of the.field | by the.sweat your.face your you.will.eat food until | to dust you.will.return",
+        "morphology": [
+          {"id": "H000326", "verb": "ארר", "form": "qal participle passive singular"},
+          {"id": "H000327", "verb": "אכל", "form": "qal yiqtol second singular"},
+          {"id": "H000328", "verb": "צמח", "form": "hiphil yiqtol third singular"},
+          {"id": "H000329", "verb": "אכל", "form": "qal weqatal second singular"},
+          {"id": "H000330", "verb": "אכל", "form": "qal yiqtol second singular"},
+          {"id": "H000334", "verb": "שוב", "form": "qal yiqtol second singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה אלהים",
+        "addressee": "אדם",
+        "concerning": ["אדם", "אדמה"]
+      },
+      "prediction": {
+        "actions": [
+          "the ground is cursed because of you",
+          "you will.eat of it in pain all the days of your life",
+          "it will cause thorns and thistles to sprout for you",
+          "you will.eat the vegetation of the field",
+          "you will.eat food by the sweat of your face until you return to the ground",
+          "to dust you.will.return"
+        ],
+        "condition": null,
+        "time": "all the.days your.life; until you return to the ground",
+        "place": null
+      },
+      "basis": "To Adam he said. Yiqtol and weqatal state eating, sprouting, and returning to dust. The two-lists seam cut this speech at you.ate (wayyiqtol); the catalog reads the remaining clauses of 3:17–19 from MACULA anyway. No later text is used.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-03-005",
+      "ref": "GEN 3:22",
+      "status": "candidate",
+      "clause_ids": ["H000339", "H000344", "H000345", "H000346", "H000347"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "פֶּן־יִשְׁלַ֣ח יָד֗וֹ וְלָקַח֙ גַּ֚ם מֵעֵ֣ץ הַֽחַיִּ֔ים וְאָכַ֖ל וָחַ֥י לְעֹלָֽם",
+        "gloss": "he.should.stretch.out hand his | he.will.take also from the.tree of.(the) life | he.will.eat | he.will.live forever of.perpetuity",
+        "morphology": [
+          {"id": "H000344", "verb": "שלח", "form": "qal yiqtol third singular"},
+          {"id": "H000345", "verb": "לקח", "form": "qal weqatal third singular"},
+          {"id": "H000346", "verb": "אכל", "form": "qal weqatal third singular"},
+          {"id": "H000347", "verb": "חיה", "form": "qal weqatal third singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה אלהים",
+        "addressee": null,
+        "concerning": ["האדם"]
+      },
+      "prediction": {
+        "actions": ["he.will.take from the tree of life", "he.will.eat", "he.will.live לעולם"],
+        "condition": "he.should.stretch.out his hand (פן)",
+        "time": "לעולם",
+        "place": null
+      },
+      "basis": "YHWH God said what would follow if the man reached out to the tree of life. Candidate: a stated chain that the following narrative then prevents, not yet raised to a standing prediction of what will happen.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-04-001",
+      "ref": "GEN 4:7",
+      "status": "predictive",
+      "clause_ids": ["H000372", "H000379", "H000380", "H000381", "H000382", "H000383", "H000384", "H000385", "H000386"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "אִם־תֵּיטִיב֙ שְׂאֵ֔ת וְאִם֙ לֹ֣א תֵיטִ֔יב לַפֶּ֖תַח חַטָּ֣את רֹבֵ֑ץ וְאֵלֶ֨יךָ֙ תְּשׁ֣וּקָת֔וֹ וְאַתָּ֖ה תִּמְשָׁל־בּֽוֹ",
+        "gloss": "if you.will.do.well lifting.up | if not you.will.do.well to the door sin [is].crouching | to you desire its | you you.will.rule over it",
+        "morphology": [
+          {"id": "H000380", "verb": "יטב", "form": "hiphil yiqtol second singular"},
+          {"id": "H000383", "verb": "יטב", "form": "hiphil yiqtol second singular"},
+          {"id": "H000384", "verb": "רבץ", "form": "qal participle active singular"},
+          {"id": "H000386", "verb": "משל", "form": "qal yiqtol second singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה",
+        "addressee": "קין",
+        "concerning": ["קין", "חטאת"]
+      },
+      "prediction": {
+        "actions": [
+          "if you do well — lifting.up",
+          "if you do not do well — sin is crouching at the door",
+          "its desire is toward you",
+          "you will.rule over it"
+        ],
+        "condition": "אם תיטיב / אם לא תיטיב",
+        "time": null,
+        "place": "לפתח — at the door"
+      },
+      "basis": "YHWH said to Cain. Two אם-clauses plus yiqtol תמשל. The speech states what will hold if Cain does well or not. No later text is used. Lifting.up is MACULA’s gloss of שאת; the catalog does not supply a meaning for that noun.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-04-002",
+      "ref": "GEN 4:11–12",
+      "status": "predictive",
+      "clause_ids": ["H000398", "H000402", "H000405", "H000406", "H000407", "H000408"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "אָר֣וּר אָ֑תָּה מִן־הָֽאֲדָמָה֙ … כִּ֤י תַֽעֲבֹד֙ אֶת־הָ֣אֲדָמָ֔ה לֹֽא־תֹסֵ֥ף תֵּת־כֹּחָ֖הּ לָ֑ךְ נָ֥ע וָנָ֖ד תִּֽהְיֶ֥ה בָאָֽרֶץ",
+        "gloss": "[are].cursed you from the ground … you.will.till (et) the ground | not it.will.repeat to.give produce its to you | a.wanderer and a.fugitive you.will.be on the earth",
+        "morphology": [
+          {"id": "H000402", "verb": "ארר", "form": "qal participle passive singular"},
+          {"id": "H000405", "verb": "עבד", "form": "qal yiqtol second singular"},
+          {"id": "H000406", "verb": "יסף", "form": "hiphil jussive third singular"},
+          {"id": "H000408", "verb": "היה", "form": "qal yiqtol second singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה",
+        "addressee": "קין",
+        "concerning": ["קין", "אדמה"]
+      },
+      "prediction": {
+        "actions": [
+          "you are cursed from the ground",
+          "when you till the ground it will not again give its produce to you",
+          "you will.be a wanderer and a fugitive on the earth"
+        ],
+        "condition": null,
+        "time": null,
+        "place": "on the earth"
+      },
+      "basis": "YHWH said (4:10 he.said). Yiqtols state what the ground will not give and what Cain will be. The participle cursed you is the verdict in the same speech.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-04-003",
+      "ref": "GEN 4:14",
+      "status": "candidate",
+      "clause_ids": ["H000409", "H000417", "H000418", "H000419", "H000420"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "מִפָּנֶ֖יךָ אֶסָּתֵ֑ר וְהָיִ֜יתִי נָ֤ע וָנָד֙ בָּאָ֔רֶץ וְהָיָ֥ה כָל־מֹצְאִ֖י יַֽהַרְגֵֽנִי",
+        "gloss": "from before you I.will.be.hidden | I.will.be a.wanderer and a.fugitive on the earth | every [one who].finds.me he will.kill.me",
+        "morphology": [
+          {"id": "H000417", "verb": "סתר", "form": "niphal yiqtol first singular"},
+          {"id": "H000418", "verb": "היה", "form": "qal weqatal first singular"},
+          {"id": "H000420", "verb": "הרג", "form": "qal yiqtol third singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "קין",
+        "addressee": "יהוה",
+        "concerning": ["קין"]
+      },
+      "prediction": {
+        "actions": [
+          "I.will.be.hidden from before you",
+          "I.will.be a wanderer and a fugitive on the earth",
+          "every one who finds me will.kill.me"
+        ],
+        "condition": null,
+        "time": null,
+        "place": "on the earth"
+      },
+      "basis": "Cain said to YHWH. Part restates 4:12; part adds whoever finds me will kill me. Candidate: human speech of what will happen, not raised to the same status as YHWH’s yiqtols in 4:11–12.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-04-004",
+      "ref": "GEN 4:15",
+      "status": "predictive",
+      "clause_ids": ["H000421", "H000422"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "כָּל־הֹרֵ֣ג קַ֔יִן שִׁבְעָתַ֖יִם יֻקָּ֑ם",
+        "gloss": "any [one.who].kills Cain sevenfold he.will.be.avenged",
+        "morphology": [
+          {"id": "H000422", "verb": "נקם", "form": "hophal yiqtol third singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה",
+        "addressee": "קין",
+        "concerning": ["קין"]
+      },
+      "prediction": {
+        "actions": ["anyone who kills Cain will.be.avenged sevenfold"],
+        "condition": "killing Cain",
+        "time": null,
+        "place": null
+      },
+      "basis": "YHWH said to him. Hophal yiqtol יקם states what will be done to one who kills Cain. The sign in the next clause is narrator action, not this record.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-04-005",
+      "ref": "GEN 4:24",
+      "status": "candidate",
+      "clause_ids": ["H000446", "H000456", "H000457"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "כִּ֥י שִׁבְעָתַ֖יִם יֻקַּם־קָ֑יִן וְלֶ֖מֶךְ שִׁבְעִ֥ים וְשִׁבְעָֽה",
+        "gloss": "sevenfold he.will.be.avenged Cain | Lamech seventy and seven",
+        "morphology": [
+          {"id": "H000456", "verb": "נקם", "form": "hophal yiqtol third singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "למך",
+        "addressee": "נשי למך",
+        "concerning": ["קין", "למך"]
+      },
+      "prediction": {
+        "actions": ["Cain will.be.avenged sevenfold", "Lamech seventy and seven"],
+        "condition": null,
+        "time": null,
+        "place": null
+      },
+      "basis": "Lamech said to his wives. The yiqtol about Cain repeats YHWH’s 4:15 wording. The clause Lamech seventy and seven has no verb in MACULA. Candidate: human speech; not raised because YHWH already said the Cain line, and Lamech’s number is not a conjugated coming-act.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-05-001",
+      "ref": "GEN 5:29",
+      "status": "candidate",
+      "clause_ids": ["H000536", "H000537", "H000538", "H000539"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "זֶ֞ה יְנַחֲמֵ֤נוּ מִֽמַּעֲשֵׂ֨נוּ֙ וּמֵעִצְּב֣וֹן יָדֵ֔ינוּ מִן־הָ֣אֲדָמָ֔ה אֲשֶׁ֥ר אֵֽרְרָ֖הּ יְהוָֽה",
+        "gloss": "this.[one] he will.comfort.us from work our and from the.pain our.hands our from the ground which he has.cursed.it Yahweh",
+        "morphology": [
+          {"id": "H000538", "verb": "נחם", "form": "piel yiqtol third singular"},
+          {"id": "H000539", "verb": "ארר", "form": "piel qatal third singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "למך",
+        "addressee": null,
+        "concerning": ["נח", "אדמה"]
+      },
+      "prediction": {
+        "actions": ["this one will.comfort us from our work and from the pain of our hands from the ground"],
+        "condition": null,
+        "time": null,
+        "place": null
+      },
+      "basis": "Lamech named his son Noah, saying. Piel yiqtol ינחמנו states what this one will do. The relative clause YHWH has cursed the ground is qatal (situation named, not a new coming act). Candidate: human naming-speech, not YHWH speaking. No later chapter is used to say whether the comfort happened.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-06-001",
+      "ref": "GEN 6:3",
+      "status": "predictive",
+      "clause_ids": ["H000558", "H000560", "H000564"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "לֹֽא־יָד֨וֹן רוּחִ֤י בָֽאָדָם֙ לְעֹלָ֔ם … וְהָי֣וּ יָמָיו מֵאָ֥ה וְעֶשְׂרִ֖ים שָׁנָֽה",
+        "gloss": "not it.will.remain spirit my in (the) humankind forever of.perpetuity | they.will.be days his one.hundred and twenty year[s]",
+        "morphology": [
+          {"id": "H000560", "verb": "דון", "form": "qal yiqtol third singular"},
+          {"id": "H000564", "verb": "היה", "form": "qal weqatal third plural"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה",
+        "addressee": null,
+        "concerning": ["אדם"]
+      },
+      "prediction": {
+        "actions": [
+          "my spirit will not remain in humankind לעולם",
+          "his days will be 120 years"
+        ],
+        "condition": null,
+        "time": "לעולם; 120 years",
+        "place": null
+      },
+      "basis": "YHWH said. Yiqtol לא ידון and weqatal והיו ימיו. The catalog does not decide what 120 years measures. No later verse is used.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-06-002",
+      "ref": "GEN 6:7",
+      "status": "predictive",
+      "clause_ids": ["H000580", "H000581"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "אֶמְחֶ֨ה אֶת־הָאָדָ֤ם … מֵעַל֙ פְּנֵ֣י הָֽאֲדָמָ֔ה",
+        "gloss": "I.will.wipe (et) (the) humankind which from on the.surface of the.ground from humankind unto animal[s] unto creeping.thing[s] and unto the.bird[s] of the.heavens",
+        "morphology": [
+          {"id": "H000581", "verb": "מחה", "form": "qal yiqtol first singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה",
+        "addressee": null,
+        "concerning": ["אדם"]
+      },
+      "prediction": {
+        "actions": ["I.will.wipe humankind from on the surface of the ground, from humankind unto animals, creeping things, and birds"],
+        "condition": null,
+        "time": null,
+        "place": "from on the surface of the ground"
+      },
+      "basis": "YHWH said. First-person yiqtol אמחה. 6:8–9 (Noah found favor; these are the accounts) are narrator and are not this record.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-06-003",
+      "ref": "GEN 6:13, 17",
+      "status": "predictive",
+      "clause_ids": ["H000599", "H000600", "H000602", "H000618", "H000620", "H000622"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "קֵ֤ץ כָּל־בָּשָׂר֙ בָּ֣א לְפָנַ֔י … הִנְנִי מַשְׁחִיתָם … הִנְנִי מֵבִ֨יא אֶת־הַמַּבּ֥וּל מַ֨יִם֙ עַל־הָאָ֔רֶץ … כֹּ֥ל אֲשֶׁר־בָּאָ֖רֶץ יִגְוָֽע",
+        "gloss": "[the].end of.all flesh [is].coming before to me | [am].about to.destroy.them with the earth | [am].about.to.bring (et) the flood water on the earth | all that it.will.die",
+        "morphology": [
+          {"id": "H000600", "verb": "בוא", "form": "qal qatal third singular"},
+          {"id": "H000602", "verb": "שחת", "form": "hiphil participle active singular"},
+          {"id": "H000618", "verb": "בוא", "form": "hiphil participle active singular"},
+          {"id": "H000622", "verb": "גוע", "form": "qal yiqtol third singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "אלהים",
+        "addressee": "נח",
+        "concerning": ["כל בשר"]
+      },
+      "prediction": {
+        "actions": [
+          "the end of all flesh is coming before me",
+          "I am about to destroy them with the earth",
+          "I am about to bring the flood water on the earth to destroy all flesh under the heavens",
+          "all that is on the earth will die"
+        ],
+        "condition": null,
+        "time": null,
+        "place": "on the earth / under the heavens"
+      },
+      "basis": "Elohim said to Noah. The coming-act clauses are בא (gloss: is.coming), participles about.to.destroy / about.to.bring, and yiqtol יגוע. Ark-making clauses in between are not this record. המבול מים is the clause’s own wording, not a title supplied from elsewhere.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-06-004",
+      "ref": "GEN 6:18",
+      "status": "predictive",
+      "clause_ids": ["H000624", "H000625"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "וַהֲקִמֹתִ֥י אֶת־בְּרִיתִ֖י אִתָּ֑ךְ וּבָאתָ֙ אֶל־הַתֵּבָ֔ה",
+        "gloss": "I.will.establish (et) covenant my with you | you.will.go into the ark you and sons your and wife your and the.wives your.sons your with you",
+        "morphology": [
+          {"id": "H000624", "verb": "קום", "form": "hiphil qatal first singular"},
+          {"id": "H000625", "verb": "בוא", "form": "qal weqatal second singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "אלהים",
+        "addressee": "נח",
+        "concerning": ["נח", "ברית"]
+      },
+      "prediction": {
+        "actions": [
+          "I.will.establish my covenant with you",
+          "you will.go into the ark, you and your sons and your wife and your sons’ wives with you"
+        ],
+        "condition": null,
+        "time": null,
+        "place": "into the ark"
+      },
+      "basis": "Same Elohim-to-Noah speech. MACULA glosses והקמתי as I.will.establish (form tagged qatal). Weqatal ובאת you.will.go. No later covenant passage is used.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-06-005",
+      "ref": "GEN 6:20",
+      "status": "candidate",
+      "clause_ids": ["H000633", "H000630"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "שְׁנַ֧יִם מִכֹּ֛ל יָבֹ֥אוּ אֵלֶ֖יךָ … זָכָ֥ר וּנְקֵבָ֖ה יִֽהְיֽוּ",
+        "gloss": "two of everything they.will.come to you to preserve.alive | male and female they.will.be",
+        "morphology": [
+          {"id": "H000633", "verb": "בוא", "form": "qal yiqtol third plural"},
+          {"id": "H000630", "verb": "היה", "form": "qal yiqtol third plural"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "אלהים",
+        "addressee": "נח",
+        "concerning": ["עוף", "בהמה", "רמש"]
+      },
+      "prediction": {
+        "actions": ["two of everything they.will.come to you", "male and female they.will.be"],
+        "condition": null,
+        "time": null,
+        "place": null
+      },
+      "basis": "Third-person yiqtols in the same speech (they.will.come / they.will.be). Candidate: not first-person YHWH-act, and 6:19 you.will.bring is the assigned work left out. No later verse is used.",
+      "interpretation": null,
+      "later_scripture": null
+    },
+    {
+      "id": "GEN-07-001",
+      "ref": "GEN 7:4",
+      "status": "predictive",
+      "clause_ids": ["H000650", "H000651"],
+      "source": {
+        "corpus": "hebrew",
+        "text": "לְ יָמִ֨ים ע֜וֹד שִׁבְעָ֗ה אָֽנֹכִי֙ מַמְטִ֣יר עַל הָ אָ֔רֶץ אַרְבָּעִ֣ים י֔וֹם וְ אַרְבָּעִ֖ים לָ֑יְלָה … מָחִ֗יתִי אֶֽת כָּל הַ יְקוּם֙ אֲשֶׁ֣ר מֵ עַ֖ל פְּנֵ֥י הָֽ אֲדָמָֽה",
+        "gloss": "to days yet seven I [am].about.to.bring.rain on the earth forty day[s] and forty night[s] | I.will.wipe (et) all the existence which from on the.surface of the.ground",
+        "morphology": [
+          {"id": "H000650", "verb": "מטר", "form": "hiphil participle active singular"},
+          {"id": "H000651", "verb": "מחה", "form": "qal qatal first singular"}
+        ]
+      },
+      "spanish": null,
+      "roles": {
+        "speaker": "יהוה",
+        "addressee": "נח",
+        "concerning": ["יקום", "ארץ"]
+      },
+      "prediction": {
+        "actions": [
+          "in seven more days I am about to bring rain on the earth forty days and forty nights",
+          "I will wipe all existence that is on the surface of the ground"
+        ],
+        "condition": null,
+        "time": "seven days yet",
+        "place": "on the earth / on the surface of the ground"
+      },
+      "basis": "YHWH said to Noah (7:1). Coming-act clauses only: participle about.to.bring.rain; MACULA glosses מחיתי as I.will.wipe (form tagged qatal). Nested עשיתי I.have.made is relative to יקום and is not a coming act. 7:1 go / 7:2–3 you.will.take are excluded as imperatives and assigned work. 7:5–24 is narrator fulfillment, not added here.",
+      "interpretation": null,
+      "later_scripture": null
+    }
+  ]
+}

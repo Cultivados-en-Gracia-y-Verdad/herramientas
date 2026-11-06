@@ -1,0 +1,556 @@
+{
+  "method": "Bible-internal speech formulas on MACULA clause own-lemmas (consonantal match)",
+  "clause_universe": {
+    "hebrew": 102124,
+    "greek": 43835,
+    "total": 145959
+  },
+  "tiers": {
+    "A_text_uses_prophecy_vocabulary": "נאם, כה אמר + יהוה, דבר יהוה היה, נבא, נביא+אמר, חזון/חזות, משא+company, προφητ*, πληρόω+προφήτης/γραφή",
+    "D_divine_speech_not_called_prophecy": "YHWH/Elohim said or spoke — the text attributes speech, not the word prophecy",
+    "excluded": "said_to_yhwh; thus-says without YHWH; משא as load/name; מראה as appearance"
+  },
+  "frames_AB": {
+    "count": 1329,
+    "hebrew": 1110,
+    "greek": 219,
+    "tier_A": 1329,
+    "by_tag": {
+      "messenger_formula": 433,
+      "thus_says": 433,
+      "yhwh_said": 433,
+      "utterance_formula": 373,
+      "prophet_named": 144,
+      "prophesy_verb": 143,
+      "word_event": 124,
+      "vision": 43,
+      "fulfillment_citation": 43,
+      "prophecy_noun": 20,
+      "prophet_speaks": 14,
+      "massa_oracle": 13,
+      "spirit_via_prophet": 4,
+      "spoken_by_lord_through_prophet": 2
+    },
+    "by_book": {
+      "JER": 419,
+      "EZK": 304,
+      "ISA": 74,
+      "ZEC": 54,
+      "MAT": 51,
+      "ACT": 41,
+      "AMO": 41,
+      "LUK": 36,
+      "1KI": 30,
+      "2KI": 27,
+      "HAG": 22,
+      "1CO": 21,
+      "1SA": 21,
+      "2CH": 20,
+      "JHN": 18,
+      "REV": 18,
+      "DAN": 17,
+      "EXO": 10,
+      "1CH": 9,
+      "MRK": 9,
+      "2SA": 8,
+      "NUM": 8,
+      "2PE": 5,
+      "HOS": 5,
+      "MIC": 5,
+      "ZEP": 5,
+      "NAM": 4,
+      "OBA": 4,
+      "ROM": 4,
+      "EPH": 3,
+      "JOS": 3,
+      "MAL": 3,
+      "PSA": 3,
+      "1PE": 2,
+      "1TH": 2,
+      "1TI": 2,
+      "GEN": 2,
+      "HAB": 2,
+      "HEB": 2,
+      "JAS": 2,
+      "JOL": 2,
+      "JON": 2,
+      "LAM": 2,
+      "PRO": 2,
+      "COL": 1,
+      "EZR": 1,
+      "JDG": 1,
+      "JUD": 1,
+      "TIT": 1
+    }
+  },
+  "yhwh_said_included": {
+    "count": 337,
+    "by_book": {
+      "EXO": 50,
+      "NUM": 30,
+      "ISA": 29,
+      "JER": 26,
+      "MAL": 24,
+      "GEN": 23,
+      "DEU": 21,
+      "JDG": 17,
+      "JOS": 15,
+      "AMO": 13,
+      "1KI": 12,
+      "1SA": 12,
+      "2KI": 7,
+      "2SA": 7,
+      "JOB": 7,
+      "ZEC": 7,
+      "2CH": 6,
+      "PSA": 6,
+      "1CH": 5,
+      "EZK": 5,
+      "HAG": 4,
+      "HOS": 3,
+      "JON": 3,
+      "LEV": 2,
+      "JOL": 1,
+      "MIC": 1,
+      "ZEP": 1
+    }
+  },
+  "elohim_said_included": {
+    "count": 58
+  },
+  "yhwh_spoke_included": {
+    "count": 252
+  },
+  "divine_speech_not_called_prophecy": {
+    "count": 647,
+    "yhwh_said": 337,
+    "elohim_said": 58,
+    "yhwh_spoke": 252
+  },
+  "said_to_yhwh_excluded": {
+    "count": 35,
+    "by_book": {
+      "2CH": 9,
+      "EXO": 4,
+      "NUM": 4,
+      "JDG": 3,
+      "PSA": 3,
+      "2SA": 2,
+      "DEU": 2,
+      "JER": 2,
+      "1KI": 1,
+      "1SA": 1,
+      "GEN": 1,
+      "JOS": 1,
+      "NEH": 1,
+      "ZEC": 1
+    }
+  },
+  "oracle_content": {
+    "count": 5228,
+    "hebrew": 4354,
+    "greek": 874,
+    "by_span": {
+      "nested": 544,
+      "same_sentence": 4684
+    },
+    "by_book": {
+      "JER": 1662,
+      "EZK": 1119,
+      "ISA": 339,
+      "ZEC": 167,
+      "ACT": 162,
+      "AMO": 158,
+      "LUK": 158,
+      "MAT": 154,
+      "2KI": 153,
+      "1KI": 142,
+      "2CH": 94,
+      "REV": 89,
+      "1SA": 75,
+      "1CO": 74,
+      "DAN": 64,
+      "JHN": 58,
+      "HAG": 56,
+      "EXO": 53,
+      "MRK": 38,
+      "ROM": 33,
+      "1CH": 31,
+      "EPH": 30,
+      "2SA": 28,
+      "NUM": 28,
+      "MIC": 22,
+      "ZEP": 22,
+      "HEB": 19,
+      "HOS": 19,
+      "NAM": 19,
+      "1TH": 17,
+      "JOS": 17,
+      "MAL": 16,
+      "HAB": 13,
+      "OBA": 13,
+      "2PE": 12,
+      "GEN": 11,
+      "1TI": 10,
+      "JAS": 9,
+      "PSA": 9,
+      "LAM": 7,
+      "JOL": 5,
+      "PRO": 5,
+      "1PE": 4,
+      "JDG": 4,
+      "JUD": 4,
+      "COL": 2,
+      "JON": 2,
+      "EZR": 1,
+      "TIT": 1
+    }
+  },
+  "samples_by_tag": {
+    "word_event": [
+      {
+        "ref": "GEN 15:1",
+        "gloss": "after the things (the) these it.came the.word of.Yahweh to Abram in the vision (cmp)"
+      },
+      {
+        "ref": "1SA 3:1",
+        "gloss": "the.word of.Yahweh it.was rare in the days (the) those"
+      },
+      {
+        "ref": "1SA 15:10",
+        "gloss": "it.came the.word of.Yahweh to Samuel (cmp)"
+      },
+      {
+        "ref": "2SA 7:4",
+        "gloss": "it.came the.word of.Yahweh to Nathan (cmp)"
+      },
+      {
+        "ref": "2SA 24:11",
+        "gloss": "the.word of.Yahweh it.came to Gad the prophet the.seer of.David (cmp)"
+      },
+      {
+        "ref": "1KI 6:11",
+        "gloss": "it.came the.word of.Yahweh to Solomon (cmp)"
+      }
+    ],
+    "utterance_formula": [
+      {
+        "ref": "GEN 22:16",
+        "gloss": "the.utterance of.Yahweh"
+      },
+      {
+        "ref": "NUM 14:28",
+        "gloss": "the.utterance of.Yahweh"
+      },
+      {
+        "ref": "NUM 24:3",
+        "gloss": "the.utterance of.Balaam son the of.Beor and the.utterance of the.man (the).opened of the.eye"
+      },
+      {
+        "ref": "NUM 24:4",
+        "gloss": "the.utterance of.[one.who].hears the.words of.God who"
+      },
+      {
+        "ref": "NUM 24:15",
+        "gloss": "the.utterance of.Balaam son the of.Beor and the.utterance of the.man (the).opened of the.eye"
+      },
+      {
+        "ref": "NUM 24:16",
+        "gloss": "the.utterance of.[one.who].hears the.words of.God and [one.who].knows the.knowledge of.the.Most.High"
+      }
+    ],
+    "messenger_formula": [
+      {
+        "ref": "EXO 4:22",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 5:1",
+        "gloss": "thus he.says Yahweh the.God of.Israel"
+      },
+      {
+        "ref": "EXO 7:17",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 7:26",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 8:16",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 9:1",
+        "gloss": "thus he.says Yahweh the.God of the.Hebrews"
+      }
+    ],
+    "thus_says": [
+      {
+        "ref": "EXO 4:22",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 5:1",
+        "gloss": "thus he.says Yahweh the.God of.Israel"
+      },
+      {
+        "ref": "EXO 7:17",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 7:26",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 8:16",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 9:1",
+        "gloss": "thus he.says Yahweh the.God of the.Hebrews"
+      }
+    ],
+    "yhwh_said": [
+      {
+        "ref": "EXO 4:22",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 5:1",
+        "gloss": "thus he.says Yahweh the.God of.Israel"
+      },
+      {
+        "ref": "EXO 7:17",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 7:26",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 8:16",
+        "gloss": "thus he.says Yahweh"
+      },
+      {
+        "ref": "EXO 9:1",
+        "gloss": "thus he.says Yahweh the.God of the.Hebrews"
+      }
+    ],
+    "prophesy_verb": [
+      {
+        "ref": "NUM 11:25",
+        "gloss": "they.prophesied"
+      },
+      {
+        "ref": "NUM 11:26",
+        "gloss": "they.prophesied in the camp"
+      },
+      {
+        "ref": "NUM 11:27",
+        "gloss": "Eldad and Medad [are].prophesying in the camp"
+      },
+      {
+        "ref": "1SA 10:5",
+        "gloss": "they [will.be].prophesying"
+      },
+      {
+        "ref": "1SA 10:6",
+        "gloss": "you.will.prophesy with them"
+      },
+      {
+        "ref": "1SA 10:10",
+        "gloss": "he.prophesied among among them"
+      }
+    ],
+    "vision": [
+      {
+        "ref": "1SA 3:1",
+        "gloss": "there.[was].not vision spread.out"
+      },
+      {
+        "ref": "1CH 17:15",
+        "gloss": "according to.all the words (the) these and according to.all the vision (the) this so he.spoke Nathan to David"
+      },
+      {
+        "ref": "2CH 9:29",
+        "gloss": "not [are].they written on the.words of.Nathan the prophet and on the.prophecy of.Ahijah the Shilonite and in the.visions of.Iddo the seer on Jeroboam the.son of.Nebat"
+      },
+      {
+        "ref": "2CH 32:32",
+        "gloss": "[are].written in the.vision of.Isaiah the.son of.Amoz the prophet on the.scroll of.the.kings of.Judah and Israel"
+      },
+      {
+        "ref": "PSA 89:20",
+        "gloss": "then you.spoke in a.vision to your.faithful [people]"
+      },
+      {
+        "ref": "PRO 29:18",
+        "gloss": "there.[is].not vision"
+      }
+    ],
+    "prophet_speaks": [
+      {
+        "ref": "1SA 22:5",
+        "gloss": "he.said Gad the prophet to David"
+      },
+      {
+        "ref": "1KI 20:35",
+        "gloss": "a.man one one of.the.sons of the.prophets he.said to companion his at the.word of.Yahweh"
+      },
+      {
+        "ref": "2KI 6:1",
+        "gloss": "they.said the.sons of the.prophets to Elisha"
+      },
+      {
+        "ref": "JER 14:13",
+        "gloss": "the prophets [are].saying to them"
+      },
+      {
+        "ref": "JER 23:25",
+        "gloss": "they.have.said the prophets [who]"
+      },
+      {
+        "ref": "JER 26:11",
+        "gloss": "they.said the priests and the prophets to the officials and to all the people (cmp)"
+      }
+    ],
+    "massa_oracle": [
+      {
+        "ref": "2KI 9:25",
+        "gloss": "Yahweh he.lifted.up on him (et) the oracle (the) this"
+      },
+      {
+        "ref": "2CH 19:7",
+        "gloss": "there.[is].not with Yahweh God our injustice and lifting.up of.face and taking of.a.bribe"
+      },
+      {
+        "ref": "2CH 24:27",
+        "gloss": "sons his it.will.be.numerous of the.oracle on him and the.founding of.the.house of.(the) God"
+      },
+      {
+        "ref": "JER 23:33",
+        "gloss": "what? [is].the.burden of.Yahweh"
+      },
+      {
+        "ref": "JER 23:34",
+        "gloss": "the.burden of.Yahweh"
+      },
+      {
+        "ref": "JER 23:36",
+        "gloss": "the.burden of.Yahweh not you.will.remember again"
+      }
+    ],
+    "fulfillment_citation": [
+      {
+        "ref": "MAT 1:22",
+        "gloss": "may be fulfilled"
+      },
+      {
+        "ref": "MAT 1:22",
+        "gloss": "having been spoken by the Lord through the prophet"
+      },
+      {
+        "ref": "MAT 2:15",
+        "gloss": "it might be fulfilled"
+      },
+      {
+        "ref": "MAT 2:15",
+        "gloss": "having been spoken by [the] Lord through the prophet"
+      },
+      {
+        "ref": "MAT 2:17",
+        "gloss": "Then was fulfilled"
+      },
+      {
+        "ref": "MAT 2:17",
+        "gloss": "having been spoken by Jeremiah the prophet"
+      }
+    ],
+    "prophet_named": [
+      {
+        "ref": "MAT 1:22",
+        "gloss": "having been spoken by the Lord through the prophet"
+      },
+      {
+        "ref": "MAT 2:5",
+        "gloss": "thus has it been written through the prophet"
+      },
+      {
+        "ref": "MAT 2:15",
+        "gloss": "having been spoken by [the] Lord through the prophet"
+      },
+      {
+        "ref": "MAT 2:17",
+        "gloss": "having been spoken by Jeremiah the prophet"
+      },
+      {
+        "ref": "MAT 2:23",
+        "gloss": "having been spoken through the prophets"
+      },
+      {
+        "ref": "MAT 3:3",
+        "gloss": "having been spoken of through Isaiah the prophet"
+      }
+    ],
+    "spoken_by_lord_through_prophet": [
+      {
+        "ref": "MAT 1:22",
+        "gloss": "having been spoken by the Lord through the prophet"
+      },
+      {
+        "ref": "MAT 2:15",
+        "gloss": "having been spoken by [the] Lord through the prophet"
+      }
+    ],
+    "prophecy_noun": [
+      {
+        "ref": "MAT 13:14",
+        "gloss": "is fulfilled in them the prophecy of Isaiah"
+      },
+      {
+        "ref": "ROM 12:6",
+        "gloss": "if prophecy"
+      },
+      {
+        "ref": "1CO 12:10",
+        "gloss": "to another prophecy"
+      },
+      {
+        "ref": "1CO 13:2",
+        "gloss": "I should have prophecy"
+      },
+      {
+        "ref": "1CO 13:8",
+        "gloss": "if [there are] prophesies"
+      },
+      {
+        "ref": "1CO 14:6",
+        "gloss": "not to you I should speak either in revelation or in knowledge or in prophecy or of teaching"
+      }
+    ],
+    "spirit_via_prophet": [
+      {
+        "ref": "ACT 28:25",
+        "gloss": "Rightly the Spirit - Holy spoke by Isaiah the prophet to the fathers of you saying"
+      },
+      {
+        "ref": "1CO 14:32",
+        "gloss": "spirits of prophets to prophets are subject"
+      },
+      {
+        "ref": "EPH 3:5",
+        "gloss": "now it has been revealed to holy apostles His and prophets in [the] Spirit"
+      },
+      {
+        "ref": "REV 22:6",
+        "gloss": "the Lord the God of the spirits of the prophets sent the angel of Him"
+      }
+    ]
+  },
+  "not_yet": [
+    "False-prophet vs true-prophet discernment from the text",
+    "Predictive vs indictment vs promise classification inside the oracle",
+    "Gospel κύριος-said mixes Jesus-as-Lord with λέγει κύριος citations"
+  ]
+}

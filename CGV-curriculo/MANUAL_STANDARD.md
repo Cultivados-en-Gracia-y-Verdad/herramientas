@@ -299,6 +299,11 @@ Every later H2 in that book — and every CGV hearing manual built this way — 
 5. `### En síntesis` when the H2’s movements are done.
 6. Passage footnote *definitions* only in **Apéndice D** at end of file.
 
+**Never hand-author navigation lists in the manuscript.** Presenter builds the table of contents
+from headings. Do **not** put `# Índice`, `## Tramos`, or any bullet TOC of H1/H2 spans in
+`manual/manual.md`. After `# Introducción` / `# Cómo usar este manual`, the next student heading
+is the first `#` / `##` content span.
+
 ### H2 production loop (do not skip stages)
 
 | Stage | Owner | Artifact |

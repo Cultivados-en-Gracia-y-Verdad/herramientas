@@ -1,0 +1,23 @@
+{
+  "method": "Only clauses whose own lemmas include fulfillment language plus word/prophet/scripture.",
+  "count": 20,
+  "hebrew": 9,
+  "greek": 11,
+  "by_book": {
+    "JHN": 5,
+    "1KI": 3,
+    "2CH": 3,
+    "1SA": 2,
+    "MAT": 2,
+    "ACT": 1,
+    "JAS": 1,
+    "JER": 1,
+    "LUK": 1,
+    "MRK": 1
+  },
+  "does_not": [
+    "name an event (birth, exile, return)",
+    "point at a different verse as the prophecy that was fulfilled",
+    "judge whether the claim is true or false"
+  ]
+}

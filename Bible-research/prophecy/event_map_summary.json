@@ -1,0 +1,744 @@
+{
+  "method": "Predicted event = yiqtol/weqatal/future under prophecy vocabulary or under narrator 'and YHWH said' (I-will / he-will). Not jussive ('do not fear'), not you-shall law. Repeat = same verb + same MACULA proper nouns (not divine names). Order = utterance order, speech order, or sequence words in the clause.",
+  "proper_nouns": 38592,
+  "predicted_clauses": 3207,
+  "repeated_event_types": 38,
+  "speeches_with_sequence": 501,
+  "name_threads": 118,
+  "text_phrases": [
+    {
+      "label": "exile (גלה / גולה / αἰχμαλωσία)",
+      "count": 44
+    },
+    {
+      "label": "turn the captivity",
+      "count": 25
+    },
+    {
+      "label": "return (שוב + Zion / Jerusalem / captivity)",
+      "count": 16
+    },
+    {
+      "label": "παρουσία",
+      "count": 14
+    },
+    {
+      "label": "day + YHWH",
+      "count": 13
+    },
+    {
+      "label": "latter days",
+      "count": 13
+    },
+    {
+      "label": "day + Lord",
+      "count": 7
+    },
+    {
+      "label": "thousand years",
+      "count": 7
+    },
+    {
+      "label": "come + Jesus / Christ",
+      "count": 1
+    },
+    {
+      "label": "distress + Jacob",
+      "count": 1
+    }
+  ],
+  "top_names": [
+    {
+      "name": "Israel",
+      "count": 96,
+      "first": "GEN 35:10",
+      "last": "AMO 7:17",
+      "acts": [
+        {
+          "verb": "be",
+          "n": 13
+        },
+        {
+          "verb": "cut off",
+          "n": 4
+        },
+        {
+          "verb": "let ~ go",
+          "n": 2
+        },
+        {
+          "verb": "bring out",
+          "n": 2
+        },
+        {
+          "verb": "make atonement",
+          "n": 2
+        },
+        {
+          "verb": "consecrate",
+          "n": 2
+        }
+      ]
+    },
+    {
+      "name": "Egypt",
+      "count": 31,
+      "first": "GEN 46:4",
+      "last": "AMO 8:8",
+      "acts": [
+        {
+          "verb": "know",
+          "n": 3
+        },
+        {
+          "verb": "fall",
+          "n": 2
+        },
+        {
+          "verb": "go down",
+          "n": 1
+        },
+        {
+          "verb": "bring ~ up",
+          "n": 1
+        },
+        {
+          "verb": "allow",
+          "n": 1
+        },
+        {
+          "verb": "strike",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Aaron",
+      "count": 28,
+      "first": "EXO 7:1",
+      "last": "NUM 20:26",
+      "acts": [
+        {
+          "verb": "be",
+          "n": 4
+        },
+        {
+          "verb": "present",
+          "n": 4
+        },
+        {
+          "verb": "eat",
+          "n": 2
+        },
+        {
+          "verb": "come",
+          "n": 2
+        },
+        {
+          "verb": "go in",
+          "n": 2
+        },
+        {
+          "verb": "gathered",
+          "n": 2
+        }
+      ]
+    },
+    {
+      "name": "Babylon",
+      "count": 26,
+      "first": "ISA 14:22",
+      "last": "EZK 32:11",
+      "acts": [
+        {
+          "verb": "give",
+          "n": 3
+        },
+        {
+          "verb": "serve",
+          "n": 2
+        },
+        {
+          "verb": "break",
+          "n": 2
+        },
+        {
+          "verb": "take",
+          "n": 2
+        },
+        {
+          "verb": "come",
+          "n": 2
+        },
+        {
+          "verb": "cut off",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Judah",
+      "count": 24,
+      "first": "JDG 1:2",
+      "last": "ZEC 12:4",
+      "acts": [
+        {
+          "verb": "make",
+          "n": 3
+        },
+        {
+          "verb": "give",
+          "n": 2
+        },
+        {
+          "verb": "go up",
+          "n": 1
+        },
+        {
+          "verb": "go into",
+          "n": 1
+        },
+        {
+          "verb": "remove",
+          "n": 1
+        },
+        {
+          "verb": "brought out",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Jerusalem",
+      "count": 17,
+      "first": "1KI 11:13",
+      "last": "ZEC 8:4",
+      "acts": [
+        {
+          "verb": "set",
+          "n": 2
+        },
+        {
+          "verb": "give",
+          "n": 1
+        },
+        {
+          "verb": "reject",
+          "n": 1
+        },
+        {
+          "verb": "poured out",
+          "n": 1
+        },
+        {
+          "verb": "proclaim",
+          "n": 1
+        },
+        {
+          "verb": "brought out",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Pharaoh",
+      "count": 10,
+      "first": "EXO 6:1",
+      "last": "EZK 32:32",
+      "acts": [
+        {
+          "verb": "listen",
+          "n": 3
+        },
+        {
+          "verb": "harden",
+          "n": 2
+        },
+        {
+          "verb": "do",
+          "n": 1
+        },
+        {
+          "verb": "bring",
+          "n": 1
+        },
+        {
+          "verb": "attacked",
+          "n": 1
+        },
+        {
+          "verb": "comforted",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Chaldeans",
+      "count": 6,
+      "first": "ISA 43:14",
+      "last": "JER 51:24",
+      "acts": [
+        {
+          "verb": "bring ~ down",
+          "n": 1
+        },
+        {
+          "verb": "punish",
+          "n": 1
+        },
+        {
+          "verb": "fight",
+          "n": 1
+        },
+        {
+          "verb": "they will leave",
+          "n": 1
+        },
+        {
+          "verb": "be",
+          "n": 1
+        },
+        {
+          "verb": "repay",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Edom",
+      "count": 6,
+      "first": "NUM 34:3",
+      "last": "OBA 1:8",
+      "acts": [
+        {
+          "verb": "be",
+          "n": 1
+        },
+        {
+          "verb": "stretch out",
+          "n": 1
+        },
+        {
+          "verb": "deal",
+          "n": 1
+        },
+        {
+          "verb": "lay",
+          "n": 1
+        },
+        {
+          "verb": "revoke",
+          "n": 1
+        },
+        {
+          "verb": "possess",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Moab",
+      "count": 6,
+      "first": "JER 48:35",
+      "last": "ZEP 2:9",
+      "acts": [
+        {
+          "verb": "bring to an end",
+          "n": 1
+        },
+        {
+          "verb": "spread",
+          "n": 1
+        },
+        {
+          "verb": "bring",
+          "n": 1
+        },
+        {
+          "verb": "restore",
+          "n": 1
+        },
+        {
+          "verb": "revoke",
+          "n": 1
+        },
+        {
+          "verb": "be",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Jacob",
+      "count": 5,
+      "first": "GEN 35:10",
+      "last": "AMO 9:8",
+      "acts": [
+        {
+          "verb": "called",
+          "n": 1
+        },
+        {
+          "verb": "ashamed",
+          "n": 1
+        },
+        {
+          "verb": "return",
+          "n": 1
+        },
+        {
+          "verb": "restore",
+          "n": 1
+        },
+        {
+          "verb": "I will destroy",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Ammon",
+      "count": 4,
+      "first": "DEU 2:19",
+      "last": "AMO 1:13",
+      "acts": [
+        {
+          "verb": "give",
+          "n": 1
+        },
+        {
+          "verb": "cause ~ tobe heard",
+          "n": 1
+        },
+        {
+          "verb": "restore",
+          "n": 1
+        },
+        {
+          "verb": "revoke",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "David",
+      "count": 4,
+      "first": "1KI 11:12",
+      "last": "JER 33:17",
+      "acts": [
+        {
+          "verb": "do",
+          "n": 1
+        },
+        {
+          "verb": "give",
+          "n": 1
+        },
+        {
+          "verb": "raise up",
+          "n": 1
+        },
+        {
+          "verb": "lack",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Nebuchadnezzar",
+      "count": 4,
+      "first": "JER 21:7",
+      "last": "EZK 30:10",
+      "acts": [
+        {
+          "verb": "give",
+          "n": 2
+        },
+        {
+          "verb": "take",
+          "n": 1
+        },
+        {
+          "verb": "put an end",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Zion",
+      "count": 4,
+      "first": "ISA 59:20",
+      "last": "ZEC 1:17",
+      "acts": [
+        {
+          "verb": "come",
+          "n": 1
+        },
+        {
+          "verb": "bring",
+          "n": 1
+        },
+        {
+          "verb": "plowed",
+          "n": 1
+        },
+        {
+          "verb": "comfort",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Aram",
+      "count": 3,
+      "first": "1KI 22:11",
+      "last": "ISA 17:3",
+      "acts": [
+        {
+          "verb": "gore",
+          "n": 2
+        },
+        {
+          "verb": "be",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Cush",
+      "count": 3,
+      "first": "ISA 20:4",
+      "last": "ISA 45:14",
+      "acts": [
+        {
+          "verb": "lead away",
+          "n": 1
+        },
+        {
+          "verb": "dismayed",
+          "n": 1
+        },
+        {
+          "verb": "come over",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Elam",
+      "count": 3,
+      "first": "JER 49:37",
+      "last": "JER 49:39",
+      "acts": [
+        {
+          "verb": "shatter",
+          "n": 1
+        },
+        {
+          "verb": "set",
+          "n": 1
+        },
+        {
+          "verb": "restore",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Nile",
+      "count": 3,
+      "first": "EXO 7:18",
+      "last": "AMO 8:8",
+      "acts": [
+        {
+          "verb": "stink",
+          "n": 1
+        },
+        {
+          "verb": "swarm",
+          "n": 1
+        },
+        {
+          "verb": "rise",
+          "n": 1
+        },
+        {
+          "verb": "tossed about",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "name": "Saul",
+      "count": 3,
+      "first": "1SA 16:2",
+      "last": "ISA 28:18",
+      "acts": [
+        {
+          "verb": "hears",
+          "n": 1
+        },
+        {
+          "verb": "surrender",
+          "n": 1
+        },
+        {
+          "verb": "stand",
+          "n": 1
+        }
+      ]
+    }
+  ],
+  "top_repeated": [
+    {
+      "label": "be — Israel",
+      "count": 15,
+      "first": "GEN 35:10",
+      "last": "EZK 44:12"
+    },
+    {
+      "label": "cut off — Israel",
+      "count": 6,
+      "first": "EXO 12:15",
+      "last": "JER 31:33"
+    },
+    {
+      "label": "go — Babylon",
+      "count": 6,
+      "first": "JER 20:6",
+      "last": "EZK 32:11"
+    },
+    {
+      "label": "brought — Aaron",
+      "count": 5,
+      "first": "LEV 13:2",
+      "last": "NUM 4:19"
+    },
+    {
+      "label": "allow — Egypt",
+      "count": 4,
+      "first": "EXO 3:19",
+      "last": "EZK 30:13"
+    },
+    {
+      "label": "be — Aaron",
+      "count": 4,
+      "first": "EXO 7:1",
+      "last": "NUM 4:27"
+    },
+    {
+      "label": "be — Egypt",
+      "count": 4,
+      "first": "EXO 7:19",
+      "last": "EZK 30:13"
+    },
+    {
+      "label": "go — Israel",
+      "count": 4,
+      "first": "EXO 14:16",
+      "last": "EZK 37:12"
+    },
+    {
+      "label": "present — Aaron",
+      "count": 4,
+      "first": "LEV 1:5",
+      "last": "LEV 16:11"
+    },
+    {
+      "label": "camp — Israel",
+      "count": 4,
+      "first": "NUM 1:52",
+      "last": "NUM 9:22"
+    },
+    {
+      "label": "listen — Pharaoh",
+      "count": 3,
+      "first": "EXO 6:12",
+      "last": "EXO 11:9"
+    },
+    {
+      "label": "know — Egypt",
+      "count": 3,
+      "first": "EXO 7:5",
+      "last": "EXO 14:18"
+    },
+    {
+      "label": "observe — Israel",
+      "count": 3,
+      "first": "EXO 31:16",
+      "last": "NUM 9:19"
+    },
+    {
+      "label": "make atonement — Israel",
+      "count": 3,
+      "first": "LEV 16:16",
+      "last": "NUM 15:25"
+    },
+    {
+      "label": "consecrate — Israel",
+      "count": 3,
+      "first": "LEV 16:19",
+      "last": "LEV 22:32"
+    },
+    {
+      "label": "receive — Israel",
+      "count": 3,
+      "first": "NUM 18:23",
+      "last": "EZK 47:13"
+    },
+    {
+      "label": "given — Babylon",
+      "count": 3,
+      "first": "JER 21:10",
+      "last": "JER 38:3"
+    },
+    {
+      "label": "strike — Egypt",
+      "count": 2,
+      "first": "EXO 3:20",
+      "last": "EXO 12:12"
+    },
+    {
+      "label": "let ~ go — Israel",
+      "count": 2,
+      "first": "EXO 6:11",
+      "last": "EXO 7:2"
+    },
+    {
+      "label": "die — Israel",
+      "count": 2,
+      "first": "EXO 9:4",
+      "last": "LEV 20:2"
+    },
+    {
+      "label": "put — Aaron",
+      "count": 2,
+      "first": "LEV 1:7",
+      "last": "LEV 16:8"
+    },
+    {
+      "label": "arrange — Aaron",
+      "count": 2,
+      "first": "LEV 1:8",
+      "last": "LEV 24:3"
+    },
+    {
+      "label": "eat — Aaron",
+      "count": 2,
+      "first": "LEV 6:16",
+      "last": "LEV 6:18"
+    },
+    {
+      "label": "live — Israel",
+      "count": 2,
+      "first": "LEV 23:42",
+      "last": "2KI 10:30"
+    },
+    {
+      "label": "set out — Israel",
+      "count": 2,
+      "first": "NUM 9:17",
+      "last": "NUM 9:18"
+    }
+  ]
+}

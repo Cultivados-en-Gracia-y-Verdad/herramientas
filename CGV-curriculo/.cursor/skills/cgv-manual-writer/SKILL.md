@@ -1746,6 +1746,7 @@ Todavía no se ha dicho qué deben hacer ustedes.
 
 **Never leave in the student file:**
 
+- `# Índice` / `## Tramos` / any hand-authored TOC of H1 or H2 spans — Presenter builds navigation from headings
 - «no afirmes… hasta elegirlo en Observador»
 - «Revise el rango griego en Observador»
 - Parentheticals that name **Arquitecto** or **Observador** as workshop agents
