@@ -1,0 +1,14 @@
+{
+  "name": "newsletter-desk-local",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local newsletter planning app, ready for continued development with Codex.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "start": "node scripts/dev.mjs",
+    "check": "node --check public/app.js && node --check public/plan-data.js && node --check scripts/collection.mjs && node --check scripts/dev.mjs",
+    "test": "node --test scripts/*.test.mjs"
+  }
+}
