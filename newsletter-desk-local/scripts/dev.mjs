@@ -41,9 +41,12 @@ function collectionSources(value) {
     if (!source || typeof source.name !== 'string' || !source.name.trim() || typeof source.url !== 'string') {
       throw new Error('Every feed needs a name and URL.');
     }
+    const type = source.type === 'Calendar feed' ? 'Calendar feed' : source.type === 'RSS feed' ? 'RSS feed' : null;
+    if (!type) throw new Error('Sources must be RSS or calendar feeds.');
     const url = new URL(source.url);
-    if (!['http:', 'https:'].includes(url.protocol)) throw new Error('Feed URLs must use http or https.');
-    return { name: source.name.trim().slice(0, 150), url: url.href };
+    const protocols = type === 'Calendar feed' ? ['http:', 'https:', 'webcal:'] : ['http:', 'https:'];
+    if (!protocols.includes(url.protocol)) throw new Error(type === 'Calendar feed' ? 'Calendar URLs must use webcal, http, or https.' : 'Feed URLs must use http or https.');
+    return { name: source.name.trim().slice(0, 150), url: url.href, type };
   });
 }
 

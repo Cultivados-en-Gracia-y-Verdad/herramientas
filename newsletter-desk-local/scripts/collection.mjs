@@ -78,6 +78,62 @@ export function parseFeed(xml, source) {
   });
 }
 
+function calendarProperty(block, name) {
+  const line = block.split(/\r?\n/).find(value => new RegExp(`^${name}(?:;[^:]*)?:`, 'i').test(value));
+  if (!line) return { value: '', parameters: '' };
+  const colon = line.indexOf(':');
+  const heading = line.slice(0, colon);
+  return { value: line.slice(colon + 1), parameters: heading.slice(name.length + 1) };
+}
+
+function calendarText(value = '') {
+  return value.replace(/\\[nN]/g, '\n').replace(/\\([,;\\])/g, '$1').trim();
+}
+
+function calendarDate(property) {
+  const match = property.value.match(/^(\d{4})(\d{2})(\d{2})(?:T(\d{2})(\d{2})(\d{2}))?(Z)?$/);
+  if (!match) return { iso: null, label: calendarText(property.value) };
+  const [, year, month, day, hour = '00', minute = '00', second = '00', utc] = match;
+  const timezone = property.parameters.match(/(?:^|;)TZID=([^;]+)/i)?.[1];
+  const date = utc
+    ? new Date(`${year}-${month}-${day}T${hour}:${minute}:${second}Z`)
+    : new Date(Number(year), Number(month) - 1, Number(day), Number(hour), Number(minute), Number(second));
+  const label = match[4]
+    ? `${year}-${month}-${day} ${hour}:${minute}${timezone ? ` (${timezone})` : utc ? ' (UTC)' : ''}`
+    : `${year}-${month}-${day} (all day)`;
+  return { iso: Number.isNaN(date.valueOf()) ? null : date.toISOString(), label };
+}
+
+export function parseCalendar(ical, source) {
+  if (typeof ical !== 'string' || !/BEGIN:VCALENDAR/i.test(ical)) throw new Error('Response is not an iCalendar feed.');
+  const unfolded = ical.replace(/\r?\n[ \t]/g, '');
+  const events = [...unfolded.matchAll(/BEGIN:VEVENT\r?\n([\s\S]*?)\r?\nEND:VEVENT/gi)].map(match => match[1]);
+  if (!events.length) throw new Error('Calendar contains no events.');
+  return events.map(block => {
+    const title = calendarText(calendarProperty(block, 'SUMMARY').value) || 'Untitled event';
+    const uid = calendarText(calendarProperty(block, 'UID').value);
+    const start = calendarDate(calendarProperty(block, 'DTSTART'));
+    const description = calendarText(calendarProperty(block, 'DESCRIPTION').value);
+    const location = calendarText(calendarProperty(block, 'LOCATION').value);
+    const eventUrl = safeHttpUrl(calendarText(calendarProperty(block, 'URL').value), source.url.replace(/^webcal:/i, 'https:'));
+    const summary = [description, location && `Location: ${location}`].filter(Boolean).join('\n').slice(0, 2000);
+    const identity = uid || `${title}\n${start.label}`;
+    const id = createHash('sha256').update(`${source.url}\n${identity}`).digest('hex');
+    return {
+      id,
+      sourceName: source.name,
+      sourceUrl: source.url,
+      title,
+      link: eventUrl,
+      publishedAt: start.iso,
+      dateLabel: start.label,
+      summary,
+      itemType: 'event',
+      reviewState: 'unreviewed'
+    };
+  });
+}
+
 export function createStore(file) {
   return {
     async read() {
@@ -111,8 +167,9 @@ export async function collectFeeds(sources, { store, fetchImpl = fetch, now = ()
   for (const source of sources) {
     const result = { sourceName: source.name, sourceUrl: source.url, status: 'failed', found: 0, added: 0, error: null };
     try {
-      const response = await fetchImpl(source.url, {
-        headers: { Accept: 'application/atom+xml, application/rss+xml, application/xml, text/xml;q=0.9' },
+      const fetchUrl = source.url.replace(/^webcal:/i, 'https:');
+      const response = await fetchImpl(fetchUrl, {
+        headers: { Accept: 'text/calendar, application/atom+xml, application/rss+xml, application/xml, text/xml;q=0.9' },
         redirect: 'follow',
         signal: AbortSignal.timeout(15_000)
       });
@@ -121,7 +178,7 @@ export async function collectFeeds(sources, { store, fetchImpl = fetch, now = ()
       if (declaredLength > MAX_FEED_BYTES) throw new Error('Feed is larger than 5 MB.');
       const xml = await response.text();
       if (Buffer.byteLength(xml) > MAX_FEED_BYTES) throw new Error('Feed is larger than 5 MB.');
-      const articles = parseFeed(xml, source);
+      const articles = source.type === 'Calendar feed' ? parseCalendar(xml, source) : parseFeed(xml, source);
       result.found = articles.length;
       for (const article of articles) {
         if (known.has(article.id)) continue;

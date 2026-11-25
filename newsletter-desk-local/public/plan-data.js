@@ -22,13 +22,15 @@ export function parsePlan(text) {
     let url;
     try { url = new URL(source.url); }
     catch { throw new Error('A source has an invalid URL.'); }
-    if (!['http:', 'https:'].includes(url.protocol)) {
-      throw new Error('Source URLs must use http or https.');
+    const type = typeof source.type === 'string' ? source.type : 'Website';
+    const protocols = type === 'Calendar feed' ? ['http:', 'https:', 'webcal:'] : ['http:', 'https:'];
+    if (!protocols.includes(url.protocol)) {
+      throw new Error(type === 'Calendar feed' ? 'Calendar URLs must use webcal, http, or https.' : 'Source URLs must use http or https.');
     }
     return {
       name: source.name,
       url: url.href,
-      type: typeof source.type === 'string' ? source.type : 'Website',
+      type,
       topic: typeof source.topic === 'string' ? source.topic : ''
     };
   });

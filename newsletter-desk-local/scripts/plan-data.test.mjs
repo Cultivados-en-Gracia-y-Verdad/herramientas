@@ -15,6 +15,8 @@ test('an original hosted export preserves sources, drafts, and schedule settings
   };
   assert.deepEqual(parsePlan(JSON.stringify({ title: 'Hosted export', ...plan })), plan);
   assert.deepEqual(parsePlan(JSON.stringify({ schemaVersion: 1, ...plan })), plan);
+  const calendarPlan = { sources: [{ name: 'Events', url: 'webcal://example.com/public.ics', type: 'Calendar feed', topic: 'Events' }], checks: [], fields: {} };
+  assert.deepEqual(parsePlan(JSON.stringify(calendarPlan)), calendarPlan);
 });
 
 test('invalid or unsafe imports are rejected before replacing a plan', () => {
@@ -51,7 +53,7 @@ test('local server serves app assets and does not expose project files', async (
     const collected = await fetch(origin + '/api/collect', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ sources: [{ name: 'Example', url: 'https://example.com/feed' }] })
+      body: JSON.stringify({ sources: [{ name: 'Example', url: 'https://example.com/feed', type: 'RSS feed' }] })
     });
     assert.equal(collected.status, 200);
     const result = await collected.json();

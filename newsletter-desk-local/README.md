@@ -34,14 +34,15 @@ Current official references:
 ## What works today
 
 - Manage planned sources, with names, URLs, types, and topics.
-- Collect RSS and Atom feeds on demand into a local JSON store.
-- Keep source attribution, publication dates, collection errors, and deduplicated article records.
+- Collect RSS, Atom, and public iCalendar feeds on demand into a local JSON store.
+- Accept Apple Calendar `webcal://` links as calendar sources.
+- Keep source attribution, dates, collection errors, and deduplicated article or event records.
 - Write email and WhatsApp drafts, preview them, and copy text.
 - Build a placeholder outline from source names and links.
 - Record schedule preferences, delivery options, and unresolved requirements.
 - Save in browser storage; export and import the plan as JSON.
 
-This is an early working app. Feed collection is manual and supports sources explicitly marked `RSS feed`; it does not discover feeds from ordinary websites. It does not yet select articles for an issue, summarize with AI, run a background schedule, manage subscribers, send email, or post to WhatsApp. No API keys are needed for the current version.
+This is an early working app. Collection is manual and supports sources explicitly marked `RSS feed` or `Calendar feed`; it does not discover feeds from ordinary websites. Calendar sources may use `webcal://`, `http://`, or `https://`. It does not yet select items for an issue, summarize with AI, run a background schedule, manage subscribers, send email, or post to WhatsApp. No API keys are needed for the current version.
 
 Collected articles and the latest 50 collection runs are stored in `data/newsletter-desk.json`. The `data/` directory is ignored by Git. Plan import/export remains schema version 1 and intentionally does not include collected content.
 
@@ -54,7 +55,7 @@ Collected articles and the latest 50 collection runs are stored in `data/newslet
 | `public/app.js` | Navigation, editing, source management, import/export |
 | `public/plan-data.js` | Portable plan validation |
 | `scripts/dev.mjs` | Dependency-free local HTTP server |
-| `scripts/collection.mjs` | RSS/Atom parsing, deduplication, and local persistence |
+| `scripts/collection.mjs` | RSS/Atom/iCalendar parsing, deduplication, and local persistence |
 | `scripts/plan-data.test.mjs` | Migration and local-server checks |
 | `scripts/collection.test.mjs` | Feed parsing, errors, persistence, and duplicate checks |
 | `CONTINUE_WITH_CODEX.md` | Current status and suggested next steps |
@@ -67,7 +68,7 @@ npm run check
 npm test
 ```
 
-The automated checks cover JavaScript syntax, compatibility with the hosted plan export, rejection of invalid imports, feed parsing, attribution, persistence, duplicate detection, collection errors, and the local HTTP API. Verify the responsive layout and click through the workflow in a browser after interface changes.
+The automated checks cover JavaScript syntax, compatibility with the hosted plan export, rejection of invalid imports, RSS/Atom/iCalendar parsing, `webcal` fetching, attribution, persistence, duplicate detection, collection errors, and the local HTTP API. Verify the responsive layout and click through the workflow in a browser after interface changes.
 
 ## Privacy and future integrations
 
